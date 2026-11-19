@@ -1,0 +1,279 @@
+## c2-ibp | Integration by parts workout | maths | 1 | calc2 | c2-tech
+quiz 3 | ∫ x cos x dx = ?
+* x sin x + cos x + C
+o x sin x − cos x + C
+o −x sin x + cos x + C
+o x² sin x / 2 + C
+= u = x, dv = cos x dx: x sin x − ∫ sin x dx = x sin x + cos x + C.
+> Sometimes you have to use parts twice
+
+quiz 4 | ∫ x² eˣ dx = ?
+* eˣ(x² − 2x + 2) + C
+o x²eˣ + C
+o eˣ(x² + 2x + 2) + C
+o eˣ(x² − 2x) + C
+= Parts once: x²eˣ − ∫2x eˣ dx. Parts again on that: 2xeˣ − 2eˣ.
+= Total: eˣ(x² − 2x + 2) + C.
+> Tabular integration makes repeated parts painless
+
+explain 3 | Tabular integration (the DI method)
+- Column D: differentiate the polynomial until it hits 0. Column I: integrate the other part each row.
+- Multiply diagonally with alternating signs +, −, +, …
+- *∫ x³ eˣ dx in four lines instead of three rounds of parts.*
+> And some integrals loop back on themselves
+
+story 4 | The integral that solves itself
+- ∫ eˣ sin x dx: parts twice and the same integral reappears on the right-hand side.
+- Call it I: I = eˣ sin x − eˣ cos x − I.
+- Solve the equation: *I = ½eˣ(sin x − cos x) + C.*
+> Reduction formulas turn powers into ladders
+
+explain 4 | Reduction formulas
+- Iₙ = ∫ sinⁿx dx satisfies Iₙ = −(1/n)sinⁿ⁻¹x cos x + ((n − 1)/n)Iₙ₋₂.
+- Each step drops the power by two until you hit I₀ or I₁.
+- Over [0, π/2] this gives Wallis's formula, a product that converges to π/2.
+> Next: powers of trig functions
+
+quiz 3 | ∫ arctan x dx = ?
+* x arctan x − ½ln(1 + x²) + C
+o 1/(1 + x²) + C
+o x arctan x + C
+o arctan² x / 2 + C
+= u = arctan x, dv = dx: x arctan x − ∫ x/(1 + x²) dx.
+= The last integral is ½ln(1 + x²).
+> Next: trig integrals
+
+## c2-trigint | Trig integrals | maths | 1 | calc2 | c2-ibp
+explain 3 | Odd power of sine? Peel one off
+- ∫ sin³x dx = ∫ (1 − cos²x) sin x dx.
+- Substitute u = cos x. It becomes a polynomial in u.
+- Odd power of cos? Same trick with u = sin x.
+> Even powers need the double-angle identity
+
+explain 3 | Even powers: use half-angle identities
+- $ sin²x = (1 − cos 2x)/2,   cos²x = (1 + cos 2x)/2
+- ∫ sin²x dx = x/2 − sin(2x)/4 + C.
+- *Over a full period, the average of sin² is exactly 1/2.* That's why AC power uses an RMS of V/√2.
+? Average of sin²x over a full period? :: 1/2
+> Here's an integral everyone gets wrong
+
+quiz 3 | ∫₀^π sin²x dx = ?
+* π/2
+o π
+o 0
+o 1
+= Average value 1/2 over an interval of length π.
+> Secant has a strange-looking integral
+
+story 4 | ∫ sec x dx was found by mapmakers before calculus
+- Mercator's 1569 map needed the vertical stretch at each latitude: a running sum of sec.
+- In 1645 Henry Bond noticed the tables matched ln|tan(x/2 + π/4)|.
+- *The integral of sec x was a conjecture from navigation tables.* Proved later by Barrow.
+> ∫ sec x dx = ln|sec x + tan x| + C
+
+quiz 4 | ∫ sin x cos x dx can be written as…
+o ½sin²x + C
+o −½cos²x + C
+o −¼cos 2x + C
+* All of these
+= All three are correct. They differ only by constants.
+= ½sin²x, −½cos²x and −¼cos 2x all have the same derivative.
+> Different-looking answers can all be right, because of +C
+
+## c2-trigsub | Trig substitution | maths | 2 | calc2 | c2-trigint
+explain 3 | Trig substitution undoes a square root
+- √(a² − x²): let x = a sin θ.
+- √(a² + x²): let x = a tan θ.
+- √(x² − a²): let x = a sec θ.
+- Each uses a Pythagorean identity to kill the square root.
+> Compute the area of a circle this way
+
+quiz 4 | Using x = r sin θ, what does ∫₋ᵣʳ √(r² − x²) dx equal?
+* πr²/2
+o πr²
+o r²
+o 2r²
+= It becomes r²∫ cos²θ dθ from −π/2 to π/2 = r²·π/2.
+= That's the area of a half disc. Double it: πr².
+> The inverse hyperbolic functions hide here too
+
+explain 3 | Hyperbolic functions: trig for the hyperbola
+- cosh x = (eˣ + e⁻ˣ)/2, sinh x = (eˣ − e⁻ˣ)/2.
+- cosh²x − sinh²x = 1, the hyperbola's version of sin² + cos² = 1.
+- A hanging chain makes a cosh curve: a *catenary*.
+> The Gateway Arch in St Louis is an upside-down catenary
+
+real 3 | The Gateway Arch is a weighted catenary
+- An inverted hanging chain carries its weight in pure compression: no bending.
+- Gaudí designed by hanging weighted strings and photographing them upside down.
+- *Calculus of variations proves the catenary is the shape of minimum potential energy.*
+> Next: integrals that go to infinity
+
+## c2-impr | Improper integrals | maths | 1 | calc2 | c2-trigsub
+explain 3 | Improper integrals: infinite length, finite area
+- ∫₁^∞ f(x) dx means lim b→∞ ∫₁ᵇ f(x) dx.
+- ∫₁^∞ 1/x² dx = 1. Infinite region, area 1.
+- ∫₁^∞ 1/x dx = ∞.
+> The p-test sorts them all
+
+quiz 2 | For which p does ∫₁^∞ 1/xᵖ dx converge?
+* p > 1
+o p ≥ 1
+o p < 1
+o All p > 0
+= p = 1 is the borderline: ln x → ∞.
+= Near 0 it flips: ∫₀¹ 1/xᵖ dx converges for p < 1.
+> Infinite spikes can have finite area too
+
+quiz 3 | ∫₀¹ 1/√x dx = ?
+* 2
+o ∞
+o 1
+o 1/2
+= [2√x]₀¹ = 2. The function blows up at 0 but slowly enough.
+> Comparison tests save you computing anything
+
+explain 3 | Comparison test for integrals
+- 0 ≤ f ≤ g and ∫g converges ⇒ ∫f converges.
+- ∫₁^∞ e^(−x²) dx: compare with e^(−x), which converges.
+- *You often only need to know whether it converges, not the value.*
+> The gamma function extends factorials to fractions
+
+hook 5! | (½)! = √π / 2
+- Γ(s) = ∫₀^∞ x^(s−1) e^(−x) dx satisfies Γ(n + 1) = n!.
+- It works for non-integers too. Γ(1/2) = √π.
+- So (1/2)! = Γ(3/2) = √π/2 ≈ 0.886.
+? Γ(n+1) equals what for whole n? :: n!
+> The √π comes from the Gaussian integral again
+
+## c2-num | Numerical integration | maths | 2 | calc2 | c2-impr
+explain 2 | Trapezoid rule
+- Replace the curve with straight segments between sample points.
+- $ ∫ₐᵇ f ≈ h[f₀/2 + f₁ + … + fₙ₋₁ + fₙ/2]
+- Error shrinks like h²: halve the step, quarter the error.
+> Simpson's rule uses parabolas instead
+
+explain 3 | Simpson's rule fits parabolas
+- Weights 1, 4, 2, 4, 2, …, 4, 1 times h/3.
+- Error shrinks like h⁴: halve the step, error drops 16×.
+- *It's exact for cubics*, which is a happy accident of symmetry.
+? How does Simpson's rule error scale with step h? :: Like h⁴
+> Which rule overestimates?
+
+predict 3 | Trapezoid rule on a concave-up function: over or under?
+* Overestimates
+o Underestimates
+o Exact
+= The straight chord sits above a curve that bends upward.
+= Midpoint rule does the opposite: it underestimates.
+> Gauss found something better than equal spacing
+
+story 4 | Gaussian quadrature picks the best sample points
+- Instead of equally spaced points, choose the points and weights cleverly.
+- n points integrate polynomials up to degree 2n − 1 exactly.
+- *Two well-chosen points match Simpson's three.* Used inside almost every physics simulation.
+> Next: lengths and surfaces
+
+## c2-arc | Arc length and surface area | maths | 2 | calc2 | c2-num
+explain 3 | Arc length: add up tiny hypotenuses
+- A short piece has length √(dx² + dy²).
+- $ L = ∫ₐᵇ √(1 + f′(x)²) dx
+- Square roots make these integrals nasty: few have closed forms.
+> The ellipse's perimeter has no simple formula
+
+story 4 | Nobody has a simple formula for an ellipse's perimeter
+- Arc length of an ellipse leads to an *elliptic integral*, which has no elementary form.
+- Ramanujan gave approximations accurate to staggering precision.
+- Elliptic integrals led to elliptic curves, now used in the cryptography securing your phone.
+> Surfaces of revolution use arc length too
+
+quiz 3 | Arc length of y = (2/3)x^(3/2) from 0 to 3?
+* 14/3
+o 3
+o 2√3
+o 7
+= f′ = √x, so √(1 + x). ∫₀³ √(1 + x) dx = (2/3)(8 − 1) = 14/3.
+> Next: sequences
+
+## c2-seq | Sequences | maths | 1 | calc2 | c2-arc
+explain 2 | A sequence is a function on 1, 2, 3, …
+- aₙ = 1/n: 1, 1/2, 1/3, … → 0.
+- aₙ = (−1)ⁿ: −1, 1, −1, … no limit.
+- aₙ = (1 + 1/n)ⁿ → e.
+> Recursion builds sequences from their own past
+
+story 4 | Fibonacci ratios converge to the golden ratio
+- Fₙ₊₁ = Fₙ + Fₙ₋₁: 1, 1, 2, 3, 5, 8, 13, …
+- Fₙ₊₁/Fₙ → φ = (1 + √5)/2 ≈ 1.618.
+- Binet's formula gives Fₙ directly from powers of φ and its conjugate.
+> Most "golden ratio in nature and art" claims are exaggerated, though
+
+myth 3 F | The Parthenon and the Mona Lisa were designed using the golden ratio.
+= There's no historical evidence for either. Measurements can be cherry-picked to fit almost anything.
+= Real golden-ratio patterns do appear in plant spirals (phyllotaxis).
+> Some sequences converge without you knowing the limit
+
+quiz 3 | lim n→∞ n^(1/n) = ?
+* 1
+o 0
+o e
+o ∞
+= ln(n^(1/n)) = (ln n)/n → 0, so the limit is e⁰ = 1.
+> The squeeze theorem handles oscillating sequences
+
+quiz 3 | lim n→∞ sin(n)/n = ?
+* 0
+o 1
+o Doesn't exist
+o 1/2
+= −1/n ≤ sin(n)/n ≤ 1/n. Both bounds → 0.
+> Next: adding infinitely many terms
+
+## c2-tests | Convergence tests | maths | 2 | calc2 | c2-seq
+explain 3 | Divergence test: terms must shrink to zero
+- If aₙ doesn't → 0, Σaₙ diverges. Immediately.
+- But aₙ → 0 is *not* enough: the harmonic series diverges anyway.
+? Does aₙ → 0 guarantee Σaₙ converges? :: No (e.g. the harmonic series)
+> Geometric series are the ones you can sum exactly
+
+quiz 2 | 1 + 1/3 + 1/9 + 1/27 + … = ?
+* 3/2
+o 2
+o 4/3
+o ∞
+= Geometric with r = 1/3: a/(1 − r) = 1/(2/3) = 3/2.
+> Ratio test: compare each term with the next
+
+explain 3 | Ratio test
+- L = lim |aₙ₊₁/aₙ|.
+- L < 1: converges. L > 1: diverges. L = 1: no conclusion.
+- Perfect for factorials and exponentials.
+> Integral test: turn a sum into an area
+
+quiz 3 | Does Σ 1/(n ln n) (from n = 2) converge?
+* No
+o Yes
+o Only conditionally
+= Integral test: ∫ dx/(x ln x) = ln(ln x) → ∞.
+= It diverges, but incredibly slowly: the partial sums grow like ln ln n.
+> Alternating series converge more easily
+
+explain 3 | Alternating series test
+- If terms alternate in sign, shrink in size, and → 0, the series converges.
+- 1 − 1/2 + 1/3 − 1/4 + … converges (to ln 2), even though the harmonic series doesn't.
+- Error after stopping ≤ the first term you left out.
+> Absolute vs conditional convergence
+
+quiz 4 | Σ (−1)ⁿ/√n converges…
+* Conditionally
+o Absolutely
+o Not at all
+= Alternating test: converges. But Σ 1/√n diverges (p = 1/2).
+> Which test to use? A quick decision tree
+
+explain 2 | Choosing a convergence test
+- Terms don't → 0? Diverges.
+- Geometric or p-series? Known answers.
+- Factorials or nⁿ? Ratio test. Looks like a function? Integral test.
+- Looks like a known series? Comparison or limit comparison.
+> Next: power series

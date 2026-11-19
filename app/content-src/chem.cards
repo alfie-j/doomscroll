@@ -1,0 +1,127 @@
+## ch-atom | Atoms and the periodic table | chem | 0 | - | -
+story 5 | Mendeleev left gaps for elements nobody had found
+- 1869: Dmitri Mendeleev arranged elements by atomic weight and chemical behaviour, leaving blanks.
+- He predicted the properties of the missing ones, including "eka-aluminium".
+- *Gallium was discovered in 1875 with almost exactly the properties he'd predicted.*
+> The table's shape comes from quantum mechanics
+
+explain 3 | Why the periodic table has its shape
+- Rows fill electron shells; the blocks (s, p, d, f) correspond to the type of orbital being filled.
+- Elements in a column have the same outer electron arrangement, so they react alike.
+- *That's why sodium and potassium both explode in water.*
+> Noble gases barely react
+
+quiz 2 | Which group of elements rarely forms compounds because their outer shells are full?
+* Noble gases
+o Alkali metals
+o Halogens
+o Transition metals
+= Helium, neon, argon and co. Xenon does form a few compounds; the first was made in 1962.
+> Most of an atom is empty space
+
+explain 3 | If an atom were a stadium, the nucleus would be a pea
+- The nucleus is about 100,000 times smaller across than the atom.
+- But it holds over 99.9% of the mass.
+- *Squeeze out the empty space from every human and all of humanity would fit in a sugar cube* (roughly, as neutron-star-like matter).
+> Isotopes: same element, different neutrons
+
+explain 2 | Isotopes
+- Same number of protons (so same element), different numbers of neutrons.
+- Carbon-12 and carbon-14 behave identically in chemistry; C-14 is radioactive.
+- *Heavy water (with deuterium) is about 11% denser than normal water: heavy-water ice sinks.*
+> Next: chemical bonds
+
+## ch-bond | Chemical bonds | chem | 0 | - | ch-atom
+explain 3 | Three kinds of bond
+- Ionic: electrons transferred (Na⁺Cl⁻, table salt).
+- Covalent: electrons shared (H₂O, CH₄).
+- Metallic: a sea of shared electrons, which is why metals conduct and bend.
+> Water's shape is everything
+
+explain 4 | Why water is weird
+- Its bent shape and polar O–H bonds make water a strong dipole that forms hydrogen bonds.
+- That gives it a high boiling point for its size, high surface tension, and ice that floats.
+- *If ice sank, lakes would freeze from the bottom up.*
+> Carbon forms the most compounds
+
+quiz 3 | Diamond and graphite are both pure carbon. Why is graphite soft?
+* Its carbon atoms form flat sheets held together only weakly
+o It contains impurities
+o Its atoms are larger
+o It's a liquid crystal
+= Within a sheet, bonds are strong. Between sheets, weak forces let them slide.
+= A single sheet is graphene.
+> Next: reactions
+
+## ch-react | Reactions and energy | chem | 0 | - | ch-bond
+explain 3 | Activation energy: why paper doesn't burst into flames
+- Burning paper releases energy overall, but needs a push to get started.
+- Catalysts lower that energy barrier without being used up.
+- *Enzymes are biological catalysts that can speed reactions by many orders of magnitude.*
+> The Haber process feeds half the world
+
+story 5 | The Haber–Bosch process feeds billions
+- Making ammonia from nitrogen in the air (around 1910) enabled synthetic fertiliser on a massive scale.
+- Roughly half the nitrogen in your body passed through a Haber–Bosch plant.
+- *Fritz Haber also led Germany's WWI chemical weapons programme.* A complicated legacy.
+> Le Chatelier's principle
+
+explain 3 | Le Chatelier's principle
+- Push a system at equilibrium and it shifts to partly undo the push.
+- Add more reactant: more product forms. Heat an exothermic reaction: it shifts backward.
+- *Fizzy drinks go flat when opened: lower pressure pushes CO₂ out of solution.*
+> pH is a log scale
+
+quiz 3 | Lemon juice has pH 2, coffee about pH 5. How much more acidic is lemon juice?
+* About 1,000 times
+o About 3 times
+o About 2.5 times
+o About 30 times
+= pH is −log₁₀[H⁺]. Three pH units = 10³.
+> Next: chemistry of everyday life
+
+## ch-life | Kitchen chemistry | chem | 0 | - | ch-react
+explain 4 | The Maillard reaction makes browned food taste good
+- Amino acids and sugars react above about 140°C, creating hundreds of flavour compounds.
+- Toast, seared steak, roasted coffee, beer's colour.
+- *Boiled food doesn't brown because water can't get much above 100°C.*
+> Why onions make you cry
+
+explain 3 | Onion tears
+- Cutting an onion breaks cells, letting an enzyme make syn-propanethial-S-oxide, a volatile irritant.
+- It reaches your eyes and triggers tears.
+- *Chilling the onion slows the reaction; a sharp knife breaks fewer cells.*
+> Soap works by having two ends
+
+explain 3 | How soap works
+- Soap molecules have a water-loving head and an oil-loving tail.
+- Tails bury into grease; heads face the water, forming little balls (micelles) that rinse away.
+- *That's why soap tears apart viruses with fatty outer envelopes, like coronaviruses.*
+> Salt melts ice
+
+quiz 3 | Why does salt melt ice on roads?
+* It lowers water's freezing point
+o It reacts with ice to release heat
+o It absorbs sunlight
+o It raises the temperature of the road
+= Dissolved salt disrupts ice formation. Below about −21°C, salty water freezes anyway.
+> Next: the chemistry of life and drugs
+
+## ch-org | Organic and medicinal chemistry | chem | 0 | - | ch-life
+story 4 | Aspirin came from willow bark
+- Willow bark was used for pain and fever for thousands of years; its active ingredient is related to salicylic acid.
+- Bayer chemists made acetylsalicylic acid, sold as Aspirin from 1899.
+- *Its mechanism (blocking COX enzymes) was only worked out in 1971.*
+> Chirality: left-handed and right-handed molecules
+
+explain 5 | Mirror-image molecules can act very differently
+- Many molecules come in left- and right-handed versions, like gloves.
+- Carvone: one form smells of spearmint, its mirror image of caraway.
+- *Thalidomide's tragedy in the late 1950s led to much stricter testing of drugs.*
+> Kekulé's dream
+
+story 4 | Benzene's ring came in a dream (allegedly)
+- August Kekulé said the ring structure of benzene came to him in a daydream of a snake biting its own tail.
+- He told the story at a celebration in 1890, 25 years after proposing the structure.
+- *Some historians doubt the story, but it's chemistry's most famous dream.*
+> Chemistry track complete

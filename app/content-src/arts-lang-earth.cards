@@ -1,0 +1,157 @@
+## ar-art | Art history | arts | 0 | - | -
+story 4 | The Mona Lisa became world-famous after it was stolen
+- 1911: Vincenzo Peruggia, a former Louvre worker, walked out with it under his smock.
+- Newspapers worldwide ran the story; crowds came to stare at the empty space.
+- *It was recovered in Florence in 1913. Before the theft, it was respected but not iconic.*
+> Perspective was a Renaissance invention
+
+explain 3 | Linear perspective
+- Around 1415, Brunelleschi demonstrated a geometric way to show depth: parallel lines meet at a vanishing point.
+- Painters like Masaccio quickly adopted it.
+- *It's projective geometry, centuries before mathematicians formalised it.*
+> Van Gogh sold almost nothing
+
+myth 4 F | Van Gogh sold only one painting in his lifetime.
+= The Red Vineyard is the best-documented sale, but there's evidence of a few other sales and trades.
+= His fame really came after his death in 1890, helped by his sister-in-law Jo van Gogh-Bonger.
+> Impressionism was an insult
+
+story 3 | "Impressionism" started as mockery
+- 1874: critic Louis Leroy titled a review after Monet's Impression, Sunrise, sneering at its sketchiness.
+- The painters adopted the label.
+- *Portable paint tubes, invented in the 1840s, helped them paint outdoors.*
+> Duchamp's urinal changed what art means
+
+story 4 | Fountain, 1917
+- Marcel Duchamp submitted a factory urinal signed "R. Mutt" to an exhibition that promised to accept everything.
+- It was rejected anyway.
+- *A 2004 poll of art experts named it the most influential modern artwork.*
+> Next: music
+
+## ar-mus | Music and maths | arts | 0 | - | ar-art
+explain 3 | An octave is a frequency doubling
+- A440 Hz to A880 Hz is one octave up.
+- Pleasing intervals are simple ratios: a fifth is 3:2, a fourth 4:3.
+- *Pythagoras is said to have discovered this with strings of different lengths.*
+> Equal temperament is a compromise
+
+explain 4 | Why a piano is slightly out of tune on purpose
+- Stacking twelve perfect 3:2 fifths overshoots seven octaves by a small amount (the Pythagorean comma).
+- Equal temperament splits the octave into 12 equal steps of 2^(1/12) each.
+- *Every interval except the octave is a tiny bit off, but every key works equally.*
+> Beethoven composed while deaf
+
+story 4 | Beethoven conducted the Ninth unable to hear the applause
+- By 1824 Beethoven was almost completely deaf.
+- At the Ninth Symphony's premiere, a singer turned him around to see the audience applauding.
+- *He composed by imagining sound, and by feeling vibrations.*
+> 4'33"
+
+story 4 | Four minutes and thirty-three seconds of "silence"
+- John Cage's 1952 piece has a performer play nothing for its duration.
+- The music is the ambient sound in the room: coughs, rustles, rain.
+- *Cage had visited an anechoic chamber and still heard his own body, so concluded there's no true silence.*
+> Next: language
+
+## la-ling | Language | lang | 0 | - | ar-mus
+explain 3 | There are about 7,000 languages
+- Around half are endangered, with few or no children learning them.
+- Papua New Guinea alone has over 800.
+- *A language is lost roughly every few months, by some estimates.*
+> Your language may shape how you think, a little
+
+explain 4 | Linguistic relativity, the moderate version
+- The strong claim (language determines thought) is mostly rejected.
+- But some effects are real: Russian speakers, who have separate basic words for light and dark blue, distinguish those shades slightly faster.
+- *Kuuk Thaayorre speakers use compass directions instead of left and right, and stay oriented remarkably well.*
+> English spelling is chaotic for historical reasons
+
+quiz 3 | Why is "knight" spelled with a k and gh?
+* Both were once pronounced; spelling froze before pronunciation changed
+o French scribes added them for decoration
+o They mark a long vowel
+o A printing error that stuck
+= Old and Middle English pronounced the k and a throaty gh sound. Spelling was largely fixed by printing.
+> The Rosetta Stone cracked hieroglyphs
+
+story 5 | The Rosetta Stone
+- Found by French soldiers in 1799, it bears one decree in hieroglyphic, demotic Egyptian and ancient Greek.
+- Champollion used it to decipher hieroglyphs, announcing his breakthrough in 1822.
+- *He reportedly shouted "Je tiens l'affaire!" and fainted.*
+> Linear B was solved by an architect
+
+story 4 | An architect deciphered Linear B
+- Michael Ventris, an architect and amateur, showed in 1952 that the Bronze Age script Linear B wrote an early form of Greek.
+- Many experts had assumed it wasn't Greek at all.
+- *Linear A, an older related script, is still undeciphered.*
+> Next: the Earth
+
+## ea-planet | Earth science | earth | 0 | - | la-ling
+story 5 | Wegener was mocked for continental drift
+- 1912: Alfred Wegener argued continents move, citing matching coastlines and fossils across oceans.
+- Geologists rejected it: he had no mechanism.
+- *Plate tectonics, confirmed in the 1960s from seafloor magnetic stripes, proved him broadly right. He'd died in Greenland in 1930.*
+> Earth's core is as hot as the Sun's surface
+
+quiz 3 | Roughly how hot is Earth's inner core?
+* About 5,000–6,000°C
+o About 500°C
+o About 50,000°C
+o About 1,500°C
+= Comparable to the surface of the Sun. It's solid because of the immense pressure.
+> We've barely scratched the surface
+
+real 4 | The deepest hole ever drilled is 12 km
+- The Soviet Kola Superdeep Borehole reached about 12.3 km by 1989.
+- Rock temperatures reached about 180°C, much hotter than expected.
+- *That's about 0.2% of the way to Earth's centre.*
+> Everest isn't the tallest mountain
+
+quiz 3 | Measured from base to peak, which mountain is tallest?
+* Mauna Kea
+o Everest
+o K2
+o Kilimanjaro
+= Mauna Kea rises about 10,200 m from the ocean floor, though only about 4,200 m above sea level.
+= Everest has the highest summit above sea level. Chimborazo's summit is farthest from Earth's centre.
+> Next: weather and climate
+
+## ea-clim | Weather and climate | earth | 0 | - | ea-planet
+explain 3 | Weather vs climate
+- Weather: the atmosphere today. Climate: the long-term statistics, usually over 30 years.
+- "Climate is what you expect; weather is what you get."
+- *A cold week doesn't disprove a warming trend.*
+> The greenhouse effect was measured in the 1850s
+
+story 4 | Eunice Foote and John Tyndall
+- 1856: Eunice Foote showed that CO₂ trapped heat in sunlit glass cylinders.
+- 1859: John Tyndall precisely measured how CO₂ and water vapour absorb infrared.
+- *The physics of greenhouse warming is over 160 years old.*
+> CO₂ levels are measured on a Hawaiian volcano
+
+real 4 | The Keeling Curve
+- Since 1958, CO₂ has been measured continuously at Mauna Loa, Hawaii.
+- It climbs every year, with a seasonal wiggle as Northern Hemisphere plants grow and decay.
+- *Levels rose from about 315 ppm in 1958 to over 420 ppm today.*
+> Next: the planets
+
+## ea-sky | The night sky | earth | 0 | - | ea-clim
+explain 3 | Seasons aren't caused by distance from the Sun
+- Earth's axis is tilted about 23.4°. Summer is when your hemisphere tilts toward the Sun.
+- Earth is actually closest to the Sun in early January.
+- *That's why Australia has summer at Christmas.*
+> The Moon always shows us the same face
+
+explain 3 | Tidal locking
+- The Moon rotates exactly once per orbit, so the same side always faces Earth.
+- Earth's tides gradually synchronised it.
+- *The Moon is drifting away by about 3.8 cm a year,* measured with lasers bounced off Apollo reflectors.
+> Starlight is old
+
+quiz 3 | Light from the Andromeda galaxy, visible to the naked eye, left it about how long ago?
+* About 2.5 million years
+o About 8 minutes
+o About 2,500 years
+o About 2.5 billion years
+= It's the most distant object most people can see without a telescope.
+> Earth track complete

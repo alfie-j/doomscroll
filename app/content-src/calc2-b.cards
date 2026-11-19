@@ -1,0 +1,344 @@
+## c2-pow | Power series | maths | 2 | calc2 | c2-tests
+explain 3 | A power series is a polynomial that never ends
+- $ Σ cₙ(x − a)ⁿ = c₀ + c₁(x − a) + c₂(x − a)² + …
+- It converges inside a *radius of convergence* R around a, and diverges outside.
+- At the two endpoints, anything can happen: check them separately.
+? What's the radius of convergence of a power series? :: The R such that it converges for |x − a| < R and diverges for |x − a| > R
+> The geometric series is the mother of them all
+
+quiz 3 | 1/(1 − x) = 1 + x + x² + x³ + … for which x?
+* −1 < x < 1
+o All x
+o x < 1
+o −1 ≤ x ≤ 1
+= Geometric series with ratio x. Converges only for |x| < 1.
+> Differentiate and integrate it to get new series for free
+
+quiz 4 | Integrate 1/(1 + x) = 1 − x + x² − … term by term. What series do you get?
+* ln(1 + x) = x − x²/2 + x³/3 − …
+o eˣ
+o arctan x = x − x³/3 + …
+o 1/(1 + x)²
+= ∫ 1/(1 + x) dx = ln(1 + x). Term by term gives the alternating series.
+= At x = 1: ln 2 = 1 − 1/2 + 1/3 − …
+> The radius of convergence can be set by trouble you can't see
+
+story 5 | Why does 1/(1 + x²) stop converging at x = 1?
+- Its series 1 − x² + x⁴ − … has radius 1, but the function is perfectly smooth on all real numbers.
+- The trouble is at x = ±i, where 1 + x² = 0.
+- *Power series feel the complex plane.* The radius is the distance to the nearest complex singularity.
+> Complex analysis explains real calculus
+
+quiz 3 | Radius of convergence of Σ xⁿ/n! ?
+* Infinite
+o 1
+o 0
+o e
+= Ratio test: |x|/(n + 1) → 0 for every x.
+= It's the series for eˣ, which converges everywhere.
+> Next: building Taylor series by hand
+
+## c2-tay | Taylor series workout | maths | 2 | calc2 | c2-pow
+explain 3 | Taylor's formula
+- $ f(x) = Σ f⁽ⁿ⁾(a)(x − a)ⁿ / n!
+- Each coefficient matches one more derivative at the point a.
+- At a = 0 it's called a Maclaurin series.
+? General term of a Taylor series about a? :: f⁽ⁿ⁾(a)(x − a)ⁿ/n!
+> Five series worth knowing by heart
+
+explain 2 | The five Maclaurin series to memorise
+- eˣ = 1 + x + x²/2! + x³/3! + …
+- sin x = x − x³/3! + x⁵/5! − …
+- cos x = 1 − x²/2! + x⁴/4! − …
+- ln(1 + x) = x − x²/2 + x³/3 − … ;  1/(1 − x) = 1 + x + x² + …
+> Substitution builds new ones instantly
+
+quiz 3 | Maclaurin series for e^(−x²)?
+* 1 − x² + x⁴/2! − x⁶/3! + …
+o 1 − x + x²/2! − …
+o 1 + x² + x⁴/2! + …
+o −x² + x⁴ − x⁶ + …
+= Substitute −x² into eˣ.
+= Integrate it term by term and you can compute the error function by hand.
+> Series turn impossible limits into easy ones
+
+quiz 4 | lim x→0 (sin x − x)/x³ = ?
+* −1/6
+o 0
+o 1/6
+o −1/3
+= sin x − x = −x³/6 + x⁵/120 − … Divide by x³ → −1/6.
+> Coefficients can be read straight off the series
+
+quiz 4 | f(x) = x·e^(x²). What is f⁽⁵⁾(0)?
+* 60
+o 1/2
+o 120
+o 5
+= x·e^(x²) = x + x³ + x⁵/2 + … so the x⁵ coefficient is 1/2.
+= f⁽⁵⁾(0)/5! = 1/2, so f⁽⁵⁾(0) = 60.
+> No differentiating five times required
+
+real 4 | Einstein's E = mc² hides in a Taylor series
+- Relativistic energy is E = γmc², with γ = 1/√(1 − v²/c²).
+- Expand for small v: γ ≈ 1 + v²/(2c²) + …
+- So E ≈ mc² + ½mv² + …: *rest energy plus the kinetic energy from school physics.*
+> Next: how wrong is a truncated series?
+
+## c2-rem | Taylor error | maths | 2 | calc2 | c2-tay
+explain 3 | The Lagrange remainder bounds your error
+- Stop after the degree-n term. The error is f⁽ⁿ⁺¹⁾(c)(x − a)ⁿ⁺¹/(n + 1)! for some c between a and x.
+- Bound the (n + 1)th derivative and you bound the error.
+? Lagrange remainder for a degree-n Taylor polynomial? :: f⁽ⁿ⁺¹⁾(c)(x − a)ⁿ⁺¹/(n + 1)! for some c between a and x
+> How many terms for e to 6 decimals?
+
+quiz 4 | How many terms of 1 + 1 + 1/2! + 1/3! + … give e to within 10⁻⁶?
+* About 10
+o About 100
+o About 3
+o About 1,000
+= The error after the 1/n! term is less than 3/(n + 1)!.
+= 3/10! ≈ 8 × 10⁻⁷. Factorials crush errors fast.
+> Alternating series give an even simpler bound
+
+quiz 3 | Approximating sin(0.1) by 0.1, the error is at most…
+* (0.1)³/6 ≈ 0.00017
+o 0.1
+o 0.01
+o 0.001
+= Alternating series: error ≤ first omitted term, x³/3!.
+> Calculators don't use raw Taylor series though
+
+story 4 | How calculators actually compute sin x
+- Many early calculators used CORDIC: rotate a vector by a sequence of fixed angles using only shifts and adds.
+- Modern chips use range reduction plus short, carefully optimised polynomials.
+- *The polynomials aren't Taylor series.* They minimise the worst-case error instead (minimax).
+> Next: curves defined by a moving point
+
+## c2-param | Parametric curves | maths | 2 | calc2 | c2-rem
+explain 3 | Parametric curves describe motion
+- x = f(t), y = g(t): a point moving over time.
+- Slope: dy/dx = (dy/dt)/(dx/dt).
+- x = cos t, y = sin t traces a circle. x = t − sin t, y = 1 − cos t traces a cycloid.
+> The cycloid answers two famous questions
+
+story 5! | The brachistochrone: the fastest slide is not a straight line
+- 1696: Johann Bernoulli asked for the curve along which a bead slides fastest between two points.
+- The answer is a cycloid. Newton solved it overnight and sent it in anonymously.
+- Bernoulli recognised the author anyway: *"the lion by his claw".*
+> The cycloid is also the tautochrone: every start point arrives at the bottom at the same time
+
+quiz 3 | x = t², y = t³. What is dy/dx at t = 2?
+* 3
+o 12
+o 4
+o 3/4
+= dy/dt = 3t² = 12, dx/dt = 2t = 4. Ratio 3.
+> Arc length for parametric curves
+
+quiz 3 | Arc length of x = cos t, y = sin t for t from 0 to 2π?
+* 2π
+o π
+o 4π
+o 1
+= √(sin²t + cos²t) = 1. Integrate 1 over 2π.
+> Next: polar coordinates
+
+## c2-polar | Polar coordinates | maths | 2 | calc2 | c2-param
+explain 2 | Polar coordinates: distance and angle
+- x = r cos θ, y = r sin θ. r² = x² + y².
+- r = 2 is a circle. θ = π/4 is a line. r = θ is a spiral.
+- Roses: r = cos(kθ) has k petals if k is odd, 2k if k is even.
+> Area in polar uses wedges, not rectangles
+
+explain 3 | Polar area
+- A thin wedge has area ½r²dθ.
+- $ A = ½ ∫ r(θ)² dθ
+- The cardioid r = 1 + cos θ has area 3π/2.
+> Test yourself
+
+quiz 3 | Area enclosed by r = 2cos θ?
+* π
+o 2π
+o 4π
+o π/2
+= It's a circle of radius 1. Or: ½∫₋π/2^π/2 4cos²θ dθ = π.
+> Next: differential equations
+
+## c2-ode1 | First-order ODEs | maths | 2 | calc2 | c2-polar
+explain 3 | Separable equations: split and integrate
+- dy/dx = g(x)h(y). Rearrange: dy/h(y) = g(x)dx. Integrate both sides.
+- dy/dx = xy: ln|y| = x²/2 + C, so y = Ae^(x²/2).
+> Newton's law of cooling is separable
+
+quiz 3 | Coffee at 90°C cools in a 20°C room: T′ = −k(T − 20). Solution?
+* T = 20 + 70e^(−kt)
+o T = 90e^(−kt)
+o T = 20 + 90e^(−kt)
+o T = 70 − 20e^(−kt)
+= T − 20 decays exponentially from 70.
+> Detectives use this to estimate time of death
+
+real 3 | Time of death from cooling
+- A body cools roughly according to Newton's law of cooling.
+- Two temperature readings an hour apart give k. Then solve back to 37°C.
+- *Forensic estimates add corrections for clothing, air flow and the first hours of plateau.*
+> Linear first-order equations need an integrating factor
+
+explain 4 | The integrating factor
+- y′ + P(x)y = Q(x). Multiply by μ = e^(∫P dx).
+- The left side becomes (μy)′. Integrate both sides.
+- y′ + y = eˣ: μ = eˣ, (eˣy)′ = e²ˣ, y = eˣ/2 + Ce⁻ˣ.
+? Integrating factor for y′ + P(x)y = Q(x)? :: μ = e^(∫P dx)
+> Logistic growth: when exponentials hit a ceiling
+
+explain 3 | The logistic equation
+- $ dP/dt = rP(1 − P/K)
+- Small P: exponential growth. Near the carrying capacity K: growth stops.
+- Solution is an S-curve. Epidemics, product adoption and yeast in a jar all follow it roughly.
+> Some differential equations are chaotic
+
+story 4 | Lorenz found chaos by rounding a number
+- 1961: Edward Lorenz restarted a weather simulation, typing 0.506 instead of 0.506127.
+- The forecast diverged completely within simulated weeks.
+- *The butterfly effect.* His three simple ODEs became the most famous chaotic system.
+> Next: second-order equations
+
+## c2-ode2 | Second-order linear ODEs | maths | 2 | calc2 | c2-ode1
+explain 3 | Constant-coefficient ODEs: guess eʳˣ
+- ay″ + by′ + cy = 0. Try y = eʳˣ: ar² + br + c = 0.
+- Two real roots: two exponentials. Repeated root: eʳˣ and xeʳˣ.
+- Complex roots α ± iβ: e^(αx)(A cos βx + B sin βx). *Oscillation.*
+? What does a complex root of the characteristic equation mean physically? :: Oscillation (sines and cosines), damped or growing by e^(αx)
+> The spring is the most important ODE in physics
+
+quiz 3 | y″ + 9y = 0. General solution?
+* A cos 3x + B sin 3x
+o Ae³ˣ + Be⁻³ˣ
+o A cos 9x + B sin 9x
+o (A + Bx)e³ˣ
+= r² + 9 = 0, r = ±3i.
+= Simple harmonic motion with angular frequency 3.
+> Add friction and the oscillation dies away
+
+predict 4 | A damped spring: y″ + 2y′ + y = 0. Does it oscillate?
+* No, it's critically damped
+o Yes, slowly decaying
+o Yes, growing
+= r² + 2r + 1 = (r + 1)² = 0: a repeated root.
+= Critical damping returns fastest without overshooting. Car suspension aims near it.
+> Push it at the right frequency and you get resonance
+
+explain 4 | Resonance
+- y″ + ω₀²y = cos(ωt). If ω = ω₀, the solution contains t·sin(ω₀t): it grows without bound.
+- Real systems have damping, so the amplitude peaks instead of exploding.
+- *Opera singers shattering glass, swings going higher, MRI machines: all resonance.*
+> Tacoma Narrows wasn't simple resonance, though
+
+myth 4 F | The Tacoma Narrows Bridge collapsed in 1940 because wind matched its resonant frequency.
+= The popular textbook story is a simplification.
+= The collapse is explained by aeroelastic flutter: the bridge's own motion fed energy from steady wind into a twisting mode.
+= Steady 64 km/h wind, no periodic pushing required.
+> Next: the Laplace transform
+
+## c2-lap | Laplace transform | maths | 3 | calc2 | c2-ode2
+explain 4 | The Laplace transform turns calculus into algebra
+- $ F(s) = ∫₀^∞ f(t)e^(−st) dt
+- Derivatives become multiplication: L{f′} = sF(s) − f(0).
+- Solve the ODE as an algebra problem in s, then transform back.
+? Laplace transform of f′? :: sF(s) − f(0)
+> A table of transforms does most of the work
+
+quiz 3 | L{e^(at)} = ?
+* 1/(s − a)
+o 1/(s + a)
+o a/s
+o e^(as)
+= ∫₀^∞ e^((a − s)t) dt = 1/(s − a), for s > a.
+> Engineers live in the s-domain
+
+real 4 | Control engineers think in Laplace space
+- Cruise control, drones and thermostats are designed as transfer functions G(s).
+- Stability means every pole of G(s) has negative real part.
+- *A pole in the right half-plane means the system blows up.*
+> Next: Fourier series in practice
+
+## c2-fourp | Fourier series practice | maths | 2 | calc2 | c2-lap
+explain 3 | Finding Fourier coefficients
+- f(x) = a₀/2 + Σ (aₙ cos nx + bₙ sin nx) on [−π, π].
+- $ aₙ = (1/π)∫ f(x)cos(nx) dx,  bₙ = (1/π)∫ f(x)sin(nx) dx
+- Works because sines and cosines of different frequencies are *orthogonal*: they integrate to zero against each other.
+> Symmetry halves the work
+
+quiz 3 | f(x) = x on [−π, π]. Which coefficients are zero?
+* All the aₙ (cosine terms)
+o All the bₙ (sine terms)
+o None
+o All of them
+= x is odd. Odd functions only need sines.
+> Fourier series prove the Basel result too
+
+story 4 | Parseval's theorem: energy is the same in both pictures
+- The integral of f² equals the sum of the squares of the coefficients (suitably scaled).
+- Apply it to f(x) = x and out drops Σ1/n² = π²/6 again.
+- *Energy in time = energy in frequency.*
+> Next: the Fourier transform
+
+## c2-ft | Fourier transform | maths | 3 | calc2 | c2-fourp
+explain 4 | The Fourier transform: a spectrum for any signal
+- $ f̂(ω) = ∫ f(t)e^(−iωt) dt
+- It says how much of each frequency ω is in the signal.
+- Non-periodic signals get a continuous spectrum instead of discrete harmonics.
+> A narrow pulse has a wide spectrum
+
+predict 4 | Squeeze a pulse to half the duration. What happens to its spectrum?
+* It becomes twice as wide
+o It becomes half as wide
+o It stays the same
+= Time and frequency widths trade off: Δt·Δω ≥ a constant.
+= In quantum mechanics this same fact is the uncertainty principle.
+> The FFT made the transform practical
+
+story 5 | The FFT: the algorithm that runs the modern world
+- 1965: Cooley and Tukey publish the Fast Fourier Transform: n log n operations instead of n².
+- Gauss had found essentially the same method around 1805 while tracking asteroids. Unpublished.
+- *Audio, Wi-Fi, 4G, image compression and MRI all depend on it.*
+> Convolution becomes multiplication under the transform
+
+explain 4 | The convolution theorem
+- Convolution (f * g) smears one function by another: blurs, echoes, filters.
+- $ (f * g)^ = f̂ · ĝ
+- So filtering a song is just multiplying its spectrum. FFT, multiply, inverse FFT.
+> Next: complex numbers properly
+
+## c2-cplx | Complex numbers | maths | 1 | calc2 | c2-ft
+hook 4 | i was invented to solve cubics, not x² = −1
+- 1500s: Cardano's formula for cubics sometimes needed √(negative numbers) along the way, even when all three answers were real.
+- Bombelli worked through the arithmetic and the imaginary parts cancelled to give real roots.
+- *Mathematicians were forced to accept them.*
+> Multiply by i and you rotate by 90°
+
+explain 3 | Complex multiplication is rotation and scaling
+- Write z = re^(iθ). Multiply two: lengths multiply, angles add.
+- Multiplying by i rotates by 90°. i² = −1 is two quarter-turns: a half-turn.
+- *That's why complex numbers model waves and AC circuits so well.*
+? What does multiplying by i do geometrically? :: Rotates by 90° anticlockwise
+> De Moivre gives every trig identity for free
+
+quiz 3 | (cos θ + i sin θ)³ = ?
+* cos 3θ + i sin 3θ
+o cos³θ + i sin³θ
+o 3cos θ + 3i sin θ
+o cos 3θ − i sin 3θ
+= De Moivre: (e^(iθ))³ = e^(3iθ).
+= Expand the left side and match real parts: cos 3θ = 4cos³θ − 3cos θ.
+> Roots of unity are evenly spaced around a circle
+
+quiz 3 | How many complex solutions does z⁶ = 1 have?
+* 6
+o 2
+o 1
+o Infinitely many
+= e^(2πik/6) for k = 0,…,5: the vertices of a regular hexagon.
+= Fundamental Theorem of Algebra: a degree-n polynomial has exactly n complex roots (with multiplicity).
+> Calculus 2 done. Calculus 3: more dimensions

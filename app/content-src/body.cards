@@ -1,0 +1,173 @@
+## bo-body | The human body | bio | 0 | - | bi-anim
+explain 3 | Your stomach lining replaces itself every few days
+- Stomach acid has a pH around 1.5–3.5: strong enough to dissolve some metals.
+- A protective mucus layer and fast cell turnover stop it digesting you.
+- *Barry Marshall drank a culture of H. pylori in 1984 to prove bacteria cause ulcers. Nobel Prize, 2005.*
+> Your blood vessels could circle the Earth
+
+quiz 3 | Laid end to end, roughly how long are an adult's blood vessels?
+* About 100,000 km
+o About 1,000 km
+o About 10 km
+o About 1 million km
+= Most of it is capillaries, each thinner than a hair. Estimates vary, but around 100,000 km is often cited.
+= That's about two and a half times around the Earth.
+> Bones are stronger than steel, by weight
+
+explain 3 | Bone: lightweight and self-repairing
+- Bone's strength-to-weight ratio rivals some steels, and unlike steel it repairs itself.
+- Your skeleton is gradually remodelled throughout life; estimates suggest roughly 10% a year in adults.
+- *Astronauts lose bone mass in microgravity because bones respond to load.*
+> You're taller in the morning
+
+real 3 | You shrink during the day
+- The discs between your vertebrae compress while you're upright.
+- Most people are about 1 cm taller in the morning.
+- *Astronauts in orbit grow up to about 3% taller, then shrink back on Earth.*
+> Your nose can detect many smells
+
+explain 4 | How many smells can you detect?
+- A 2014 study claimed humans can distinguish over a trillion odours.
+- Other researchers disputed the maths; the true number is uncertain.
+- *Either way, the old "10,000 smells" figure had no solid basis.*
+> Next: nutrition myths
+
+## bo-food | Nutrition myths | bio | 0 | - | bo-body
+myth 3 F | Sugar makes children hyperactive.
+= Double-blind studies have repeatedly found no effect of sugar on children's behaviour.
+= Parents who were told their child had sugar rated them as more hyperactive, even when they'd had none.
+> You don't need 8 glasses of water a day
+
+myth 3 F | Everyone needs to drink eight glasses of water a day on top of everything else.
+= Food and other drinks provide much of your water. Needs vary with size, activity and climate.
+= Thirst is a decent guide for most healthy people.
+> Breakfast and metabolism
+
+explain 4 | Is breakfast the most important meal?
+- The phrase was popularised by cereal marketing in the early 1900s.
+- Randomised trials haven't shown that eating breakfast causes weight loss.
+- *Eat it if it suits you. It isn't magic.*
+> Calories in, calories out, mostly
+
+explain 4 | A calorie is a unit of energy
+- A food calorie (kcal) is the energy to heat 1 kg of water by 1°C.
+- Bomb calorimeters burn food to measure it; digestion extracts less from some foods, like nuts.
+- *Weight change follows energy balance, but hunger and metabolism respond, which makes it hard.*
+> Next: exercise science
+
+## bo-ex | Exercise science | bio | 0 | - | bo-food
+explain 4 | Exercise grows new brain cells (in animals) and helps memory
+- Aerobic exercise increases BDNF, a protein that supports neuron growth.
+- Studies in older adults found a year of walking enlarged the hippocampus slightly.
+- *It's one of the best-supported ways to protect memory.*
+> Muscle soreness isn't lactic acid
+
+myth 3 F | The muscle soreness you feel a day or two after exercise is caused by lactic acid build-up.
+= Lactate clears within about an hour after exercise.
+= Delayed-onset muscle soreness comes from microscopic damage and the inflammation that repairs it.
+> VO₂ max
+
+explain 4 | VO₂ max: your aerobic engine size
+- The maximum rate your body can use oxygen, in ml per kg per minute.
+- Untrained adults: around 35–45. Elite endurance athletes: 70–90.
+- *Higher VO₂ max is strongly associated with longer life.*
+> Next: genetics fun
+
+## bo-gene | Genetics oddities | bio | 0 | - | bo-ex
+explain 3 | Some people can taste a chemical others can't
+- PTC tastes intensely bitter to some people and like nothing to others.
+- The difference is largely down to one gene, TAS2R38.
+- *It was discovered by accident in 1931 when a chemist's lab partner complained about the bitter dust.*
+> Coriander tastes of soap to some
+
+explain 3 | Why coriander tastes like soap to some people
+- A variant near olfactory receptor genes, including OR6A2, is linked to detecting soapy-smelling aldehydes in coriander.
+- Rates vary by population, from a few percent to over a fifth.
+- *It's partly genetic, partly familiarity.*
+> We're all a bit Neanderthal
+
+quiz 3 | Roughly how much Neanderthal DNA do people of non-African descent carry?
+* About 1–2%
+o About 25%
+o About 0.0001%
+o About 10%
+= Interbreeding happened as modern humans spread out of Africa.
+= Some of those genes affect immunity and skin.
+> Next: evolution oddities
+
+## bo-evo | Evolution's odd designs | bio | 0 | - | bo-gene
+explain 4 | The recurrent laryngeal nerve takes a detour
+- It runs from the brain, down into the chest, loops under a major blood vessel, and back up to the larynx.
+- In giraffes, that's a detour of several metres.
+- *Evolution tinkers with what exists: in fish ancestors the route was direct.*
+> Your eyes are wired backwards
+
+explain 4 | The vertebrate eye is wired inside out
+- Light passes through nerve fibres and blood vessels before reaching photoreceptors.
+- That's what creates the blind spot.
+- *Octopus eyes evolved separately and have the wiring behind the receptors: no blind spot.*
+> Hiccups may be a fishy leftover
+
+explain 3 | Hiccups might be an evolutionary leftover
+- One hypothesis links hiccups to the reflex tadpoles use to push water over their gills while blocking the airway.
+- It's speculative, but the nerve pathways involved are ancient.
+- *The record for continuous hiccups: about 68 years (Charles Osborne).*
+> Body track complete
+
+## en-eng | Engineering marvels | physics | 0 | - | sp-miss
+story 4 | The Eiffel Tower grows in summer
+- Thermal expansion makes the iron tower around 15 cm taller on hot days.
+- It was meant to be temporary, built for the 1889 World's Fair, and survived partly as a radio antenna.
+- *Many Parisian artists signed a petition against it before it was built.*
+> Bridges
+
+explain 4 | Why suspension bridges can be so long
+- Cables in pure tension carry the deck's weight to tall towers and anchorages.
+- Steel is far stronger in tension than stone is in compression over long spans.
+- *The longest spans exceed 2 km (Çanakkale, Turkey, 2022).*
+> The Burj Khalifa
+
+quiz 3 | How tall is the Burj Khalifa?
+* About 828 m
+o About 541 m
+o About 1,000 m
+o About 452 m
+= Completed 2010. Its Y-shaped plan helps disrupt wind vortices.
+> The Panama Canal lifts ships over a continent
+
+explain 4 | The Panama Canal is a water elevator
+- Locks raise ships about 26 m to Gatun Lake, then lower them on the other side.
+- Each transit uses around 200 million litres of fresh water from the lake.
+- *Droughts in 2023 forced limits on how many ships could pass.*
+> Engineering track complete
+
+## ev-phys | Everyday physics 2 | physics | 0 | - | en-eng
+explain 3 | How a microwave oven heats food
+- Microwaves at about 2.45 GHz make water molecules rotate back and forth, generating heat.
+- Food heats unevenly because of standing-wave hot spots: that's why there's a turntable.
+- *Percy Spencer noticed a chocolate bar melting in his pocket near a radar magnetron in 1945.*
+> Rainbows are cones
+
+explain 4 | A rainbow is a circle centred opposite the Sun
+- Sunlight refracts into raindrops, reflects off the back, and exits at about 42° for red, 40° for violet.
+- Every observer sees their own rainbow from different drops.
+- *From a plane you can sometimes see the full circle.*
+> Why ice is slippery
+
+explain 4 | Why ice is slippery is still debated
+- The old explanation, pressure melting, doesn't produce enough melting at normal temperatures.
+- Current explanations focus on a thin, liquid-like layer on the ice surface, and friction heating.
+- *A surprisingly unsettled question for something so familiar.*
+> Why a spinning football curves
+
+explain 4 | The Magnus effect
+- A spinning ball drags air around with it, deflecting the airflow and pushing the ball sideways.
+- Roberto Carlos's 1997 free kick curved dramatically around a wall.
+- *Tennis topspin dives for the same reason.*
+> Why the sea is blue and salty
+
+explain 3 | Why is the sea salty?
+- Rain slowly weathers rocks, carrying dissolved minerals to the sea.
+- Water evaporates; the salt stays.
+- *About 3.5% salt by mass on average.*
+> Everyday physics part two complete

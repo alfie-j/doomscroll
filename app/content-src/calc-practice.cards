@@ -1,0 +1,372 @@
+## c1-px1 | Calc 1 exam practice: limits and derivatives | maths | 1 | calc1 | c1-rules
+quiz 2 | lim x→2 (x² − 4)/(x − 2) = ?
+* 4
+o 0
+o 2
+o Undefined
+= Factor: (x − 2)(x + 2)/(x − 2) = x + 2 → 4.
+> Next problem
+
+quiz 2 | lim x→0 sin(5x)/x = ?
+* 5
+o 1
+o 0
+o 1/5
+= sin(5x)/x = 5 · sin(5x)/(5x) → 5.
+> Next problem
+
+quiz 3 | lim x→∞ (3x² − x)/(1 − 2x²) = ?
+* −3/2
+o 3/2
+o 0
+o −∞
+= Ratio of leading coefficients: 3/(−2).
+> Next problem
+
+quiz 2 | d/dx (x³ + 2x)⁴ = ?
+* 4(x³ + 2x)³(3x² + 2)
+o 4(x³ + 2x)³
+o (3x² + 2)⁴
+o 4(3x² + 2)³
+= Chain rule: outer 4(·)³, inner 3x² + 2.
+> Next problem
+
+quiz 3 | d/dx (eˣ cos x) = ?
+* eˣ(cos x − sin x)
+o −eˣ sin x
+o eˣ(cos x + sin x)
+o eˣ cos x
+= Product rule: eˣ cos x + eˣ(−sin x).
+> Next problem
+
+quiz 3 | d/dx ln(cos x) = ?
+* −tan x
+o 1/cos x
+o tan x
+o −1/sin x
+= (1/cos x)(−sin x).
+> Next problem
+
+quiz 3 | Equation of the tangent to y = x² at x = 3?
+* y = 6x − 9
+o y = 6x + 9
+o y = 3x
+o y = 9x − 18
+= Slope 6 at (3, 9): y − 9 = 6(x − 3).
+> Next problem
+
+quiz 3 | d/dx (x/(x² + 1)) = ?
+* (1 − x²)/(x² + 1)²
+o 1/(2x)
+o (x² − 1)/(x² + 1)²
+o 1/(x² + 1)
+= Quotient rule: ((x² + 1) − 2x²)/(x² + 1)².
+> Next problem
+
+quiz 4 | f(x) = x³ − 12x. On [−3, 3], what's the absolute maximum?
+* 16
+o 9
+o 0
+o 27
+= Critical points x = ±2: f(−2) = 16, f(2) = −16. Endpoints: f(−3) = 9, f(3) = −9.
+> Next problem
+
+quiz 3 | d/dx arcsin(2x) = ?
+* 2/√(1 − 4x²)
+o 1/√(1 − 4x²)
+o 2/√(1 − x²)
+o 1/(1 + 4x²)
+= Chain rule on 1/√(1 − u²) with u = 2x.
+> Next set: integrals
+
+## c1-px2 | Calc 1 exam practice: integrals | maths | 1 | calc1 | c1-sub
+quiz 2 | ∫ (1/x) dx from 1 to e = ?
+* 1
+o e
+o 0
+o e − 1
+= ln e − ln 1 = 1.
+> Next problem
+
+quiz 2 | ∫ cos(3x) dx = ?
+* (1/3) sin(3x) + C
+o 3 sin(3x) + C
+o −(1/3) sin(3x) + C
+o sin(3x) + C
+= Reverse chain rule: divide by the inner derivative.
+> Next problem
+
+quiz 3 | ∫₀¹ (2x + 1)⁴ dx = ?
+* 24.2
+o 121
+o 12.1
+o 48.4
+= u = 2x + 1: (1/2)∫₁³ u⁴ du = (1/10)(243 − 1) = 24.2.
+> Next problem
+
+quiz 3 | ∫ x/(x² + 4) dx = ?
+* ½ ln(x² + 4) + C
+o ln(x² + 4) + C
+o ½ arctan(x/2) + C
+o 2 ln(x² + 4) + C
+= u = x² + 4, du = 2x dx.
+> Next problem
+
+quiz 3 | ∫ 1/(x² + 9) dx = ?
+* (1/3) arctan(x/3) + C
+o arctan(x/3) + C
+o (1/9) arctan(x) + C
+o ln(x² + 9) + C
+= Standard form ∫ 1/(x² + a²) = (1/a) arctan(x/a).
+> Next problem
+
+quiz 3 | Area between y = √x and y = x from 0 to 1?
+* 1/6
+o 1/3
+o 1/2
+o 2/3
+= √x is above: ∫₀¹ (√x − x) dx = 2/3 − 1/2.
+> Next problem
+
+quiz 3 | Volume when y = x (0 ≤ x ≤ 2) spins about the x-axis?
+* 8π/3
+o 2π
+o 4π
+o 8π
+= π∫₀² x² dx = 8π/3: a cone.
+> Next problem
+
+quiz 4 | ∫₋₁¹ x³cos(x) dx = ?
+* 0
+o 2 sin 1
+o 1
+o π
+= x³cos x is odd. Symmetric limits.
+> Next problem
+
+quiz 3 | A particle has v(t) = 3t² − 6t. Displacement from t = 0 to t = 3?
+* 0
+o 27
+o 9
+o −4
+= ∫₀³ (3t² − 6t) dt = [t³ − 3t²]₀³ = 27 − 27 = 0.
+= Back where it started, though it travelled a distance of 8.
+> Next problem
+
+quiz 4 | d/dx ∫ₓ^(x²) sin t dt = ?
+* 2x sin(x²) − sin x
+o sin(x²) − sin x
+o 2x sin(x²)
+o cos(x²) − cos x
+= FTC with both limits variable: upper limit term minus lower limit term.
+> Calc 2 practice next
+
+## c2-px1 | Calc 2 exam practice: techniques | maths | 1 | calc2 | c2-trigsub
+quiz 3 | ∫ x ln x dx = ?
+* (x²/2) ln x − x²/4 + C
+o x ln x − x + C
+o (x²/2) ln x + C
+o ln x/2 + C
+= u = ln x, dv = x dx.
+> Next problem
+
+quiz 3 | ∫ sin²x cos x dx = ?
+* (1/3) sin³x + C
+o (1/3) cos³x + C
+o sin x cos x + C
+o −(1/3) sin³x + C
+= u = sin x.
+> Next problem
+
+quiz 4 | ∫ 1/(x(x + 1)) dx = ?
+* ln|x/(x + 1)| + C
+o ln|x(x + 1)| + C
+o 1/(x + 1) + C
+o ln|x + 1| − 1/x + C
+= Partial fractions: 1/x − 1/(x + 1).
+> Next problem
+
+quiz 4 | ∫ dx/√(4 − x²) = ?
+* arcsin(x/2) + C
+o arccos(2x) + C
+o (1/2) arcsin x + C
+o ln|x + √(4 − x²)| + C
+= x = 2 sin θ turns it into ∫ dθ.
+> Next problem
+
+quiz 3 | ∫₀^∞ e^(−2x) dx = ?
+* 1/2
+o 2
+o ∞
+o 1
+= [−½e^(−2x)]₀^∞ = 0 + ½.
+> Next problem
+
+quiz 4 | ∫₀^∞ x e^(−x) dx = ?
+* 1
+o 0
+o ∞
+o 1/2
+= Parts, or Γ(2) = 1! = 1.
+> Next problem
+
+quiz 3 | ∫ sec²x tan x dx = ?
+* ½ tan²x + C
+o tan x + C
+o sec x + C
+o ½ sec x + C
+= u = tan x, du = sec²x dx.
+> Next problem
+
+quiz 3 | Does ∫₁^∞ 1/x^1.01 dx converge?
+* Yes
+o No
+o Only conditionally
+= p = 1.01 > 1. It converges (to 100), just barely.
+> Series practice next
+
+## c2-px2 | Calc 2 exam practice: series | maths | 2 | calc2 | c2-tests
+quiz 3 | Does Σ n/(n² + 1) converge?
+* No
+o Yes
+o Only absolutely
+= Limit comparison with 1/n, which diverges.
+> Next problem
+
+quiz 3 | Does Σ 1/2ⁿ · n converge? (Σ n/2ⁿ)
+* Yes, to 2
+o No
+o Yes, to 1
+o Yes, to 4
+= Ratio test gives 1/2 < 1. The exact sum is 2.
+> Next problem
+
+quiz 4 | Radius of convergence of Σ (x − 3)ⁿ/(n·4ⁿ)?
+* 4
+o 3
+o 1/4
+o 1
+= Ratio test: |x − 3|/4 < 1.
+> Next problem
+
+quiz 3 | Maclaurin series of 1/(1 + x²) starts…
+* 1 − x² + x⁴ − x⁶ + …
+o 1 + x² + x⁴ + …
+o x − x³/3 + …
+o 1 − x + x² − …
+= Geometric series with ratio −x².
+> Next problem
+
+quiz 4 | Σ from n=0 to ∞ of xⁿ/n! evaluated at x = ln 3?
+* 3
+o ln 3
+o e³
+o 1/3
+= That's e^x at x = ln 3.
+> Next problem
+
+quiz 4 | Σ from n=1 to ∞ of 1/(n(n + 1)) = ?
+* 1
+o ∞
+o 1/2
+o 2
+= Telescoping: 1/n − 1/(n + 1). Everything cancels except the first 1.
+> Next problem
+
+quiz 4 | Taylor series of cos x about 0: the coefficient of x⁴?
+* 1/24
+o −1/24
+o 1/4
+o 1/12
+= cos x = 1 − x²/2 + x⁴/24 − …
+> Next problem
+
+quiz 3 | Which test settles Σ (−1)ⁿ/ln(n) for n ≥ 2?
+* Alternating series test (converges)
+o Ratio test
+o Divergence test (diverges)
+o p-test
+= 1/ln n decreases to 0. It converges, but not absolutely.
+> Calc 3 practice next
+
+## c3-px1 | Calc 3 exam practice | maths | 2 | calc3 | c3-cs
+quiz 3 | f(x, y) = e^(xy). f_x = ?
+* y e^(xy)
+o x e^(xy)
+o e^(xy)
+o xy e^(xy)
+= Treat y as a constant.
+> Next problem
+
+quiz 3 | ∇(x² + y² + z²) at (1, −1, 2)?
+* (2, −2, 4)
+o (1, −1, 2)
+o (2, 2, 4)
+o 6
+= ∇ = (2x, 2y, 2z).
+> Next problem
+
+quiz 4 | Critical point of f = x² + xy + y² − 3x?
+* (2, −1)
+o (1, −1)
+o (3, 0)
+o (0, 0)
+= f_x = 2x + y − 3 = 0, f_y = x + 2y = 0 → x = 2, y = −1.
+> Next problem
+
+quiz 3 | ∬ over [0,1]×[0,2] of xy dA = ?
+* 1
+o 2
+o 1/2
+o 4
+= (∫₀¹ x dx)(∫₀² y dy) = (1/2)(2) = 1.
+> Next problem
+
+quiz 4 | div of F = (x², yz, z²)?
+* 2x + 3z
+o 2x + y + 2z
+o (2x, z, 2z)
+o x² + yz + z²
+= ∂(x²)/∂x + ∂(yz)/∂y + ∂(z²)/∂z = 2x + z + 2z = 2x + 3z.
+> Next problem
+
+quiz 4 | curl of F = (y, −x, 0)?
+* (0, 0, −2)
+o (0, 0, 2)
+o (0, 0, 0)
+o (1, −1, 0)
+= z-component: ∂(−x)/∂x − ∂y/∂y = −1 − 1 = −2.
+= It rotates clockwise.
+> Next problem
+
+quiz 4 | ∮ (x dy − y dx) around the unit circle = ?
+* 2π
+o π
+o 0
+o 4π
+= Green: ∬ (1 + 1) dA = 2 × π. In general ½∮(x dy − y dx) is the enclosed area.
+> Next problem
+
+quiz 4 | Volume of the region under z = 4 − x² − y² and above z = 0?
+* 8π
+o 4π
+o 16π
+o 32π/3
+= Polar: ∫₀^2π ∫₀² (4 − r²) r dr dθ = 2π(8 − 4) = 8π.
+> Next problem
+
+quiz 3 | Work by F = (2x, 2y) along any path from (0,0) to (1,2)?
+* 5
+o 3
+o 2
+o Depends on the path
+= F = ∇(x² + y²). Work = φ(1,2) − φ(0,0) = 5.
+> Next problem
+
+quiz 4 | Flux of F = (x, y, z) through the closed unit cube [0,1]³?
+* 3
+o 1
+o 6
+o 0
+= Divergence theorem: div F = 3 times volume 1.
+> All calculus practice sets done

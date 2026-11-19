@@ -1,0 +1,175 @@
+## p2-lens | Geometric optics | physics | 1 | phys2 | p2-opt
+explain 2 | The thin lens equation
+- $ 1/f = 1/u + 1/v
+- Magnification m = v/u (with sign conventions deciding upright or inverted).
+- Converging lens: real inverted image when the object is beyond f.
+? Thin lens equation? :: 1/f = 1/u + 1/v
+> Practice
+
+quiz 3 | An object 30 cm from a converging lens with f = 10 cm. Image distance?
+* 15 cm
+o 20 cm
+o 7.5 cm
+o 30 cm
+= 1/v = 1/10 − 1/30 = 2/30.
+= Real, inverted, half the size.
+> Power in dioptres
+
+explain 3 | Glasses are measured in dioptres
+- Power P = 1/f in metres. A +2 D lens has f = 50 cm.
+- Short-sighted eyes focus too strongly: diverging (negative) lenses help.
+- *Long-sightedness from ageing (presbyopia) usually starts in your 40s, as the lens stiffens.*
+> Why telescopes use mirrors
+
+explain 4 | Big telescopes use mirrors, not lenses
+- Large lenses sag under their own weight and bend different colours by different amounts (chromatic aberration).
+- Mirrors can be supported from behind and reflect all colours equally.
+- *The largest refractor ever built (Yerkes, 1897) has a 1 m lens. Mirrors now exceed 10 m.*
+> Next: solid-state physics
+
+## p3-solid | Solid-state physics | physics | 3 | phys3 | p3-ident
+explain 4 | Band theory: why some solids conduct
+- In a crystal, atomic energy levels spread into bands.
+- Metals have a partly filled band: electrons move freely. Insulators have a big gap to the next empty band.
+- *Semiconductors have a small gap, around 1 eV for silicon.*
+> Doping makes semiconductors useful
+
+explain 4 | Doping silicon
+- Add phosphorus (5 outer electrons): extra electrons, n-type.
+- Add boron (3 outer electrons): missing electrons, "holes", p-type.
+- *Join them and you get a p–n junction: a diode, and the basis of solar cells and LEDs.*
+> The transistor
+
+story 5 | The transistor, 1947
+- Bardeen, Brattain and Shockley at Bell Labs built the first transistor from germanium, a paperclip and gold foil.
+- It replaced fragile vacuum tubes.
+- *A modern phone chip has tens of billions of them.*
+? What's the key property of a p–n junction? :: Current flows easily one way but hardly the other (it rectifies)
+> LED colour comes from the band gap
+
+quiz 4 | An LED's colour depends mainly on…
+* The band gap of its semiconductor
+o The voltage applied
+o The colour of its plastic case
+o The current
+= Photon energy ≈ band gap. Larger gap: bluer light.
+= Blue LEDs (Akasaki, Amano, Nakamura) won the 2014 Nobel Prize because they were so hard to make.
+> Superconductors expel magnetic fields
+
+explain 5 | The Meissner effect
+- A superconductor doesn't just have zero resistance: it actively expels magnetic fields.
+- That's why a magnet can levitate over one.
+- *BCS theory (1957): electrons pair up via lattice vibrations and move without scattering.*
+> Next: astrophysics
+
+## p3-astro | Astrophysics | physics | 3 | phys3 | p3-gr
+explain 4 | The Hertzsprung–Russell diagram
+- Plot stars by temperature and luminosity and they fall into groups, not random scatter.
+- Most stars sit on the main sequence, fusing hydrogen.
+- *Giants, supergiants and white dwarfs are stages of stellar life.*
+> Neutron stars are city-sized atomic nuclei
+
+explain 5 | Neutron stars
+- About 1.4 solar masses squeezed into a ball roughly 20 km across.
+- A teaspoon of its material would weigh billions of tonnes on Earth.
+- *Pulsars are spinning neutron stars sweeping radio beams across us.*
+> Jocelyn Bell Burnell found the first pulsar
+
+story 5 | "LGM-1": the signal nicknamed Little Green Men
+- 1967: PhD student Jocelyn Bell Burnell noticed a tiny, perfectly regular radio signal pulsing every 1.33 seconds.
+- It turned out to be a rotating neutron star: a pulsar.
+- *The 1974 Nobel Prize went to her supervisor, not her. She later gave her $3 million Breakthrough Prize to fund physics students from under-represented groups.*
+> Gravitational waves
+
+story 5! | 2015: LIGO heard two black holes collide
+- The waves from a merger 1.3 billion light-years away stretched LIGO's 4 km arms by less than a thousandth of a proton's width.
+- Einstein had predicted gravitational waves a century earlier but doubted they'd ever be detected.
+- *Nobel Prize 2017.*
+> Black holes evaporate (slowly)
+
+explain 5 | Hawking radiation
+- Hawking (1974): quantum effects near the horizon make black holes emit thermal radiation.
+- Smaller black holes are hotter and evaporate faster.
+- *A solar-mass black hole would take around 10⁶⁷ years: far longer than the universe's age.*
+> Next: numerical methods
+
+## nm-num | Numerical methods | maths | 2 | calc2 | c2-num
+explain 3 | Euler's method: step along the slope
+- For y′ = f(x, y): y_(n+1) = y_n + h·f(x_n, y_n).
+- Simple, but errors pile up: the error scales like h.
+- *Runge–Kutta (RK4) samples the slope four times per step; error scales like h⁴.*
+> Floating point limits
+
+explain 4 | Catastrophic cancellation
+- Subtracting nearly equal numbers loses most significant digits.
+- (1 + 10⁻¹⁶) − 1 = 0 in standard double precision.
+- *Rewriting formulas (like the quadratic formula for tiny roots) avoids it.*
+> Monte Carlo methods
+
+real 4 | Estimate π by throwing darts
+- Throw random points into a unit square. The fraction landing inside the quarter circle approaches π/4.
+- Error shrinks like 1/√N: slow, but it works in any number of dimensions.
+- *Monte Carlo was named by Ulam and von Neumann in the 1940s, after the casino.*
+> Stiff equations
+
+explain 5 | Stiff equations
+- When a system has processes on wildly different timescales, explicit methods need absurdly tiny steps.
+- Implicit methods (like backward Euler) stay stable with big steps.
+- *Chemical reaction networks are the classic stiff problem.*
+> Next: PDEs and Green's functions
+
+## pde-sol | Solving PDEs | maths | 3 | calc3 | c3-pd
+explain 4 | The heat equation smooths everything
+- u_t = α u_xx: hot spots spread out, sharp corners round off instantly.
+- Fourier modes decay like e^(−αk²t): fine wiggles vanish fastest.
+- *Running it backwards in time is unstable: you can't un-blur.*
+> The wave equation keeps shapes
+
+quiz 4 | Which PDE preserves sharp features as they travel (in 1D)?
+* The wave equation
+o The heat equation
+o Laplace's equation
+o The diffusion equation
+= Solutions f(x − ct) + g(x + ct) keep their shape.
+> Green's functions
+
+explain 5 | Green's functions: the response to a single kick
+- Solve the equation with a point source (a delta function). That's the Green's function G.
+- Any source is a sum of point sources, so the solution is ∫ G(x, x′) f(x′) dx′.
+- *In electrostatics, G for Laplace's equation is just the 1/(4π|r − r′|) potential of a point charge.*
+? What is a Green's function? :: The response of a linear system to a point (delta) source; general solutions are integrals of it against the source
+> Fourier transforms turn PDEs into ODEs
+
+explain 5 | Transform methods
+- Fourier-transform a PDE in space: derivatives become multiplication by ik.
+- The PDE becomes an ODE in time for each mode.
+- *Solve it, transform back: that's how the heat kernel is found.*
+> Next: probability for physicists
+
+## pr-phys | Probability for scientists | stats | 2 | - | st-dist
+explain 3 | Expectation and variance
+- E[X] = Σ x p(x). Var(X) = E[X²] − E[X]².
+- Variances of independent variables add.
+- *So the uncertainty of an average of N measurements shrinks like 1/√N.*
+> The binomial distribution
+
+quiz 3 | Flip a fair coin 100 times. Standard deviation of the number of heads?
+* 5
+o 10
+o 50
+o 2.5
+= √(np(1 − p)) = √25.
+= Getting 60+ heads is about a 2σ event: roughly 3% chance.
+> Error propagation
+
+explain 4 | Combining measurement errors
+- Adding quantities: add absolute errors in quadrature: σ = √(σ₁² + σ₂²).
+- Multiplying: add relative errors in quadrature.
+- *That's why lab reports care whether errors are independent.*
+> Random walks
+
+explain 4 | The random walk
+- Take N random unit steps. Average distance from the start grows like √N, not N.
+- It describes diffusion, Brownian motion and stock prices (roughly).
+- *A drunk walker in 2D always eventually returns home. In 3D, there's about a 66% chance they never do.*
+> Course extras complete

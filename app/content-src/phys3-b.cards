@@ -1,0 +1,342 @@
+## p3-se | The Schrödinger equation | physics | 2 | phys3 | p3-oldq
+explain 3 | The Schrödinger equation
+- $ iħ ∂ψ/∂t = −(ħ²/2m) ∂²ψ/∂x² + Vψ
+- ψ is a complex wavefunction. |ψ|² is a probability density (Born, 1926).
+- It's deterministic: ψ evolves smoothly. Randomness only enters at measurement.
+? What does |ψ(x)|² represent? :: The probability density of finding the particle at x
+> Stationary states have definite energy
+
+explain 3 | Stationary states
+- If ψ = φ(x)e^(−iEt/ħ), the time-independent equation is Hφ = Eφ.
+- |ψ|² doesn't change in time: nothing observable moves.
+- *Atoms in stationary states don't radiate.* That fixes Bohr's problem.
+> Normalisation: probabilities add to 1
+
+quiz 3 | ψ(x) = A for 0 < x < 2 and zero elsewhere. What must A be?
+* 1/√2
+o 1/2
+o 2
+o √2
+= ∫|ψ|² dx = 2A² = 1.
+> Expectation values are averages over many measurements
+
+explain 4 | Expectation values
+- ⟨x⟩ = ∫ψ* x ψ dx. ⟨p⟩ = ∫ψ*(−iħ ∂/∂x)ψ dx.
+- They're the average results of measuring many identically prepared systems.
+- *Ehrenfest's theorem: expectation values obey Newton's laws* (approximately).
+> Next: solvable potentials
+
+## p3-1d | 1D quantum potentials | physics | 2 | phys3 | p3-se
+quiz 3 | Electron in a 1 nm infinite well. If the ground state energy is E₁, what is E₃?
+* 9E₁
+o 3E₁
+o 6E₁
+o 27E₁
+= Eₙ ∝ n².
+> The quantum harmonic oscillator has equally spaced levels
+
+explain 4 | The quantum harmonic oscillator
+- $ Eₙ = ħω(n + ½)
+- Equally spaced, and the lowest energy is ½ħω, not zero: *zero-point energy*.
+- Molecular vibrations, phonons and the electromagnetic field are all harmonic oscillators.
+? Energy levels of the quantum harmonic oscillator? :: Eₙ = ħω(n + ½)
+> Ladder operators climb the levels
+
+explain 5 | Ladder operators
+- Define a and a† from x and p. Then H = ħω(a†a + ½).
+- a† raises the energy by ħω; a lowers it. a|0⟩ = 0.
+- *In quantum field theory, a† creates a particle.* The same algebra, promoted.
+> Tunnelling depends exponentially on barrier width
+
+quiz 4 | Doubling a barrier's width changes the tunnelling probability roughly how?
+* Squares it (e.g. 10⁻³ → 10⁻⁶)
+o Halves it
+o Doubles it
+o No change
+= Transmission ≈ e^(−2κL). Double L: square the factor.
+= That exponential sensitivity is what scanning tunnelling microscopes exploit.
+> STMs image individual atoms this way
+
+real 5 | The scanning tunnelling microscope
+- A sharp tip hovers a few atoms above a surface. Electrons tunnel across the gap.
+- The current changes about 10× for every 0.1 nm, so it maps atomic bumps.
+- *1990: IBM spelled out "IBM" with 35 xenon atoms using one.*
+> Next: the hydrogen atom
+
+## p3-h | The hydrogen atom | physics | 3 | phys3 | p3-1d
+explain 4 | Four quantum numbers label every electron state
+- n (energy shell), l = 0…n−1 (orbital angular momentum), m_l = −l…l, m_s = ±½.
+- l = 0, 1, 2, 3 are called s, p, d, f.
+- *The periodic table's shape is these rules plus Pauli exclusion.*
+? Allowed values of l for a given n? :: 0, 1, …, n − 1
+> Count the states in a shell
+
+quiz 3 | How many electron states (including spin) in the n = 3 shell?
+* 18
+o 9
+o 6
+o 32
+= 2n² = 18: one 3s, three 3p, five 3d orbitals, two spins each.
+> Spectral lines are fingerprints
+
+real 4 | Helium was discovered in the Sun before Earth
+- 1868: a yellow spectral line in sunlight matched no known element.
+- It was named after Helios. Helium wasn't isolated on Earth until 1895.
+- *Spectroscopy tells us what stars are made of without visiting.*
+> Fine structure: relativity tweaks the levels
+
+explain 5 | Fine structure and the 21 cm line
+- Relativistic and spin-orbit corrections split levels by about α² ≈ 1/18,800 of the gross energies.
+- α ≈ 1/137 is the fine-structure constant.
+- Hyperfine splitting of hydrogen's ground state emits the 21 cm radio line that maps our galaxy's gas.
+> Next: spin
+
+## p3-spin | Spin and angular momentum | physics | 3 | phys3 | p3-h
+story 5 | Stern–Gerlach: silver atoms split in two
+- 1922: a beam of silver atoms through a non-uniform magnetic field split into two spots, not a smear.
+- Angular momentum along any axis comes in discrete values.
+- *Stern and Gerlach didn't know it, but they'd seen electron spin.*
+> Spin-½ measured along different axes
+
+quiz 4 | A spin-½ particle is measured "up" along z, then measured along x. Probability of "up" along x?
+* 50%
+o 100%
+o 0%
+o 25%
+= |⟨+x|+z⟩|² = 1/2.
+= Measuring along z again afterwards gives 50/50 too: the x measurement erased the z information.
+> Angular momentum components don't commute
+
+explain 4 | You can't know Lx and Lz together
+- [Lx, Ly] = iħLz and cyclic.
+- So you can only know L² and one component simultaneously.
+- *That's why we label states by l and m_l but not by three components.*
+> Spin determines statistics
+
+## p3-ident | Identical particles | physics | 3 | phys3 | p3-spin
+explain 4 | Fermions and bosons
+- Swap two identical particles: the wavefunction picks up +1 (bosons) or −1 (fermions).
+- Half-integer spin: fermions (electrons, quarks). Integer spin: bosons (photons, gluons).
+- *Spin-statistics theorem: this link follows from relativity plus quantum mechanics.*
+> Fermions avoid each other, bosons pile up
+
+real 4 | Lasers are bosons piling into one state
+- Photons are bosons: stimulated emission makes more photons copying an existing one.
+- Billions end up in the same mode: same frequency, phase and direction.
+- *Laser = Light Amplification by Stimulated Emission of Radiation.* Einstein predicted the process in 1917.
+> Neutron stars are held up by fermions refusing to share
+
+explain 4 | Degeneracy pressure holds up dead stars
+- White dwarfs are supported by electrons that can't be squeezed into the same states.
+- Above about 1.4 solar masses (Chandrasekhar's limit), electrons lose and the star collapses further.
+- *Neutron stars are held up mainly by neutron degeneracy pressure* plus nuclear forces.
+? What is the Chandrasekhar limit? :: About 1.4 solar masses, the maximum mass of a white dwarf
+> Next: the nucleus
+
+## p3-nuc | Nuclear physics | physics | 2 | phys3 | p3-ident
+explain 3 | Radioactive decay
+- Alpha: emits a helium nucleus. Beta: a neutron turns into a proton, emitting an electron and antineutrino. Gamma: a high-energy photon.
+- Each nucleus decays at random. Large numbers follow N = N₀e^(−λt).
+- Half-life t½ = ln 2/λ.
+> Iron is the bottom of the energy valley
+
+explain 4 | The binding energy curve
+- Binding energy per nucleon peaks around iron and nickel.
+- Fusing light nuclei and splitting heavy ones both release energy.
+- *Stars build elements up to iron. Heavier ones come mostly from supernovae and neutron star mergers.*
+> Gold was forged in colliding neutron stars
+
+real 5 | Much of the universe's gold came from neutron star collisions
+- 2017: gravitational waves from merging neutron stars (GW170817) were seen along with light from the explosion.
+- The light showed signs of freshly made heavy elements.
+- *A substantial share of the gold in your jewellery was likely forged this way.*
+> Fission was discovered in 1938
+
+story 4 | Lise Meitner explained fission on a winter walk
+- 1938: Hahn and Strassmann found barium after bombarding uranium with neutrons.
+- Meitner and Frisch, walking in the snow in Sweden, worked out that the nucleus had split, using E = mc².
+- *Hahn got the 1944 Nobel Prize alone.* Meitner's role is now widely recognised.
+> Chain reactions need critical mass
+
+## p3-part | Particle physics | physics | 3 | phys3 | p3-nuc
+explain 3 | The Standard Model in one card
+- Matter: 6 quarks and 6 leptons (electron, muon, tau and three neutrinos).
+- Forces: photon (EM), W and Z (weak), 8 gluons (strong).
+- The Higgs boson gives mass to the W, Z and fermions.
+- *Gravity isn't in it.*
+> Quarks are never seen alone
+
+explain 4 | Confinement: why you can't pull quarks apart
+- The strong force between quarks doesn't weaken with distance like gravity or EM does.
+- Pull two apart and the energy in the gluon field makes new quark–antiquark pairs.
+- *You get more hadrons, never a free quark.*
+> The Higgs was found in 2012
+
+story 4 | 48 years from prediction to discovery
+- 1964: Higgs and others predicted a field that gives particles mass, and a boson to go with it.
+- 2012: CERN's ATLAS and CMS experiments found it at about 125 GeV.
+- *Higgs and Englert shared the 2013 Nobel Prize.*
+> Neutrinos pass through you by the trillion
+
+quiz 3 | About how many solar neutrinos pass through your thumbnail each second?
+* About 60 billion
+o About 1,000
+o About 1 million
+o None reach Earth
+= Roughly 6 × 10¹⁰ per cm² per second. Almost all pass straight through Earth too.
+> Neutrinos change flavour as they travel
+
+story 4 | The solar neutrino problem
+- From the 1960s, Ray Davis's detector found only about a third of the expected solar neutrinos.
+- The answer, confirmed around 2001: neutrinos oscillate between types, so detectors that see one type miss the others.
+- *Oscillation means neutrinos have mass,* which the original Standard Model didn't allow.
+> Next: statistical mechanics
+
+## p3-stat | Statistical mechanics | physics | 3 | phys3 | p3-part
+explain 4 | The Boltzmann factor
+- At temperature T, a state with energy E is occupied with probability ∝ e^(−E/k_BT).
+- k_BT at room temperature ≈ 1/40 eV.
+- *That's why chemistry happens at room temperature but nuclear reactions don't.*
+? k_BT at room temperature, in eV? :: About 1/40 eV (0.025 eV)
+> Equipartition: ½k_BT per quadratic degree of freedom
+
+quiz 4 | Equipartition: average energy of a diatomic gas molecule at room temperature?
+* (5/2)k_BT
+o (3/2)k_BT
+o (7/2)k_BT
+o k_BT
+= 3 translational + 2 rotational degrees of freedom. Vibrations are "frozen out" at room temperature.
+= Classical physics couldn't explain the freezing. Quantum energy gaps do.
+> Phase transitions and universality
+
+explain 5 | Universality at critical points
+- Near a critical point, a magnet and a liquid–gas system obey identical scaling laws.
+- Microscopic details wash out: only dimension and symmetry matter.
+- *Kenneth Wilson's renormalisation group explained this. Nobel Prize, 1982.*
+> Next: the formal machinery of quantum mechanics
+
+## p3-dirac | Dirac notation and operators | physics | 3 | phys3 | p3-stat
+explain 4 | Bras, kets and inner products
+- A state is a ket |ψ⟩: a vector in a Hilbert space.
+- ⟨φ|ψ⟩ is the overlap. |⟨φ|ψ⟩|² is the probability of finding φ when in state ψ.
+- *Change basis and the vector stays the same; only its components change.*
+> Observables are Hermitian operators
+
+explain 4 | Observables and eigenvalues
+- Each measurable quantity is a Hermitian operator A.
+- Possible outcomes are its eigenvalues (always real). After measuring, the state is the eigenvector.
+- Probability of outcome aᵢ: |⟨aᵢ|ψ⟩|².
+? What are the possible results of measuring observable A? :: The eigenvalues of the Hermitian operator A
+> Time evolution is a unitary operator
+
+quiz 4 | Two observables can be measured simultaneously with certainty when their operators…
+* Commute
+o Are both Hermitian
+o Have the same eigenvalues
+o Anticommute
+= Commuting operators share a set of eigenvectors.
+> Density matrices handle uncertainty about the state itself
+
+explain 5 | Density matrices
+- ρ = Σpᵢ|ψᵢ⟩⟨ψᵢ| describes a statistical mix of states.
+- Pure state: Tr(ρ²) = 1. Mixed: less than 1.
+- *Entangle a qubit with its environment and it looks mixed: decoherence.*
+> Next: approximations when exact solutions fail
+
+## p3-pert | Perturbation theory | physics | 4 | phys3 | p3-dirac
+explain 4 | First-order energy shift
+- H = H₀ + λV, with V small.
+- $ Eₙ⁽¹⁾ = ⟨n|V|n⟩
+- The first-order shift is just the average of the perturbation in the unperturbed state.
+? First-order energy correction in perturbation theory? :: ⟨n|V|n⟩
+> Second order pushes levels apart
+
+explain 5 | Level repulsion
+- Second order: Eₙ⁽²⁾ = Σ |⟨m|V|n⟩|²/(Eₙ − Eₘ) over m ≠ n.
+- The ground state always goes down at second order.
+- *Coupled levels repel each other:* the avoided crossings seen all over molecular physics.
+> Fermi's golden rule gives transition rates
+
+explain 5 | Fermi's golden rule
+- $ Γ = (2π/ħ)|⟨f|V|i⟩|² ρ(E_f)
+- Transition rate = (coupling squared) × (density of final states).
+- *Radioactive decay rates, light absorption and scattering cross-sections all use it.*
+> Next: scattering
+
+## p3-scat | Scattering theory | physics | 4 | phys3 | p3-pert
+story 4 | Rutherford found the nucleus by surprise
+- 1909: Geiger and Marsden fired alpha particles at thin gold foil. A few bounced almost straight back.
+- Rutherford: "as if you fired a 15-inch shell at a piece of tissue paper and it came back and hit you".
+- *Atoms are almost entirely empty, with a tiny dense nucleus.*
+> The cross-section measures effective target size
+
+explain 4 | Cross-sections
+- dσ/dΩ: how many particles scatter into a given direction, per unit incoming flux.
+- Rutherford: dσ/dΩ ∝ 1/sin⁴(θ/2).
+- Units of area: particle physicists use the barn, 10⁻²⁸ m² ("as big as a barn" for a nucleus).
+> The Born approximation is a Fourier transform
+
+explain 5 | The Born approximation
+- For weak potentials, the scattering amplitude ∝ Fourier transform of V at momentum transfer q.
+- Scattering experiments literally measure the Fourier transform of the target.
+- *X-ray crystallography works the same way.* That's how DNA's double helix was read.
+> Next: quantum fields
+
+## p3-qft | Quantum field theory ideas | physics | 4 | phys3 | p3-scat
+explain 5 | Particles are excitations of fields
+- Every particle type is a ripple in its own field filling all of space.
+- Every electron is identical because they're all excitations of one electron field.
+- Creation and annihilation operators add and remove quanta.
+> Feynman diagrams are bookkeeping
+
+explain 4 | Feynman diagrams
+- Lines are particles; vertices are interactions with a coupling strength.
+- Each diagram is one term in a perturbation series.
+- *QED predicts the electron's magnetic moment to over 10 significant figures.* One of the most precise matches in science.
+> Virtual particles aren't little balls
+
+myth 4 F | Virtual particles pop in and out of existence everywhere, as real particles briefly borrowing energy.
+= Virtual particles are internal lines in a perturbation calculation, not observable things.
+= The "borrowing energy" story is a popular metaphor, not what the maths says.
+= Vacuum effects like the Casimir force and the Lamb shift are real, though.
+> Renormalisation tamed the infinities
+
+story 5 | Renormalisation: infinities that cancel
+- Early QED calculations gave infinite answers.
+- Feynman, Schwinger and Tomonaga showed the infinities can be absorbed into the measured mass and charge.
+- *Nobel Prize 1965.* Feynman still called it "a dippy process".
+> Next: gravity and the universe
+
+## p3-gr | General relativity and cosmology | physics | 4 | phys3 | p3-qft
+explain 4 | Einstein's field equations
+- $ G_μν = (8πG/c⁴) T_μν
+- Left: curvature of spacetime. Right: energy and momentum.
+- *"Spacetime tells matter how to move; matter tells spacetime how to curve."* (John Wheeler)
+> Light bends around the Sun
+
+story 5 | 1919: the eclipse that made Einstein famous
+- GR predicted starlight grazing the Sun bends by 1.75 arcseconds, twice the Newtonian value.
+- Eddington's expedition to Príncipe measured it during a total eclipse.
+- *Headlines worldwide: "Revolution in Science".*
+> The universe is expanding
+
+quiz 3 | Hubble's law: v = H₀d with H₀ ≈ 70 km/s per megaparsec. Recession speed of a galaxy 100 Mpc away?
+* About 7,000 km/s
+o About 70 km/s
+o About 700,000 km/s
+o About 0.7 km/s
+= 70 × 100.
+= 1/H₀ gives roughly the age of the universe: about 14 billion years.
+> The cosmic microwave background is the Big Bang's afterglow
+
+story 5 | Two engineers mistook the Big Bang for pigeon droppings
+- 1964: Penzias and Wilson found a persistent microwave hiss from every direction.
+- They cleaned pigeon droppings out of their antenna. The hiss stayed.
+- *It was the 2.7 K afterglow of the early universe. Nobel Prize, 1978.*
+> Most of the universe is stuff we can't see
+
+explain 4 | Dark matter and dark energy
+- Ordinary matter: about 5% of the universe's energy. Dark matter: about 27%. Dark energy: about 68%.
+- Dark matter shows up in galaxy rotation and gravitational lensing.
+- Dark energy drives the accelerating expansion, discovered in 1998 using supernovae.
+> Physics 3 done. That's the whole physics track

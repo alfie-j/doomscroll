@@ -1,0 +1,412 @@
+## c1-sketch | Curve sketching | maths | 1 | calc1 | c1-rr
+explain 3 | Sketch any curve with four questions
+- Where is it zero? (intercepts)
+- Where is f′ = 0 or undefined? (critical points: peaks, valleys, flats)
+- Where does f″ change sign? (inflection points)
+- What happens as x → ±∞ and near any vertical asymptotes?
+> f′ tells you rising or falling. f″ tells you the bend
+
+quiz 3 | f(x) = x³ − 3x. Where are its local max and min?
+* Max at x = −1, min at x = 1
+o Max at x = 1, min at x = −1
+o Only a min at x = 0
+o No turning points
+= f′ = 3x² − 3 = 0 at x = ±1.
+= f″ = 6x: negative at −1 (max), positive at 1 (min).
+> The second derivative test settles max vs min in one line
+
+explain 2 | Second derivative test
+- At a critical point c (f′(c) = 0):
+- f″(c) > 0: local minimum. f″(c) < 0: local maximum.
+- f″(c) = 0: the test says *nothing*. x⁴, −x⁴ and x³ all have f″(0) = 0.
+? If f′(c)=0 and f″(c)=0, what does the second derivative test conclude? :: Nothing. Use the first derivative test instead
+> Inflection points are where the bend flips
+
+quiz 3 | Where is the inflection point of f(x) = x³ − 6x² + 5?
+* x = 2
+o x = 0
+o x = 4
+o x = 6
+= f″ = 6x − 12 = 0 at x = 2, and it changes sign there.
+> The bell curve has two inflection points, exactly one standard deviation out
+
+real 4 | The normal distribution bends at ±1σ
+- f(x) = e^(−x²/2) has f″ = (x² − 1)e^(−x²/2).
+- Zero at x = ±1: the bell switches from concave down to concave up there.
+- *That's literally where standard deviation sits on the curve.*
+> A cusp is where even the derivative gives up
+
+predict 3 | What does y = x^(2/3) look like at x = 0?
+* A sharp cusp pointing down
+o A smooth valley
+o A corner like |x|
+= y′ = (2/3)x^(−1/3) → ±∞ from either side.
+= Both sides go vertical at the origin: a cusp.
+> Next: using all this to optimise real things
+
+## c1-opt | Optimisation problems | maths | 1 | calc1 | c1-sketch
+explain 3 | The optimisation recipe
+- 1. Write the thing to maximise as one formula.
+- 2. Use the constraint to cut it to one variable.
+- 3. Differentiate, set to zero, solve.
+- 4. Check endpoints and that it really is a max (or min).
+> The classic: the open box
+
+quiz 4 | Cut equal squares of side x from the corners of a 12 × 12 sheet and fold up a box. Which x maximises volume?
+* 2
+o 3
+o 4
+o 6
+= V = x(12 − 2x)². V′ = (12 − 2x)(12 − 6x) = 0 gives x = 2 or 6.
+= x = 6 gives zero volume. x = 2 gives V = 128.
+> Drinks cans are an optimisation problem too
+
+predict 4 | For a fixed volume, which cylinder uses the least metal?
+* Height equal to diameter
+o Height twice the diameter
+o Height half the diameter
+= Minimise 2πr² + 2πrh with πr²h fixed: you get h = 2r.
+= Real cans are taller because the lids are thicker and cost more than the sides.
+> Light solves optimisation problems all the time
+
+story 4 | Light takes the fastest path, and that gives you Snell's law
+- Fermat (1662): light travels between two points along the path of least time.
+- Minimise travel time across two media with speeds v₁ and v₂.
+- $ sin θ₁ / v₁ = sin θ₂ / v₂
+- *Refraction falls out of a derivative set to zero.*
+> A lifeguard running then swimming solves the same problem
+
+quiz 3 | A farmer fences a rectangle against a river (no fence on the river side) with 200 m of fence. Maximum area?
+* 5000 m²
+o 2500 m²
+o 10000 m²
+o 4000 m²
+= 2x + y = 200, A = x(200 − 2x). A′ = 200 − 4x = 0, x = 50, y = 100.
+> Profit is maximised where marginal revenue equals marginal cost
+
+real 3 | Economists optimise with derivatives every day
+- Profit P(q) = R(q) − C(q). Set P′(q) = 0.
+- So R′(q) = C′(q): *marginal revenue equals marginal cost*.
+- "Marginal" just means derivative.
+> Next: replacing curves with lines
+
+## c1-lin | Linear approximation | maths | 1 | calc1 | c1-opt
+explain 3 | Zoom in far enough and every smooth curve is a line
+- Near x = a: f(x) ≈ f(a) + f′(a)(x − a).
+- That's the tangent line used as a stand-in for the function.
+- It's the first term of a Taylor series.
+? Linear approximation of f near a? :: f(x) ≈ f(a) + f′(a)(x − a)
+> Estimate square roots in your head
+
+quiz 3 | Use linear approximation to estimate √4.1.
+* 2.025
+o 2.05
+o 2.01
+o 2.1
+= f(x) = √x, f′(4) = 1/4. √4.1 ≈ 2 + (1/4)(0.1) = 2.025.
+= True value: 2.02485…
+> Physicists use this constantly: sin θ ≈ θ
+
+explain 3 | The small-angle approximation
+- Near 0 (in radians): sin θ ≈ θ, tan θ ≈ θ, cos θ ≈ 1 − θ²/2.
+- At 10° (0.1745 rad), sin θ = 0.1736. Less than 1% off.
+- *It turns the pendulum equation into simple harmonic motion.*
+> Error grows the further you go: the second derivative controls it
+
+predict 3 | Using (1 + x)ⁿ ≈ 1 + nx, what is 1.01¹⁰ roughly?
+* 1.1
+o 1.01
+o 1.21
+= 1 + 10(0.01) = 1.10. True value 1.1046.
+= This "binomial approximation" appears everywhere in physics.
+> Next: L'Hôpital, properly
+
+## c1-lhop | Indeterminate forms | maths | 1 | calc1 | c1-lin
+quiz 3 | lim x→0 (1 − cos x)/x² = ?
+* 1/2
+o 0
+o 1
+o ∞
+= L'Hôpital twice: sin x/(2x) → cos x/2 → 1/2.
+= Or use cos x ≈ 1 − x²/2.
+> L'Hôpital only works on 0/0 or ∞/∞
+
+myth 3 F | You can use L'Hôpital's rule on any limit of a fraction.
+= Only on 0/0 or ∞/∞ forms. Otherwise it gives wrong answers.
+= lim x→0 (x + 1)/(x + 2) = 1/2. L'Hôpital would wrongly give 1/1 = 1.
+> Exponent forms like 1^∞ need logs first
+
+quiz 4 | lim x→0⁺ xˣ = ?
+* 1
+o 0
+o e
+o Undefined
+= Take logs: x ln x → 0 (since x beats ln x). So xˣ → e⁰ = 1.
+> 0⁰ is an argument mathematicians still have
+
+story 3 | Is 0⁰ equal to 1?
+- In combinatorics and power series, 0⁰ = 1 makes every formula work.
+- As a limit form, 0⁰ is indeterminate: x⁰ → 1 but 0ˣ → 0.
+- Most programming languages return 1. *Context decides.*
+> Next: running derivatives backwards
+
+quiz 3 | lim x→∞ (ln x)/√x = ?
+* 0
+o ∞
+o 1
+o 1/2
+= L'Hôpital: (1/x)/(1/(2√x)) = 2/√x → 0.
+= Logs lose to every positive power.
+> Next: antiderivatives
+
+## c1-anti | Antiderivatives | maths | 1 | calc1 | c1-lhop
+explain 2 | Antiderivatives: undo the derivative
+- If F′ = f, then F is an antiderivative of f.
+- ∫ xⁿ dx = xⁿ⁺¹/(n + 1) + C, for n ≠ −1.
+- *Always + C*: every constant differentiates to zero.
+? ∫ xⁿ dx for n ≠ −1? :: xⁿ⁺¹/(n + 1) + C
+> The +C isn't pedantry: it's a whole family of curves
+
+quiz 2 | ∫ (6x² − 4x + 3) dx = ?
+* 2x³ − 2x² + 3x + C
+o 12x − 4 + C
+o 6x³ − 4x² + 3x + C
+o 2x³ − 4x² + 3x + C
+= Power rule backwards on each term.
+> Initial conditions pin down C
+
+quiz 3 | f′(x) = 2x and f(1) = 5. What is f(x)?
+* x² + 4
+o x² + 5
+o 2x² + 3
+o x² + C
+= f = x² + C. f(1) = 1 + C = 5, so C = 4.
+> Physics runs on this: from acceleration back to position
+
+real 3 | Drop a ball: integrate twice
+- a = −9.8 m/s². Integrate: v = −9.8t + v₀.
+- Integrate again: s = −4.9t² + v₀t + s₀.
+- *The two constants are the starting speed and height.*
+> Some functions have no antiderivative you can write down
+
+myth 4 F | Every function you can write down has an antiderivative you can write down.
+= ∫ e^(−x²) dx, ∫ sin(x)/x dx and ∫ √(1 + x³) dx have no formula in elementary functions.
+= Liouville proved this in the 1830s. The antiderivatives exist; they just need new names, like erf(x).
+> Next: the definite integral
+
+## c1-def | Definite integrals | maths | 1 | calc1 | c1-anti
+explain 3 | The definite integral is signed area
+- ∫ₐᵇ f(x) dx counts area above the axis as positive, below as negative.
+- ∫₀^2π sin x dx = 0: the two humps cancel.
+- For total area, integrate |f|.
+> Some properties save a lot of work
+
+explain 2 | Integral properties worth knowing
+- ∫ₐᵃ f = 0. ∫ₐᵇ f = −∫ᵦₐ f.
+- ∫ₐᵇ f + ∫ᵦᶜ f = ∫ₐᶜ f.
+- If f ≤ g on [a, b], then ∫ f ≤ ∫ g.
+> Average value is an integral too
+
+quiz 3 | Average value of f(x) = x² on [0, 3]?
+* 3
+o 4.5
+o 9
+o 1.5
+= Average = (1/(b − a))∫ₐᵇ f = (1/3)(27/3) = 3.
+> There's a theorem guaranteeing f hits its average
+
+explain 3 | Mean Value Theorem for integrals
+- A continuous f on [a, b] actually equals its average value somewhere in the interval.
+- $ f(c) = (1/(b − a)) ∫ₐᵇ f(x) dx
+- Average temperature over a day? At some moment it really was that temperature.
+> Next: the Fundamental Theorem in practice
+
+quiz 3 | ∫₀^π sin x dx = ?
+* 2
+o 0
+o 1
+o π
+= [−cos x]₀^π = −(−1) − (−1) = 2.
+> One hump of sine has area exactly 2
+
+## c1-ftc | FTC workout | maths | 1 | calc1 | c1-def
+quiz 3 | d/dx ∫₀ˣ cos(t²) dt = ?
+* cos(x²)
+o sin(x²)
+o 2x cos(x²)
+o 0
+= FTC part 1: differentiating the accumulated area gives back the integrand.
+> Variable limits bring in the chain rule
+
+quiz 4 | d/dx ∫₀^(x²) eᵗ dt = ?
+* 2x·e^(x²)
+o e^(x²)
+o eˣ
+o 2x·eˣ
+= FTC gives e^(x²), times the derivative of the upper limit, 2x.
+> A whole new function defined by an integral
+
+explain 4 | ln x can be defined as an integral
+- $ ln x = ∫₁ˣ (1/t) dt
+- Every property of logs follows from this: ln(ab) = ln a + ln b is just splitting the area.
+- *Many textbooks build the logarithm exactly this way.*
+> The error function is defined the same way
+
+real 3 | erf(x): an integral with its own name
+- erf(x) = (2/√π) ∫₀ˣ e^(−t²) dt. No elementary formula.
+- It gives the probability a normal measurement lands within a certain range.
+- Calculators and spreadsheets compute it numerically.
+> Next: substitution practice
+
+## c1-sub | Substitution practice | maths | 1 | calc1 | c1-ftc
+quiz 3 | ∫ x·e^(x²) dx = ?
+* ½e^(x²) + C
+o e^(x²) + C
+o x²e^(x²) + C
+o 2e^(x²) + C
+= u = x², du = 2x dx. ∫ ½eᵘ du = ½eᵘ.
+> Look for an inner function whose derivative is lying around
+
+quiz 3 | ∫ cos x / sin x dx = ?
+* ln|sin x| + C
+o −ln|sin x| + C
+o ln|cos x| + C
+o 1/sin² x + C
+= u = sin x, du = cos x dx. ∫ du/u = ln|u|.
+> Change the limits when you substitute in a definite integral
+
+explain 3 | Definite integrals: change the limits too
+- ∫₀¹ 2x(x² + 1)³ dx with u = x² + 1: when x = 0, u = 1; when x = 1, u = 2.
+- $ ∫₁² u³ du = [u⁴/4]₁² = 15/4
+- Change the limits and you never have to substitute back.
+> Sometimes the substitution isn't obvious
+
+quiz 4 | ∫ tan x dx = ?
+* −ln|cos x| + C
+o ln|cos x| + C
+o sec² x + C
+o ln|tan x| + C
+= tan = sin/cos. u = cos x, du = −sin x dx.
+= −ln|cos x| = ln|sec x|.
+> Next: areas between curves
+
+## c1-area | Area between curves | maths | 1 | calc1 | c1-sub
+explain 2 | Area between curves = top minus bottom
+- $ A = ∫ₐᵇ (top − bottom) dx
+- Find where the curves cross: those are often your limits.
+- If they swap places, split the integral.
+> Sometimes integrating in y is easier
+
+quiz 3 | Area between y = x and y = x² on [0, 1]?
+* 1/6
+o 1/2
+o 1/3
+o 1/12
+= x is on top. ∫₀¹ (x − x²) dx = 1/2 − 1/3 = 1/6.
+> Area also gives you a famous inequality
+
+quiz 4 | Area enclosed by y = 4 − x² and the x-axis?
+* 32/3
+o 16/3
+o 8
+o 16
+= Crosses at ±2. ∫₋₂² (4 − x²) dx = 16 − 16/3 = 32/3.
+= Archimedes' rule: 4/3 of the inscribed triangle (area 8).
+> Next: volumes by spinning
+
+## c1-vol | Volumes of revolution | maths | 1 | calc1 | c1-area
+explain 3 | Disc method: slice it like salami
+- Spin y = f(x) around the x-axis. Each slice is a disc of area πf(x)².
+- $ V = π ∫ₐᵇ f(x)² dx
+- Hollow middle? Subtract the inner disc: washers.
+> Derive the volume of a sphere in one line
+
+quiz 4 | Spin y = √(r² − x²) around the x-axis. Volume?
+* (4/3)πr³
+o πr³
+o (2/3)πr³
+o 4πr²
+= π∫₋ᵣʳ (r² − x²) dx = π(2r³ − 2r³/3) = (4/3)πr³.
+> Archimedes wanted this result on his tomb
+
+story 4 | Archimedes' tombstone had a sphere in a cylinder
+- He proved a sphere has 2/3 the volume of the cylinder that wraps it, and 2/3 of its surface area too.
+- He asked for that diagram on his grave.
+- Cicero found the overgrown tomb in Syracuse around 75 BC, recognising it by the sphere and cylinder.
+> Shells: another way to slice
+
+explain 3 | Shell method: slice into tubes
+- Spin around the y-axis. Each thin vertical strip makes a cylindrical shell.
+- $ V = 2π ∫ₐᵇ x·f(x) dx
+- Use whichever method gives the easier integral.
+> Next: making calculus rigorous
+
+## c1-ra1 | Analysis: sequences and completeness | maths | 3 | calc1 | c1-vol
+explain 3 | What it means for a sequence to converge
+- aₙ → L if for every ε > 0, eventually all terms are within ε of L.
+- "Eventually" = there's an N after which it holds.
+- 1/n → 0: for any ε, pick N > 1/ε.
+? Definition of aₙ → L? :: For every ε > 0 there is N such that n > N implies |aₙ − L| < ε
+> The rationals have holes. The reals don't
+
+explain 4 | Completeness: why calculus needs the real numbers
+- The sequence 1, 1.4, 1.41, 1.414, … is all rational, but its limit √2 isn't.
+- The reals fill every hole: any bounded increasing sequence converges.
+- *Without completeness, the Intermediate Value Theorem fails.* x² − 2 would skip zero on the rationals.
+> The least upper bound property is the engine
+
+quiz 3 | What is the supremum (least upper bound) of {1 − 1/n : n ≥ 1}?
+* 1
+o 0.99
+o It doesn't exist
+o 0
+= Every term is below 1 and gets arbitrarily close. 1 itself is never reached.
+= Supremum ≠ maximum: this set has no maximum.
+> Cauchy found a way to test convergence without knowing the limit
+
+explain 4 | Cauchy sequences converge without naming the limit
+- Terms get arbitrarily close to *each other*: |aₘ − aₙ| < ε for large m, n.
+- In the reals, Cauchy ⇔ convergent.
+- In the rationals, a Cauchy sequence can head towards a hole. That's another way to define completeness.
+> Every bounded sequence has a convergent subsequence
+
+explain 4 | Bolzano–Weierstrass
+- Every bounded sequence of reals has a convergent subsequence.
+- Proof idea: keep halving the interval, always keeping a half with infinitely many terms.
+- It's the workhorse behind the Extreme Value Theorem.
+? Bolzano–Weierstrass theorem? :: Every bounded real sequence has a convergent subsequence
+> Next: continuity, rigorously
+
+myth 3 F | A sequence that keeps increasing must go to infinity.
+= 1 − 1/n increases forever but converges to 1.
+= Monotone convergence theorem: increasing and bounded ⇒ converges.
+> Next: uniform continuity
+
+## c1-ra2 | Analysis: continuity rigorously | maths | 4 | calc1 | c1-ra1
+explain 4 | Uniform continuity: one δ for everywhere
+- Continuous: for each point and each ε there's a δ (which may depend on the point).
+- Uniformly continuous: one δ works across the whole domain.
+- x² on all reals isn't uniform: it gets steeper, so δ must shrink as x grows.
+> Heine–Cantor: on closed bounded intervals, the two coincide
+
+quiz 4 | Which is uniformly continuous on (0, 1)?
+* √x
+o 1/x
+o sin(1/x)
+o 1/x²
+= √x extends continuously to [0, 1], a compact interval, so it's uniformly continuous.
+= 1/x and sin(1/x) oscillate or blow up near 0.
+> Uniform convergence is the property that lets you swap limits
+
+explain 4 | Pointwise vs uniform convergence
+- fₙ(x) = xⁿ on [0, 1] converges pointwise to 0 (for x < 1) and 1 (at x = 1): a discontinuous limit.
+- Each fₙ is continuous. The limit isn't.
+- *Uniform convergence preserves continuity.* Pointwise convergence doesn't.
+? Why does uniform convergence matter? :: It preserves continuity and allows swapping limits with integrals
+> This is exactly why Fourier series misbehave at jumps
+
+story 4 | Cauchy published a wrong theorem
+- In 1821 Cauchy claimed a convergent sum of continuous functions is always continuous.
+- Fourier series of square waves are counterexamples: continuous sines summing to a jump.
+- The fix, uniform convergence, took decades to be stated clearly. *Even the founders of rigour slipped.*
+> Calculus 1 is done. Calculus 2 builds integration into an art

@@ -1,0 +1,255 @@
+## p3-wav2 | Waves and sound | physics | 1 | phys3 | -
+explain 2 | Every wave obeys v = fλ
+- Speed = frequency × wavelength.
+- Sound in air: about 343 m/s. Middle C (262 Hz) has a wavelength of about 1.3 m.
+- Light: 3 × 10⁸ m/s. Green light (550 nm) oscillates about 5.5 × 10¹⁴ times a second.
+> Sound needs a medium, light doesn't
+
+quiz 2 | Count seconds between lightning and thunder: 6 s. Roughly how far away?
+* About 2 km
+o About 6 km
+o About 200 m
+o About 20 km
+= Sound covers ~343 m per second: 6 × 343 ≈ 2 km.
+= Light arrives essentially instantly.
+> Loudness is logarithmic
+
+explain 3 | Decibels are logarithmic
+- +10 dB means 10× the intensity. +20 dB means 100×.
+- A rock concert (110 dB) is a billion times the intensity of a whisper (20 dB).
+- *Your ears perceive roughly every +10 dB as "twice as loud".*
+> Beats: two close notes make a wobble
+
+quiz 3 | Tuning forks of 440 Hz and 444 Hz sound together. What do you hear?
+* A 442 Hz tone pulsing 4 times a second
+o Two separate notes
+o An 884 Hz tone
+o A 4 Hz hum
+= Superposition gives an average frequency with an amplitude envelope at the difference frequency.
+= Musicians tune by listening for beats to slow and vanish.
+> Breaking the sound barrier makes a cone of sound
+
+explain 3 | Sonic booms
+- A plane faster than sound outruns its own pressure waves.
+- They pile up into a cone-shaped shock front: the Mach cone, with sin θ = v_sound/v.
+- *The boom follows the plane along the ground the whole time it's supersonic,* not just once.
+> Next: interference and diffraction
+
+## p3-int | Interference and diffraction | physics | 2 | phys3 | p3-wave
+quiz 3 | Double slit: slit spacing d, wavelength λ, screen distance L. Fringe spacing?
+* λL/d
+o dL/λ
+o λd/L
+o λ/d
+= Bright fringes where path difference d sin θ = mλ. Small angles give spacing λL/d.
+= Closer slits spread the pattern out.
+> Young's experiment was evidence for light as a wave in 1801
+
+story 4 | Thomas Young fought Newton's ghost
+- Newton had argued light was particles. His reputation made the idea hard to challenge.
+- Around 1801–1803 Young showed interference fringes with light, which only waves can make.
+- *A century later, quantum theory said both of them were partly right.*
+> Thin films make rainbow colours
+
+real 3 | Why soap bubbles and oil slicks shimmer
+- Light reflects off the top and bottom of a thin film and the two reflections interfere.
+- Which wavelengths reinforce depends on film thickness, so colours shift as the film thins.
+- *Just before a bubble pops, it goes black: too thin for any visible light to reinforce.*
+> Diffraction limits how sharply anything can see
+
+explain 4 | The diffraction limit
+- A lens of diameter D can't resolve angles smaller than about 1.22λ/D (Rayleigh criterion).
+- Bigger telescopes see finer detail. So do shorter wavelengths.
+- *Electron microscopes beat light microscopes because electrons have far shorter wavelengths.*
+> CDs and DVDs are diffraction gratings
+
+quiz 3 | Why does a Blu-ray hold more than a DVD?
+* It uses a shorter-wavelength (blue-violet) laser, so pits can be smaller
+o It spins faster
+o It's physically bigger
+o It uses both sides
+= 405 nm versus 650 nm. A smaller diffraction-limited spot means denser data.
+> Next: heat and temperature
+
+## p3-th1 | Laws of thermodynamics | physics | 1 | phys3 | p3-int
+explain 2 | The four laws of thermodynamics
+- Zeroth: things in equilibrium with a third thing are in equilibrium with each other (temperature makes sense).
+- First: energy is conserved. ΔU = Q − W.
+- Second: entropy of an isolated system never decreases.
+- Third: you can't reach absolute zero in finitely many steps.
+> A famous summary: you can't win, you can't break even, you can't quit
+
+quiz 3 | 1 kg of water warmed by 10°C. Heat needed? (c = 4,200 J/kg·K)
+* 42,000 J
+o 4,200 J
+o 420 J
+o 420,000 J
+= Q = mcΔT.
+= Water's high heat capacity is why oceans moderate coastal climates.
+> Phase changes eat energy without changing temperature
+
+explain 3 | Latent heat
+- Melting ice at 0°C absorbs about 334 kJ/kg without warming at all.
+- Boiling water absorbs about 2,260 kJ/kg.
+- *That's why steam burns are worse than boiling-water burns.*
+> Absolute zero is −273.15°C
+
+story 4 | Kelvin realised there's a bottom to temperature
+- Gases shrink by a fixed fraction per degree. Extrapolate and their pressure hits zero at −273.15°C.
+- William Thomson (Lord Kelvin) built a temperature scale from that absolute zero in 1848.
+- *The coldest labs now reach billionths of a kelvin, but never zero.*
+> Next: molecules in motion
+
+## p3-kin | Kinetic theory | physics | 2 | phys3 | p3-th1
+explain 3 | Temperature is average kinetic energy
+- For a monatomic ideal gas: ⟨½mv²⟩ = (3/2)k_BT.
+- Air molecules at room temperature move at around 500 m/s.
+- *Pressure is the drumming of trillions of collisions on the walls.*
+> pV = nRT falls out of collisions
+
+quiz 3 | Double the absolute temperature of a gas at fixed volume. Pressure…
+* Doubles
+o Quadruples
+o Stays the same
+o Increases by √2
+= pV = nRT, so p ∝ T.
+= Molecular speed rises by √2, and both collision rate and impulse per collision scale with speed.
+> Brownian motion proved atoms exist
+
+story 5 | Einstein used pollen jitter to prove atoms exist (1905)
+- Robert Brown saw pollen particles jiggling in water in 1827, without explanation.
+- Einstein showed random molecular kicks predict a specific diffusion rate.
+- Jean Perrin measured it in 1908, giving Avogadro's number. *The last atom sceptics gave up.*
+> The Maxwell–Boltzmann distribution
+
+explain 4 | Speeds follow the Maxwell–Boltzmann distribution
+- Few molecules are slow, few are very fast; most are in between.
+- The high-speed tail grows steeply with temperature.
+- *Reaction rates depend on that tail, which is why cooking is so sensitive to temperature.*
+> Next: engines and refrigerators
+
+## p3-eng | Heat engines | physics | 2 | phys3 | p3-kin
+explain 3 | No engine can turn all heat into work
+- A heat engine takes heat from a hot source, does work, and dumps the rest to a cold sink.
+- Carnot: max efficiency 1 − T_c/T_h.
+- *Car engines manage roughly 25–40%. Big combined-cycle power stations reach around 60%.*
+> Heat pumps beat 100%
+
+quiz 4 | A heat pump moves heat from 0°C outside to a 20°C house. Ideal heat delivered per joule of work?
+* About 15 J
+o 1 J
+o Less than 1 J
+o About 2 J
+= Ideal COP = T_h/(T_h − T_c) = 293/20 ≈ 15.
+= Real ones manage 3–4: still 3–4 J of heat per joule of electricity.
+> Entropy explains why
+
+quiz 3 | Melting 1 kg of ice at 0°C (L = 334 kJ/kg). Entropy change of the ice?
+* About +1,220 J/K
+o About −1,220 J/K
+o Zero
+o About +334,000 J/K
+= ΔS = Q/T = 334,000/273.
+> Entropy and the arrow of time
+
+explain 4 | Why the past is different from the future
+- Microscopic laws (almost) don't care about the direction of time.
+- But the universe began in a low-entropy state, and entropy has been rising ever since.
+- *Eggs break and don't unbreak because there are vastly more broken arrangements.*
+> Next: special relativity properly
+
+## p3-sr | Lorentz transformations | physics | 2 | phys3 | p3-eng
+explain 3 | Two postulates rebuild space and time
+- 1. Physics is the same in every inertial frame.
+- 2. Light's speed in vacuum is the same for every observer.
+- From these alone: time dilation, length contraction, and simultaneity that depends on who's watching.
+> The Lorentz factor controls everything
+
+quiz 3 | At v = 0.6c, the Lorentz factor γ is…
+* 1.25
+o 1.6
+o 0.8
+o 2.5
+= γ = 1/√(1 − 0.36) = 1/0.8.
+> Simultaneity is relative
+
+story 4 | The train and the platform
+- Lightning strikes both ends of a moving train. The platform observer sees both flashes at once.
+- The train observer is moving toward one flash: they see that one first, and conclude the strikes weren't simultaneous.
+- *Both are right.* "At the same time" depends on the frame.
+> Spacetime interval: what everyone agrees on
+
+explain 4 | The spacetime interval is invariant
+- $ s² = c²t² − x² − y² − z²
+- Observers disagree on times and distances but agree on s².
+- *Spacetime geometry with a minus sign.* It's why the travelling twin's path is shorter in proper time.
+? What quantity do all inertial observers agree on between two events? :: The spacetime interval c²Δt² − Δx² (− Δy² − Δz²)
+> Velocities don't simply add
+
+quiz 4 | A spaceship at 0.5c fires a probe forward at 0.5c relative to the ship. Speed relative to Earth?
+* 0.8c
+o 1.0c
+o 0.5c
+o 0.75c
+= (u + v)/(1 + uv/c²) = 1/(1 + 0.25) = 0.8c.
+> Next: E = mc², carefully
+
+## p3-rmom | Relativistic energy and momentum | physics | 2 | phys3 | p3-sr
+explain 3 | The energy-momentum relation
+- $ E² = (pc)² + (mc²)²
+- At rest: E = mc². Massless particles: E = pc.
+- *Photons have momentum but no mass.*
+? Relativistic energy-momentum relation? :: E² = (pc)² + (mc²)²
+> Nuclear binding energy is missing mass
+
+quiz 3 | Fusing four hydrogen nuclei into helium-4 converts about what fraction of the mass to energy?
+* About 0.7%
+o About 7%
+o About 0.0001%
+o About 50%
+= Helium-4 is about 0.7% lighter than four protons. The difference powers the Sun.
+= The Sun converts about 4 million tonnes of mass into energy every second.
+> Matter and antimatter convert 100%
+
+real 4 | PET scans detect annihilation
+- A tracer releases positrons. Each annihilates with an electron, making two 511 keV gamma rays in opposite directions.
+- 511 keV is exactly the electron's rest energy, mc².
+- *The scanner traces back the lines to find where the tracer collected.*
+> Next: the birth of quantum theory
+
+## p3-oldq | The quantum revolution | physics | 2 | phys3 | p3-rmom
+story 5 | Planck introduced quanta "as an act of desperation"
+- Classical physics predicted a hot object should radiate infinite energy at short wavelengths: the ultraviolet catastrophe.
+- In 1900 Planck assumed energy comes in chunks E = hf, and the formula matched experiments perfectly.
+- *He later described it as an act of desperation.* He didn't believe the chunks were physically real.
+> Einstein took the quanta seriously
+
+quiz 3 | Light of 4 eV photons hits a metal with work function 2.5 eV. Max kinetic energy of ejected electrons?
+* 1.5 eV
+o 6.5 eV
+o 4 eV
+o 2.5 eV
+= Einstein: KE_max = hf − φ.
+= Brighter light gives more electrons, not faster ones.
+> Compton scattering: photons bounce like billiard balls
+
+explain 4 | Compton scattering
+- X-rays scattered off electrons come out with longer wavelengths.
+- Δλ = (h/m_ec)(1 − cos θ): exactly what particle collisions with momentum p = h/λ predict.
+- *1923: the clinching evidence that photons carry momentum.*
+> Bohr's atom quantised the orbits
+
+explain 3 | Bohr's model of hydrogen
+- Electrons only allowed in orbits with angular momentum nħ.
+- Energies E_n = −13.6 eV/n². Jumps between them emit or absorb specific frequencies.
+- *Wrong picture, right energies.* It explained hydrogen's spectral lines exactly.
+? Energy levels of hydrogen in the Bohr model? :: Eₙ = −13.6 eV/n²
+> de Broglie: matter has a wavelength
+
+quiz 3 | de Broglie wavelength of an electron with momentum p?
+* λ = h/p
+o λ = p/h
+o λ = hp
+o λ = h/(mc)
+= Confirmed in 1927 by Davisson and Germer, who saw electrons diffract off a nickel crystal.
+> Next: the Schrödinger equation

@@ -1,0 +1,234 @@
+## p2-coul | Charge and Coulomb's law | physics | 1 | phys2 | -
+explain 2 | Coulomb's law
+- $ F = kq₁q₂/r²,  k = 1/(4πε₀) ≈ 9 × 10⁹ N m²/C²
+- Like charges repel, opposite charges attract.
+- Same inverse-square shape as gravity, but about 10³⁶ times stronger between two protons.
+? Coulomb's constant k? :: 1/(4πε₀) ≈ 9 × 10⁹ N m²/C²
+> Charge is quantised and conserved
+
+explain 3 | Charge comes in lumps
+- Every free charge is a whole multiple of e = 1.602 × 10⁻¹⁹ C.
+- Millikan measured it in 1909 by balancing charged oil drops in an electric field.
+- Quarks carry ±1/3 and ±2/3 of e, but are never seen alone.
+> One coulomb is a ridiculous amount of charge
+
+quiz 3 | Two 1 C charges 1 m apart. Force between them?
+* About 9 × 10⁹ N
+o About 9 N
+o About 1 N
+o About 9 × 10⁻⁹ N
+= F = k × 1 × 1 / 1² = 9 × 10⁹ N: roughly the weight of a million tonnes.
+= Static shocks involve microcoulombs.
+> Why does a balloon stick to the wall?
+
+explain 3 | Induced charge: why a charged balloon sticks to a neutral wall
+- The balloon's charge pushes electrons in the wall slightly away, leaving the near surface oppositely charged.
+- The nearby opposite charge attracts more strongly than the farther like charge repels.
+- *Net attraction to a neutral object.* Same reason dust clings to screens.
+> Next: the field picture
+
+## p2-field | Electric field | physics | 1 | phys2 | p2-coul
+explain 2 | The electric field: force per unit charge
+- E = F/q. A point charge makes E = kQ/r², pointing away from positive charge.
+- Field lines start on positive charges and end on negative ones.
+- *The field exists whether or not a test charge is there to feel it.*
+> Superposition: fields just add
+
+quiz 3 | A dipole: +q and −q a distance d apart. Field far away falls off as…
+* 1/r³
+o 1/r²
+o 1/r
+o 1/r⁴
+= The two 1/r² fields nearly cancel. The leftover depends on d/r, giving 1/r³.
+= Neutral molecules attract each other through such leftover fields.
+> A uniform field is the parallel-plate capacitor's gift
+
+quiz 3 | An electron in a uniform field E = 1000 N/C. Acceleration?
+* About 1.8 × 10¹⁴ m/s²
+o About 1000 m/s²
+o About 9.8 m/s²
+o About 10⁶ m/s²
+= a = eE/m = (1.6 × 10⁻¹⁹ × 1000)/(9.1 × 10⁻³¹).
+= Gravity is utterly negligible for electrons in fields.
+> Old TV tubes steered electrons with exactly this
+
+real 3 | Cathode ray tubes steered electrons with fields
+- Old TVs fired electrons through deflecting fields (magnetic coils in most sets) to paint the screen line by line.
+- J. J. Thomson used electric and magnetic deflection to discover the electron in 1897.
+- *Every pixel on a CRT was an electron's landing spot.*
+> Next: Gauss's law in practice
+
+## p2-gauss | Gauss's law workout | physics | 2 | phys2 | p2-field
+quiz 3 | Field inside a uniformly charged hollow spherical shell?
+* Zero
+o kQ/r²
+o kQ/R²
+o It depends on where you are
+= A Gaussian sphere inside encloses no charge, and by symmetry E is radial, so E = 0.
+= Newton proved the same for gravity inside a hollow planet.
+> Outside, the shell acts like a point charge
+
+quiz 4 | Field at distance r from an infinite line charge with density λ?
+* λ/(2πε₀r)
+o λ/(4πε₀r²)
+o λ/(ε₀r)
+o λ/(2ε₀)
+= Gaussian cylinder: E × 2πrL = λL/ε₀.
+> Inside a uniform ball, E grows linearly
+
+quiz 4 | Inside a uniformly charged solid ball (radius R), how does E depend on r?
+* E ∝ r
+o E ∝ 1/r²
+o E is constant
+o E = 0
+= Enclosed charge ∝ r³, surface area ∝ r²: E ∝ r.
+= Same for gravity inside a uniform planet: a tunnel through it gives SHM.
+> Drop through a tunnel through Earth and you'd arrive in about 42 minutes
+
+story 4 | The gravity train: 42 minutes to anywhere
+- In a frictionless straight tunnel between any two points on a uniform Earth, you'd oscillate in SHM.
+- The trip takes about 42 minutes, whatever the two cities are.
+- *Same period as a satellite skimming the surface, divided by two.*
+> Next: potential
+
+## p2-pot | Electric potential | physics | 1 | phys2 | p2-gauss
+explain 2 | Potential: energy per unit charge
+- V = U/q, measured in volts (joules per coulomb).
+- Point charge: V = kQ/r. Fields point from high to low potential.
+- E = −∇V: the field is the downhill slope of the potential.
+? Relation between E and V? :: E = −∇V
+> An electron-volt is a unit of energy
+
+quiz 2 | Energy gained by an electron accelerated through 1,000 V?
+* 1,000 eV (1.6 × 10⁻¹⁶ J)
+o 1,000 J
+o 1 eV
+o 1.6 × 10⁻¹⁹ J
+= ΔU = qΔV = e × 1000 V.
+> Equipotentials are perpendicular to field lines
+
+explain 3 | Why birds on power lines don't get shocked
+- Current needs a potential *difference* across a path.
+- Both feet on the same wire sit at essentially the same potential: no current through the bird.
+- *Touch the wire and the ground (or a second wire) at once, and it's fatal.*
+> Sharp points concentrate charge
+
+explain 3 | Lightning rods and sharp points
+- On a conductor, charge piles up where curvature is highest, making strong fields at sharp points.
+- Strong enough fields ionise air and leak charge away: corona discharge, St Elmo's fire.
+- Franklin's pointed rods give lightning a preferred path to ground.
+> Next: storing charge
+
+## p2-cap | Capacitors and dielectrics | physics | 1 | phys2 | p2-pot
+explain 2 | Capacitance: charge stored per volt
+- C = Q/V. Parallel plates: C = ε₀A/d.
+- Energy stored: ½CV².
+- *Defibrillators dump a capacitor's energy through the heart in milliseconds.*
+> Dielectrics boost capacitance
+
+explain 3 | Dielectrics
+- An insulator between the plates polarises, partly cancelling the field.
+- Capacitance rises by the dielectric constant κ (water: about 80).
+- That's how tiny capacitors in your phone store useful charge.
+> Capacitors combine opposite to resistors
+
+quiz 3 | Two 4 μF capacitors in series. Total capacitance?
+* 2 μF
+o 8 μF
+o 4 μF
+o 1 μF
+= Series: 1/C = 1/4 + 1/4. Parallel would give 8 μF.
+> Touchscreens are capacitors
+
+real 3 | Your touchscreen measures capacitance
+- A grid of electrodes under the glass forms tiny capacitors.
+- Your finger, a conductor, changes the capacitance where you touch.
+- *That's why gloves don't work and a sausage does.*
+> Next: moving charges
+
+## p2-curr | Current and resistance | physics | 1 | phys2 | p2-cap
+explain 2 | Current, voltage, resistance
+- Current I = charge per second (amps). V = IR (Ohm's law, for ohmic materials).
+- Resistance R = ρL/A: longer and thinner wires resist more.
+- Power dissipated: P = IV = I²R = V²/R.
+> Why transmit power at high voltage?
+
+quiz 4 | Power lines carry P = IV. Raising the voltage 10× (same power) changes the wire losses by…
+* 1/100
+o 1/10
+o 10×
+o Nothing
+= Current drops 10×. Loss I²R drops 100×.
+= That's why grids step up to hundreds of kilovolts.
+> The current war was about exactly this
+
+story 4 | Edison vs Westinghouse: the war of the currents
+- Edison backed DC. DC voltage was hard to step up, so it needed power stations every mile or so.
+- Westinghouse and Tesla backed AC, which transformers step up and down easily.
+- *AC won.* Today very long links use high-voltage DC again, thanks to modern electronics.
+> Resistance falls to zero in superconductors
+
+story 4 | Superconductivity: zero resistance, discovered 1911
+- Kamerlingh Onnes cooled mercury to 4.2 K and its resistance vanished.
+- Currents in superconducting loops have persisted for years without measurable decay.
+- *MRI magnets are superconducting coils cooled with liquid helium.*
+> Next: circuits
+
+## p2-dc | DC circuits | physics | 1 | phys2 | p2-curr
+quiz 2 | 6 Ω and 3 Ω resistors in parallel. Total?
+* 2 Ω
+o 9 Ω
+o 4.5 Ω
+o 18 Ω
+= 1/R = 1/6 + 1/3 = 1/2.
+= Parallel total is always less than the smallest branch.
+> Real batteries have internal resistance
+
+explain 3 | Internal resistance
+- Terminal voltage V = ε − Ir drops as you draw more current.
+- Short-circuit current is ε/r: why a car battery can melt a spanner.
+- *Maximum power transfer when the load resistance equals r.*
+> Kirchhoff's laws solve any network
+
+quiz 4 | A 12 V battery drives 2 Ω and 4 Ω in series. Voltage across the 4 Ω?
+* 8 V
+o 4 V
+o 6 V
+o 12 V
+= Current 12/6 = 2 A. V = 2 × 4.
+= Voltage divider: V_out = V × R₂/(R₁ + R₂).
+> Wheatstone bridges measure resistance precisely
+
+explain 3 | The Wheatstone bridge
+- Four resistors in a diamond with a meter across the middle.
+- When the meter reads zero, R₁/R₂ = R₃/R₄.
+- Strain gauges in bathroom scales use it to detect tiny resistance changes.
+> Next: circuits that change over time
+
+## p2-rc | RC and RL circuits | physics | 2 | phys2 | p2-dc
+explain 3 | Charging a capacitor
+- q(t) = CV(1 − e^(−t/RC)). Current decays as e^(−t/RC).
+- After one time constant RC: 63% charged. After 5RC: >99%.
+- *Camera flashes charge a capacitor slowly, then dump it in a millisecond.*
+> Inductors resist changes in current
+
+explain 3 | Inductors: electrical inertia
+- V = L dI/dt. An inductor fights any change in current.
+- Switch off current through an inductor suddenly and the voltage spikes: that's how car ignition coils make sparks.
+- RL time constant: L/R.
+> Combine L and C and you get oscillation
+
+quiz 4 | An LC circuit oscillates at what angular frequency?
+* 1/√(LC)
+o √(LC)
+o LC
+o R/L
+= L q̈ + q/C = 0: SHM with ω² = 1/(LC).
+= Energy swaps between the capacitor's field and the inductor's field.
+> Every radio tuner is an LC circuit
+
+real 4 | Tuning a radio is resonance
+- Turn the dial and you change C in an LC circuit.
+- Only the station at the resonant frequency gets a big response.
+- *Same maths as a mass on a spring.*
+> Next: magnetism

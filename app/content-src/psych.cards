@@ -1,0 +1,226 @@
+## ps-classic | Classic experiments | psych | 0 | - | ps-bias
+story 5 | Milgram: ordinary people, lethal shocks
+- 1961: volunteers were told to give increasing electric shocks to a "learner" who got answers wrong. The shocks were fake; the screams were acted.
+- In the best-known version, about 65% went all the way to the maximum 450 volts when calmly told to continue.
+- *Later analyses note many participants doubted the shocks were real.* The core finding still shook psychology.
+> Asch showed people deny their own eyes
+
+story 4 | Asch's line experiment
+- 1951: participants judged which of three lines matched a reference line. The answer was obvious.
+- Planted actors all gave the same wrong answer first.
+- *About three-quarters of participants conformed at least once.* But most answers were still correct.
+> The Stanford prison experiment is shakier than its fame
+
+myth 4 F | The Stanford Prison Experiment proved that ordinary people turn cruel when given power.
+= Recordings and interviews later showed guards were coached toward toughness, and some prisoners said they were acting.
+= It was never published as a peer-reviewed study in the usual way and can't support strong conclusions.
+> The marshmallow test has been reinterpreted
+
+explain 4 | The marshmallow test, revisited
+- 1970s: children who waited longer for a second marshmallow later did better on various life measures.
+- A larger 2018 replication found the link shrank a lot once family background and early ability were accounted for.
+- *Waiting may partly reflect whether a child has reason to trust that the reward will come.*
+> The bystander effect
+
+explain 4 | The bystander effect
+- People are less likely to help when others are present: responsibility diffuses.
+- The famous 1964 Kitty Genovese story ("38 witnesses did nothing") was heavily exaggerated by the press.
+- *A 2019 study of real CCTV found someone intervened in about 90% of public conflicts.*
+> Next: how habits work
+
+## ps-habit | Habits and learning | psych | 0 | - | ps-classic
+explain 4 | The habit loop
+- Cue → routine → reward. Repeat enough and the routine becomes automatic.
+- Habits shift control from deliberate goal-directed brain systems toward automatic ones.
+- *That's why you can drive home and not remember the journey.*
+> How long does a habit take?
+
+myth 3 F | It takes 21 days to form a habit.
+= The 21-day figure traces back loosely to a 1960 self-help book about plastic surgery patients.
+= A 2009 study found new habits took anywhere from 18 to 254 days, with a median around 66.
+> Variable rewards are the strongest
+
+explain 4 | Variable rewards: the slot-machine schedule
+- Skinner found behaviour rewarded on an unpredictable schedule is the hardest to extinguish.
+- Pigeons pecked hundreds of times for an occasional, random reward.
+- *It's the engine behind slot machines, social feeds, and the mystery drops in this app.*
+> Dopamine is about wanting, not liking
+
+explain 4 | Dopamine signals surprise, not pleasure
+- Dopamine neurons fire most for unexpected rewards, less for expected ones, and dip when an expected reward doesn't come.
+- This "reward prediction error" is how the brain learns what to expect.
+- *It's the same maths as reinforcement learning in AI.*
+> Next: motivation
+
+## ps-motiv | Motivation | psych | 0 | - | ps-habit
+explain 4 | Rewards can kill interest
+- 1973: children who loved drawing were promised a reward for it. Later they drew less in free time than children who weren't.
+- Expected external rewards can crowd out intrinsic motivation (the overjustification effect).
+- *Unexpected rewards don't seem to do the same damage.*
+> The goal gradient
+
+explain 3 | The goal gradient effect
+- People speed up as they get closer to a goal: rats run faster near the food, coffee-card holders buy faster near the free drink.
+- A card with 12 stamps and 2 pre-filled gets completed faster than a card with 10 and none filled.
+- *Same work remaining; the head start changes behaviour.*
+> Why your progress bar matters
+
+quiz 3 | Self-determination theory says intrinsic motivation needs three things. Which is NOT one of them?
+* Financial reward
+o Autonomy
+o Competence
+o Relatedness
+= Deci and Ryan: autonomy (choice), competence (mastery), relatedness (connection).
+> Flow is the sweet spot of challenge
+
+explain 4 | Flow
+- Csikszentmihalyi: deep absorption when challenge matches skill.
+- Too easy: boredom. Too hard: anxiety. Just right: time disappears.
+- *Good games and good teachers keep you right on that edge.*
+> Next: sleep
+
+## ps-sleep | Sleep | psych | 0 | - | ps-motiv
+explain 3 | Sleep cycles last about 90 minutes
+- Light sleep, deep sleep, then REM (when most vivid dreaming happens).
+- Deep sleep dominates early in the night, REM later.
+- *Waking from deep sleep is what makes you groggy.*
+> Sleep cleans the brain
+
+explain 4 | The glymphatic system
+- 2013 mouse studies found the spaces between brain cells widen during sleep, letting fluid flush out waste.
+- Waste products include amyloid-beta, linked to Alzheimer's disease.
+- *Research in humans is ongoing, but it's one more reason sleep matters.*
+> The record for staying awake
+
+story 4 | Randy Gardner stayed awake for 11 days
+- 1964: a 17-year-old stayed awake for about 264 hours for a science fair.
+- He developed mood changes, memory problems and hallucinations, but recovered after sleeping.
+- *Guinness stopped accepting the record because it's dangerous.*
+> Teenagers' clocks really do shift later
+
+real 3 | Why teenagers can't get up
+- Puberty shifts the body clock later: melatonin is released later in the evening.
+- Some schools that moved start times later saw better attendance and sleep.
+- *It's biology, not just laziness.*
+> Next: how perception fools you
+
+## ps-perc | Perception and illusions | psych | 0 | - | ps-sleep
+story 5 | The dress: blue and black, or white and gold?
+- 2015: a photo of a dress split the internet.
+- People's brains made different assumptions about the lighting: shadow (so it's white/gold) or warm light (so it's blue/black).
+- *The real dress was blue and black.*
+> You have a blind spot in each eye
+
+explain 3 | Your blind spot
+- Where the optic nerve leaves the retina there are no light receptors.
+- Your brain fills in the gap using the surroundings, so you never notice.
+- *Close one eye and you can make a dot on a page vanish.*
+> Change blindness
+
+story 4 | Swapping a person mid-conversation
+- 1998: an experimenter asked strangers for directions. Mid-conversation, workers carrying a door passed between them, and a different person took the asker's place.
+- About half of the strangers didn't notice.
+- *We see far less than we think we do.*
+> The gorilla in the room
+
+quiz 3 | In the famous "invisible gorilla" study, what fraction of viewers missed the gorilla?
+* About half
+o About 5%
+o About 90%
+o Nobody
+= Viewers counting basketball passes often failed to see a person in a gorilla suit walk through (Simons & Chabris, 1999).
+> Next: social psychology
+
+## ps-soc | Social psychology | psych | 0 | - | ps-perc
+explain 4 | The fundamental attribution error
+- Someone cuts you up in traffic: they're a jerk. You cut someone up: you were late for something important.
+- We explain others' behaviour by character, our own by circumstance.
+- *Cultures vary in how strongly they do this.*
+> The spotlight effect
+
+explain 3 | The spotlight effect
+- Students wearing an embarrassing T-shirt guessed about half of the room noticed. Only about a quarter did.
+- People think others notice them far more than they do.
+- *Everyone else is busy worrying about themselves.*
+> Dunbar's number
+
+explain 4 | Dunbar's number
+- Robin Dunbar proposed humans can maintain about 150 stable relationships, based on primate brain sizes.
+- Layers: about 5 intimate, 15 close, 50 good friends, 150 meaningful contacts.
+- *Critics question how precise the number is, but the layered pattern shows up in many datasets.*
+> Next: the replication crisis
+
+## ps-rep | The replication crisis | psych | 0 | - | ps-soc
+story 5 | In 2015, most famous psychology results failed to replicate
+- The Open Science Collaboration re-ran 100 published psychology studies.
+- About 36% of the replications found statistically significant results, compared with 97% of the originals.
+- *Effect sizes were on average about half as large.*
+> Power posing
+
+myth 4 F | Standing in a "power pose" for two minutes raises testosterone and lowers stress hormones.
+= The original 2010 hormone results didn't replicate in larger studies.
+= One co-author later publicly said she no longer believed the effect was real.
+> Why it happened
+
+explain 4 | How false findings get published
+- Small samples, many measured outcomes, and flexible analysis let random noise look significant.
+- Journals favoured surprising positive results.
+- *Fixes: pre-registration, larger samples, sharing data.*
+> Ego depletion took a hit too
+
+explain 4 | Willpower as a battery: the ego depletion debate
+- Studies suggested self-control uses up a limited resource, even that sugar drinks restored it.
+- A large 2016 multi-lab replication found an effect close to zero.
+- *The debate continues, but the simple "battery" story is in doubt.*
+> Next: emotions and stress
+
+## ps-emo | Emotion and stress | psych | 0 | - | ps-rep
+explain 3 | Stress isn't always bad
+- Short bursts of stress sharpen focus and memory (the Yerkes–Dodson inverted U).
+- Chronic stress, lasting weeks or months, harms sleep, immunity and memory.
+- *Some studies suggest that viewing stress as useful can change how the body responds.*
+> Naming an emotion calms it
+
+explain 4 | Affect labelling
+- Putting feelings into words ("I feel anxious") reduces amygdala activity in brain scans.
+- It's one reason journaling and talking help.
+- *"Name it to tame it."*
+> Happiness and money
+
+quiz 4 | What did a large 2021 study find about income and happiness?
+* Well-being kept rising with income, with no plateau at $75,000
+o Happiness stops rising above $75,000
+o Money has no link to happiness
+o Richer people are less happy
+= Killingsworth (2021) found experienced well-being kept rising with income.
+= A 2023 follow-up with Kahneman found the plateau held only for the unhappiest group.
+> Next: how to actually study
+
+## ps-study | Study techniques that work | psych | 0 | - | ps-emo
+explain 4 | The best study techniques, ranked
+- A 2013 review (Dunlosky et al.) rated practice testing and spaced practice as the most effective.
+- Highlighting, re-reading and summarising rated low.
+- *Feeling productive and being productive are different things.*
+> Interleaving beats blocking
+
+explain 4 | Interleave your practice
+- Mixing different problem types feels harder than doing one type in a block.
+- But it trains you to choose the method, which is what exams test.
+- *In one study, interleaved maths practice led to much higher test scores a week later.*
+? Why does interleaving help exam performance? :: It trains you to identify which method a problem needs, not just to execute one method
+> Explaining to someone else
+
+explain 3 | The Feynman technique
+- Explain the idea in simple words as if teaching a child.
+- Where you get stuck or use jargon, you've found a gap. Go back and learn it.
+- *Teaching is one of the best ways to learn.*
+> Pomodoro and breaks
+
+quiz 3 | Which study habit is LEAST supported by evidence?
+* Studying in your preferred "learning style" (visual, auditory…)
+o Spacing study sessions out
+o Testing yourself
+o Sleeping after learning
+= Studies matching teaching to learning styles haven't found benefits.
+= The other three are among the best-supported techniques.
+> Psychology track complete

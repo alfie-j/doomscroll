@@ -1,0 +1,323 @@
+## ph-greek | The Greeks | philo | 0 | - | -
+story 4 | Socrates never wrote a word
+- Everything we know of him comes from students, mainly Plato, and critics like Aristophanes.
+- His method: ask questions until people discover they don't know what they thought they knew.
+- Athens executed him in 399 BC for "corrupting the youth" and impiety. He drank hemlock rather than flee.
+> "The unexamined life is not worth living" is from his trial speech
+
+explain 4 | Plato's cave
+- Prisoners chained facing a wall see only shadows of objects carried behind them. They think the shadows are reality.
+- One escapes, sees the sun, returns, and is mocked by the others.
+- *Plato's point: the senses show shadows; reason reveals the real Forms.*
+> Aristotle, his student, disagreed
+
+explain 3 | Aristotle: look at the world
+- Where Plato put reality in abstract Forms, Aristotle studied actual things: animals, cities, arguments.
+- He founded formal logic, classified hundreds of species, and wrote on ethics, politics and physics.
+- *Some of his physics was wrong for 2,000 years* (heavy things don't fall faster).
+> His ethics is still taught today
+
+explain 4 | Aristotle's virtue: the golden mean
+- Courage sits between cowardice and recklessness. Generosity between stinginess and extravagance.
+- Virtue is a habit, built by practice, like a skill.
+- The goal is eudaimonia: flourishing, not just pleasure.
+? What is Aristotle's "golden mean"? :: Virtue lies between two vices of excess and deficiency
+> The Stoics took a harder line
+
+quiz 3 | Which Greek philosopher said everything is made of atoms and void, centuries before chemistry?
+* Democritus
+o Plato
+o Pythagoras
+o Heraclitus
+= Democritus (with his teacher Leucippus), around 400 BC.
+= Atomos means "uncuttable".
+> Heraclitus said you can't step in the same river twice
+
+story 3 | Diogenes lived in a large jar and mocked Alexander the Great
+- Diogenes the Cynic rejected comfort and convention, living in a ceramic jar in Athens.
+- Legend: Alexander offered him any wish. Diogenes asked him to stop blocking his sunlight.
+- Alexander supposedly said: "If I were not Alexander, I would be Diogenes."
+> Next: the Stoics
+
+## ph-stoic | Stoicism | philo | 0 | - | ph-greek
+explain 4 | The Stoic dichotomy of control
+- Some things are up to us: our judgements, intentions, responses. Most things aren't: other people, the weather, the past.
+- Epictetus: suffering comes from treating the second kind as if it were the first.
+- *Modern cognitive behavioural therapy borrows this directly.*
+> Epictetus was born a slave
+
+story 4 | Marcus Aurelius wrote a diary he never meant anyone to read
+- The most powerful man in the Roman world wrote private notes to himself on staying calm, fair and humble.
+- We call them the *Meditations*. Many were written on military campaigns.
+- "You have power over your mind, not outside events" is a common paraphrase of his ideas.
+> Seneca wrote about the shortness of life
+
+quiz 3 | Which Stoic was a former slave?
+* Epictetus
+o Marcus Aurelius
+o Seneca
+o Zeno of Citium
+= Epictetus was born into slavery in Hierapolis, later freed, and taught in Greece.
+= Marcus Aurelius was an emperor; Seneca was a wealthy statesman.
+> Stoicism's oddest exercise: imagining loss
+
+explain 3 | Negative visualisation
+- Stoics regularly imagined losing the things they valued.
+- Not to be gloomy, but to appreciate them now and be prepared.
+- *Modern research on gratitude finds something similar.*
+> Next: how to decide what's right
+
+## ph-eth | Ethics: three big theories | philo | 0 | - | ph-stoic
+explain 3 | Utilitarianism: maximise happiness
+- Bentham and Mill: the right act produces the greatest good for the greatest number.
+- Consequences are all that matter.
+- Problem: it seems to allow terrible acts if the numbers work out.
+> Kant says consequences aren't the point
+
+explain 4 | Kant's categorical imperative
+- Act only on rules you could will to be universal laws.
+- Treat people never merely as means, always also as ends.
+- *Lying is wrong even to a murderer at the door, Kant argued.* Many find that conclusion hard to accept.
+? Kant's categorical imperative (first formulation)? :: Act only on maxims you could will to become universal laws
+> Virtue ethics asks a different question
+
+quiz 3 | Which theory asks "what would a good person do?" rather than "what rule?" or "what outcome?"
+* Virtue ethics
+o Utilitarianism
+o Kantian ethics
+o Contractarianism
+= Virtue ethics, from Aristotle, focuses on character.
+> Peter Singer's drowning child
+
+explain 4 | Singer's drowning child
+- You'd ruin your expensive shoes to save a child drowning in front of you.
+- A child dying of a preventable disease far away is no less real.
+- *So, Singer argued in 1972, failing to donate is morally similar.* It later inspired the effective altruism movement.
+> Moral luck: should results matter?
+
+explain 4 | Moral luck
+- Two equally careless drivers. One hits a child who runs into the road; the other doesn't.
+- We blame the first far more, yet they did exactly the same thing.
+- *Thomas Nagel and Bernard Williams named the problem in 1976.*
+> Next: do we have free will?
+
+## ph-free | Free will | philo | 0 | - | ph-eth
+explain 4 | The free will problem
+- If every event is caused by earlier events, so are your choices.
+- If some events are random, randomness isn't freedom either.
+- *Either way, where does free will fit?*
+> Compatibilists think it fits fine
+
+explain 3 | Compatibilism
+- Free will doesn't mean uncaused. It means acting from your own reasons without coercion.
+- Hume, and today Daniel Dennett, defend this view.
+- Most professional philosophers are compatibilists, according to the PhilPapers surveys.
+> The Libet experiments are often overstated
+
+myth 4 F | Neuroscience experiments have shown that free will is an illusion.
+= Libet (1983) found brain activity rising before people reported deciding to move a finger.
+= But later work suggests that signal may be random background fluctuation crossing a threshold, not a hidden decision.
+= The experiments don't settle the philosophical question.
+> Frankfurt cases: could you have done otherwise?
+
+explain 4 | Frankfurt cases
+- A neuroscientist secretly plans to force you to vote for X if you start to choose Y.
+- You choose X on your own. The device never activates.
+- *You couldn't have done otherwise, yet you seem responsible.* (Harry Frankfurt, 1969)
+> Next: what is the mind?
+
+## ph-mind | Philosophy of mind | philo | 0 | - | ph-free
+explain 4 | The hard problem of consciousness
+- Easy problems: explaining how the brain processes information, sorts inputs, controls behaviour.
+- Hard problem (David Chalmers, 1995): why is any of it accompanied by experience?
+- *Why does red look like anything at all?*
+> Descartes split mind and body
+
+explain 3 | Dualism and the interaction problem
+- Descartes: mind and body are different substances.
+- Princess Elisabeth of Bohemia asked him in 1643: how can a non-physical mind move a physical body?
+- *His answer, via the pineal gland, satisfied almost nobody.*
+> What is it like to be a bat?
+
+explain 4 | Nagel's bat
+- Bats navigate by echolocation. There's presumably something it is like to be one.
+- But no amount of physical knowledge seems to tell you what that is like *from the inside*.
+- Thomas Nagel (1974): subjective experience resists objective description.
+> Philosophical zombies
+
+explain 4 | Philosophical zombies
+- Imagine a being physically identical to you, behaving identically, but with no inner experience.
+- If such a being is even conceivable, consciousness might not be purely physical.
+- *Critics say it only seems conceivable because we don't understand consciousness yet.*
+> Next: what can we know?
+
+## ph-know | Epistemology | philo | 0 | - | ph-mind
+explain 3 | Rationalists vs empiricists
+- Rationalists (Descartes, Leibniz): some knowledge comes from reason alone.
+- Empiricists (Locke, Hume): all knowledge comes from experience. The mind starts as a blank slate.
+- Kant tried to combine them: experience gives content, the mind supplies structure.
+> Hume's fork
+
+explain 4 | Hume's fork
+- Every claim is either a relation of ideas (true by definition, like maths) or a matter of fact (learned by experience).
+- Anything that's neither, Hume said, should be "committed to the flames".
+- *That targeted much of metaphysics and theology.*
+> Brains in vats
+
+explain 4 | Can you prove you're not a brain in a vat?
+- Every experience you have could, in principle, be fed to a brain in a vat.
+- So how do you know you have hands?
+- G. E. Moore's reply: "Here is one hand." He was more certain of that than of any sceptical premise.
+> The problem of other minds
+
+quiz 3 | Which philosopher said "I think, therefore I am"?
+* Descartes
+o Locke
+o Kant
+o Hume
+= "Cogito, ergo sum", from the Discourse on the Method (1637), in French as "je pense, donc je suis".
+> Next: logic and its paradoxes
+
+## ph-logic | Logic and paradoxes | philo | 0 | - | ph-know
+explain 4 | The liar paradox
+- "This sentence is false."
+- If it's true, it's false. If it's false, it's true.
+- *It's 2,000 years old and still has no universally accepted solution.*
+> Russell found the same knot in set theory
+
+story 5 | Russell's paradox broke the foundations of maths
+- Consider the set of all sets that don't contain themselves. Does it contain itself?
+- Either answer leads to contradiction.
+- 1902: Russell wrote to Frege, whose life's work depended on unrestricted sets. Frege replied that arithmetic itself was tottering.
+> A barber who shaves everyone who doesn't shave themselves
+
+explain 3 | The sorites paradox
+- One grain of sand isn't a heap. Adding one grain never turns a non-heap into a heap.
+- So a million grains isn't a heap.
+- *Vague words like "tall", "bald" and "heap" resist sharp boundaries.*
+> The unexpected hanging
+
+explain 4 | The surprise exam paradox
+- A teacher says there'll be a surprise exam next week.
+- It can't be Friday (you'd expect it by Thursday night). Then it can't be Thursday either… so none at all?
+- The exam comes on Wednesday. Everyone is surprised.
+> Logic has a limit, proved by Gödel
+
+story 5! | Gödel proved maths can never prove everything that's true
+- 1931: any consistent formal system strong enough for arithmetic contains true statements it can't prove.
+- And it can't prove its own consistency.
+- *Hilbert's dream of a complete, provably consistent mathematics was dead.*
+? Gödel's first incompleteness theorem? :: Any consistent formal system capable of arithmetic has true statements it cannot prove
+> Next: existentialism
+
+## ph-exist | Existentialism | philo | 0 | - | ph-logic
+explain 4 | "Existence precedes essence"
+- Sartre: a paper knife is designed for a purpose before it exists. Humans aren't.
+- We exist first, then define ourselves through our choices.
+- *So we're "condemned to be free": no excuses, no fixed nature to blame.*
+> Camus asked whether life is worth living at all
+
+explain 4 | Camus and the absurd
+- We demand meaning; the universe offers none. That clash is "the absurd".
+- Sisyphus is condemned to push a boulder uphill forever.
+- Camus's conclusion: "One must imagine Sisyphus happy."
+> Kierkegaard came first
+
+story 3 | Kierkegaard wrote under a dozen pseudonyms
+- The Danish philosopher published as Johannes de Silentio, Victor Eremita, Johannes Climacus and more.
+- Each pseudonym argued a different worldview.
+- *He wanted readers to choose for themselves, not just follow an author.*
+> Nietzsche's eternal return
+
+explain 4 | Nietzsche's eternal recurrence
+- Imagine living your life again, exactly the same, infinitely many times.
+- Would you curse that thought, or welcome it?
+- *Nietzsche's test: live so you'd want it to repeat.*
+> Next: politics
+
+## ph-pol | Political philosophy | philo | 0 | - | ph-exist
+explain 3 | Hobbes: life without government is "nasty, brutish and short"
+- Leviathan (1651): in a state of nature, everyone fears everyone.
+- Rational people would hand power to a sovereign in exchange for security.
+- He wrote it during and after the English Civil War.
+> Locke argued governments must earn their power
+
+explain 3 | Locke's natural rights
+- People have rights to life, liberty and property before any government exists.
+- Governments exist to protect them; if they don't, people may replace them.
+- *Jefferson echoed him in the Declaration of Independence.*
+> Rawls's veil of ignorance
+
+explain 5 | Rawls's veil of ignorance
+- Design society's rules without knowing who you'll be: rich or poor, healthy or sick, which gender or ethnicity.
+- Rawls (1971) argued you'd choose equal basic liberties and allow inequality only if it benefits the worst off.
+- *A thought experiment for fairness you can apply to almost anything.*
+> Nozick replied with Wilt Chamberlain
+
+explain 4 | Nozick's Wilt Chamberlain argument
+- Start with any distribution you think is fair.
+- A million fans each freely pay 25 cents to watch Wilt Chamberlain play. He ends up rich.
+- *Nozick (1974): if every step was voluntary, how is the result unjust?*
+> Next: philosophy from the East
+
+## ph-east | Eastern philosophy | philo | 0 | - | ph-pol
+explain 4 | The Buddha's diagnosis
+- Four Noble Truths: life involves suffering; suffering comes from craving; it can end; there's a path to ending it.
+- The self, he taught, isn't a fixed thing but a changing process (anattā).
+> Confucius focused on relationships
+
+explain 3 | Confucius: ethics through roles and ritual
+- Social harmony comes from people fulfilling their roles well: parent, child, ruler, friend.
+- His version of the golden rule: don't do to others what you wouldn't want done to you.
+- *The Analects were compiled by his students after his death.*
+> Laozi taught the opposite of striving
+
+explain 3 | The Tao and wu wei
+- The Tao Te Ching (traditionally attributed to Laozi): the Way that can be named is not the eternal Way.
+- Wu wei: effortless action, like water flowing around obstacles.
+- *Water is soft, yet it wears away stone.*
+> Zhuangzi dreamed he was a butterfly
+
+story 4 | Zhuangzi's butterfly dream
+- Zhuangzi dreamed he was a butterfly, happily fluttering.
+- He woke up and wondered: was he Zhuangzi who dreamed of being a butterfly, or a butterfly now dreaming it was Zhuangzi?
+- *A Chinese brain-in-a-vat, more than 2,000 years earlier.*
+> Next: philosophy of time and physics
+
+## ph-time | Philosophy of time | philo | 0 | - | ph-sci
+explain 4 | Does time flow?
+- A-theory: there's a real "now" moving through time. Past is gone, future is open.
+- B-theory: all times exist equally, like points along a line. "Now" is just where you are.
+- *Relativity's lack of absolute simultaneity is often taken to favour the B-theory.*
+> McTaggart argued time is unreal
+
+explain 4 | The block universe
+- In relativity, observers disagree about what's happening "now" elsewhere.
+- If there's no universal now, maybe past, present and future all exist together.
+- Einstein, after a friend's death: the distinction between past, present and future is "a stubbornly persistent illusion".
+> Can you travel back in time?
+
+explain 4 | The grandfather paradox
+- Travel back and stop your grandparents meeting. Then you were never born, so you can't travel back.
+- Responses: you'll fail somehow (self-consistency), or you create a new branch of history.
+- *General relativity allows some solutions with closed time-like curves.* Whether physics really permits them is unknown.
+> Next: philosophy of mathematics
+
+## ph-math | Philosophy of mathematics | philo | 0 | - | ph-time
+explain 4 | Is maths discovered or invented?
+- Platonists: numbers exist independently, and we discover their properties.
+- Formalists: maths is a game of symbols with rules we chose.
+- *Why maths fits physics so well is still debated.* Wigner called it "the unreasonable effectiveness of mathematics" (1960).
+> Some proofs don't build anything
+
+explain 4 | Constructive vs classical proof
+- Classical proof: "There exist irrational a, b with aᵇ rational." Proof: try √2^√2; if it's irrational, raise it to √2.
+- You get an answer without knowing which case holds.
+- *Constructivists reject such proofs: show me the example.*
+> Some infinities are too big to compare
+
+story 4 | The continuum hypothesis can't be settled
+- Is there an infinity strictly between the whole numbers and the real numbers?
+- Gödel (1940) showed you can't disprove it; Cohen (1963) showed you can't prove it, from standard axioms.
+- *It's independent: maths can go either way.*
+> Philosophy track complete

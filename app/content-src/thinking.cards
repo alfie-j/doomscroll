@@ -1,0 +1,121 @@
+## ct-fall | Logical fallacies | philo | 0 | - | ph-logic
+explain 3 | Straw man
+- Misrepresenting someone's argument as a weaker version, then attacking that.
+- "We should reduce car use in the city centre." "So you want to ban all cars?"
+- *Fix: restate their view in a form they'd agree with before replying (steelmanning).*
+> Ad hominem
+
+explain 2 | Ad hominem
+- Attacking the person instead of the argument.
+- "Why listen to her climate views? She flies on holiday."
+- *Hypocrisy doesn't make an argument false.*
+> False dilemma
+
+quiz 3 | "You're either with us or against us." Which fallacy?
+* False dilemma
+o Slippery slope
+o Appeal to authority
+o Circular reasoning
+= Presenting two options when more exist.
+> Slippery slope
+
+explain 3 | Slippery slope
+- Claiming one step will inevitably lead to an extreme outcome, without showing the chain.
+- Some slopes are real. The fallacy is assuming the slide without evidence.
+- *Ask: what stops each step from happening?*
+> Circular reasoning
+
+quiz 3 | "This book is true because it says it is." Which fallacy?
+* Begging the question (circular reasoning)
+o Red herring
+o Tu quoque
+o No true Scotsman
+= The conclusion is assumed in the premise.
+> No true Scotsman
+
+explain 3 | No true Scotsman
+- "No Scotsman puts sugar on porridge." "My uncle's Scottish and does." "Well, no *true* Scotsman does."
+- Redefining terms to dodge a counterexample.
+- *Coined by philosopher Antony Flew.*
+> Appeal to nature
+
+myth 3 F | If something is natural, it must be good for you.
+= Arsenic, hemlock and botulinum toxin are natural.
+= Many synthetic medicines save lives. Natural vs artificial says little about safety.
+> Post hoc
+
+explain 3 | Post hoc ergo propter hoc
+- "After this, therefore because of this."
+- I wore my lucky socks and we won. So the socks helped.
+- *Sequence isn't causation.*
+> Burden of proof
+
+explain 4 | Russell's teapot
+- Bertrand Russell: if he claimed a tiny china teapot orbits the Sun between Earth and Mars, too small to see, no one could disprove it.
+- That doesn't oblige anyone to believe it.
+- *The burden of proof lies with the person making the claim.*
+> Next: thinking tools
+
+## ct-tools | Thinking tools | philo | 0 | - | ct-fall
+explain 3 | Occam's razor
+- When two explanations fit the evidence, prefer the one that assumes less.
+- It's a rule of thumb, not a law: sometimes the truth is complicated.
+- *Named after William of Ockham, a 14th-century friar.*
+> Hanlon's razor
+
+explain 2 | Hanlon's razor
+- Never attribute to malice what is adequately explained by incompetence (or error).
+- Most bad outcomes are mistakes, not plots.
+- *It's useful for keeping relationships and organisations sane.*
+> Chesterton's fence
+
+explain 4 | Chesterton's fence
+- You find a fence across a road and can't see why it's there.
+- Don't remove it until you know why it was put up.
+- *Rules and traditions often encode reasons we've forgotten.*
+> Steelmanning
+
+explain 3 | Steelmanning
+- Build the strongest version of the opposing argument before disagreeing.
+- If you can't, you probably don't understand the disagreement yet.
+- *Daniel Dennett's rules for criticism start with restating the other view so well they'd thank you.*
+> Inversion
+
+explain 4 | Inversion: think backwards
+- Instead of asking how to succeed, ask how you'd guarantee failure, then avoid that.
+- Mathematician Carl Jacobi: "Invert, always invert."
+- *Charlie Munger made it a favourite investing tool.*
+> Base rates
+
+explain 4 | Start with the base rate
+- How likely is this kind of thing in general, before the specific details?
+- A detailed story about a shy, tidy person makes "librarian" feel likely, but there are many more salespeople.
+- *Kahneman and Tversky showed people ignore base rates constantly.*
+> Next: reading the news critically
+
+## ct-news | Reading the news critically | stats | 0 | - | ct-tools
+explain 4 | Relative risk vs absolute risk
+- "Doubles your risk!" can mean going from 1 in 10,000 to 2 in 10,000.
+- Always ask: double of what?
+- *Absolute numbers tell you whether to care.*
+> Graphs can lie with axes
+
+explain 3 | Truncated axes
+- Start a bar chart's y-axis at 95 instead of 0 and a 2% difference looks enormous.
+- Check where the axis starts.
+- *Dual axes on one chart can create correlations from nothing.*
+> Most published research findings are…
+
+story 5 | "Why most published research findings are false"
+- John Ioannidis's 2005 paper argued that small studies, small effects, flexible designs and hot topics make false positives common.
+- It became one of the most-downloaded papers in its journal's history.
+- *Replication matters more than any single striking study.*
+> Precision isn't accuracy
+
+quiz 3 | A survey reports "47.32% of people prefer tea". What should you ask first?
+* How many people were asked, and how were they chosen?
+o Why two decimal places?
+o Who funded it? (only)
+o Nothing: it's precise
+= Two decimals look rigorous but say nothing about sampling error or bias.
+> Critical thinking track complete

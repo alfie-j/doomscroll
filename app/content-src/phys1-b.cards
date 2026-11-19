@@ -1,0 +1,284 @@
+## p1-torq | Torque and rotation | physics | 1 | phys1 | p1-mom
+explain 2 | Torque: the rotational version of force
+- τ = r × F, size rF sin θ.
+- Push a door near the hinge and it barely moves. Push the handle: easy.
+- *Longer lever arm, same force, more torque.*
+> Archimedes: give me a place to stand and I will move the Earth
+
+quiz 3 | A 60 kg child sits 1.5 m from a seesaw's pivot. Where must a 90 kg adult sit to balance?
+* 1 m from the pivot
+o 1.5 m
+o 2.25 m
+o 0.5 m
+= Torques balance: 60 × 1.5 = 90 × d.
+> Rotational second law: τ = Iα
+
+explain 3 | τ = Iα: rotational Newton's second law
+- I (moment of inertia) plays the role of mass.
+- It depends on how far the mass sits from the axis: I = Σmr².
+- *A figure skater can't change their mass, but can change I.*
+> Rolling combines spinning and sliding
+
+predict 4 | A solid ball and a hollow ball of equal mass and radius race down a ramp. Which wins?
+* The solid ball
+o The hollow ball
+o Tie
+= Solid sphere I = (2/5)mr², hollow (2/3)mr². Less energy goes into spinning the solid one.
+> Gyroscopes resist tipping because of angular momentum
+
+## p1-angm | Angular momentum | physics | 1 | phys1 | p1-torq
+explain 3 | Angular momentum is conserved without external torque
+- L = Iω for a rigid body. L = r × p for a particle.
+- Pull mass inward and spin speeds up.
+- *Divers tuck to spin fast, then open out to slow down before entering the water.*
+> Cats use it to land on their feet
+
+story 4 | How a falling cat turns over without breaking physics
+- A cat starting with zero angular momentum must keep zero overall.
+- It bends at the middle and twists its front and back halves in opposite directions, tucking legs to change their moments of inertia.
+- *Net rotation without net angular momentum.* Physicists published papers on this in 1969.
+> Precession: why a spinning top doesn't fall
+
+explain 4 | Precession
+- Gravity's torque on a tilted spinning top points sideways, not down.
+- So the angular momentum vector swings around in a circle instead of toppling.
+- Earth precesses too: its axis traces a circle every ~26,000 years. Polaris won't always be the pole star.
+> Kepler's second law is angular momentum conservation
+
+quiz 3 | Why does a planet move fastest when it's closest to the Sun?
+* Angular momentum r × mv is conserved
+o The Sun pushes it harder
+o Energy is lost far from the Sun
+o Kepler's third law
+= Gravity points toward the Sun: no torque. So rv sin θ stays constant.
+= Small r means large v. Equal areas in equal times.
+> Next: gravity itself
+
+## p1-grav | Gravitation | physics | 1 | phys1 | p1-angm
+explain 2 | Newton's law of gravitation
+- $ F = GMm/r²
+- G = 6.674 × 10⁻¹¹ N m²/kg²: tiny, which is why gravity between people is undetectable.
+- Same law for an apple and the Moon.
+> Weighing the Earth took a lead ball experiment
+
+story 4 | Cavendish weighed the Earth in a shed in 1798
+- He hung lead balls from a torsion wire and measured the minute twist as bigger balls attracted them.
+- That fixed G, and from g at the surface, Earth's mass and density.
+- He found Earth is about 5.4 times denser than water: so its core must be heavy.
+> g changes with height, but slowly
+
+quiz 3 | At what height above the surface is g a quarter of its surface value?
+* One Earth radius up (~6,400 km)
+o 100 km
+o Two Earth radii up
+o It never drops that low
+= g ∝ 1/r². Doubling r from the centre quarters g.
+> Escape velocity doesn't depend on the launch angle
+
+quiz 3 | Escape velocity from Earth's surface?
+* About 11.2 km/s
+o About 7.9 km/s
+o About 3 km/s
+o About 30 km/s
+= ½v² = GM/R gives v = √(2GM/R).
+= 7.9 km/s is the speed for a low circular orbit: escape is √2 times that.
+> Make an object small enough and not even light escapes
+
+story 5 | Black holes were predicted in 1783
+- John Michell: a star dense enough would have an escape velocity above the speed of light. It would be invisible.
+- Set √(2GM/R) = c: R = 2GM/c², exactly the Schwarzschild radius general relativity gives.
+- *Right answer, wrong theory.* Earth would need to be squeezed to about 9 mm.
+> Next: things that wobble
+
+## p1-shm | Simple harmonic motion | physics | 1 | phys1 | p1-grav
+explain 3 | SHM: acceleration proportional to displacement, pointing back
+- a = −ω²x. Solution: x = A cos(ωt + φ).
+- Mass on a spring: ω = √(k/m). Pendulum: ω = √(g/L).
+- *Period doesn't depend on amplitude.* That's why pendulum clocks keep time.
+? Angular frequency of a mass on a spring? :: ω = √(k/m)
+> Galileo noticed the period trick in a cathedral
+
+story 3 | Galileo timed a swinging lamp with his pulse
+- The story: in Pisa Cathedral, around 1583, Galileo saw a chandelier swing and timed it with his pulse.
+- Big swings and small swings seemed to take the same time.
+- *Isochronism became the basis of pendulum clocks.* (True only for small swings.)
+> Large swings break SHM
+
+quiz 3 | A 1 m pendulum on Earth: period roughly? (g ≈ 9.8)
+* 2 s
+o 1 s
+o 6.3 s
+o 0.5 s
+= T = 2π√(1/9.8) ≈ 2.0 s.
+= The metre was once nearly defined as the length of a pendulum with a 2 s period.
+> Energy sloshes between kinetic and potential
+
+explain 2 | Energy in SHM
+- At the ends: all potential, zero speed.
+- At the centre: all kinetic, maximum speed Aω.
+- Total energy ½kA² stays constant.
+> Next: friction and pushing
+
+## p1-damp | Damped and driven oscillations | physics | 2 | phys1 | p1-shm
+explain 3 | Damping: underdamped, critical, overdamped
+- Underdamped: oscillates while decaying. Car with worn shocks.
+- Critical: returns fastest without overshoot. Good suspension, door closers.
+- Overdamped: oozes back slowly.
+> Driving at the natural frequency gives resonance
+
+explain 4 | Quality factor Q
+- Q ≈ number of oscillations before the energy drops a lot (precisely: 2π × energy stored / energy lost per cycle).
+- A wine glass: Q around 1,000. A quartz watch crystal: around 10,000 or more.
+- *High Q: sharp resonance, long ringing.*
+> Why quartz watches are so accurate
+
+real 4 | Your watch counts 32,768 vibrations per second
+- A tiny quartz tuning fork resonates at 32,768 Hz = 2¹⁵.
+- Fifteen halvings in a digital circuit give exactly one tick per second.
+- High Q means the frequency barely drifts: a few seconds a month.
+> Next: fluids
+
+## p1-fluid | Fluids | physics | 1 | phys1 | p1-damp
+explain 2 | Pressure in a fluid increases with depth
+- p = p₀ + ρgh.
+- Every 10 m of water adds about one atmosphere.
+- *Shape of the container doesn't matter*, only depth.
+> Archimedes in the bath
+
+story 3 | Archimedes and the crown
+- Story: King Hiero suspected his gold crown had silver mixed in.
+- Archimedes realised the crown's volume could be found by the water it displaced, then compared with pure gold of the same weight.
+- The "Eureka" bath story comes from Vitruvius, two centuries later.
+> Buoyancy is the weight of displaced fluid
+
+quiz 3 | An iceberg floats in seawater. Roughly what fraction is underwater?
+* About 90%
+o About 50%
+o About 10%
+o It depends on its shape
+= Fraction submerged = density of ice / density of seawater ≈ 917/1025 ≈ 0.89.
+> Fast fluid means low pressure
+
+explain 3 | Bernoulli's principle
+- Along a streamline: p + ½ρv² + ρgh = constant.
+- Faster flow, lower pressure.
+- Atomisers, carburettors and the shower curtain that sucks inward all use it.
+> But it isn't the whole story of how wings work
+
+myth 4 F | Wings lift because air over the top must travel further to "catch up" with air underneath.
+= There's no rule that the two streams must meet at the trailing edge. In fact the top air arrives *earlier*.
+= Wings work by turning air downward (Newton's third law), with lower pressure above (consistent with Bernoulli).
+= Planes can fly upside down: the angle of attack matters.
+> Next: physics from accelerating frames
+
+## p1-nonin | Non-inertial frames | physics | 2 | phys1 | p1-fluid
+explain 3 | Fictitious forces appear in accelerating frames
+- In a braking bus, you lurch forward. No force pushed you: the bus decelerated under you.
+- In the bus's frame, physics works if you add a fictitious force −ma.
+- Centrifugal and Coriolis forces are fictitious forces of rotating frames.
+> Coriolis steers hurricanes
+
+real 4 | Coriolis spins hurricanes, not bathtubs
+- On a rotating Earth, moving air is deflected: right in the Northern Hemisphere, left in the Southern.
+- Hurricanes rotate anticlockwise in the north, clockwise in the south.
+- *Bathtubs and sinks are far too small:* their drain direction depends on how the water was poured.
+> Foucault proved Earth rotates with a pendulum
+
+story 4 | Foucault's pendulum, Paris 1851
+- A 67 m pendulum in the Panthéon swung in a plane that slowly rotated.
+- At latitude λ, the plane turns 360° in 24 h / sin λ: about 32 hours in Paris.
+- *The first direct proof of Earth's rotation without looking at the sky.*
+> Next: Lagrangian mechanics in practice
+
+## p1-lagp | Lagrangian practice | physics | 3 | phys1 | p1-adv
+quiz 3 | Lagrangian of a simple pendulum (length l, angle θ)?
+* ½ml²θ̇² + mgl cos θ
+o ½ml²θ̇² − mgl cos θ
+o ½mθ̇² + mgθ
+o ml²θ̇ + mgl sin θ
+= T = ½ml²θ̇². With height measured from the pivot, V = −mgl cos θ, so L = T − V.
+> Plug it into Euler–Lagrange
+
+quiz 4 | What equation of motion does that Lagrangian give?
+* θ̈ = −(g/l) sin θ
+o θ̈ = −(g/l) θ
+o θ̈ = (g/l) cos θ
+o θ̈ = −g sin θ
+= ∂L/∂θ̇ = ml²θ̇, its time derivative ml²θ̈. ∂L/∂θ = −mgl sin θ.
+= Small angles: sin θ ≈ θ gives SHM.
+> Cyclic coordinates give conserved quantities for free
+
+explain 4 | Cyclic coordinates
+- If L doesn't depend on a coordinate q, then ∂L/∂q = 0.
+- Euler–Lagrange then says the momentum p = ∂L/∂q̇ is conserved.
+- *A free particle in polar coordinates: θ is cyclic, so angular momentum is conserved.*
+? What's conserved if L doesn't depend on coordinate q? :: Its conjugate momentum ∂L/∂q̇
+> Constraints disappear when you choose good coordinates
+
+explain 4 | Why Lagrangians make constraints easy
+- A bead on a wire, a pendulum, a rolling cylinder: Newton needs the constraint forces.
+- Lagrange uses coordinates that already obey the constraints: θ for the pendulum, not x and y.
+- *The constraint forces never appear.* (Use multipliers if you want them.)
+> Next: planets, properly
+
+## p1-cent | Central forces | physics | 3 | phys1 | p1-lagp
+explain 4 | The two-body problem reduces to one body
+- Two masses orbiting each other = one particle of reduced mass μ = m₁m₂/(m₁ + m₂) moving in the same force.
+- Angular momentum conservation keeps the orbit in a plane.
+- An effective potential V(r) + L²/(2μr²) adds a centrifugal barrier.
+> Inverse-square forces give closed ellipses
+
+story 5 | Bertrand's theorem: only two forces give closed orbits
+- For bound orbits to close for every starting condition, the force must be inverse square (planets) or linear (springs).
+- Any other central force makes orbits precess, tracing rosettes.
+- *Mercury's orbit precesses slightly too much for Newton.* General relativity accounts for the excess 43″ per century.
+? Which central forces give closed orbits for all bound initial conditions? :: Inverse-square and linear (Hooke) forces
+> Orbits are conic sections
+
+quiz 3 | A planet's orbit has total energy E < 0. What shape is it?
+* An ellipse (or circle)
+o A parabola
+o A hyperbola
+o A spiral
+= E < 0: bound ellipse. E = 0: parabola (just escapes). E > 0: hyperbola.
+> Next: many masses and springs
+
+## p1-norm | Normal modes | physics | 3 | phys1 | p1-cent
+explain 4 | Normal modes: coupled oscillators untangled
+- Two pendulums joined by a spring can swing in step or in opposition.
+- Each is a normal mode with its own frequency. Any motion is a mix of the two.
+- Finding them is an eigenvalue problem: det(K − ω²M) = 0.
+> Coupled pendulums swap energy back and forth
+
+predict 4 | Two identical pendulums are weakly coupled by a spring. You start one swinging. What happens?
+* The energy slowly passes to the other and back again
+o Both quickly swing together
+o The second never moves
+= Starting one pendulum excites both normal modes. Their slightly different frequencies beat.
+= The motion transfers back and forth at the beat frequency.
+> Molecules vibrate in normal modes too
+
+real 4 | CO₂ absorbs infrared because of a normal mode
+- CO₂ has a symmetric stretch, an asymmetric stretch and bending modes.
+- The asymmetric stretch and bending modes change the dipole moment, so they absorb infrared radiation.
+- *That's the greenhouse effect at molecular scale.*
+> Next: rigid bodies in 3D
+
+## p1-rigid | Rigid bodies in 3D | physics | 4 | phys1 | p1-norm
+explain 4 | The inertia tensor
+- In 3D, L = Iω where I is a 3×3 matrix. L and ω need not be parallel.
+- Every body has three principal axes where they are parallel.
+- *A wobbling frisbee or a badly balanced tyre: L and ω misaligned.*
+> Spinning about the middle axis is unstable
+
+story 5 | The tennis racket theorem
+- A body spins stably about its largest and smallest principal axes but not the intermediate one.
+- Throw a phone or tennis racket spinning around the middle axis and it flips over halfway.
+- *Astronaut Vladimir Dzhanibekov filmed a wingnut flipping repeatedly in orbit in 1985.*
+> Euler's equations describe the wobble
+
+explain 5 | Euler's equations for rigid bodies
+- $ I₁ω̇₁ = (I₂ − I₃)ω₂ω₃ (and cyclic)
+- Linearise around spin on each axis: the middle axis gives exponential growth of small wobbles.
+- That's the tennis racket instability, from three coupled ODEs.
+> Physics 1 done. Physics 2: electricity and magnetism

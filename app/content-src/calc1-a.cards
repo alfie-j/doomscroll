@@ -1,0 +1,460 @@
+## c1-func | Functions and graphs | maths | 1 | calc1 | -
+hook 4 | A function is a machine with one rule: one input, exactly one output.
+- Feed it 3, get 9. Feed it 3 again, still 9. That's f(x) = x².
+- A circle x² + y² = 1 is *not* a function of x: x = 0 gives y = 1 and y = −1.
+- Vertical line test: if any vertical line hits the graph twice, it fails.
+> Everything in calculus is about how these machines change
+
+quiz 2 | Which of these is a function of x?
+* y = x³ − 2x
+o x = y²
+o x² + y² = 4
+o y² = x + 1
+= Only y = x³ − 2x gives one y for every x.
+= The others give ± pairs: two outputs for one input.
+> Domain: the inputs a function will actually accept
+
+explain 2 | Domain: the inputs a function accepts
+- f(x) = √x only takes x ≥ 0 (in the reals).
+- g(x) = 1/(x − 2) takes everything except x = 2.
+- h(x) = ln x needs x > 0.
+- *Roots of negatives, division by zero, logs of non-positives*: the three classic exclusions.
+? Domain of f(x) = ln(x − 3)? :: x > 3
+> Combine two machines and you get composition
+
+explain 3 | Composition: one machine feeding another
+- (f∘g)(x) = f(g(x)): run g first, then f.
+- f(x) = x², g(x) = x + 1: f(g(x)) = (x + 1)², but g(f(x)) = x² + 1.
+- *Order matters.* Composition is not multiplication.
+? If f(x) = 2x and g(x) = x + 3, what is f(g(1))? :: f(4) = 8
+> Some machines can be run backwards
+
+explain 3 | Inverse functions run the machine backwards
+- f(x) = 2x + 1. Solve y = 2x + 1 for x: f⁻¹(y) = (y − 1)/2.
+- The graph of f⁻¹ is f reflected in the line y = x.
+- Only one-to-one functions have inverses: x² on all reals doesn't (2 and −2 both give 4).
+> eˣ and ln x are the most important inverse pair in maths
+
+quiz 2 | What is f⁻¹(x) if f(x) = x³ + 2?
+* ∛(x − 2)
+o ∛x − 2
+o 1/(x³ + 2)
+o (x − 2)³
+= Swap and solve: x = y³ + 2, so y = ∛(x − 2).
+= Check: f(∛(x − 2)) = (x − 2) + 2 = x.
+> Even and odd functions have symmetry you can exploit
+
+explain 2 | Even and odd functions
+- Even: f(−x) = f(x). Mirror symmetry in the y-axis: x², cos x.
+- Odd: f(−x) = −f(x). Symmetry through the origin: x³, sin x.
+- *The integral of an odd function from −a to a is 0.* Free marks in exams.
+? ∫ from −2 to 2 of x⁵ dx? :: 0, because x⁵ is odd
+> Shifting and stretching graphs follows four simple rules
+
+explain 3 | Transformations: what happens to y = f(x)
+- f(x) + c: shift up by c. f(x + c): shift *left* by c.
+- c·f(x): stretch vertically. f(cx): squeeze horizontally by c.
+- −f(x): flip over the x-axis. f(−x): flip over the y-axis.
+- Inside the brackets everything acts backwards.
+> Why does f(x + 2) move left? Because x = −2 now does what x = 0 used to
+
+predict 3 | log₁₀ grows absurdly slowly. Roughly how big must x be for log₁₀(x) = 100?
+* A 1 followed by 100 zeros
+o About 1,000
+o About 10,000
+= log₁₀(x) = 100 means x = 10¹⁰⁰: a googol.
+= That's more than the number of atoms in the observable universe (about 10⁸⁰).
+> Exponentials are the opposite: they explode
+
+myth 3 F | Exponential growth means "really fast growth".
+= Exponential means growth proportional to current size: y′ = ky.
+= Early on it can look slower than linear. 1.01ˣ only overtakes 100x after about 1,150 steps.
+= *It's not fast at first. It's relentless.*
+> Next: what happens as x heads to infinity
+
+## c1-inf | Limits at infinity | maths | 1 | calc1 | c1-lim
+hook 3 | What is 1/x when x is infinitely big?
+- Not "zero divided by something". Infinity isn't a number you can plug in.
+- But as x grows, 1/x gets as close to 0 as you like.
+- $ lim (x→∞) 1/x = 0
+> That idea tells you where every rational function ends up
+
+explain 3 | Rational functions: compare the top and bottom degrees
+- Degree top < degree bottom: limit at infinity is 0.
+- Equal degrees: ratio of the leading coefficients. (3x² + 1)/(5x² − x) → 3/5.
+- Top bigger: it blows up (no finite limit).
+? lim x→∞ of (4x³ − x)/(2x³ + 7)? :: 2
+> Those limits become horizontal asymptotes
+
+quiz 2 | Horizontal asymptote of y = (2x + 1)/(x − 3)?
+* y = 2
+o y = −1/3
+o x = 3
+o None
+= Equal degrees: leading coefficients 2/1.
+= x = 3 is the *vertical* asymptote, where the bottom is zero.
+> Can a graph cross its own asymptote? Yes
+
+myth 3 F | A graph can never cross its horizontal asymptote.
+= y = sin(x)/x crosses y = 0 infinitely often while approaching it.
+= Horizontal asymptotes describe the far ends only.
+= Vertical asymptotes are the ones you can't cross (the function isn't defined there).
+> Exponentials versus polynomials: who wins?
+
+predict 4 | As x → ∞, which wins: x¹⁰⁰ or 1.01ˣ?
+* 1.01ˣ, eventually by a mile
+o x¹⁰⁰, it has a huge head start
+o They grow at the same rate
+= Any exponential with base > 1 beats any polynomial in the end.
+= The crossover here is enormous, but it comes. Then x¹⁰⁰/1.01ˣ → 0.
+> And logarithms lose to everything
+
+explain 3 | The growth hierarchy
+- ln x  ≪  xᵃ (any a > 0)  ≪  bˣ (b > 1)  ≪  x!  ≪  xˣ
+- Every function on the right eventually crushes everything on its left.
+- *Algorithm speeds use exactly this ladder*: log n, n, n², 2ⁿ, n!
+? Which grows faster: x! or 10ˣ? :: x!, since each new factor eventually exceeds 10
+> One limit defines e itself
+
+hook 5! | (1 + 1/n)ⁿ → e
+- n = 1: 2. n = 10: 2.594. n = 1000: 2.717. n → ∞: 2.71828…
+- It's compound interest: 100% a year, compounded n times.
+- Compound every instant and £1 becomes *£e*, not infinity.
+? What is lim n→∞ (1 + 1/n)ⁿ? :: e ≈ 2.71828
+> Jacob Bernoulli found this in 1683, asking about bank interest
+
+quiz 3 | lim x→∞ (√(x² + x) − x) = ?
+* 1/2
+o 0
+o 1
+o ∞
+= Multiply by the conjugate: x/(√(x² + x) + x).
+= Divide by x: 1/(√(1 + 1/x) + 1) → 1/2.
+> Infinity minus infinity can be anything. The conjugate trick decides
+
+explain 2 | ∞ − ∞, 0·∞, ∞/∞: indeterminate forms
+- These don't have fixed values. They depend on how fast each part moves.
+- x² − x → ∞, but x − x → 0, and (x + 5) − x → 5.
+- *Rewrite, simplify or use L'Hôpital.* Never guess.
+> Continuity: when a function behaves exactly as expected
+
+## c1-cont | Continuity | maths | 1 | calc1 | c1-inf
+explain 3 | Continuous means: no surprises at the point
+- f is continuous at a if lim(x→a) f(x) exists *and* equals f(a).
+- Three ways to fail: a hole, a jump, or blowing up.
+- Polynomials, sin, cos, eˣ are continuous everywhere.
+? Definition of continuity at x = a? :: lim x→a f(x) exists and equals f(a)
+> A hole can be patched. A jump can't
+
+quiz 2 | f(x) = (x² − 9)/(x − 3). What kind of discontinuity at x = 3?
+* Removable (a hole)
+o Jump
+o Infinite
+o It's continuous
+= Factor: (x − 3)(x + 3)/(x − 3) = x + 3 for x ≠ 3.
+= The limit is 6. Define f(3) = 6 and the hole disappears.
+> Some functions are discontinuous everywhere
+
+story 4 | A function that's continuous at exactly one point
+- Let f(x) = x when x is rational, and 0 when x is irrational.
+- Near any point except 0, it jumps between two values infinitely often.
+- At x = 0 both rules give 0. *Continuous at one point, nowhere else.*
+> Dirichlet's version, 1 for rationals and 0 for irrationals, is continuous nowhere
+
+myth 3 F | If you can draw a graph without lifting your pen, the function is differentiable.
+= |x| is continuous but has a corner at 0: no single tangent.
+= Weierstrass (1872) built a function continuous everywhere and differentiable *nowhere*.
+= Continuity is necessary for differentiability, not sufficient.
+> Corners, cusps and vertical tangents all break the derivative
+
+predict 3 | You climbed a mountain from 8am to 6pm. Next day you walk down the same path, 8am to 6pm. Is there a time when you were at the same spot on both days?
+* Yes, always
+o Only if you walked at constant speed
+o Not necessarily
+= Overlay both days: one height curve goes up, the other down, so they must cross.
+= That's the Intermediate Value Theorem on the difference of the two.
+> The IVT also guarantees roots exist, and bisection finds them
+
+explain 3 | Bisection: the IVT as an algorithm
+- f(1) < 0 and f(2) > 0: a root is in [1, 2].
+- Check the midpoint, keep the half where the sign changes. Repeat.
+- Each step halves the interval: 10 steps give ~3 decimal places.
+- *Slow but unbreakable.* Newton's method is faster but can fail.
+> One theorem says continuous functions always hit their max
+
+explain 3 | Extreme Value Theorem
+- A continuous function on a *closed* interval [a, b] has a maximum and a minimum.
+- Open intervals break it: 1/x on (0, 1) has no maximum.
+- So in optimisation: check critical points *and* the endpoints.
+? Why does the EVT need a closed interval? :: On open intervals the function can approach a max/min without reaching it (e.g. 1/x on (0,1))
+> Next: the derivative rules you'll use a thousand times
+
+## c1-rules | Derivative rules workout | maths | 1 | calc1 | c1-der
+quiz 2 | d/dx (3x⁴ − 5x² + 7) = ?
+* 12x³ − 10x
+o 12x³ − 10x + 7
+o 3x³ − 5x
+o 12x⁴ − 10x²
+= Power rule term by term. Constants vanish.
+> Products need their own rule
+
+explain 2 | Product rule
+- $ (fg)′ = f′g + fg′
+- Not f′g′. d/dx (x·x) = 2x, but (1)(1) = 1. Wrong.
+- Mnemonic: "left d-right plus right d-left".
+? Product rule? :: (fg)′ = f′g + fg′
+> Quotients: the rule everyone forgets the sign in
+
+explain 2 | Quotient rule
+- $ (f/g)′ = (f′g − fg′)/g²
+- "Low d-high minus high d-low, over low squared."
+- Or skip it: write f/g as f·g⁻¹ and use product + chain rule.
+> Practice beats memorising
+
+quiz 3 | d/dx (x²/(x + 1)) = ?
+* (x² + 2x)/(x + 1)²
+o 2x/(x + 1)
+o (x² − 2x)/(x + 1)²
+o 2x/(x + 1)²
+= (2x(x + 1) − x²·1)/(x + 1)² = (x² + 2x)/(x + 1)².
+> Chain rule in disguise is everywhere
+
+quiz 3 | d/dx (2x + 1)⁵ = ?
+* 10(2x + 1)⁴
+o 5(2x + 1)⁴
+o (2x + 1)⁴
+o 10x(2x + 1)⁴
+= Outer: 5(·)⁴. Inner derivative: 2. Multiply: 10(2x + 1)⁴.
+> Roots are just powers
+
+quiz 2 | d/dx √x = ?
+* 1/(2√x)
+o √x/2
+o 2√x
+o −1/(2√x)
+= √x = x^(1/2). Bring down 1/2, drop the power to −1/2.
+> And 1/x is a power too
+
+quiz 3 | d/dx (1/x³) = ?
+* −3/x⁴
+o −3/x²
+o 1/(3x²)
+o 3/x⁴
+= x⁻³ → −3x⁻⁴.
+> Second derivatives: the rate of change of the rate of change
+
+explain 3 | The second derivative is acceleration
+- Position s(t). Velocity s′(t). Acceleration s″(t).
+- f″ > 0: concave up (holds water). f″ < 0: concave down.
+- Where f″ changes sign: an *inflection point*.
+? What does f″(x) > 0 tell you? :: The graph is concave up there (slope increasing)
+> There's even a name for the third derivative
+
+story 3 | Jerk, snap, crackle, pop
+- The third derivative of position is *jerk*: how suddenly acceleration changes.
+- Lift and train designers limit jerk so passengers don't stumble.
+- The 4th, 5th and 6th derivatives are informally called snap, crackle and pop.
+> Next: trig functions and why radians matter
+
+quiz 4 | A car's position is s(t) = t³ − 6t² + 9t. When is it momentarily stopped?
+* t = 1 and t = 3
+o t = 0 only
+o t = 2
+o Never
+= v(t) = 3t² − 12t + 9 = 3(t − 1)(t − 3) = 0.
+> Next: derivatives of sin and cos
+
+## c1-trig | Trig derivatives | maths | 1 | calc1 | c1-rules
+hook 3 | The derivative of sin is cos. The derivative of cos is −sin.
+- Differentiate sin four times and you're back where you started.
+- sin → cos → −sin → −cos → sin.
+- That cycle is why waves and oscillations obey calculus so neatly.
+> But only in radians
+
+predict 3 | In degrees, what is d/dx sin(x°)?
+* (π/180)·cos(x°)
+o cos(x°)
+o 180/π · cos(x°)
+= x° = πx/180 radians, so the chain rule throws out π/180.
+= Radians are the units where the constant is exactly 1.
+> tan has a derivative with a famous shape
+
+quiz 2 | d/dx tan x = ?
+* sec² x
+o −csc² x
+o sec x tan x
+o 1/cos x
+= tan = sin/cos. Quotient rule: (cos² + sin²)/cos² = 1/cos² = sec² x.
+> Chain rule meets trig
+
+quiz 3 | d/dx sin(3x²) = ?
+* 6x cos(3x²)
+o cos(6x)
+o 3x² cos(3x²)
+o 6x sin(3x²)
+= Outer: cos(3x²). Inner: 6x.
+> Inverse trig derivatives look nothing like trig
+
+explain 3 | arctan has an algebraic derivative
+- $ d/dx arctan x = 1/(1 + x²)
+- $ d/dx arcsin x = 1/√(1 − x²)
+- A trig function's inverse differentiates to pure algebra. That's why arctan shows up when you integrate 1/(1 + x²).
+? d/dx arctan x? :: 1/(1 + x²)
+> Which leads to a formula for π
+
+story 4 | π from a derivative
+- Integrate 1/(1 + x²) from 0 to 1: arctan 1 = π/4.
+- Expand 1/(1 + x²) as 1 − x² + x⁴ − …, integrate term by term.
+- *π/4 = 1 − 1/3 + 1/5 − 1/7 + …* (Leibniz, also Madhava centuries earlier).
+> It converges painfully slowly: a million terms gets π to about 6 digits
+
+real 3 | Your phone's step counter is differentiating sine waves
+- Walking makes your phone's accelerometer swing in a rough sine wave.
+- Peaks and zero crossings are where derivatives vanish or change sign.
+- *Count the cycles, count the steps.*
+> Next: exponentials and logs
+
+quiz 4 | y = x·sin x. Find y″.
+* 2cos x − x sin x
+o −x sin x
+o cos x − x sin x
+o 2cos x + x sin x
+= y′ = sin x + x cos x.
+= y″ = cos x + cos x − x sin x = 2cos x − x sin x.
+> Next: the derivative that equals itself
+
+## c1-exp | Exponentials and logs | maths | 1 | calc1 | c1-trig
+explain 3 | d/dx ln x = 1/x
+- Because ln is the inverse of eˣ: if y = ln x, then x = eʸ, so dx/dy = eʸ = x.
+- Flip it: dy/dx = 1/x.
+- That's why ∫ 1/x dx = ln|x| + C. The power rule fails at x⁻¹, and ln fills the gap.
+? d/dx ln x? :: 1/x
+> Other bases just pick up a log
+
+quiz 3 | d/dx 2ˣ = ?
+* 2ˣ ln 2
+o x·2ˣ⁻¹
+o 2ˣ
+o 2ˣ / ln 2
+= 2ˣ = e^(x ln 2). Chain rule gives ln 2 · 2ˣ.
+= The power rule doesn't apply: the variable is in the exponent.
+> The power rule versus the exponent rule is the #1 exam trap
+
+myth 4 F | d/dx xˣ = x·xˣ⁻¹
+= That treats it like a power. It's also an exponential. Neither rule works alone.
+= Write xˣ = e^(x ln x). Then d/dx = xˣ(ln x + 1).
+= Trick: *logarithmic differentiation*.
+> Logarithmic differentiation tames ugly products
+
+explain 3 | Logarithmic differentiation
+- For y = f(x)^g(x) or giant products, take ln of both sides first.
+- ln y = x ln x → y′/y = ln x + 1 → y′ = xˣ(ln x + 1).
+- Logs turn products into sums and powers into multipliers.
+> Logs also turn multiplication into addition, which built the slide rule
+
+story 4 | Logarithms were invented to save astronomers' time
+- 1614: John Napier published logarithms so that multiplying huge numbers became adding.
+- Laplace later said they doubled an astronomer's working life.
+- Slide rules, which are just log scales, flew to the Moon with Apollo astronauts.
+> Here's the curve that makes ln special
+
+quiz 3 | Find the slope of y = ln(x² + 1) at x = 1.
+* 1
+o 1/2
+o 2
+o ln 2
+= y′ = 2x/(x² + 1). At x = 1: 2/2 = 1.
+> Exponential decay is just a negative exponent
+
+real 3 | Carbon dating is a derivative equation
+- Living things keep a steady ratio of carbon-14. When they die, it decays with a half-life of about 5,730 years.
+- Measure what's left, solve N = N₀e^(−kt) for t.
+- *A bone with a quarter of its C-14 is about 11,460 years old.* Two half-lives.
+? Half-life of carbon-14? :: About 5,730 years
+> Next: when y won't come out on its own
+
+predict 4 | Which is bigger: e^π or π^e?
+* e^π
+o π^e
+o They're equal
+= e^π ≈ 23.14 and π^e ≈ 22.46.
+= Proof: x^(1/x) peaks at x = e, so e^(1/e) > π^(1/π). Raise both sides to eπ.
+> Next: implicit differentiation
+
+## c1-impl | Implicit differentiation | maths | 1 | calc1 | c1-exp
+explain 3 | Implicit differentiation: differentiate first, solve later
+- x² + y² = 25 isn't y = f(x), but y still depends on x.
+- Differentiate both sides, treating y as a function: 2x + 2y·y′ = 0.
+- Solve: *y′ = −x/y*. At (3, 4) the slope is −3/4.
+? Slope of x² + y² = 25 at (3,4)? :: −3/4
+> Every y term picks up a y′ from the chain rule
+
+quiz 3 | xy = 6. Find dy/dx.
+* −y/x
+o y/x
+o −x/y
+o 6/x
+= Product rule: y + x·y′ = 0, so y′ = −y/x.
+> It works on curves that aren't functions at all
+
+quiz 4 | Find dy/dx for x³ + y³ = 6xy at (3, 3).
+* −1
+o 1
+o 3
+o 0
+= 3x² + 3y²y′ = 6y + 6xy′.
+= At (3,3): 27 + 27y′ = 18 + 18y′, so 9y′ = −9, y′ = −1.
+> That curve is the folium of Descartes
+
+story 3 | Descartes challenged Fermat with this curve
+- The folium x³ + y³ = 3axy was Descartes' challenge to Fermat over finding tangents.
+- Fermat found them easily with his early calculus-like method.
+- Descartes was annoyed. Calculus was decades away but already brewing.
+> Implicit differentiation also explains why the derivative of an inverse flips
+
+explain 3 | Derivative of an inverse function
+- If y = f⁻¹(x), then f(y) = x. Differentiate: f′(y)·y′ = 1.
+- $ (f⁻¹)′(x) = 1 / f′(f⁻¹(x))
+- Slopes of inverse graphs are reciprocals at mirrored points.
+> Next: rates that depend on each other
+
+## c1-rr | Related rates | maths | 1 | calc1 | c1-impl
+explain 3 | Related rates: everything changes with time
+- Write an equation linking the quantities. Differentiate with respect to t.
+- Plug in the numbers *after* differentiating, never before.
+- Units check everything: m/s, m²/s, m³/s.
+> The classic: a balloon being inflated
+
+quiz 3 | A spherical balloon's radius grows at 2 cm/s. How fast is volume growing when r = 10 cm?
+* 800π cm³/s
+o 400π cm³/s
+o 80π cm³/s
+o 4000π/3 cm³/s
+= V = (4/3)πr³, so dV/dt = 4πr²·dr/dt = 4π(100)(2).
+> Ladders sliding down walls are an exam favourite
+
+quiz 4 | A 5 m ladder slides down a wall. The base moves out at 1 m/s. How fast does the top fall when the base is 3 m out?
+* 3/4 m/s
+o 1 m/s
+o 4/3 m/s
+o 3/5 m/s
+= x² + y² = 25, so 2x·x′ + 2y·y′ = 0. With x = 3, y = 4: 6 + 8y′ = 0.
+= y′ = −3/4: falling at 3/4 m/s.
+> As the base slides out, the top moves faster and faster
+
+predict 4 | In the ideal model, what happens to the speed of the ladder's top just before it hits the ground?
+* It heads to infinity
+o It levels off at 1 m/s
+o It slows to zero
+= y′ = −x·x′/y, and y → 0.
+= Real ladders lose contact with the wall first. The model breaks before the maths does.
+> Shadows are related rates too
+
+quiz 4 | A 2 m person walks away from a 6 m lamppost at 1.5 m/s. How fast does their shadow lengthen?
+* 0.75 m/s
+o 1.5 m/s
+o 3 m/s
+o 0.5 m/s
+= Similar triangles: s/2 = (x + s)/6, so s = x/2.
+= ds/dt = (1/2)(1.5) = 0.75 m/s, whatever the distance.
+> Next: sketching any curve from its derivatives

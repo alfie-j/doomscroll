@@ -1,0 +1,302 @@
+## hi-anc | The ancient world | history | 0 | - | hi-time
+story 4 | The Great Pyramid was the tallest human-made structure for about 3,800 years
+- Built around 2560 BC to about 146 m tall.
+- It was overtaken only in the 1300s, by Lincoln Cathedral's central spire (which later collapsed).
+- *Its builders were paid workers, not slaves: archaeologists found their villages and bakeries.*
+> Cleopatra wasn't Egyptian by descent
+
+myth 4 F | Cleopatra was ethnically Egyptian.
+= She was from the Ptolemaic dynasty, descended from one of Alexander the Great's Macedonian Greek generals.
+= She was, however, reportedly the first of her dynasty to learn the Egyptian language.
+> The Library of Alexandria didn't burn in one night
+
+myth 4 F | The Library of Alexandria was destroyed in a single great fire.
+= Caesar's fire in 48 BC damaged part of the collection, but the library seems to have declined over centuries through lost funding and political purges.
+= There was no single catastrophic moment.
+> Babylonians did algebra 3,800 years ago
+
+story 4 | A 3,800-year-old tablet lists Pythagorean triples
+- Plimpton 322, a Babylonian clay tablet from around 1800 BC, lists sets of numbers like 119, 120, 169.
+- They satisfy a² + b² = c², over a thousand years before Pythagoras.
+- *The Babylonians also computed √2 to about six decimal places.*
+> The Antikythera mechanism is a 2,000-year-old computer
+
+story 5! | A shipwreck held an ancient Greek analogue computer
+- Divers found corroded bronze gears off the island of Antikythera in 1901.
+- X-ray scans revealed a geared device predicting eclipses and planetary positions, built around 100 BC.
+- *Nothing comparable is known for over a thousand years afterwards.*
+> Next: Rome
+
+## hi-rome | Rome | history | 0 | - | hi-anc
+explain 3 | Roman concrete is still standing
+- The Pantheon's unreinforced concrete dome, built around 125 AD, is still the largest of its kind.
+- Roman marine concrete actually strengthens over time as seawater reacts with volcanic ash.
+- *Modern engineers study it to make more durable concrete.*
+> The Roman Empire lasted until 1453
+
+quiz 3 | When did the (Eastern) Roman Empire finally fall?
+* 1453
+o 476
+o 410
+o 1066
+= The Western empire ended in 476. The Eastern (Byzantine) empire lasted until the Ottomans took Constantinople in 1453.
+= Its citizens called themselves Romans throughout.
+> Caesar's last words weren't "Et tu, Brute?"
+
+myth 3 F | Julius Caesar's last words were "Et tu, Brute?"
+= That line comes from Shakespeare.
+= Suetonius reports that some said Caesar spoke in Greek, "Kai su, teknon?" ("You too, child?"), but also that he may have said nothing.
+> Romans had fast food
+
+real 3 | Pompeii had dozens of street food counters
+- Thermopolia were counters with built-in jars serving hot food and drink.
+- Many Romans in cramped flats had no kitchen and ate out.
+- *A beautifully painted one was excavated in 2020, with duck bones still in the pots.*
+> Next: the medieval world
+
+## hi-med | Medieval history | history | 0 | - | hi-rome
+myth 4 F | Medieval people thought the Earth was flat.
+= Educated medieval Europeans knew Earth was a sphere. Bede, Aquinas and many others say so.
+= The myth was largely popularised in the 1800s, including by Washington Irving's romantic biography of Columbus.
+> Columbus's real mistake was the Earth's size
+
+explain 4 | Columbus got Earth's size badly wrong
+- Scholars of his time correctly estimated Earth's circumference. Columbus used figures making it much smaller.
+- He put Japan under 5,000 km west of the Canaries. It's nearly 20,000 km.
+- *Without the Americas in the way, his crew would have starved.*
+> The Black Death killed a third of Europe
+
+quiz 3 | Roughly what fraction of Europe's population died in the Black Death (1347–1351)?
+* Around a third to a half
+o About 5%
+o About 90%
+o About 1%
+= Estimates range from 30% to 50% or more in some regions.
+= Labour shortages afterwards raised wages for survivors.
+> The House of Wisdom kept Greek science alive
+
+story 4 | Baghdad's House of Wisdom
+- In the 800s, scholars in Baghdad translated Greek works by Aristotle, Euclid and Ptolemy into Arabic.
+- Al-Khwarizmi wrote there; "algebra" comes from his book's title, and "algorithm" from his name.
+- *Many Greek works reached medieval Europe only via Arabic translations.*
+> Next: the printing press
+
+## hi-print | The printing revolution | history | 0 | - | hi-med
+story 4 | Gutenberg's press around 1450 changed everything
+- Movable metal type, oil-based ink, and a press adapted from wine presses.
+- By 1500, millions of books had been printed in Europe.
+- *China had movable type centuries earlier* (Bi Sheng, 1040s), but thousands of characters made it less transformative there.
+> The Reformation spread by print
+
+explain 3 | Luther went viral
+- 1517: Luther's 95 Theses were printed and spread across Germany within weeks.
+- His pamphlets made him one of the best-selling authors of the early 1500s.
+- *Without the press, the Reformation might have been one more suppressed protest.*
+> Printing fixed spelling, slowly
+
+explain 3 | Printers shaped English spelling
+- Early printers sometimes added letters to justify lines and charge by length.
+- Many came from Flanders and brought Dutch spellings: "ghost" gained its "h" that way.
+- *English spelling froze while pronunciation kept changing* (the Great Vowel Shift).
+> Next: the scientific revolution
+
+## hi-sci | The Scientific Revolution | history | 0 | - | hi-print
+story 4 | Copernicus published as he died
+- Copernicus's sun-centred model was printed in 1543, reportedly reaching him on his deathbed.
+- An unsigned preface by the editor, Osiander, called it a mere calculating device.
+- *Kepler later exposed who wrote that preface.*
+> Galileo's telescope
+
+story 4 | Galileo turned a toy into a revolution
+- Telescopes were invented in the Netherlands in 1608. Galileo built better ones in 1609.
+- He saw mountains on the Moon, moons around Jupiter and the phases of Venus.
+- *Venus's phases were hard evidence that it orbits the Sun.*
+> Galileo was pardoned in 1992
+
+quiz 3 | In what year did the Catholic Church formally acknowledge it had erred in condemning Galileo?
+* 1992
+o 1642
+o 1835
+o 1965
+= Pope John Paul II accepted the findings of a commission in 1992, 359 years after the trial.
+> Newton spent more time on alchemy than physics
+
+story 4 | Newton the alchemist
+- Newton wrote over a million words on alchemy and theology, far more than on physics.
+- He also worked out a date for the end of the world from biblical prophecy: no earlier than 2060.
+- *Keynes called him "not the first of the age of reason, but the last of the magicians".*
+> The Royal Society's motto
+
+quiz 2 | The Royal Society's motto "Nullius in verba" means…
+* Take nobody's word for it
+o Knowledge is power
+o Through the stars
+o Truth conquers all
+= Founded 1660. The motto rejects authority in favour of experiment.
+> Next: the Industrial Revolution
+
+## hi-ind | The Industrial Revolution | history | 0 | - | hi-sci
+explain 3 | Steam engines started as mine pumps
+- Newcomen's 1712 engine pumped water out of coal mines. It was very inefficient.
+- James Watt's separate condenser (1769) improved efficiency several times over.
+- *The watt, the unit of power, is named after him.*
+> Railways standardised time
+
+story 4 | Trains forced Britain onto one clock
+- Before railways, towns kept local time: Bristol ran about 10 minutes behind London.
+- Railways adopted London time in 1840s timetables to avoid confusion and crashes.
+- *Legal standard time for Great Britain came in 1880.*
+> The Luddites weren't against technology
+
+myth 3 F | The Luddites hated technology itself.
+= They were skilled textile workers protesting machines used to cut wages and break labour agreements.
+= Their target was how the machines were used, not progress as such.
+> Life expectancy at birth was low partly due to infant deaths
+
+explain 4 | Low average life expectancy didn't mean everyone died at 40
+- In many historical societies, very high infant and child mortality pulled the average down.
+- Adults who survived childhood often lived into their 60s or beyond.
+- *Averages can hide very different distributions.*
+> Next: the World Wars
+
+## hi-ww1 | The First World War | history | 0 | - | hi-ind
+story 4 | A wrong turn started the war
+- 28 June 1914: Archduke Franz Ferdinand's driver took a wrong turn in Sarajevo and stalled the car.
+- Gavrilo Princip, a member of a group that had failed to kill the Archduke that morning, happened to be nearby.
+- *He fired two shots. A month later, Europe was at war.*
+> Christmas 1914: an unofficial truce
+
+story 4 | The Christmas truce of 1914
+- On parts of the Western Front, British and German soldiers stopped fighting, sang carols and met in no man's land.
+- Some swapped cigarettes and souvenirs; there are accounts of football kickabouts.
+- *Commanders made sure it didn't happen again.*
+> Tanks were codenamed water carriers
+
+quiz 3 | Why were tanks called "tanks"?
+* As a secrecy cover: workers were told they were water tanks
+o The inventor's name was Tank
+o They carried fuel tanks
+o From a French word
+= Early prototypes were described as water carriers for Mesopotamia. "Tank" stuck.
+> Next: the Second World War
+
+## hi-ww2 | The Second World War | history | 0 | - | hi-ww1
+story 5 | Bletchley Park read Enigma
+- Polish mathematicians first broke Enigma in the 1930s and shared their work with Britain in 1939.
+- At Bletchley Park, Turing and others built electromechanical "bombes" to find daily settings.
+- *Historians estimate the intelligence shortened the war, possibly by around two years.*
+> Colossus was the first programmable electronic digital computer
+
+story 4 | Colossus was kept secret for 30 years
+- Built by Tommy Flowers in 1943–44 to break German teleprinter codes (Lorenz, not Enigma).
+- Most units were dismantled after the war; its existence wasn't publicly revealed until the 1970s.
+- *ENIAC often gets called the first computer because Colossus was secret.*
+> Operation Mincemeat fooled Hitler with a corpse
+
+story 5 | Operation Mincemeat
+- 1943: British intelligence dressed a dead man as a fictional officer, "Major William Martin", with fake invasion plans.
+- His body washed up in Spain. The documents reached German intelligence.
+- *Germany reinforced Greece and Sardinia; the Allies invaded Sicily.*
+> D-Day weather nearly changed history
+
+explain 4 | D-Day depended on a weather forecast
+- Eisenhower delayed the invasion by a day because of storms.
+- Group Captain James Stagg's team predicted a short break in the weather for 6 June 1944.
+- *German forecasters, lacking Atlantic weather data, expected the storms to continue.*
+> Next: the Cold War
+
+## hi-cold | Cold War and space race | history | 0 | - | hi-ww2
+story 4 | Sputnik's beep shocked America
+- 4 October 1957: the USSR launched Sputnik 1, an 84 kg sphere that beeped on radio.
+- Anyone with a shortwave radio could hear it pass over.
+- *NASA was founded the next year.*
+> The world came closest to nuclear war in 1962
+
+story 5 | Vasili Arkhipov may have prevented nuclear war
+- During the Cuban Missile Crisis, a Soviet submarine was being forced to surface by US depth charges.
+- Its captain wanted to launch a nuclear torpedo. Launch needed agreement of three senior officers.
+- *Arkhipov refused.* The submarine surfaced.
+> Apollo 11's computer had less memory than a calculator
+
+real 4 | Apollo's guidance computer
+- It had about 4 KB of erasable memory and 72 KB of read-only "core rope" memory, woven by hand.
+- During landing it threw "1202" alarms from overload; software designed by Margaret Hamilton's team kept it running.
+- *Armstrong landed with well under a minute of hover fuel to spare.*
+> The Berlin Wall fell by accident
+
+story 4 | The Berlin Wall opened because of a press conference mistake
+- 9 November 1989: official Günter Schabowski announced new travel rules, unprepared.
+- Asked when they took effect, he said "immediately, without delay".
+- *Crowds gathered at the checkpoints that night; overwhelmed guards opened the gates.*
+> Next: history of mathematics
+
+## hi-math | History of mathematics | history | 0 | - | hi-cold
+story 4 | Zero arrived late in Europe
+- Indian mathematicians treated zero as a number by the 600s (Brahmagupta gave rules for it in 628).
+- Fibonacci's 1202 book promoted Hindu-Arabic numerals in Europe.
+- *Some Italian cities banned them in official records at first, fearing fraud.*
+> Negative numbers were "absurd" for centuries
+
+story 4 | Fermat's last theorem took 358 years
+- Around 1637, Fermat scribbled in a margin that xⁿ + yⁿ = zⁿ has no whole-number solutions for n > 2, and that the margin was too small for his proof.
+- Andrew Wiles proved it in 1994, using mathematics Fermat couldn't have had.
+- *Wiles worked in near-secrecy for about seven years.*
+> Euler was the most productive mathematician ever
+
+story 4 | Euler kept working after going blind
+- Leonhard Euler lost most of his sight but dictated research to assistants.
+- His collected works run to over 80 volumes. About half his output came in the last 17 years of his life.
+- *He worked out the orbital calculations in his head.*
+> Ramanujan
+
+story 5 | Ramanujan's letter to Hardy
+- 1913: a clerk in Madras sent G. H. Hardy pages of extraordinary formulas without proofs.
+- Hardy said they "must be true, because, if they were not true, no one would have had the imagination to invent them".
+- *Ramanujan came to Cambridge, became a Fellow of the Royal Society, and died at 32.*
+> Next: the history of physics
+
+## hi-phys | History of physics | history | 0 | - | hi-math
+story 4 | Marie Curie won Nobel Prizes in two sciences
+- Physics (1903, shared) for radioactivity and Chemistry (1911) for discovering polonium and radium.
+- Her notebooks are still radioactive and kept in lead-lined boxes.
+- *She remains the only person to win Nobels in two different sciences.*
+> The Solvay conference of 1927
+
+story 4 | 17 of 29 attendees were or became Nobel laureates
+- The 1927 Solvay Conference on electrons and photons brought together Einstein, Bohr, Curie, Heisenberg, Schrödinger, Dirac and more.
+- Einstein and Bohr argued over quantum mechanics at breakfast and dinner.
+- *Einstein: "God does not play dice." Bohr: stop telling God what to do.*
+> The Manhattan Project
+
+story 4 | The Manhattan Project employed over 100,000 people
+- Most workers had no idea what they were building.
+- Trinity, the first test, was on 16 July 1945 in New Mexico.
+- Oppenheimer later recalled a line from the Bhagavad Gita: "Now I am become Death, the destroyer of worlds."
+> Next: strange history
+
+## hi-odd | Strange but true | history | 0 | - | hi-phys
+story 4 | The Great Emu War
+- 1932: Australia sent soldiers with machine guns to cull emus destroying crops in Western Australia.
+- The emus scattered, dodged and survived in large numbers.
+- *The military withdrew. Newspapers declared the emus the winners.*
+> The shortest war lasted under an hour
+
+quiz 3 | The Anglo-Zanzibar War of 1896 lasted roughly how long?
+* About 40 minutes
+o About 3 days
+o About a week
+o About 6 hours
+= Often called the shortest war in recorded history, it ended with Zanzibar's surrender after a short bombardment.
+> Napoleon was attacked by rabbits
+
+story 3 | Napoleon was ambushed by rabbits
+- According to a popular account, after a 1807 treaty a rabbit hunt was arranged for Napoleon.
+- The rabbits, reportedly farm-raised and expecting food, swarmed toward the hunting party instead of fleeing.
+- *Napoleon is said to have retreated to his carriage.*
+> Ketchup was sold as medicine
+
+story 3 | Ketchup pills
+- In the 1830s, tomato extracts were sold in America as cures for indigestion and other ailments.
+- Dr John Cook Bennett promoted tomatoes as medicine; tomato pills became a fad.
+- *The fad collapsed amid fraudulent imitations.*
+> History track complete

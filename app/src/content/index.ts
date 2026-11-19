@@ -2,6 +2,10 @@ import type { Card, Chain, Course, CourseId } from './types';
 import * as M from './maths';
 import * as P from './physics';
 import * as B from './breadth';
+import generatedJson from './generated.json';
+
+/** Hand-written deck compiled from content-src/*.cards by scripts/compile-cards.ts. */
+const generated = generatedJson as unknown as { chains: Chain[]; cards: Card[] };
 
 type Built = { meta: Chain; cards: Card[] };
 
@@ -27,12 +31,13 @@ export const COURSES: Course[] = [
   { id: 'phys3', name: 'Physics 3: Modern', short: 'PHYS 3', subject: 'physics' },
 ];
 
-export const CHAINS: Record<string, Chain> = Object.fromEntries(BUILT.map(b => [b.meta.id, b.meta]));
+export const CHAINS: Record<string, Chain> = Object.fromEntries([...BUILT.map(b => b.meta), ...generated.chains].map(c => [c.id, c]));
 
 export const CARDS: Card[] = [
   ...BUILT.flatMap(b => b.cards),
   ...M.mathsMemes, ...P.physicsMemes, ...B.memes,
   ...M.mathsDepth, ...B.breadthDepth,
+  ...generated.cards,
 ];
 
 export const CARD_BY_ID: Record<string, Card> = Object.fromEntries(CARDS.map(c => [c.id, c]));

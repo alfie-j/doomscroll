@@ -1,0 +1,285 @@
+## p2-bf | Magnetic fields and forces | physics | 1 | phys2 | p2-rc
+explain 2 | The Lorentz force
+- $ F = q(E + v × B)
+- The magnetic part is always perpendicular to the velocity, so it does no work.
+- *Magnetic fields bend paths but never change speed.*
+? Why does a magnetic field do no work on a moving charge? :: The force qv×B is always perpendicular to the velocity
+> So charges in a uniform B field go in circles
+
+quiz 3 | Radius of a charged particle's circle in a magnetic field?
+* r = mv/(qB)
+o r = qB/(mv)
+o r = mvqB
+o r = v/B
+= qvB = mv²/r.
+= Heavier ions curve less: that's how a mass spectrometer sorts them.
+> The cyclotron frequency doesn't depend on speed
+
+explain 4 | The cyclotron trick
+- Period of the circle: 2πm/(qB). Independent of speed.
+- So a fixed-frequency alternating voltage can kick particles every half turn as they spiral outward.
+- *Ernest Lawrence's first cyclotron (1931) fitted in his hand.*
+> Earth's field traps particles too
+
+real 4 | Auroras are particles spiralling along Earth's field lines
+- Charged particles from the Sun spiral around magnetic field lines toward the poles.
+- They hit oxygen and nitrogen high in the atmosphere, which glow green and red.
+- *The Van Allen belts are the trapped particles that bounce between the poles.*
+> Currents feel magnetic forces too
+
+quiz 3 | Force on a 2 m wire carrying 3 A at right angles to a 0.5 T field?
+* 3 N
+o 1.5 N
+o 6 N
+o 12 N
+= F = BIL = 0.5 × 3 × 2.
+= Every electric motor is this force turning a coil.
+> Next: where magnetic fields come from
+
+## p2-bs | Biot–Savart and Ampère | physics | 2 | phys2 | p2-bf
+story 4 | Ørsted saw a compass twitch during a lecture, 1820
+- Hans Christian Ørsted noticed a compass needle move when he switched on a current nearby.
+- Within weeks, Ampère and Biot and Savart had worked out the laws.
+- *Electricity and magnetism were connected.*
+> Field around a straight wire
+
+quiz 3 | Magnetic field at distance r from a long straight wire carrying current I?
+* μ₀I/(2πr)
+o μ₀I/(4πr²)
+o μ₀I/r
+o μ₀Ir
+= Ampère's law: B × 2πr = μ₀I.
+= Circles around the wire, by the right-hand grip rule.
+> Two parallel wires attract
+
+explain 3 | Parallel currents attract
+- Each wire's field pushes on the other's current.
+- Same direction: attract. Opposite directions: repel.
+- The ampere was defined from this force until 2019.
+> Solenoids make uniform fields
+
+quiz 3 | Field inside a long solenoid with n turns per metre carrying I?
+* μ₀nI
+o μ₀I/(2πr)
+o μ₀nI/2
+o Zero
+= Ampère's law on a rectangle half inside: B L = μ₀ n L I.
+= Field outside is nearly zero.
+> No magnetic monopoles: field lines always close
+
+myth 3 F | Cutting a bar magnet in half gives a separate north pole and south pole.
+= You get two smaller magnets, each with both poles.
+= ∇·B = 0: no isolated magnetic charges have ever been found.
+> Next: induction
+
+## p2-ind | Electromagnetic induction | physics | 2 | phys2 | p2-bs
+quiz 3 | A 100-turn coil's flux changes by 0.02 Wb in 0.1 s. Induced EMF?
+* 20 V
+o 2 V
+o 0.2 V
+o 200 V
+= ε = N ΔΦ/Δt = 100 × 0.02 / 0.1.
+> Lenz's sign is energy conservation
+
+explain 3 | Lenz's law is energy conservation
+- If induced currents *helped* the change, a nudge would create a runaway current from nothing.
+- So they always oppose it.
+- *Push a magnet into a coil and you feel resistance: that's the work becoming electrical energy.*
+> Eddy currents brake trains
+
+real 3 | Induction hobs heat the pan, not the hob
+- A coil under the glass makes a rapidly changing magnetic field.
+- It induces eddy currents in the pan's metal base, which heat it directly.
+- *Aluminium and glass pans don't work well: the base needs to be magnetic and resistive enough.*
+> Transformers use mutual induction
+
+quiz 3 | A transformer has 100 primary turns and 2,000 secondary turns. 230 V in gives…
+* 4,600 V out
+o 11.5 V out
+o 230 V out
+o 2,300 V out
+= V_s/V_p = N_s/N_p = 20.
+= Current steps down by the same factor: power is (ideally) conserved.
+> Next: AC circuits
+
+## p2-ac | AC circuits | physics | 2 | phys2 | p2-ind
+explain 3 | RMS: the honest average of AC
+- Mains voltage is a sine wave. Its average is zero, but heating depends on V².
+- RMS = peak/√2. UK mains is 230 V RMS, about 325 V peak.
+- *A 230 V AC heater runs exactly like a 230 V DC one.*
+> Capacitors and inductors have frequency-dependent resistance
+
+explain 4 | Reactance
+- Capacitor: X_C = 1/(ωC). Blocks low frequencies, passes high ones.
+- Inductor: X_L = ωL. Blocks high frequencies, passes low ones.
+- *Speaker crossovers send bass to the woofer and treble to the tweeter this way.*
+> Phasors turn AC into complex algebra
+
+explain 4 | Impedance is complex resistance
+- Z_R = R, Z_L = iωL, Z_C = 1/(iωC).
+- Then V = IZ works for AC, with Z combining like resistances.
+- *The imaginary part is the 90° phase shift.* Electrical engineers write j instead of i.
+> RLC resonance
+
+quiz 4 | A series RLC circuit draws maximum current at what frequency?
+* ω = 1/√(LC)
+o ω = R/L
+o ω = 1/(RC)
+o ω = 0
+= At resonance X_L = X_C, they cancel, and Z = R is minimal.
+> Next: Maxwell's equations in action
+
+## p2-emw | EM waves | physics | 2 | phys2 | p2-max
+explain 3 | Light is a transverse EM wave
+- E and B oscillate perpendicular to each other and to the direction of travel.
+- E/B = c in vacuum.
+- Radio, microwave, infrared, visible, UV, X-ray, gamma: same thing, different wavelengths.
+> Hertz proved the waves exist in 1887
+
+story 4 | Hertz said his discovery had no use
+- 1887: Heinrich Hertz generated and detected radio waves with spark gaps.
+- Asked about applications, he reportedly said it was of no use whatsoever.
+- *By 1899, Marconi was sending wireless signals across the Channel.*
+> Visible light is a tiny sliver of the spectrum
+
+quiz 2 | Roughly what wavelength range can human eyes see?
+* About 380–750 nm
+o About 1–10 μm
+o About 10–100 nm
+o About 1 mm–1 m
+= Violet ~380 nm to red ~750 nm.
+= Less than one octave, out of a spectrum spanning over 20 orders of magnitude.
+> Light carries momentum, so it can push
+
+real 4 | Solar sails really work
+- Light has momentum p = E/c. Reflecting it pushes the sail.
+- Japan's IKAROS probe (2010) sailed using sunlight alone.
+- *The push is tiny, but it never stops.*
+> Next: reflection and refraction from Maxwell
+
+## p2-opt | Optics from electromagnetism | physics | 2 | phys2 | p2-emw
+explain 2 | Refraction: light slows down in materials
+- Speed in a medium: v = c/n. Glass n ≈ 1.5, water n ≈ 1.33.
+- Snell's law: n₁ sin θ₁ = n₂ sin θ₂.
+- *Light bends toward the normal entering a denser medium.*
+> Total internal reflection traps light
+
+quiz 3 | Critical angle for light leaving glass (n = 1.5) into air?
+* About 42°
+o About 30°
+o About 60°
+o About 90°
+= sin θ_c = 1/1.5 ≈ 0.667.
+= Beyond 42° the light can't escape: it reflects completely.
+> The internet runs on total internal reflection
+
+real 4 | Fibre optics are trapped light
+- A glass core with a slightly lower-index cladding keeps light bouncing inside.
+- Modern fibre loses only about 0.2 dB per km: a signal travels around 15 km before halving.
+- *Undersea cables carry the vast majority of intercontinental internet traffic.*
+> Polarisation is the direction E oscillates
+
+explain 3 | Polarised sunglasses
+- Glare from water and roads is mostly horizontally polarised (Brewster's angle effect).
+- Polarising lenses block horizontal E-field oscillations.
+- Tilt your head with polarised glasses and phone screens can go dark: they're polarised too.
+> Next: solving for fields exactly
+
+## p2-lap | Laplace's equation and images | physics | 3 | phys2 | p2-opt
+explain 4 | In charge-free regions, ∇²V = 0
+- Laplace's equation: the potential is the average of its surroundings.
+- So V has no local maxima or minima in empty space.
+- *Earnshaw's theorem: you can't trap a charge with static electric fields alone.*
+> That's why ion traps need oscillating fields
+
+story 4 | Earnshaw's theorem and the Paul trap
+- Static fields can't hold a charge stably: there's always an escape direction.
+- Wolfgang Paul used a rapidly oscillating field that averages to a trap. Nobel Prize 1989.
+- *Ion traps now hold single atoms for quantum computers.*
+> Image charges solve conductor problems by trickery
+
+explain 4 | Method of images
+- A charge q near a grounded conducting plane.
+- Replace the plane with a fake charge −q at the mirror position. The potential on the plane is zero, as required.
+- *Uniqueness theorem: if it satisfies the boundary conditions, it's the answer.*
+? Why is the method of images valid? :: The uniqueness theorem: a solution matching the boundary conditions is the only solution
+> Separation of variables handles boxes and spheres
+
+explain 5 | Separation of variables
+- Guess V(x, y) = X(x)Y(y). Laplace's equation splits into two ODEs.
+- Boundary conditions pick out sines, sinhs, or Legendre polynomials on spheres.
+- *Sum the pieces with Fourier coefficients to match any boundary.*
+> Next: multipoles
+
+## p2-mp | Multipole expansion | physics | 3 | phys2 | p2-lap
+explain 4 | Multipole expansion: far away, any charge looks simple
+- V = monopole (1/r) + dipole (1/r²) + quadrupole (1/r³) + …
+- Net charge sets the monopole. Separation of charge sets the dipole.
+- *Far enough away, only the first non-zero term matters.*
+> Water's dipole explains half of chemistry
+
+real 4 | Water is a strong electric dipole
+- The O–H bonds pull electrons toward oxygen, and the bent shape doesn't cancel the dipoles.
+- That makes water dissolve salts, form hydrogen bonds, and absorb microwaves.
+- *Microwave ovens jiggle water molecules' dipoles back and forth.*
+> Next: fields inside materials
+
+## p2-mat | Fields in matter | physics | 3 | phys2 | p2-mp
+explain 4 | D and H: fields that track free charges and currents
+- Materials polarise (P) and magnetise (M).
+- D = ε₀E + P and H = B/μ₀ − M separate free sources from bound ones.
+- ∇·D = ρ_free, ∇×H = J_free + ∂D/∂t.
+> Ferromagnets remember
+
+explain 4 | Ferromagnetism and hysteresis
+- Iron's atomic magnetic moments align in domains.
+- Apply a field and domains grow; remove it and some alignment stays.
+- *That memory stored data on hard drives for decades.*
+> Diamagnetism can levitate a frog
+
+story 5 | The levitating frog, 2000 Ig Nobel Prize
+- Water (and so frogs) is weakly diamagnetic: repelled by magnetic fields.
+- In a 16 T magnet, Andre Geim levitated a live frog.
+- *Ten years later he won a real Nobel Prize, for graphene.*
+> Next: radiation from moving charges
+
+## p2-rad | Radiation | physics | 4 | phys2 | p2-mat
+explain 5 | Only accelerating charges radiate
+- A charge at constant velocity just carries its field along.
+- Accelerate it and a kink in the field races outward at c: radiation.
+- Larmor: power P = q²a²/(6πε₀c³).
+> This doomed the classical atom
+
+story 4 | The classical atom should collapse in about 10⁻¹¹ s
+- An electron orbiting a nucleus is accelerating, so it should radiate and spiral in.
+- Classical physics predicts collapse in tens of picoseconds.
+- *Atoms exist. Quantum mechanics was needed to explain why.*
+> Synchrotron light is radiation used on purpose
+
+real 4 | Synchrotrons: X-ray factories
+- Electrons forced round a ring at nearly c radiate intense, narrow beams of X-rays.
+- Biologists use them to work out protein structures.
+- Diamond Light Source in Oxfordshire is one: a ring about half a kilometre round.
+> Next: electromagnetism and relativity
+
+## p2-rel | Relativistic electrodynamics | physics | 4 | phys2 | p2-adv
+explain 5 | Maxwell's equations were already relativistic
+- Lorentz found the transformations that leave them unchanged before Einstein explained why.
+- Einstein's 1905 paper was titled *On the Electrodynamics of Moving Bodies*.
+- *Special relativity came out of electromagnetism.*
+> E and B mix under boosts
+
+quiz 5 | Which quantity is the same for every inertial observer?
+* E² − c²B²
+o E alone
+o B alone
+o E + B
+= E and B change with the frame, but E² − c²B² and E·B are Lorentz invariants.
+= A pure E field in one frame can't become a pure B field in another.
+> The four-potential unifies φ and A
+
+explain 5 | Four-vectors package it neatly
+- A^μ = (φ/c, A) and J^μ = (cρ, J).
+- Lorenz gauge: ∂_μA^μ = 0. Then each component of A^μ obeys a wave equation sourced by J^μ.
+- *Charge conservation is ∂_μJ^μ = 0.*
+> Physics 2 done. Physics 3: waves, heat and the quantum

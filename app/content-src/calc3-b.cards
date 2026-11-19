@@ -1,0 +1,290 @@
+## c3-dbl | Double integrals | maths | 2 | calc3 | c3-lag
+explain 3 | Double integrals add up volume under a surface
+- ∬_R f(x, y) dA: chop the region into tiny squares, multiply each by the height f, add.
+- On a rectangle: integrate in x, then in y (or the other way round).
+- f = 1 gives the area of R.
+> Non-rectangular regions need variable limits
+
+quiz 3 | ∫₀¹ ∫₀ˣ y dy dx = ?
+* 1/6
+o 1/2
+o 1/3
+o 1
+= Inner: ∫₀ˣ y dy = x²/2. Outer: ∫₀¹ x²/2 dx = 1/6.
+> Switching the order can rescue an impossible integral
+
+quiz 4 | ∫₀¹ ∫ᵧ¹ e^(x²) dx dy: what's the trick?
+* Swap the order: it becomes ∫₀¹ x e^(x²) dx
+o Use integration by parts
+o It can't be done exactly
+o Use polar coordinates
+= Region: 0 ≤ y ≤ x ≤ 1. Swapped: ∫₀¹ ∫₀ˣ e^(x²) dy dx = ∫₀¹ x e^(x²) dx.
+= = (e − 1)/2. The impossible inner integral never has to be done.
+> Centres of mass are double integrals
+
+explain 3 | Centre of mass
+- x̄ = (1/M)∬ x ρ dA, ȳ = (1/M)∬ y ρ dA, with M = ∬ ρ dA.
+- Uniform semicircle of radius R: ȳ = 4R/(3π).
+- *Balance a shape on a pin at (x̄, ȳ).*
+> Pappus gets volumes from centroids
+
+story 4 | Pappus's theorem: volume = area × distance travelled by the centroid
+- Spin a shape around an axis. Volume = (area) × (2π × distance of its centroid from the axis).
+- Torus: circle of radius r, centre R from the axis. V = πr² · 2πR = 2π²Rr².
+- Pappus of Alexandria knew this around 300 AD.
+> Next: double integrals in polar coordinates
+
+## c3-pol2 | Polar double integrals | maths | 2 | calc3 | c3-dbl
+quiz 3 | ∬ over the unit disc of (x² + y²) dA = ?
+* π/2
+o π
+o 2π
+o π/4
+= In polar: ∫₀^2π ∫₀¹ r² · r dr dθ = 2π · 1/4 = π/2.
+> Don't forget the r
+
+myth 3 F | In polar coordinates, dA = dr dθ.
+= dA = r dr dθ. The extra r is the Jacobian.
+= Far from the origin, the same dθ sweeps a wider arc.
+> The Gaussian integral is the classic polar trick
+
+quiz 4 | Volume under z = e^(−(x² + y²)) over the whole plane?
+* π
+o √π
+o 2π
+o 1
+= ∫₀^2π ∫₀^∞ e^(−r²) r dr dθ = 2π · 1/2 = π.
+= Its square root is the Gaussian integral √π.
+> Next: three dimensions
+
+## c3-tri | Triple integrals | maths | 2 | calc3 | c3-pol2
+explain 3 | Triple integrals: mass of a solid
+- ∭ ρ(x, y, z) dV: density times tiny volume, added up.
+- The hard part is the limits: describe the solid as z between two surfaces, over a region in the plane.
+> Practice
+
+quiz 3 | Volume of the tetrahedron x, y, z ≥ 0, x + y + z ≤ 1?
+* 1/6
+o 1/3
+o 1/2
+o 1
+= ∫₀¹ ∫₀^(1−x) (1 − x − y) dy dx = 1/6.
+= In n dimensions the same corner simplex has volume 1/n!.
+> Moments of inertia are triple integrals
+
+explain 4 | Moment of inertia
+- I = ∭ r² ρ dV, where r is distance from the axis.
+- Solid sphere: (2/5)MR². Hollow sphere: (2/3)MR².
+- *Spin a raw egg and a hard-boiled egg: the cooked one spins smoothly; the raw one's liquid inside wobbles and drags.*
+? Moment of inertia of a solid sphere about a diameter? :: (2/5)MR²
+> Next: cylindrical and spherical coordinates
+
+## c3-cs | Cylindrical and spherical coordinates | maths | 2 | calc3 | c3-tri
+explain 3 | Cylindrical coordinates: polar plus height
+- (r, θ, z), with dV = r dr dθ dz.
+- Perfect for cylinders, cones and anything with an axis.
+> Spherical coordinates for balls
+
+explain 3 | Spherical coordinates
+- (ρ, θ, φ): distance from origin, polar angle from the z-axis, azimuth.
+- $ dV = ρ² sin θ dρ dθ dφ
+- Warning: maths and physics books swap the names θ and φ. Check before trusting a formula.
+> Derive the sphere's volume in one line
+
+quiz 3 | ∫₀^2π ∫₀^π ∫₀^R ρ² sin θ dρ dθ dφ = ?
+* (4/3)πR³
+o 4πR²
+o πR³
+o 2πR³/3
+= R³/3 · 2 · 2π = (4/3)πR³.
+> Ice cream cones are a classic exam question
+
+quiz 4 | Volume inside the sphere ρ = 2 and the cone θ = π/3 (ice cream cone)?
+* (8π/3)
+o 8π
+o 16π/3
+o 4π/3
+= ∫₀^2π ∫₀^(π/3) ∫₀² ρ² sin θ dρ dθ dφ = 2π · (1 − cos(π/3)) · 8/3.
+= = 2π · 1/2 · 8/3 = 8π/3.
+> Next: general change of variables
+
+## c3-jac | Change of variables | maths | 3 | calc3 | c3-cs
+explain 4 | The Jacobian generalises substitution
+- Map (u, v) → (x, y). A small rectangle du dv becomes a parallelogram.
+- Its area is |det J| du dv, where J is the matrix of partial derivatives.
+- Polar r, spherical ρ² sin θ: special cases of |det J|.
+? What does |det J| represent in a change of variables? :: The local area (or volume) scaling factor of the map
+> Ellipses become circles
+
+quiz 4 | Area of the ellipse x²/a² + y²/b² ≤ 1, using x = au, y = bv?
+* πab
+o πa²b²
+o 2πab
+o π(a + b)
+= The map turns the unit disc into the ellipse. Jacobian = ab.
+= Area = ab × π.
+> Probability uses Jacobians when transforming random variables
+
+real 4 | Changing variables in probability
+- If Y = g(X), the density transforms by the Jacobian: f_Y(y) = f_X(x)|dx/dy|.
+- That's how you get the Box–Muller method: two uniform random numbers → two normal ones, via polar coordinates.
+- *Every simulation that needs normal random numbers relies on it.*
+> Next: vector fields
+
+## c3-vf | Vector fields and line integrals | maths | 2 | calc3 | c3-jac
+explain 3 | A vector field puts an arrow at every point
+- Wind velocity, gravitational force, electric field.
+- F(x, y) = (−y, x) swirls anticlockwise around the origin.
+> A line integral adds up how much the field pushes along a path
+
+explain 3 | Work is a line integral
+- $ W = ∫_C F · dr
+- Only the component of F along the path does work.
+- Parametrise: ∫ F(r(t)) · r′(t) dt.
+? Work done by force F along path C? :: ∫_C F · dr
+> Practice
+
+quiz 4 | F = (−y, x). Work around the unit circle anticlockwise?
+* 2π
+o 0
+o π
+o −2π
+= r(t) = (cos t, sin t). F · r′ = sin²t + cos²t = 1. Integrate over 2π.
+> Some fields don't care about the path
+
+## c3-cons | Conservative fields | maths | 2 | calc3 | c3-vf
+explain 3 | Conservative fields: path doesn't matter
+- If F = ∇φ, the work from A to B is just φ(B) − φ(A).
+- Around any closed loop the work is zero.
+- Gravity is conservative: climbing a hill costs the same energy by any route.
+? Work by a conservative field F = ∇φ from A to B? :: φ(B) − φ(A)
+> Test: curl F = 0 on a simply connected region
+
+quiz 3 | Is F = (2xy, x² + 3y²) conservative?
+* Yes, φ = x²y + y³
+o No
+o Only in the first quadrant
+= ∂P/∂y = 2x = ∂Q/∂x. Integrate to find φ = x²y + y³.
+> A field can have zero curl and still not be conservative
+
+story 5 | The vortex field that breaks the rule
+- F = (−y, x)/(x² + y²) has zero curl everywhere it's defined.
+- But its work around the unit circle is 2π, not 0.
+- The catch: it's undefined at the origin, *a hole in the domain*. Topology beats calculus.
+> That hole is detected by de Rham cohomology
+
+## c3-surf | Surface integrals and flux | maths | 3 | calc3 | c3-cons
+explain 3 | Flux: how much flows through a surface
+- $ Φ = ∬_S F · n dS
+- Only the component of F through the surface (along n) counts.
+- Water through a net, electric field through a closed surface.
+> Parametrise surfaces like curves, with two parameters
+
+explain 4 | Surface area from a parametrisation
+- r(u, v) traces a surface. r_u × r_v is normal, and its length gives the area scale.
+- $ dS = |r_u × r_v| du dv
+- For a sphere of radius R: dS = R² sin θ dθ dφ, total 4πR².
+> Practice
+
+quiz 3 | Flux of F = (0, 0, 1) up through the unit disc in the plane z = 0?
+* π
+o 1
+o 2π
+o 0
+= n = (0, 0, 1), so F · n = 1. Area of the disc is π.
+> Next: Stokes' theorem
+
+## c3-stokes | Stokes' theorem | maths | 3 | calc3 | c3-surf
+explain 4 | Stokes' theorem
+- $ ∮_C F · dr = ∬_S (∇ × F) · n dS
+- Circulation round the edge = total curl through any surface with that edge.
+- Any surface: a flat disc or a butterfly net on the same hoop gives the same answer.
+? Stokes' theorem? :: ∮_C F·dr = ∬_S (∇×F)·n dS for any surface S bounded by C
+> Practice turns a hard line integral into an easy flux
+
+quiz 4 | F = (−y, x, 0). ∮ F · dr round the unit circle using Stokes?
+* 2π
+o π
+o 0
+o 4π
+= curl F = (0, 0, 2). Flux through the unit disc: 2 × π = 2π.
+= Same as the direct calculation.
+> Stokes' theorem gives Faraday's law
+
+real 4 | Electric generators are Stokes' theorem
+- Faraday: ∇ × E = −∂B/∂t.
+- Integrate over a surface and apply Stokes: the EMF around a loop equals minus the rate of change of magnetic flux through it.
+- *Differential form ↔ integral form is always Stokes or Gauss.*
+> Next: the divergence theorem in practice
+
+## c3-div | Divergence theorem practice | maths | 3 | calc3 | c3-stokes
+quiz 4 | Flux of F = (x, y, z) out of the sphere of radius 2?
+* 32π
+o 16π
+o 8π
+o 4π
+= div F = 3. Volume (4/3)π(8). 3 × 32π/3 = 32π.
+> Inverse square fields are special
+
+explain 4 | Why gravity and electricity are inverse square
+- F = r/|r|³ has zero divergence everywhere except the origin.
+- Its flux through any closed surface around the origin is 4π, whatever the shape.
+- *Inverse square is exactly what makes flux independent of distance.* In 3D, surfaces grow like r².
+> In 4 spatial dimensions, gravity would be inverse cube
+
+explain 3 | Conservation laws come from the divergence theorem
+- Rate of change of stuff inside = −(flux out of the boundary) + sources.
+- Shrink the region to a point: ∂ρ/∂t + ∇ · J = 0.
+- *Charge, mass, probability: every conservation law is this equation.*
+> Next: the language that unifies everything
+
+## c3-forms | Differential forms | maths | 4 | calc3 | c3-div
+explain 4 | Differential forms: what you integrate
+- 0-forms: functions. 1-forms: things like P dx + Q dy, integrated along curves.
+- 2-forms: things like f dx∧dy, integrated over surfaces.
+- dx∧dy = −dy∧dx. That sign is orientation, and it's why the Jacobian has a determinant.
+> The exterior derivative replaces grad, curl and div
+
+explain 4 | One d to rule them all
+- d on 0-forms is the gradient. On 1-forms in 3D, it's the curl. On 2-forms, the divergence.
+- d(dω) = 0 always.
+- Stokes for every dimension: ∫_∂M ω = ∫_M dω.
+? What does d² = 0 encode in vector calculus? :: curl(grad f) = 0 and div(curl F) = 0
+> Maxwell's equations become two lines
+
+real 5 | Maxwell's equations in forms: dF = 0, d⋆F = J
+- F is the electromagnetic 2-form, combining E and B.
+- dF = 0 contains Faraday's law and no magnetic monopoles.
+- d⋆F = J contains Gauss's law and Ampère–Maxwell. *Four equations, two lines, any coordinates.*
+> Closed forms that aren't exact reveal holes
+
+explain 5 | de Rham cohomology counts holes with calculus
+- Closed: dω = 0. Exact: ω = dη. Exact ⇒ closed always.
+- Closed but not exact signals a hole. The vortex field dθ on the punctured plane is the example.
+- *Calculus detects topology.* The plane minus a point has one independent such form.
+> Next: tensors and manifolds
+
+## c3-mani | Manifolds and tensors | maths | 4 | calc3 | c3-forms
+explain 4 | A manifold looks flat up close
+- A sphere is 2D: small patches look like the plane, but globally it's curved.
+- Charts map patches to ℝⁿ. An atlas covers everything.
+- *You can't flatten the whole sphere without distortion.* That's why every world map lies.
+> Gauss proved curvature is intrinsic
+
+story 5 | Theorema Egregium: an ant can measure curvature
+- Gauss (1827): a surface's curvature can be computed from distances measured within the surface alone.
+- So a flat sheet can roll into a cylinder (zero curvature) but never into a sphere.
+- *It's why you fold a pizza slice: bending it one way stiffens it the other way.*
+> Tensors are how physics stays the same in every coordinate system
+
+explain 4 | Tensors: objects that transform predictably
+- A vector's components change with coordinates, but the arrow doesn't.
+- Tensors generalise this: matrices, stress, the metric, the curvature.
+- *Write physics as tensor equations and it holds in every coordinate system.* That's how general relativity is built.
+> The metric tensor measures lengths on curved spaces
+
+explain 4 | The metric tensor
+- $ ds² = g_ij dxⁱ dxʲ
+- Flat plane: ds² = dx² + dy². Sphere of radius R: ds² = R²dθ² + R² sin²θ dφ².
+- In general relativity, gravity *is* the metric of spacetime.
+> Calculus 3 done. On to the physics courses

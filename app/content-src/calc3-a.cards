@@ -1,0 +1,304 @@
+## c3-vecs | Vectors | maths | 1 | calc3 | -
+explain 2 | A vector is an arrow: size and direction
+- v = (3, 4) means 3 across, 4 up. Its length is √(3² + 4²) = 5.
+- Add vectors tip to tail. Scale them by stretching.
+- Unit vector: divide by the length. (3, 4)/5 = (0.6, 0.8).
+> The dot product measures how aligned two vectors are
+
+explain 3 | The dot product
+- $ a·b = a₁b₁ + a₂b₂ + a₃b₃ = |a||b|cos θ
+- Zero means perpendicular. Positive means pointing roughly the same way.
+- Work = force · displacement: only the aligned part of the force counts.
+? When is a·b = 0 for non-zero vectors? :: When they are perpendicular
+> Find an angle without drawing anything
+
+quiz 3 | Angle between (1, 0, 1) and (0, 1, 1)?
+* 60°
+o 45°
+o 90°
+o 30°
+= Dot product 1. Lengths √2 each. cos θ = 1/2.
+> The cross product makes a perpendicular vector
+
+explain 3 | The cross product (3D only)
+- a × b is perpendicular to both a and b. Direction by the right-hand rule.
+- Length |a||b|sin θ: the area of the parallelogram they span.
+- a × b = −(b × a). Order matters.
+? Magnitude of a × b? :: |a||b|sin θ, the area of the parallelogram spanned
+> Torque and magnetic force are both cross products
+
+quiz 3 | (1, 0, 0) × (0, 1, 0) = ?
+* (0, 0, 1)
+o (0, 0, −1)
+o (1, 1, 0)
+o 0
+= i × j = k. Right-hand rule.
+> Triple products give volumes
+
+explain 3 | The scalar triple product is a volume
+- a·(b × c) = volume of the parallelepiped spanned by a, b, c (with sign).
+- It equals the 3×3 determinant of the three vectors.
+- *Zero volume means the three vectors lie in one plane.*
+> Projections split a vector into useful pieces
+
+quiz 3 | Projection of (2, 3) onto (1, 0)?
+* (2, 0)
+o (0, 3)
+o (2, 3)
+o (1, 0)
+= proj = (a·b/|b|²)b = 2·(1, 0).
+= Shadows, components of forces, least squares: all projections.
+> Next: lines and planes in 3D
+
+## c3-lp | Lines and planes | maths | 1 | calc3 | c3-vecs
+explain 2 | Lines in 3D: a point plus a direction
+- r(t) = r₀ + t·v. Every value of t gives a point on the line.
+- In 3D two lines can be parallel, meet, or *skew*: never meet but not parallel.
+> A plane is defined by its normal
+
+explain 3 | A plane is everything perpendicular to a normal
+- Normal n = (a, b, c) through point P₀: n·(r − r₀) = 0.
+- That expands to ax + by + cz = d.
+- The coefficients of x, y, z *are* the normal vector.
+? Normal vector of the plane 2x − y + 3z = 7? :: (2, −1, 3)
+> Distance to a plane is a projection
+
+quiz 4 | Distance from the origin to the plane x + 2y + 2z = 6?
+* 2
+o 6
+o 3
+o 6/5
+= |d|/|n| = 6/√(1 + 4 + 4) = 6/3 = 2.
+> Two planes meet in a line found by a cross product
+
+quiz 3 | Direction of the line where x + y + z = 1 meets x − y = 0?
+* (1, 1, −2)
+o (1, −1, 0)
+o (1, 1, 1)
+o (0, 0, 1)
+= Cross the normals: (1, 1, 1) × (1, −1, 0) = (1, 1, −2).
+> Next: curves in space
+
+## c3-curve | Space curves | maths | 2 | calc3 | c3-lp
+explain 3 | Vector-valued functions describe paths
+- r(t) = (cos t, sin t, t) is a helix.
+- Velocity r′(t), speed |r′(t)|, acceleration r″(t).
+- Differentiate each component separately.
+> Curvature measures how sharply a path bends
+
+explain 4 | Curvature
+- κ = |T′(s)|: how fast the unit tangent turns per unit length.
+- Formula: κ = |r′ × r″| / |r′|³.
+- A circle of radius R has κ = 1/R. A straight line has κ = 0.
+? Curvature of a circle of radius R? :: 1/R
+> Road designers use curvature to stop cars flying off
+
+real 4 | Motorway on-ramps are clothoids
+- A straight road joined directly to a circular curve makes curvature jump: you'd have to yank the wheel.
+- Engineers use a clothoid, whose curvature grows linearly with distance.
+- *Roller coaster loops use similar shapes so the g-force builds smoothly.*
+> Acceleration splits into tangential and normal parts
+
+explain 4 | Tangential and normal acceleration
+- $ a = (d|v|/dt) T + κ|v|² N
+- The first term speeds you up. The second pulls you sideways.
+- At constant speed round a bend, all acceleration is sideways: κv².
+> Next: functions of two variables
+
+## c3-multi | Functions of several variables | maths | 2 | calc3 | c3-curve
+explain 2 | z = f(x, y) is a landscape
+- Contour lines (level curves) are where f has a constant value.
+- Close contours: steep. Far apart: flat.
+- Weather maps, topographic maps and heat maps are all level-curve plots.
+> Limits in 2D are harder than in 1D
+
+predict 4 | f(x, y) = xy/(x² + y²). Does it have a limit at (0, 0)?
+* No
+o Yes, 0
+o Yes, 1/2
+= Along y = 0 it's 0. Along y = x it's 1/2.
+= Different paths, different values: no limit.
+> In 2D you can approach a point along infinitely many paths
+
+story 4 | A function that fools every straight line
+- f(x, y) = x²y/(x⁴ + y²) → 0 along every straight line through the origin.
+- Along the parabola y = x² it equals 1/2.
+- *Checking straight lines isn't enough to prove a 2D limit.*
+> Polar coordinates often settle it
+
+quiz 4 | lim (x,y)→(0,0) of x³/(x² + y²) = ?
+* 0
+o 1
+o Doesn't exist
+o ∞
+= In polar: r³cos³θ/r² = r cos³θ → 0 regardless of θ.
+> Next: partial derivatives in practice
+
+## c3-pd | Partial derivatives workout | maths | 2 | calc3 | c3-part
+quiz 2 | f = x²y + sin y. ∂f/∂y = ?
+* x² + cos y
+o 2xy
+o 2xy + cos y
+o x² − cos y
+= Treat x as a constant and differentiate in y.
+> Mixed partials usually agree
+
+explain 3 | Clairaut: mixed partials commute
+- If the second partials are continuous, f_xy = f_yx.
+- So it doesn't matter whether you differentiate in x first or y first.
+- There are pathological counterexamples when continuity fails.
+> Physics equations are written in partial derivatives
+
+explain 4 | PDEs: the language of physics
+- Heat equation: u_t = α u_xx. Heat flows from hot spots to cold.
+- Wave equation: u_tt = c² u_xx. Disturbances travel at speed c.
+- Laplace's equation: u_xx + u_yy = 0. Steady states: potentials, soap films, temperature at equilibrium.
+> Check a solution of the wave equation
+
+quiz 4 | Which solves the wave equation u_tt = c²u_xx?
+* u = sin(x − ct)
+o u = sin(x)cos(x)
+o u = e^(x + t)
+o u = x² − t²
+= u_tt = −c² sin(x − ct), u_xx = −sin(x − ct). ✓
+= Any f(x − ct) works: a shape moving right at speed c.
+> d'Alembert's solution: f(x − ct) + g(x + ct)
+
+## c3-chain | Multivariable chain rule | maths | 2 | calc3 | c3-pd
+explain 3 | The chain rule with several paths
+- z = f(x, y), with x and y depending on t.
+- $ dz/dt = (∂f/∂x)(dx/dt) + (∂f/∂y)(dy/dt)
+- Add up every route from t to z.
+? Multivariable chain rule for z = f(x(t), y(t))? :: dz/dt = f_x·x′(t) + f_y·y′(t)
+> A tree diagram keeps the bookkeeping straight
+
+quiz 3 | T = x²y, with x = cos t, y = sin t. dT/dt at t = 0?
+* 1
+o 0
+o 2
+o −1
+= T_x = 2xy = 0, T_y = x² = 1. x′ = 0, y′ = 1. So 0 + 1 = 1.
+> Implicit differentiation gets a clean formula
+
+explain 4 | Implicit function theorem shortcut
+- If F(x, y) = 0 defines y(x), then dy/dx = −F_x / F_y.
+- x² + y² − 25 = 0: dy/dx = −2x/2y = −x/y.
+- It works whenever F_y ≠ 0: that's the theorem's condition.
+> Next: the gradient in action
+
+## c3-grad | Gradient and directional derivatives | maths | 2 | calc3 | c3-chain
+explain 3 | Directional derivative: slope in any direction
+- Rate of change of f moving in unit direction u: D_u f = ∇f · u.
+- Biggest when u points along ∇f. Zero when u runs along a contour.
+? Directional derivative of f in unit direction u? :: ∇f · u
+> Test it
+
+quiz 3 | f = x² + y². Directional derivative at (1, 1) in direction (1, 0)?
+* 2
+o 2√2
+o 1
+o 0
+= ∇f = (2x, 2y) = (2, 2). Dot with (1, 0): 2.
+> Maximum rate of change is the gradient's length
+
+quiz 3 | Same f at (1, 1). Fastest rate of increase?
+* 2√2
+o 2
+o 4
+o √2
+= |∇f| = |(2, 2)| = 2√2.
+> Gradients are perpendicular to level curves, always
+
+explain 3 | Why ∇f is perpendicular to contours
+- Along a contour f doesn't change, so D_u f = ∇f · u = 0.
+- Dot product zero means perpendicular.
+- *Water runs downhill at right angles to the contour lines.*
+> Gradient descent climbs down instead of up
+
+real 4 | Every neural network learns by gradient descent
+- Loss function L(w) over millions of weights w.
+- Update: w ← w − η∇L. Step against the gradient, downhill.
+- *Backpropagation is just an efficient way to compute ∇L with the chain rule.*
+> Next: tangent planes
+
+## c3-tan | Tangent planes | maths | 2 | calc3 | c3-grad
+explain 3 | The tangent plane is the 2D linearisation
+- $ z ≈ f(a, b) + f_x(a, b)(x − a) + f_y(a, b)(y − b)
+- Zoom into a smooth surface far enough and it looks flat.
+> For level surfaces, the gradient is the normal
+
+quiz 3 | Normal vector to the sphere x² + y² + z² = 9 at (1, 2, 2)?
+* (2, 4, 4)
+o (1, 2, 2)/9
+o (0, 0, 1)
+o (2, 2, 4)
+= ∇F = (2x, 2y, 2z). Any multiple works: it points straight out from the centre.
+> Linearisation estimates errors in measurements
+
+real 3 | Error propagation is a tangent plane
+- Volume of a cylinder V = πr²h. r and h each have measurement error.
+- dV ≈ V_r dr + V_h dh = 2πrh dr + πr² dh.
+- *A 1% error in r becomes about 2% in V.* Squares double relative errors.
+> Next: finding maxima and minima
+
+## c3-opt | Multivariable optimisation | maths | 2 | calc3 | c3-tan
+explain 3 | Critical points in 2D
+- Solve ∇f = 0: both partial derivatives zero at once.
+- Each solution is a max, a min or a saddle.
+- Use the Hessian test (D = f_xx f_yy − f_xy²) to decide.
+> Practice
+
+quiz 3 | f = x² + y² − 4x + 6y. Critical point?
+* (2, −3), a minimum
+o (−2, 3), a minimum
+o (2, −3), a saddle
+o (0, 0)
+= f_x = 2x − 4 = 0, f_y = 2y + 6 = 0.
+= Complete the square: f = (x − 2)² + (y + 3)² − 13. A bowl.
+> Least squares is a calculus problem
+
+real 4 | Least squares: fitting a line is minimising a sum
+- Choose m, c to minimise Σ(yᵢ − mxᵢ − c)².
+- Set both partial derivatives to zero: two linear equations, the *normal equations*.
+- Gauss used this in 1801 to predict where the lost asteroid Ceres would reappear. It worked.
+> On a closed region, check the boundary too
+
+quiz 4 | Max of f = xy on the disc x² + y² ≤ 2?
+* 1
+o 2
+o 0
+o √2
+= Inside, the only critical point is (0, 0), a saddle with f = 0.
+= On the boundary, x = y = 1 gives 1. That's the max.
+> Lagrange multipliers handle boundaries elegantly
+
+## c3-lag | Lagrange practice | maths | 2 | calc3 | c3-opt
+quiz 3 | Maximise f = x + y on the circle x² + y² = 1.
+* √2
+o 1
+o 2
+o 1/√2
+= ∇f = λ∇g: 1 = 2λx, 1 = 2λy, so x = y = 1/√2.
+= f = √2.
+> Fixed perimeter, biggest rectangle: a square again
+
+quiz 4 | Box with no lid, volume 32. Minimise surface area. Dimensions?
+* 4 × 4 × 2
+o 2 × 2 × 8
+o 3 × 3 × 32/9
+o 4 × 2 × 4 (height 4)
+= Minimise xy + 2xz + 2yz with xyz = 32. Symmetry and λ give x = y = 2z.
+= x = y = 4, z = 2.
+> Lagrange multipliers have meaning in economics
+
+real 4 | The multiplier is a shadow price
+- Maximise output subject to a budget. λ is how much output an extra £1 of budget buys.
+- In physics, λ often turns out to be a constraint force, like the tension in a pendulum rod.
+- *λ measures how much the constraint is costing you.*
+> Maximum entropy distributions come from Lagrange multipliers
+
+story 4 | The Boltzmann distribution is a Lagrange problem
+- Maximise entropy −Σpᵢ ln pᵢ subject to Σpᵢ = 1 and fixed average energy.
+- Two multipliers. The solution: pᵢ ∝ e^(−βEᵢ).
+- *β, a Lagrange multiplier, turns out to be 1/k_BT.* Temperature is a multiplier.
+> Next: double integrals

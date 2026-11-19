@@ -1,0 +1,276 @@
+## ec-micro | Supply and demand | econ | 0 | - | ec-money
+explain 2 | Supply and demand set the price
+- Higher prices: buyers want less, sellers offer more.
+- Where the curves cross is the equilibrium price.
+- *Shortages and gluts push the price back toward it.*
+> Price ceilings cause shortages
+
+explain 3 | Price controls: good intentions, odd effects
+- A cap below the market price means demand exceeds supply: queues and black markets.
+- A floor above it (like some minimum prices) can create surpluses.
+- *Economists argue a lot about how big these effects are in practice, especially for minimum wages.*
+> Elasticity: how much demand responds
+
+quiz 3 | Which typically has the most price-elastic demand?
+* A specific brand of cereal
+o Insulin
+o Petrol, in the short run
+o Salt
+= Close substitutes make demand elastic: raise one brand's price and people switch.
+= Necessities with no substitutes are inelastic.
+> Opportunity cost is the real price
+
+explain 3 | Opportunity cost
+- The true cost of something is the next best thing you give up.
+- A free concert ticket still costs you the evening.
+- *University's biggest cost for many students is the wages they don't earn.*
+> Next: game theory
+
+## ec-game | Game theory | econ | 0 | - | ec-micro
+explain 4 | Nash equilibrium
+- A set of strategies where no player gains by changing theirs alone.
+- John Nash proved in 1950 that every finite game has at least one (possibly with mixed strategies).
+- *An equilibrium can be bad for everyone, as in the prisoner's dilemma.*
+? What is a Nash equilibrium? :: A strategy profile where no player can do better by changing only their own strategy
+> The ultimatum game
+
+explain 4 | The ultimatum game
+- One player splits £10 and offers some to the other. If refused, both get nothing.
+- Pure self-interest says accept any offer above zero.
+- *In experiments, offers below about 20–30% are often rejected: people pay to punish unfairness.*
+> Chicken and brinkmanship
+
+explain 3 | Chicken: whoever swerves loses
+- Two drivers head at each other. Swerving is safe but humiliating; neither swerving is a disaster.
+- Committing visibly (throwing your steering wheel out of the window) can win.
+- *Cold War nuclear strategy was studied this way.*
+> Auctions are games too
+
+story 4 | The winner's curse
+- In auctions for things of uncertain value, the winner is often whoever overestimated it most.
+- Oil companies bidding for drilling rights in the 1960s–70s found their winning tracts often underperformed.
+- *Smart bidders shade their bids down.*
+> Next: behavioural economics
+
+## ec-behav | Behavioural economics | econ | 0 | - | ec-game
+explain 4 | Nudges: changing choices without banning anything
+- Switching pension schemes from opt-in to opt-out raised participation dramatically in many studies.
+- People stick with defaults.
+- *Thaler and Sunstein's 2008 book "Nudge" popularised the idea; Thaler won the 2017 Nobel.*
+> Mental accounting
+
+explain 3 | Mental accounting
+- People treat money differently depending on its label: a tax refund feels like "free money".
+- Losing a £20 theatre ticket feels different from losing a £20 note, though they're equivalent.
+- *Money is fungible; our minds don't treat it that way.*
+> Hyperbolic discounting
+
+explain 4 | Present bias
+- Many people prefer £100 today over £110 next week, but £110 in 53 weeks over £100 in 52.
+- Same one-week wait, opposite choices.
+- *That inconsistency is why gym memberships go unused.*
+> The endowment effect
+
+story 4 | The mug experiment
+- Students given a mug demanded about twice as much to sell it as other students would pay to buy one.
+- Owning something makes it feel more valuable.
+- *Kahneman, Knetsch and Thaler, 1990.*
+> Next: money and central banks
+
+## ec-macro | Money and central banks | econ | 0 | - | ec-behav
+explain 3 | Most money is created by banks making loans
+- When a bank lends, it creates a new deposit: new money.
+- The Bank of England said so explicitly in a 2014 bulletin.
+- *Physical cash is a small fraction of the money supply in the UK.*
+> Inflation targets
+
+explain 3 | Why central banks target about 2% inflation
+- Zero risks tipping into deflation, which can freeze spending and make debts heavier.
+- A little inflation gives room to cut real interest rates in a slump.
+- *New Zealand pioneered explicit inflation targeting in 1990.*
+> Hyperinflation
+
+story 4 | Hungary 1946: prices doubled roughly every 15 hours
+- At its peak, Hungary's monthly inflation reached about 4 × 10¹⁶ percent.
+- The largest banknote issued was 100 quintillion pengő.
+- *The worst hyperinflation on record.*
+> Interest rates are the main lever
+
+quiz 3 | A central bank raises interest rates. What is the usual intended effect?
+* Slow borrowing and spending to bring inflation down
+o Speed up the economy
+o Increase inflation
+o Weaken the currency
+= Higher rates make borrowing costlier and saving more attractive.
+= They usually strengthen the currency too.
+> Next: bubbles
+
+## ec-bubble | Bubbles and crashes | econ | 0 | - | ec-macro
+story 4 | Tulip mania was smaller than the legend
+- 1637: Dutch tulip bulb prices spiked and then collapsed.
+- Historians now think the economic damage was limited and many tales were exaggerated by moralising pamphlets.
+- *It's still the most famous bubble story.*
+> Newton lost a fortune in the South Sea Bubble
+
+story 4 | Newton lost a fortune in the South Sea Bubble
+- 1720: shares in the South Sea Company soared, then crashed.
+- Newton reportedly sold early at a profit, bought back near the top, and lost heavily.
+- *Attributed quote: "I can calculate the motions of heavenly bodies, but not the madness of people."*
+> The 2008 crisis
+
+explain 4 | 2008 in one card
+- US banks issued mortgages to risky borrowers, bundled them into securities rated as safe, and sold them widely.
+- When house prices fell, losses spread through a highly leveraged, interconnected system.
+- *Lehman Brothers' collapse on 15 September 2008 triggered a global panic.*
+> Next: personal finance
+
+## ec-pf | Personal finance maths | econ | 0 | - | ec-bubble
+explain 3 | Index funds beat most professionals
+- Most actively managed funds underperform their benchmark index over 10–15 years, after fees.
+- Low-cost index funds just buy the whole market.
+- *Warren Buffett won a 10-year, $1 million bet (2008–2017) that an S&P 500 fund would beat a set of hedge funds.*
+> Fees compound too
+
+quiz 4 | Over 40 years at 6% growth, how much does a 1% annual fee cut your final pot, roughly?
+* About 30%
+o About 1%
+o About 10%
+o About 60%
+= Growth at 5% vs 6% for 40 years: 1.05⁴⁰/1.06⁴⁰ ≈ 7.04/10.29 ≈ 0.68.
+= Small percentages compound into big differences.
+> Starting early beats saving more
+
+real 4 | Starting at 25 vs 35
+- Saving the same monthly amount from 25 instead of 35 can mean a much larger pot at 65, purely from 10 extra years of compounding.
+- At 7% growth, money roughly doubles every decade.
+- *Time in the market is the biggest lever you control.*
+> Economics track complete. Next: biology
+
+## bi-evo | Evolution | bio | 0 | - | bi-life
+explain 3 | Natural selection in three steps
+- Variation: individuals differ. Inheritance: some differences are passed on. Selection: some variants leave more offspring.
+- Over many generations, populations change.
+- *No goal or foresight required.*
+> Darwin sat on his idea for 20 years
+
+story 4 | Darwin was nearly scooped
+- Darwin developed natural selection by the early 1840s but didn't publish.
+- 1858: Alfred Russel Wallace sent him an essay with the same idea.
+- *Their papers were presented together; Darwin published On the Origin of Species in 1859.*
+> Evolution observed in real time
+
+story 4 | The peppered moth
+- In industrial Britain, soot-darkened trees favoured dark moths over pale ones.
+- Dark forms became dominant near cities; after clean air laws, pale moths rebounded.
+- *A textbook case of natural selection, confirmed by later studies.*
+> Whales evolved from land mammals
+
+explain 4 | Whales' closest living relatives are hippos
+- Fossils trace whales back about 50 million years to small, four-legged, land-dwelling ancestors.
+- Some modern whales still have tiny vestigial hip bones.
+- *DNA places hippos as their nearest living kin.*
+> Next: genetics
+
+## bi-gene | Genetics | bio | 0 | - | bi-evo
+story 4 | Mendel's peas were ignored for 35 years
+- Gregor Mendel, a monk, published his pea-breeding laws of inheritance in 1866.
+- Hardly anyone noticed. Three scientists rediscovered them independently in 1900.
+- *He died thinking his work had been in vain.*
+> DNA's structure, 1953
+
+story 4 | Photo 51
+- Rosalind Franklin's X-ray image of DNA, "Photo 51", was shown to James Watson without her knowledge.
+- Watson and Crick published the double helix in 1953.
+- *Franklin died in 1958; the 1962 Nobel went to Watson, Crick and Wilkins.*
+> Humans share most of their DNA with each other
+
+quiz 3 | Roughly how similar are any two humans' DNA sequences?
+* About 99.9%
+o About 90%
+o About 99.99999%
+o About 50%
+= Most human variation is in that 0.1%: millions of letters.
+= Humans and chimpanzees are roughly 98–99% similar in comparable DNA.
+> CRISPR edits genes like text
+
+explain 4 | CRISPR: a bacterial immune system turned editing tool
+- Bacteria store snippets of viral DNA and use Cas proteins to cut matching invaders.
+- Doudna and Charpentier showed in 2012 it can be programmed to cut any chosen DNA sequence.
+- *Nobel Prize in Chemistry, 2020. The first CRISPR-based therapy was approved in 2023, for sickle cell disease.*
+> Next: the brain
+
+## bi-brain | The brain | bio | 0 | - | bi-gene
+myth 4 F | We only use 10% of our brains.
+= Brain imaging shows activity across virtually all regions over a day.
+= The brain is about 2% of body weight but uses about 20% of resting energy: evolution wouldn't keep a 90% idle organ.
+> Phineas Gage
+
+story 4 | Phineas Gage survived an iron rod through his skull
+- 1848: an explosion drove a 1 m tamping iron through the railway worker's left frontal lobe.
+- He survived, but friends said he was "no longer Gage": his personality changed.
+- *An early clue that specific brain regions shape character and judgement.*
+> Neurons and synapses
+
+quiz 3 | Roughly how many neurons are in the human brain?
+* About 86 billion
+o About 1 billion
+o About 1 trillion
+o About 10 million
+= Plus a similar number of glial cells, and an estimated 100 trillion or more synapses.
+> Plasticity: the brain rewires
+
+explain 4 | London taxi drivers grow their hippocampus
+- Drivers learning "The Knowledge" of London's streets showed growth in the posterior hippocampus over training.
+- The hippocampus is key for spatial memory.
+- *Adult brains change with practice.* (Maguire et al., 2000s.)
+> Next: microbes
+
+## bi-mic | Microbes and medicine | bio | 0 | - | bi-brain
+story 5 | Fleming's messy lab discovered penicillin
+- 1928: Alexander Fleming returned from holiday to find mould had killed bacteria on a culture plate.
+- Purifying it took until the 1940s, by Florey, Chain and colleagues.
+- *Antibiotics have since saved hundreds of millions of lives.*
+> Antibiotic resistance is evolution in fast-forward
+
+explain 4 | Antibiotic resistance
+- Bacteria divide in as little as 20 minutes: billions of generations of variation.
+- Antibiotics kill the susceptible, leaving resistant strains to multiply.
+- *Antimicrobial resistance was linked to over a million deaths in 2019.*
+> Vaccines started with cowpox
+
+story 4 | Edward Jenner and the milkmaids
+- Milkmaids who caught mild cowpox seemed immune to deadly smallpox.
+- 1796: Jenner inoculated a boy with cowpox, then exposed him to smallpox. He didn't get ill.
+- *"Vaccine" comes from vacca, Latin for cow. Smallpox was declared eradicated in 1980.*
+> Viruses aren't quite alive
+
+explain 4 | Are viruses alive?
+- Viruses can't reproduce or make energy on their own; they hijack cells.
+- Giant viruses like mimivirus have more genes than some bacteria.
+- *They sit on the blurry edge of what counts as life.*
+> Next: animal minds
+
+## bi-anim | Animal intelligence | bio | 0 | - | bi-mic
+story 4 | Crows solve multi-step puzzles
+- New Caledonian crows make and use hook tools from twigs.
+- In experiments, they've solved puzzles needing several steps in the right order.
+- *Some crows recognise individual human faces and hold grudges.*
+> Elephants and the mirror test
+
+explain 3 | The mirror test
+- Mark an animal's body where it can only see it in a mirror. Does it touch the mark on itself?
+- Great apes, dolphins, elephants and magpies have passed versions of it.
+- *Cleaner wrasse fish passed in a 2019 study, provoking debate about what the test measures.*
+> Bees count and communicate
+
+explain 4 | The waggle dance
+- Honeybees communicate the direction and distance of flowers by dancing.
+- The angle of the waggle run relative to vertical encodes direction relative to the sun.
+- *Karl von Frisch decoded it and shared the 1973 Nobel Prize.*
+> Octopuses escape tanks
+
+story 3 | Inky the octopus escaped to the sea
+- 2016: an octopus at New Zealand's National Aquarium squeezed out of a gap in his tank.
+- He apparently slid across the floor and down a 50 m drainpipe into the ocean.
+- *Octopuses can squeeze through any gap larger than their beak.*
+> Biology track complete

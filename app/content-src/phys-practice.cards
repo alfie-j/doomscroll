@@ -1,0 +1,261 @@
+## p1-px1 | Phys 1 exam practice: kinematics and forces | physics | 1 | phys1 | p1-nl
+quiz 2 | A car accelerates from rest at 3 m/s² for 4 s. Final speed?
+* 12 m/s
+o 7 m/s
+o 24 m/s
+o 0.75 m/s
+= v = u + at = 0 + 12.
+> Next problem
+
+quiz 3 | Same car: distance covered in those 4 s?
+* 24 m
+o 12 m
+o 48 m
+o 6 m
+= s = ½at² = ½ × 3 × 16.
+> Next problem
+
+quiz 3 | A ball is thrown up at 20 m/s (g = 10). Maximum height?
+* 20 m
+o 40 m
+o 10 m
+o 2 m
+= v² = u² − 2gh: h = 400/20.
+> Next problem
+
+quiz 3 | A 10 kg box on a 30° frictionless slope. Acceleration down the slope? (g = 10)
+* 5 m/s²
+o 10 m/s²
+o 8.7 m/s²
+o 0 m/s²
+= a = g sin 30°.
+> Next problem
+
+quiz 3 | Kinetic friction μ = 0.2 on a 5 kg block sliding on a level floor. Friction force? (g = 10)
+* 10 N
+o 1 N
+o 50 N
+o 25 N
+= F = μmg = 0.2 × 50.
+> Next problem
+
+quiz 4 | A 1,200 kg car rounds a 40 m radius bend at 10 m/s. Required centripetal force?
+* 3,000 N
+o 300 N
+o 30,000 N
+o 1,200 N
+= mv²/r = 1200 × 100/40.
+> Next problem
+
+quiz 3 | A projectile is launched horizontally at 15 m/s from a 20 m cliff (g = 10). How far out does it land?
+* 30 m
+o 15 m
+o 20 m
+o 45 m
+= Fall time √(2 × 20/10) = 2 s. Horizontal: 15 × 2.
+> Next problem
+
+quiz 3 | Weight of a 70 kg astronaut on the Moon (g = 1.6 m/s²)?
+* 112 N
+o 70 N
+o 700 N
+o 11 N
+= W = mg. Mass stays 70 kg everywhere.
+> Energy and momentum practice next
+
+## p1-px2 | Phys 1 exam practice: energy, momentum, rotation | physics | 1 | phys1 | p1-mom
+quiz 3 | A 2 kg trolley at 3 m/s. Kinetic energy?
+* 9 J
+o 6 J
+o 18 J
+o 3 J
+= ½mv² = ½ × 2 × 9.
+> Next problem
+
+quiz 3 | A 60 kg climber gains 500 m of height. Gain in potential energy? (g = 10)
+* 300 kJ
+o 30 kJ
+o 3 MJ
+o 3 kJ
+= mgh = 60 × 10 × 500 = 300,000 J.
+> Next problem
+
+quiz 3 | A 5 kg gun fires a 0.01 kg bullet at 500 m/s. Recoil speed?
+* 1 m/s
+o 5 m/s
+o 0.1 m/s
+o 100 m/s
+= Momentum: 0.01 × 500 = 5 × v.
+> Next problem
+
+quiz 4 | A 0.15 kg ball hits a wall at 20 m/s and rebounds at 20 m/s. Impulse magnitude?
+* 6 N s
+o 3 N s
+o 0
+o 1.5 N s
+= Δp = 0.15 × (20 − (−20)).
+> Next problem
+
+quiz 3 | A motor lifts 100 kg by 10 m in 20 s. Power output? (g = 10)
+* 500 W
+o 1,000 W
+o 5,000 W
+o 50 W
+= mgh/t = 10,000/20.
+> Next problem
+
+quiz 4 | A disc (I = ½MR²) of mass 2 kg, radius 0.5 m spins at 10 rad/s. Rotational KE?
+* 12.5 J
+o 25 J
+o 5 J
+o 50 J
+= I = 0.25 kg m². KE = ½Iω² = ½ × 0.25 × 100.
+> Next problem
+
+quiz 4 | A spring (k = 400 N/m) with a 1 kg mass. Period of oscillation?
+* π/10 s ≈ 0.31 s
+o 20 s
+o 2π s
+o 0.05 s
+= T = 2π√(m/k) = 2π/20.
+> Next problem
+
+quiz 4 | Orbital speed of a satellite in low Earth orbit (r ≈ 6,700 km, g there ≈ 8.9 m/s²)?
+* About 7.7 km/s
+o About 11 km/s
+o About 3 km/s
+o About 30 km/s
+= v = √(g r) = √(8.9 × 6.7 × 10⁶) ≈ 7.7 km/s.
+> E&M practice next
+
+## p2-px1 | Phys 2 exam practice | physics | 1 | phys2 | p2-dc
+quiz 3 | Force between charges of 2 μC and 3 μC, 0.3 m apart? (k = 9 × 10⁹)
+* 0.6 N
+o 6 N
+o 0.06 N
+o 60 N
+= F = 9 × 10⁹ × 6 × 10⁻¹²/0.09 = 0.6 N.
+> Next problem
+
+quiz 3 | A 3 μF capacitor at 100 V. Charge stored?
+* 300 μC
+o 30 μC
+o 3 mC
+o 0.03 μC
+= Q = CV.
+> Next problem
+
+quiz 3 | Energy stored in that capacitor?
+* 15 mJ
+o 30 mJ
+o 150 mJ
+o 1.5 mJ
+= ½CV² = ½ × 3 × 10⁻⁶ × 10⁴ = 0.015 J.
+> Next problem
+
+quiz 3 | A 2 kW kettle runs on 230 V. Current drawn?
+* About 8.7 A
+o About 0.12 A
+o About 460 A
+o About 2 A
+= I = P/V = 2000/230.
+> Next problem
+
+quiz 3 | Resistance of that kettle's element?
+* About 26 Ω
+o About 0.04 Ω
+o About 460 Ω
+o About 2.6 Ω
+= R = V²/P = 52,900/2000.
+> Next problem
+
+quiz 4 | Field 5 cm from a long wire carrying 10 A? (μ₀ = 4π × 10⁻⁷)
+* 40 μT
+o 4 μT
+o 400 μT
+o 0.4 μT
+= B = μ₀I/(2πr) = 2 × 10⁻⁷ × 10/0.05.
+= Comparable to Earth's field (about 50 μT).
+> Next problem
+
+quiz 4 | A proton moves at 10⁶ m/s perpendicular to a 0.1 T field. Radius of its circle? (m = 1.67 × 10⁻²⁷ kg)
+* About 10 cm
+o About 1 mm
+o About 1 m
+o About 10 m
+= r = mv/(qB) = (1.67 × 10⁻²¹)/(1.6 × 10⁻²⁰) ≈ 0.10 m.
+> Next problem
+
+quiz 3 | A 500-turn coil of area 0.01 m² in a field that drops from 0.2 T to 0 in 0.05 s. Average EMF?
+* 20 V
+o 2 V
+o 0.2 V
+o 200 V
+= ε = NAΔB/Δt = 500 × 0.01 × 0.2/0.05.
+> Phys 3 practice next
+
+## p3-px1 | Phys 3 exam practice | physics | 2 | phys3 | p3-oldq
+quiz 3 | Energy of a photon with wavelength 600 nm? (hc ≈ 1240 eV·nm)
+* About 2.1 eV
+o About 0.5 eV
+o About 21 eV
+o About 600 eV
+= E = hc/λ = 1240/600.
+> Next problem
+
+quiz 3 | Hydrogen electron drops from n = 2 to n = 1. Photon energy?
+* 10.2 eV
+o 13.6 eV
+o 3.4 eV
+o 6.8 eV
+= 13.6(1 − 1/4).
+= That's the ultraviolet Lyman-alpha line, 122 nm.
+> Next problem
+
+quiz 3 | A muon's lifetime at rest is 2.2 μs. At γ = 10, how long does it last in the lab frame?
+* 22 μs
+o 0.22 μs
+o 2.2 μs
+o 220 μs
+= Time dilation: γτ.
+> Next problem
+
+quiz 4 | A half-life of 6 hours. Fraction left after 1 day?
+* 1/16
+o 1/4
+o 1/24
+o 1/8
+= 24/6 = 4 half-lives: (1/2)⁴.
+> Next problem
+
+quiz 3 | Rest energy of an electron?
+* 511 keV
+o 938 MeV
+o 13.6 eV
+o 1 MeV
+= mc² for the electron. 938 MeV is the proton's.
+> Next problem
+
+quiz 4 | de Broglie wavelength of an electron accelerated through 100 V? (h/√(2me·V) ≈ 1.23 nm/√V)
+* About 0.12 nm
+o About 1.2 nm
+o About 12 nm
+o About 0.012 nm
+= 1.23/√100 = 0.123 nm: similar to atomic spacings, so electrons diffract off crystals.
+> Next problem
+
+quiz 4 | A Carnot fridge between −3°C and 27°C. Maximum coefficient of performance?
+* 9
+o 10
+o 0.9
+o 1.1
+= COP = T_c/(T_h − T_c) = 270/30.
+> Next problem
+
+quiz 4 | Particle in a box: ground state 0.5 eV. Energy of the photon emitted in the 2 → 1 transition?
+* 1.5 eV
+o 0.5 eV
+o 2 eV
+o 1 eV
+= E₂ = 4 × 0.5 = 2 eV. Difference 1.5 eV.
+> All physics practice sets done

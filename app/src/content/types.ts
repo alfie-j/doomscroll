@@ -1,5 +1,6 @@
 export type Subject =
-  | 'maths' | 'physics' | 'philo' | 'lit' | 'history' | 'psych' | 'stats' | 'cs' | 'econ' | 'bio';
+  | 'maths' | 'physics' | 'philo' | 'lit' | 'history' | 'psych' | 'stats' | 'cs' | 'econ' | 'bio'
+  | 'chem' | 'arts' | 'lang' | 'earth';
 
 export type Format =
   | 'hook' | 'explain' | 'story' | 'reallife' | 'quiz' | 'predict' | 'myth' | 'meme' | 'interactive';

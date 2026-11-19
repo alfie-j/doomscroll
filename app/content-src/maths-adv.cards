@@ -1,0 +1,243 @@
+## la-mat | Matrices | maths | 2 | calc3 | c3-lp
+explain 3 | A matrix is a function that moves space
+- Multiply a vector by a matrix and you get a new vector: rotated, stretched, sheared or flipped.
+- The columns show where the basis vectors (1,0) and (0,1) land.
+- *Matrix multiplication is composing two such moves.*
+> Order matters
+
+quiz 3 | For 2×2 matrices A and B, is AB always equal to BA?
+* No
+o Yes
+o Only if both are invertible
+= Rotate then shear ≠ shear then rotate.
+= Matrices that do commute share eigenvectors (when diagonalisable).
+> The determinant measures area scaling
+
+explain 3 | The determinant is the area (or volume) scale factor
+- det = 2: areas double. det = −1: areas kept, orientation flipped.
+- det = 0: space is squashed flat, so the matrix has no inverse.
+- For [[a, b], [c, d]]: ad − bc.
+? What does det(A) = 0 mean geometrically? :: A squashes space into a lower dimension, so it isn't invertible
+> Compute one
+
+quiz 2 | det [[3, 1], [2, 4]] = ?
+* 10
+o 14
+o 12
+o 2
+= 3 × 4 − 1 × 2 = 10.
+> Solving linear systems
+
+explain 3 | Ax = b
+- A system of linear equations is one matrix equation.
+- If det A ≠ 0, the unique solution is x = A⁻¹b.
+- *In practice, computers use Gaussian elimination rather than computing inverses.*
+> Rank tells you how many dimensions survive
+
+explain 4 | Rank and nullity
+- Rank: dimension of the output space (column space).
+- Nullity: dimension of the vectors sent to zero (null space).
+- Rank–nullity theorem: rank + nullity = number of columns.
+? Rank–nullity theorem? :: rank(A) + nullity(A) = number of columns of A
+> Next: eigenvectors
+
+## la-eig | Eigenvalues and eigenvectors | maths | 2 | calc3 | la-mat
+explain 4 | Eigenvectors don't change direction
+- Av = λv: the matrix only stretches v by the factor λ.
+- Find λ by solving det(A − λI) = 0.
+- *They're the natural axes of a transformation.*
+? Equation for eigenvalues of A? :: det(A − λI) = 0
+> Find some
+
+quiz 3 | Eigenvalues of [[2, 0], [0, 5]]?
+* 2 and 5
+o 7 and 0
+o 10
+o 2.5
+= Diagonal matrices have their eigenvalues on the diagonal.
+> Trace and determinant give them for free
+
+explain 4 | Trace and determinant shortcut
+- Sum of eigenvalues = trace (sum of the diagonal).
+- Product of eigenvalues = determinant.
+- *For 2×2 matrices that's enough to find them: solve λ² − (tr)λ + det = 0.*
+> Rotations have complex eigenvalues
+
+predict 4 | A 90° rotation matrix in 2D. Does it have real eigenvectors?
+* No: its eigenvalues are ±i
+o Yes, along the x-axis
+o Yes, along the diagonal
+= Every non-zero vector changes direction under a 90° rotation.
+= Complex eigenvalues e^(±iθ) encode the rotation angle.
+> Diagonalisation makes powers easy
+
+explain 4 | Diagonalisation
+- If A = PDP⁻¹ with D diagonal, then Aⁿ = PDⁿP⁻¹.
+- Powers of a diagonal matrix are just powers of its entries.
+- *Fibonacci numbers come out this way: the golden ratio is an eigenvalue.*
+> Symmetric matrices are the nicest
+
+explain 4 | The spectral theorem
+- A real symmetric matrix has real eigenvalues and an orthonormal set of eigenvectors.
+- So it's a pure stretch along perpendicular axes.
+- *Quantum observables are the complex version: Hermitian operators.*
+> Google's PageRank is an eigenvector
+
+real 5 | PageRank is the top eigenvector of the web
+- Build a matrix of links between pages. A page's importance is the weighted importance of pages linking to it.
+- That's an eigenvector equation: r = Mr, with eigenvalue 1.
+- *Brin and Page's 1998 paper launched Google on it.*
+> Next: vector spaces in general
+
+## la-space | Vector spaces | maths | 3 | calc3 | la-eig
+explain 4 | A vector space is anything you can add and scale
+- Arrows, but also polynomials, functions, matrices and quantum states.
+- Basis: a minimal set that spans everything. Dimension: how many basis vectors.
+- *The space of polynomials of degree ≤ 3 has dimension 4: 1, x, x², x³.*
+> Inner products give geometry
+
+explain 4 | Inner products and orthogonality
+- An inner product lets you measure lengths and angles.
+- For functions: ⟨f, g⟩ = ∫ f(x)g(x) dx.
+- *Fourier series are just expansions in an orthogonal basis of sines and cosines.*
+> Gram–Schmidt makes any basis orthogonal
+
+explain 4 | Gram–Schmidt
+- Take vectors one by one; subtract their projections onto the ones already done; normalise.
+- Out comes an orthonormal basis for the same space.
+- *Applied to 1, x, x², … on [−1, 1], it produces the Legendre polynomials.*
+> The SVD is the most useful factorisation
+
+explain 5 | Singular value decomposition
+- Every matrix factors as A = UΣVᵀ: rotate, stretch along axes, rotate.
+- Keep only the largest singular values and you get the best low-rank approximation.
+- *Image compression, recommendation systems and PCA all use it.*
+> Next: complex analysis
+
+## ca-fun | Complex functions | maths | 3 | calc2 | c2-cplx
+explain 4 | Complex differentiability is a huge constraint
+- f(z) is differentiable at z if the limit of [f(z + h) − f(z)]/h is the same from every direction in the plane.
+- Writing f = u + iv, that forces the Cauchy–Riemann equations: u_x = v_y, u_y = −v_x.
+- *Such functions are called holomorphic, and they're astonishingly rigid.*
+? Cauchy–Riemann equations? :: u_x = v_y and u_y = −v_x
+> Differentiable once means differentiable forever
+
+hook 5 | A complex function differentiable once is differentiable infinitely many times
+- In real analysis, f′ can exist while f″ doesn't.
+- For holomorphic functions, one derivative guarantees all of them, and a convergent Taylor series.
+- *Know a holomorphic function on a tiny disc and you know it everywhere it extends.*
+> Is |z|² holomorphic?
+
+quiz 4 | Which function is holomorphic on the whole complex plane?
+* e^z
+o |z|²
+o z̄ (complex conjugate)
+o Re(z)
+= e^z satisfies Cauchy–Riemann everywhere.
+= |z|², z̄ and Re(z) fail them almost everywhere.
+> Bounded entire functions are constant
+
+explain 5 | Liouville's theorem
+- A function holomorphic on the whole plane and bounded must be constant.
+- So sin z, which is bounded on the real line, blows up along the imaginary axis.
+- *Liouville's theorem gives a two-line proof of the Fundamental Theorem of Algebra.*
+> Next: contour integration
+
+## ca-int | Contour integration | maths | 4 | calc2 | ca-fun
+explain 5 | Cauchy's theorem
+- The integral of a holomorphic function around any closed loop is zero, if there are no singularities inside.
+- Only the singularities matter.
+- *Integrals become a matter of counting what's inside the loop.*
+> Residues do the work
+
+explain 5 | The residue theorem
+- $ ∮ f(z) dz = 2πi × (sum of residues inside)
+- The residue at a simple pole a is lim (z − a)f(z).
+- *It evaluates real integrals that resist every other method.*
+? Residue theorem? :: ∮ f dz = 2πi × (sum of residues of f inside the contour)
+> A real integral via complex analysis
+
+quiz 5 | Using residues, ∫ from −∞ to ∞ of dx/(1 + x²) = ?
+* π
+o 2π
+o π/2
+o 1
+= Close the contour in the upper half-plane. The pole at z = i has residue 1/(2i).
+= 2πi × 1/(2i) = π. Matches arctan from −π/2 to π/2.
+> Analytic continuation extends functions beyond their formula
+
+story 5 | 1 + 2 + 3 + … = −1/12 (sort of)
+- The zeta function ζ(s) = Σ 1/nˢ converges only for Re(s) > 1.
+- Analytic continuation extends it uniquely to almost the whole plane, giving ζ(−1) = −1/12.
+- *The sum doesn't equal −1/12. But −1/12 really appears in string theory and the Casimir effect via such regularisation.*
+> The Riemann hypothesis lives here
+
+story 5! | The Riemann hypothesis: a million dollars for the zeros of ζ
+- Riemann (1859) conjectured all non-trivial zeros of ζ(s) lie on the line Re(s) = 1/2.
+- Those zeros control the fine distribution of prime numbers.
+- *Over 10 trillion zeros have been checked numerically. No proof yet.*
+> Next: symmetry and groups
+
+## gp-sym | Groups and symmetry | maths | 3 | phys3 | p3-dirac
+explain 4 | A group is the mathematics of symmetry
+- A set with an operation that's associative, has an identity and inverses.
+- The rotations of a square, the integers under addition, invertible matrices.
+- *Symmetries of anything form a group.*
+> How many ways can you place a square back on itself?
+
+quiz 3 | How many symmetries does a square have (rotations and reflections)?
+* 8
+o 4
+o 6
+o 12
+= 4 rotations and 4 reflections: the dihedral group D₄.
+> Rubik's cube is a group
+
+real 4 | The Rubik's cube group
+- It has about 4.3 × 10¹⁹ reachable positions.
+- In 2010 it was proved every position can be solved in at most 20 moves ("God's number").
+- *The proof used about 35 CPU-years of computer time donated by Google.*
+> Lie groups describe continuous symmetries
+
+explain 5 | Lie groups and the Standard Model
+- Continuous symmetries like rotations form Lie groups.
+- The Standard Model's symmetry is SU(3) × SU(2) × U(1): strong, weak and electromagnetic.
+- *Particles sort into representations of these groups, which is how quarks were predicted.*
+> The eightfold way predicted a particle
+
+story 5 | Gell-Mann predicted the Ω⁻ from a pattern
+- 1962: arranging known particles by SU(3) symmetry left a gap at the tip of a triangle.
+- Gell-Mann predicted its charge, strangeness and approximate mass.
+- *The Ω⁻ was found at Brookhaven in 1964.* Mendeleev's table, but for particles.
+> Next: quantum information
+
+## qi-bits | Quantum information | physics | 4 | phys3 | p3-adv
+explain 4 | A qubit is a unit vector in 2D complex space
+- |ψ⟩ = α|0⟩ + β|1⟩ with |α|² + |β|² = 1.
+- Measure and you get 0 with probability |α|², 1 with |β|².
+- *n qubits need 2ⁿ complex numbers to describe in general.*
+> No-cloning theorem
+
+explain 5 | You can't copy an unknown quantum state
+- No-cloning theorem (1982): no device can duplicate an arbitrary unknown quantum state.
+- Proof: cloning would have to be linear and non-linear at once.
+- *It's what makes quantum key distribution secure.*
+> Quantum teleportation
+
+explain 5 | Quantum teleportation moves a state, not matter
+- Share an entangled pair. Measure your qubit together with the one to send; phone the two-bit result.
+- The receiver applies a correction and holds the original state. The original is destroyed.
+- *No faster-than-light signalling: the classical phone call is essential.*
+> Shor's algorithm
+
+explain 5 | Shor's algorithm factors numbers exponentially faster
+- 1994: Peter Shor showed a quantum computer could factor large numbers in polynomial time.
+- It uses the quantum Fourier transform to find the period of a function.
+- *Breaking RSA-2048 would need many thousands of error-corrected logical qubits: far beyond today's machines.*
+> Decoherence is the enemy
+
+explain 4 | Decoherence
+- Interaction with the environment leaks quantum information, destroying superpositions.
+- Quantum computers fight it with isolation, low temperatures, and error correction.
+- *Error correction spreads one logical qubit across many physical ones.*
+> Masters-level maths and physics complete

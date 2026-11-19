@@ -1,0 +1,302 @@
+## st-dist | Distributions | stats | 0 | - | st-prob
+explain 3 | The central limit theorem
+- Add up lots of independent random things and the total tends toward a bell curve, whatever the individual distributions look like.
+- That's why heights, measurement errors and exam totals are roughly normal.
+- *Dice: one die is flat; the sum of ten dice is nearly a perfect bell.*
+? What does the central limit theorem say? :: Sums (or averages) of many independent random variables tend toward a normal distribution
+> 68–95–99.7
+
+quiz 2 | In a normal distribution, roughly what fraction lies within 2 standard deviations of the mean?
+* 95%
+o 68%
+o 99.7%
+o 50%
+= 68% within 1σ, 95% within 2σ, 99.7% within 3σ.
+> Not everything is normal
+
+explain 4 | Fat tails: when the bell curve lies
+- Wealth, city sizes, earthquake energies and stock crashes follow heavy-tailed distributions.
+- Extreme events are far more common than a normal curve predicts.
+- *Under a normal model, a daily crash like October 1987 would be essentially impossible.*
+> The Poisson distribution counts rare events
+
+story 4 | Horse kicks and the Poisson distribution
+- Ladislaus Bortkiewicz (1898) counted Prussian cavalry soldiers killed by horse kicks per corps per year.
+- The counts fitted a Poisson distribution almost perfectly.
+- *Rare, independent events in a fixed window: calls to a call centre, typos per page, goals in a match.*
+> Next: significance and p-values
+
+## st-test | Hypothesis testing | stats | 0 | - | st-dist
+explain 4 | What a p-value actually means
+- p = probability of seeing data at least this extreme *if the null hypothesis were true*.
+- It is not the probability that the null hypothesis is true.
+- p < 0.05 is a convention from Fisher, not a law of nature.
+? What does a p-value of 0.03 mean? :: If there were no real effect, data this extreme would occur about 3% of the time
+> Run enough tests and something will be "significant"
+
+real 4 | Jelly beans cause acne (in 1 of 20 colours)
+- Test 20 jelly bean colours for a link to acne at p < 0.05.
+- By chance alone, you'd expect about one "significant" result.
+- *Headline: GREEN JELLY BEANS LINKED TO ACNE.* That's the multiple comparisons problem (a famous xkcd).
+> Statistical vs practical significance
+
+explain 3 | Significant doesn't mean big
+- With a million participants, a drug that lowers blood pressure by 0.1 mmHg can be "highly significant".
+- That's real but medically meaningless.
+- *Always ask for the effect size.*
+> Confidence intervals
+
+explain 4 | Confidence intervals, carefully
+- A 95% CI method captures the true value in 95% of repeated experiments.
+- For one computed interval, it's not quite "95% chance the true value is inside" (that's a Bayesian credible interval).
+- *Most scientists blur the two in everyday speech.*
+> Next: correlation and causation
+
+## st-cause | Correlation and causation | stats | 0 | - | st-test
+real 4 | Ice cream sales predict drownings
+- Both rise in summer. Neither causes the other.
+- A third factor (hot weather) drives both: a confounder.
+- *Spurious correlations are everywhere once you look.*
+> Simpson's paradox can reverse a trend
+
+story 5 | Simpson's paradox at Berkeley, 1973
+- Overall, men were admitted to Berkeley's graduate school at a higher rate than women.
+- Department by department, women were admitted at equal or higher rates in most.
+- *Women had applied more to competitive departments with low admission rates for everyone.*
+> Randomised trials beat confounders
+
+explain 4 | Why randomised controlled trials work
+- Randomly assigning treatment balances every confounder, known and unknown, on average.
+- That's why RCTs are the gold standard for causation.
+- *James Lind's 1747 scurvy trial on a ship was an early controlled comparison: citrus cured it.*
+> Survivorship bias
+
+story 5 | Abraham Wald and the bullet holes
+- WWII: planes returning from missions had bullet holes clustered on wings and fuselage. Engineers proposed armouring those spots.
+- Statistician Abraham Wald said armour the places with *no* holes: planes hit there didn't come back.
+- *You're only seeing the survivors.*
+> Next: expected value and gambling
+
+## st-ev | Expected value | stats | 0 | - | st-cause
+explain 3 | Expected value: the long-run average
+- EV = Σ (probability × payoff).
+- A fair coin paying £2 on heads and £0 on tails has EV £1.
+- *Casinos design every game so the EV is in their favour.*
+> Roulette's house edge
+
+quiz 3 | European roulette: £1 on red pays £1 profit. Expected value per bet?
+* About −2.7p
+o 0p
+o −5.3p
+o +1p
+= 18/37 to win £1, 19/37 to lose £1: EV = −1/37 ≈ −£0.027.
+= American roulette has an extra 00 slot, doubling the edge to about 5.3%.
+> The lottery is worse
+
+real 3 | UK Lotto odds
+- Matching all 6 numbers from 59: 1 in about 45 million.
+- Roughly half the ticket money goes back as prizes; the rest to good causes, tax and operating costs.
+- *Expected return is about 50p per £1.*
+> The St Petersburg paradox
+
+explain 5 | The St Petersburg paradox
+- A coin is flipped until heads. If heads first appears on flip n, you win £2ⁿ.
+- Expected value: ½·2 + ¼·4 + ⅛·8 + … = 1 + 1 + 1 + … = infinite.
+- *Yet nobody would pay much to play.* Daniel Bernoulli (1738) proposed utility grows like the log of wealth.
+> The Kelly criterion
+
+explain 4 | Kelly betting
+- For a repeated bet, the Kelly fraction maximises long-run growth: f = edge / odds.
+- Betting more than Kelly increases the risk of ruin without increasing growth.
+- *Edward Thorp used it in blackjack and later on Wall Street.*
+> Next: Bayes in the wild
+
+## st-bayes | Bayesian thinking | stats | 0 | - | st-ev
+explain 4 | Bayes' theorem in words
+- Posterior ∝ likelihood × prior.
+- Start with what you believed, weight by how well each hypothesis predicts the evidence.
+- *Extraordinary claims require extraordinary evidence, because their prior is low.*
+? Bayes' theorem in words? :: Posterior is proportional to likelihood × prior
+> The prosecutor's fallacy
+
+story 5 | Sally Clark and the prosecutor's fallacy
+- 1999: Sally Clark was convicted of murdering her two babies, partly on a claim that two cot deaths in one family had odds of 1 in 73 million.
+- That number wrongly assumed the deaths were independent, and the odds of innocence were confused with the odds of the evidence.
+- *Her conviction was overturned in 2003.* The Royal Statistical Society publicly criticised the statistics.
+> Bayesian search found a lost submarine
+
+story 4 | Bayesian search
+- 1968: the US submarine Scorpion vanished in the Atlantic.
+- Searchers built a probability map from expert scenarios and updated it as areas were searched.
+- *The wreck was found about 200 m from the predicted highest-probability cell.*
+> Next: sampling
+
+## st-samp | Sampling and surveys | stats | 0 | - | st-bayes
+story 5 | The poll that predicted the wrong US president, 1936
+- The Literary Digest polled about 2.4 million people and predicted Alf Landon would beat Roosevelt.
+- Its mailing lists came largely from telephone directories and car registrations: wealthier voters in the Depression.
+- *Roosevelt won in a landslide. George Gallup, with a much smaller but more representative sample, called it right.*
+> Sample size vs representativeness
+
+quiz 3 | A well-chosen random sample of 1,000 people gives a margin of error of roughly…
+* ±3 percentage points
+o ±0.1 points
+o ±10 points
+o ±30 points
+= About 1/√n ≈ 1/31.6 ≈ 3%. Population size barely matters.
+> Leading questions change answers
+
+explain 3 | Question wording changes results
+- Asking whether to "forbid" something gets different answers from asking whether to "not allow" it, even though they mean the same.
+- Order matters too: earlier questions prime later ones.
+- *Always ask to see the exact question before trusting a poll.*
+> Stats track complete. Next: computing
+
+## cs-algo | Algorithms and complexity | cs | 0 | - | cs-think
+explain 3 | Big-O: how running time grows
+- O(1): constant. O(log n): binary search. O(n): reading a list. O(n log n): good sorting. O(n²): comparing every pair.
+- For a million items, n² is a trillion steps; n log n is about 20 million.
+- *Choosing the right algorithm beats buying a faster computer.*
+> Sorting a deck of cards
+
+quiz 3 | Which sorting algorithm is O(n log n) in the worst case?
+* Merge sort
+o Bubble sort
+o Insertion sort
+o Quicksort (basic version)
+= Merge sort always splits in half and merges. Quicksort is O(n log n) on average but O(n²) worst case.
+> Dijkstra found shortest paths in 20 minutes
+
+story 4 | Dijkstra designed his algorithm at a café
+- 1956: Edsger Dijkstra designed his shortest-path algorithm in about 20 minutes, without pen and paper, while shopping in Amsterdam.
+- It's still the core of route-finding in maps and network routing.
+- *He said not having a pencil forced him to keep it simple.*
+> Some problems have no fast solution (we think)
+
+explain 4 | The travelling salesman problem
+- Find the shortest route visiting every city once.
+- Checking all routes for 20 cities: about 6 × 10¹⁶ possibilities.
+- *Nobody knows a fast exact algorithm, but heuristics get within a few percent.*
+> Next: data structures
+
+## cs-ds | Data structures | cs | 0 | - | cs-algo
+explain 3 | Hash tables: instant lookup
+- Turn a key into an array index with a hash function. Lookup is O(1) on average.
+- Collisions happen when two keys land in the same slot; good designs handle them.
+- *Python dictionaries, JavaScript objects and database indexes rely on them.*
+> Stacks and queues
+
+explain 2 | Stacks and queues
+- Stack: last in, first out. Like a pile of plates. Your browser's back button.
+- Queue: first in, first out. Like a supermarket line. Your printer's jobs.
+- *Function calls use a stack: that's what a "stack overflow" overflows.*
+> Trees organise hierarchies
+
+quiz 3 | A balanced binary search tree with a million items needs about how many comparisons to find one?
+* About 20
+o About 1,000
+o About 500,000
+o 1
+= log₂(1,000,000) ≈ 20.
+> Graphs model networks
+
+explain 3 | Graphs: nodes and edges
+- Social networks, road maps, the web, molecules: all graphs.
+- Google's original PageRank ranked pages by treating links as votes, weighted by the voter's own rank.
+- *It's the stationary distribution of a random web surfer.*
+> Next: how the internet works
+
+## cs-net | How the internet works | cs | 0 | - | cs-ds
+explain 3 | Packets, not pipes
+- Data is chopped into packets, each routed independently, possibly by different paths.
+- TCP reassembles them in order and resends lost ones.
+- *Designed so the network keeps working when parts fail.*
+> DNS is the internet's phone book
+
+explain 3 | DNS turns names into addresses
+- You type a domain name; DNS servers translate it into an IP address.
+- Results are cached at many levels so lookups are fast.
+- *When DNS fails, sites seem down even though they're running fine.*
+> The first message on the internet
+
+story 4 | The first message on ARPANET was "LO"
+- 29 October 1969: a UCLA student tried to log in to a computer at Stanford by typing "LOGIN".
+- The system crashed after "LO".
+- *So the internet's first word was, fittingly, "lo".*
+> HTTPS keeps your data private
+
+explain 3 | What the padlock in your browser means
+- HTTPS encrypts traffic between you and the site using TLS.
+- A certificate, signed by a trusted authority, proves the site is who it claims.
+- *It doesn't mean the site is trustworthy, only that the connection is private.*
+> Next: cryptography
+
+## cs-crypt | Cryptography | cs | 0 | - | cs-net
+explain 4 | Public-key cryptography
+- You publish a public key; anyone can encrypt messages to you with it.
+- Only your private key can decrypt them.
+- *It solved the ancient problem of sharing a secret key with a stranger.*
+> RSA relies on factoring being hard
+
+explain 4 | RSA in one card
+- Multiply two huge primes: easy. Factor the product back: extremely hard.
+- Public key: the product and an exponent. Private key: derived from the primes.
+- *A large enough quantum computer running Shor's algorithm could break it,* which is why "post-quantum" cryptography is being rolled out.
+> GCHQ invented it first, in secret
+
+story 5 | British spies invented public-key crypto years before it went public
+- James Ellis, Clifford Cocks and Malcolm Williamson at GCHQ developed it between 1970 and 1974.
+- Rivest, Shamir and Adleman published RSA independently in 1977.
+- *GCHQ's work was declassified only in 1997.*
+> One-time pads are unbreakable
+
+explain 4 | The one-time pad
+- XOR your message with a truly random key as long as the message, used once.
+- Shannon proved in 1949 that this is perfectly secure.
+- *The catch: you need to share as much key as message, securely, in advance.*
+> Next: AI and machine learning
+
+## cs-ai | Machine learning basics | cs | 0 | - | cs-crypt
+explain 3 | Machine learning: learning from examples
+- Instead of writing rules, you show a model lots of labelled examples and let it adjust its parameters.
+- Training minimises a loss function by gradient descent.
+- *Overfitting: memorising the training data instead of learning the pattern.*
+> Neural networks are layers of weighted sums
+
+explain 4 | A neural network in one card
+- Each neuron computes a weighted sum of inputs and applies a non-linear function.
+- Stack layers and the network can approximate almost any function (the universal approximation theorem).
+- *Backpropagation computes how each weight should change, using the chain rule.*
+> Language models predict the next token
+
+explain 4 | How large language models are trained
+- Pretraining: predict the next token across a vast amount of text.
+- Then fine-tuning, including training on human feedback, shapes them into assistants.
+- *Their knowledge comes from patterns in text, which is why they can state wrong things confidently.*
+> The Turing test
+
+story 4 | Turing's imitation game, 1950
+- Turing proposed replacing "can machines think?" with: can a machine's text conversation be told apart from a human's?
+- He predicted that by 2000 machines would fool average interrogators 30% of the time after five minutes.
+- *He also anticipated many modern objections to machine intelligence.*
+> Next: information theory
+
+## cs-info | Information theory | cs | 0 | - | cs-ai
+explain 4 | Shannon defined information in 1948
+- Information is surprise: a likely event tells you little, an unlikely one tells you a lot.
+- Entropy H = −Σ p log₂ p measures average surprise in bits.
+- *A fair coin flip carries exactly 1 bit.*
+? What is the entropy of a fair coin flip? :: 1 bit
+> Compression can't beat entropy
+
+explain 4 | Why you can't compress random data
+- Shannon's source coding theorem: you can't losslessly compress below the entropy.
+- ZIP files shrink text because English is highly predictable.
+- *Compress an already-compressed file and it barely changes.*
+> Error correction lets space probes talk
+
+real 4 | Voyager still phones home with error-correcting codes
+- Voyager's transmitter puts out about 20 watts, from over 20 billion km away.
+- Error-correcting codes add structured redundancy so corrupted bits can be repaired.
+- *Your phone, QR codes and CDs use the same idea.*
+> Computing track complete

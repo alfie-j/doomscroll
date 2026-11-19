@@ -1,6 +1,6 @@
 import { CARD_BY_ID, CARDS, CHAINS, CHAIN_CARDS, CHAIN_LENGTH, COURSES, courseCards, courseOf } from '../content';
 import type { Card, CourseId, Format, Subject } from '../content/types';
-import { SUBJECT_NOUN } from '../theme';
+import { SUBJECT_NAME, SUBJECT_NOUN } from '../theme';
 import { betaSample, pick, rand, randInt } from './random';
 import { type LogEvent, type PersistedState, dayKey, daysBetween } from './state';
 
@@ -469,7 +469,7 @@ export class Engine {
         if (old < at && now >= at && !this.s.titles.includes(title)) {
           this.s.titles.push(title);
           if (at < 500) { this.effects.push({ type: 'toast', text: `New title: ${title}` }); continue; }
-          this.insertNext({ key: this.key(), kind: 'milestone', tone: 'title', title: `Unlocked: ${title}`, lines: [`${now} XP in ${subject === 'lit' ? 'literature' : subject}.`, 'Next title unlocks further up.'] });
+          this.insertNext({ key: this.key(), kind: 'milestone', tone: 'title', title: `Unlocked: ${title}`, lines: [`${now} XP in ${SUBJECT_NAME[subject]}.`, 'Next title unlocks further up.'] });
         }
       }
     }

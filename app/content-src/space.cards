@@ -1,0 +1,285 @@
+## sp-sol | The solar system | physics | 0 | - | x-light
+explain 3 | The Sun holds 99.8% of the solar system's mass
+- Jupiter holds most of the rest: more than twice all the other planets combined.
+- The centre of mass of the Sun and Jupiter lies just outside the Sun's surface.
+- *So the Sun wobbles, which is one way we detect planets around other stars.*
+> Venus is hotter than Mercury
+
+quiz 3 | Which planet has the hottest surface?
+* Venus
+o Mercury
+o Mars
+o Jupiter
+= About 465°C, hot enough to melt lead, from a runaway greenhouse effect under thick CO₂.
+= Mercury is closer to the Sun but has no atmosphere to trap heat.
+> A day on Venus is longer than its year
+
+explain 4 | Venus spins backwards, very slowly
+- It rotates once every 243 Earth days, in the opposite direction to most planets.
+- It orbits the Sun in 225 days.
+- *From the surface, the Sun would rise in the west.*
+> Saturn would float
+
+myth 3 T | Saturn's average density is less than water's.
+= About 0.69 g/cm³. In a big enough bathtub, it would (theoretically) float.
+= Its rings are mostly water ice, and less than 1 km thick in most places.
+> Pluto lost its status in 2006
+
+story 4 | Why Pluto was demoted
+- 2005: Eris was found, about as big as Pluto, with more surely to come.
+- The IAU defined a planet in 2006: it must have cleared its orbital neighbourhood. Pluto hasn't.
+- *New Horizons flew past in 2015 and found mountains of water ice and glaciers of nitrogen.*
+> Mars has the tallest volcano known
+
+quiz 3 | Olympus Mons on Mars is about how tall?
+* About 22 km
+o About 9 km
+o About 50 km
+o About 2 km
+= Roughly two and a half times Everest's height above sea level.
+= Mars's low gravity and lack of moving plates let lava pile up in one place.
+> Europa may have more water than Earth
+
+explain 4 | Ocean moons
+- Jupiter's moon Europa and Saturn's Enceladus have liquid water oceans under ice.
+- Enceladus shoots geysers of water into space; Cassini flew through them.
+- *They're among the best places to look for life beyond Earth.*
+> Next: stars
+
+## sp-star | Stars | physics | 0 | - | sp-sol
+explain 3 | Stars are fusion reactors held together by gravity
+- Gravity squeezes inward; pressure from fusion heat pushes outward.
+- The Sun fuses about 600 million tonnes of hydrogen per second.
+- *It has enough fuel for about another 5 billion years.*
+> Bigger stars live shorter lives
+
+quiz 3 | Which lives longest?
+* A red dwarf with 0.2 solar masses
+o The Sun
+o A blue giant with 20 solar masses
+o They all live about 10 billion years
+= Red dwarfs burn so slowly they can last trillions of years: longer than the universe has existed.
+= Massive stars burn out in a few million years.
+> Light from the Sun's core takes ages to escape
+
+explain 4 | Sunlight is old
+- A photon made in the Sun's core is absorbed and re-emitted countless times.
+- It takes on the order of 100,000 years (estimates vary widely) to random-walk out.
+- *Then just 8 minutes to reach you.*
+> You're made of star stuff
+
+explain 4 | Where the elements came from
+- Hydrogen and most helium: the Big Bang.
+- Carbon, oxygen and up to iron: fusion in stars.
+- *Heavier elements: supernovae and neutron star mergers.* The calcium in your bones was made in stars.
+> Betelgeuse dimmed in 2019
+
+story 3 | The Great Dimming of Betelgeuse
+- Late 2019, the red supergiant Betelgeuse dimmed dramatically. People wondered if it was about to explode.
+- Observations showed a dust cloud from material it had ejected.
+- *It will go supernova someday, but probably not for about 100,000 years.*
+> Next: galaxies
+
+## sp-gal | Galaxies | physics | 0 | - | sp-star
+explain 3 | The Milky Way has 100–400 billion stars
+- We're about 26,000 light-years from its centre, in a spiral arm.
+- At its centre is a black hole of about 4 million solar masses: Sagittarius A*.
+- *Its image was released in 2022 by the Event Horizon Telescope.*
+> Andromeda will collide with us
+
+explain 3 | Andromeda is heading our way
+- The Andromeda galaxy approaches at about 110 km/s.
+- In roughly 4–5 billion years, the two galaxies will merge.
+- *Stars are so far apart that almost none will actually collide.*
+> Edwin Hubble showed galaxies exist
+
+story 5 | Before 1924, the Milky Way was thought to be the whole universe
+- Spiral "nebulae" were debated: gas clouds within our galaxy, or galaxies of their own?
+- Edwin Hubble measured Cepheid variable stars in Andromeda and showed it was far outside the Milky Way.
+- *The universe got unimaginably bigger overnight.*
+> Henrietta Leavitt made it possible
+
+story 4 | Henrietta Leavitt's ruler for the universe
+- Working at Harvard as a "computer" in the 1900s–1910s, she found Cepheid stars' brightness pulses relate to their true luminosity.
+- That made them standard candles for measuring distance.
+- *Hubble's discoveries were built on her law.*
+> Next: planets around other stars
+
+## sp-exo | Exoplanets | physics | 0 | - | sp-gal
+explain 3 | Over 5,000 exoplanets are confirmed
+- The first around a Sun-like star, 51 Pegasi b, was found in 1995: a gas giant orbiting in 4 days.
+- Most are found by the transit method: a tiny dip as a planet crosses its star.
+- *Mayor and Queloz won the 2019 Nobel Prize for 51 Peg b.*
+> Hot Jupiters surprised everyone
+
+explain 4 | The habitable zone
+- The range of distances where liquid water could exist on a planet's surface.
+- TRAPPIST-1, a red dwarf 40 light-years away, has seven Earth-sized planets, several in this zone.
+- *Habitable zone doesn't mean inhabited.*
+> JWST reads alien atmospheres
+
+real 4 | The James Webb telescope reads exoplanet atmospheres
+- As a planet transits, starlight filters through its atmosphere. Molecules absorb specific wavelengths.
+- JWST detected carbon dioxide in an exoplanet atmosphere in 2022.
+- *We're starting to check alien skies for the chemistry of life.*
+> The Fermi paradox
+
+explain 4 | The Fermi paradox: where is everybody?
+- Billions of stars, many with planets, and billions of years for civilisations to spread.
+- Yet no evidence of anyone.
+- *Possible answers: life is rare, civilisations self-destruct, they're quiet, or we're not looking right.*
+> Next: space exploration
+
+## sp-miss | Space missions | physics | 0 | - | sp-exo
+story 5 | Voyager carries a golden record
+- Voyager 1 and 2, launched in 1977, each carry a gold-plated record of sounds and images from Earth.
+- Greetings in 55 languages, music from Bach to Chuck Berry, and a diagram showing how to play it.
+- *Voyager 1 entered interstellar space in 2012.*
+> The Pale Blue Dot
+
+story 4 | The Pale Blue Dot
+- 1990: Carl Sagan persuaded NASA to turn Voyager 1's camera back toward Earth from about 6 billion km away.
+- Earth appears as a speck less than a pixel wide in a sunbeam.
+- *"That's here. That's home. That's us."*
+> Hubble launched with a blurry mirror
+
+story 4 | Hubble was launched short-sighted
+- 1990: Hubble's main mirror had been ground to the wrong shape by about 2 micrometres.
+- Astronauts installed corrective optics in 1993, like glasses for a telescope.
+- *It went on to become one of the most productive scientific instruments ever built.*
+> Rovers on Mars
+
+quiz 3 | Opportunity was designed to last 90 Martian days. How long did it actually operate?
+* About 15 years
+o About 6 months
+o About 3 years
+o About 40 years
+= It landed in 2004 and last communicated in 2018, before a dust storm covered its solar panels.
+> Space track complete
+
+## mt-prime | Primes | maths | 0 | - | m-inf
+story 4 | Euclid proved there are infinitely many primes
+- Suppose there were finitely many. Multiply them all and add 1.
+- The new number isn't divisible by any prime on the list, so the list was incomplete.
+- *About 2,300 years old and still one of the most elegant proofs.*
+> Primes thin out, but predictably
+
+explain 4 | The prime number theorem
+- Near a large number N, about 1 in every ln N numbers is prime.
+- Near a million, about 1 in 14. Near a billion, about 1 in 21.
+- *Gauss guessed this as a teenager from tables.*
+> The largest known primes
+
+quiz 3 | Most of the largest known primes are of what form?
+* 2ᵖ − 1 (Mersenne primes)
+o 10ⁿ + 1
+o n! + 1
+o p² + 1
+= There's a fast test for them (Lucas–Lehmer). The record has over 41 million digits.
+= Found by the volunteer GIMPS project.
+> Twin primes
+
+explain 4 | Twin primes and the gap problem
+- Twin primes differ by 2: (11, 13), (17, 19), (41, 43).
+- Are there infinitely many? Unknown.
+- *2013: Yitang Zhang proved there are infinitely many prime pairs within 70 million of each other. That bound has since been cut to 246.*
+> Goldbach's conjecture
+
+explain 3 | Goldbach's conjecture
+- Every even number greater than 2 is the sum of two primes: 4 = 2 + 2, 28 = 11 + 17.
+- Checked by computer up to 4 × 10¹⁸.
+- *Still unproved since 1742.*
+> Primes keep your money safe
+
+real 4 | Your bank relies on prime numbers
+- Encryption like RSA uses the product of two huge primes.
+- Multiplying them is fast; finding them from the product is believed to be infeasible for large enough numbers.
+- *Ulam spiral: plot integers in a square spiral and the primes form strange diagonal lines.*
+> Next: unsolved problems
+
+## mt-open | Unsolved problems | maths | 0 | - | mt-prime
+explain 4 | The Collatz conjecture
+- Take any positive integer. If even, halve it. If odd, triple it and add 1. Repeat.
+- It always seems to reach 1. 27 takes 111 steps and climbs to 9,232 first.
+- *Erdős: "Mathematics may not be ready for such problems."*
+> The Millennium Prize Problems
+
+explain 3 | Seven million-dollar problems
+- In 2000 the Clay Institute offered $1 million each for seven problems, including P vs NP and the Riemann hypothesis.
+- One has been solved: the Poincaré conjecture.
+- *Grigori Perelman solved it, then turned down both the prize and the Fields Medal.*
+> The moving sofa
+
+explain 4 | The moving sofa problem
+- What's the largest area of sofa you can move around a right-angled corner in a hallway of width 1?
+- Gerver's shape (1992) gives about 2.2195.
+- *A proof that it's optimal was announced in 2024 and is being checked.*
+> The happy ending problem
+
+story 4 | The happy ending problem
+- Esther Klein showed that any 5 points in general position include 4 forming a convex quadrilateral.
+- Erdős and Szekeres generalised it; Klein and Szekeres then married.
+- *Erdős named it the "happy ending problem".*
+> Next: famous numbers
+
+## mt-num | Famous numbers | maths | 0 | - | mt-open
+explain 4 | π is irrational and transcendental
+- Lambert proved it irrational in 1761. Lindemann proved it transcendental in 1882.
+- That settled an ancient question: you can't square the circle with ruler and compass.
+- *Over 100 trillion digits have now been computed.*
+> e shows up uninvited
+
+real 4 | The secretary problem and 1/e
+- Interviewing candidates one at a time, you must accept or reject each on the spot.
+- Best strategy: reject the first 37% (1/e), then take the first who beats them all.
+- *You pick the best candidate about 37% of the time.* Some apply it to dating, half-jokingly.
+> 6174 is a mathematical black hole
+
+story 4 | Kaprekar's constant, 6174
+- Take any four-digit number with at least two different digits. Arrange digits high to low, then low to high, subtract.
+- Repeat. You always reach 6174 within seven steps.
+- *6174: 7641 − 1467 = 6174.*
+> Graham's number
+
+explain 4 | Graham's number
+- An upper bound from a 1970s problem about colouring hypercubes. It's so large the observable universe can't hold its digits.
+- It needs special notation (Knuth's up-arrows) even to describe.
+- *Yet we know its last digits: it ends in …7262464195387.*
+> 1729 is a taxicab number
+
+story 4 | 1729: "a very interesting number"
+- Hardy visited Ramanujan in hospital in a taxi numbered 1729 and called it dull.
+- Ramanujan replied it's the smallest number expressible as the sum of two cubes in two ways: 1³ + 12³ = 9³ + 10³.
+- *Numbers like it are now called taxicab numbers.*
+> Next: geometry surprises
+
+## mt-geo | Geometry and topology surprises | maths | 0 | - | mt-num
+explain 4 | A Möbius strip has one side and one edge
+- Take a strip of paper, give it a half-twist, tape the ends.
+- Draw a line along the middle: it covers both "sides" before returning.
+- *Cut it along the middle and it stays in one piece, twice as long.*
+> A coffee mug is a doughnut
+
+explain 3 | To a topologist, a mug is a doughnut
+- Topology ignores stretching and bending, but not tearing or gluing.
+- A mug and a doughnut each have exactly one hole, so they're equivalent.
+- *A topologist can't tell their coffee mug from their breakfast.*
+> The four colour theorem needed a computer
+
+story 4 | The four colour theorem
+- Any map can be coloured with four colours so no neighbouring regions match.
+- Proved in 1976 by Appel and Haken with over 1,000 hours of computer checking.
+- *The first major theorem proved with essential computer help; many mathematicians were uneasy.*
+> Banach–Tarski
+
+story 5 | Banach–Tarski: one ball becomes two
+- Using the axiom of choice, a solid ball can be cut into finitely many pieces and reassembled into two balls the same size as the original.
+- The pieces are so bizarre they have no well-defined volume.
+- *It's a theorem, not a trick. Physical matter can't be cut that way.*
+> Spheres turned inside out
+
+story 4 | You can turn a sphere inside out
+- Smale proved in 1957 that a sphere can be everted (turned inside out) if surfaces may pass through themselves, without creases.
+- Nobody could picture how at first.
+- *Bernard Morin, who was blind, helped work out an explicit way.*
+> Maths curiosities complete
