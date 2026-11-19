@@ -1,0 +1,174 @@
+## li-first | Famous first lines | lit | 0 | - | li-math
+quiz 3 | "Call me Ishmael." Which novel opens this way?
+* Moby-Dick
+o Treasure Island
+o Robinson Crusoe
+o The Old Man and the Sea
+= Herman Melville, 1851. It sold poorly in his lifetime.
+> Next first line
+
+quiz 3 | "It was a bright cold day in April, and the clocks were striking thirteen." Which novel?
+* Nineteen Eighty-Four
+o Brave New World
+o Fahrenheit 451
+o The Handmaid's Tale
+= Orwell signals from line one that something is wrong: clocks don't strike thirteen.
+> Next first line
+
+quiz 3 | "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife." Which novel?
+* Pride and Prejudice
+o Emma
+o Middlemarch
+o Jane Eyre
+= Austen, 1813. The irony: it's the families who want the rich man, not the reverse.
+> Next first line
+
+quiz 3 | "It was the best of times, it was the worst of times…" Which novel?
+* A Tale of Two Cities
+o Great Expectations
+o Bleak House
+o Oliver Twist
+= Dickens, 1859, set around the French Revolution.
+> Next first line
+
+quiz 3 | "Mrs Dalloway said she would buy the flowers herself." Who wrote it?
+* Virginia Woolf
+o E. M. Forster
+o James Joyce
+o Katherine Mansfield
+= The whole novel takes place on one June day in 1923.
+> Next: banned books
+
+## li-ban | Banned books | lit | 0 | - | li-first
+story 4 | Ulysses was burned and banned
+- Copies were seized and burned by US Post Office officials in the early 1920s.
+- In 1933 a US judge ruled it wasn't obscene, writing that it was "a sincere and serious attempt" at a new literary form.
+- *The UK lifted its effective ban in 1936.*
+> Lady Chatterley went on trial
+
+story 4 | The Lady Chatterley trial, 1960
+- Penguin was prosecuted for publishing D. H. Lawrence's novel unexpurgated.
+- The prosecutor asked the jury whether it was a book "you would wish your wife or your servants to read".
+- *Penguin won; the book sold around 3 million copies in three months.*
+> Animal Farm was rejected for politics
+
+story 4 | Animal Farm was turned down by several publishers
+- During WWII, Britain was allied with the USSR. A satire of Stalin seemed impolitic.
+- T. S. Eliot, at Faber, rejected it too.
+- *Published in 1945, it became one of the bestselling novels of the century.*
+> Next: Jane Austen deeper
+
+## li-poets | Great poets | lit | 0 | - | li-ban
+story 4 | Keats wrote his greatest odes in about a year
+- In 1819 John Keats wrote "Ode to a Nightingale", "To Autumn" and others.
+- He died of tuberculosis in Rome in 1821, aged 25.
+- *His gravestone reads: "Here lies One Whose Name was writ in Water."*
+> Byron was mad, bad and dangerous to know
+
+story 3 | Lord Byron kept a bear at Cambridge
+- Trinity College banned dogs, so Byron kept a tame bear, arguing that nothing in the rules forbade it.
+- Lady Caroline Lamb called him "mad, bad and dangerous to know".
+- *His daughter was Ada Lovelace.*
+> Wordsworth and the daffodils
+
+quiz 3 | Who wrote "I wandered lonely as a cloud"?
+* William Wordsworth
+o Samuel Taylor Coleridge
+o Percy Shelley
+o William Blake
+= Inspired by a walk with his sister Dorothy, whose journal described the daffodils first.
+> Sylvia Plath
+
+explain 4 | Confessional poetry
+- Poets like Sylvia Plath and Robert Lowell wrote openly about mental illness, family and the self.
+- Plath's Ariel (1965), published after her death, made her famous.
+- *She won the Pulitzer Prize posthumously in 1982.*
+> Next: children's literature
+
+## li-kids | Children's books | lit | 0 | - | li-poets
+story 4 | The Cat in the Hat used just 236 different words
+- Dr Seuss was challenged to write an engaging book from a list of early-reader words.
+- Green Eggs and Ham went further: just 50 different words, after a $50 bet with his publisher.
+- *Constraint, again, fuelling creativity.*
+> Harry Potter was rejected a dozen times
+
+story 4 | Harry Potter was rejected by about 12 publishers
+- Bloomsbury took it in 1997, reportedly after the chairman's eight-year-old daughter loved the first chapter.
+- The first print run was 500 copies.
+- *The series has sold over 600 million copies.*
+> Winnie-the-Pooh was a real bear
+
+story 3 | Winnie was a Canadian black bear in London Zoo
+- A Canadian soldier bought a bear cub in 1914 and named her after Winnipeg. She ended up in London Zoo.
+- A. A. Milne's son Christopher Robin loved visiting her.
+- *His toy bear, and the stories, followed.*
+> Next: philosophy's lives
+
+## ph-lives | Philosophers' lives | philo | 0 | - | ph-math
+story 4 | Kant walked so regularly people set their clocks by him
+- In Königsberg, Kant's daily walk was famously punctual.
+- He never travelled far from his home city in his whole life.
+- *The story goes he missed his walk only when absorbed in Rousseau's Émile.*
+> Wittgenstein gave away a fortune
+
+story 4 | Wittgenstein gave away one of Europe's largest fortunes
+- Son of a steel magnate, he gave his inheritance to his siblings and lived simply.
+- He worked as a primary school teacher, gardener and hospital porter between stints at Cambridge.
+- *He thought his first book had solved all of philosophy's problems, then changed his mind.*
+> Hypatia of Alexandria
+
+story 4 | Hypatia of Alexandria
+- A mathematician, astronomer and philosopher who taught in Alexandria around 400 AD.
+- She was murdered by a Christian mob in 415 AD amid political conflict.
+- *She became a symbol of reason against fanaticism, though the details are often romanticised.*
+> Descartes died giving dawn lessons
+
+story 3 | Descartes died teaching a queen at 5 a.m.
+- Queen Christina of Sweden hired Descartes in 1649 and wanted lessons at 5 in the morning.
+- He had always liked lying in bed until late. He died in Stockholm in February 1650, probably of pneumonia.
+- *Some have suggested poisoning, but it's unproven.*
+> Next: more thought experiments
+
+## ph-te2 | More thought experiments | philo | 0 | - | ph-lives
+explain 4 | Nozick's experience machine
+- A machine could give you any experiences you want, indistinguishable from reality, for life.
+- Would you plug in?
+- *Most people say no, which suggests we value more than pleasant experiences.*
+> The teleporter problem
+
+explain 4 | The teleporter
+- A teleporter scans you, destroys you, and builds an exact copy on Mars.
+- Is the person on Mars you? What if it forgot to destroy the original?
+- *Derek Parfit argued personal identity isn't what matters; continuity of memory and character is.*
+> Twin Earth
+
+explain 5 | Twin Earth: meaning isn't in the head
+- Twin Earth is identical to Earth except "water" there is a different chemical, XYZ.
+- Your twin's thoughts are physically identical to yours, but they refer to XYZ.
+- *Hilary Putnam (1975): "Meanings just ain't in the head."*
+> Newcomb's problem
+
+explain 5 | Newcomb's problem
+- Box A has £1,000. Box B has £1 million, or nothing, decided by a near-perfect predictor who filled it if they predicted you'd take only B.
+- Take both, or only B?
+- *Philosophers split roughly evenly. Robert Nozick: "To almost everyone it is perfectly clear and obvious what should be done. The difficulty is that these people seem to divide almost evenly."*
+> The veil, the trolley, the room: all tools for testing intuitions
+
+## ph-ai | Ethics of AI | philo | 0 | - | ph-te2
+explain 4 | The alignment problem
+- An AI system optimises the objective it's given, which may not be what its designers meant.
+- Nick Bostrom's paperclip maximiser: an AI told to make paperclips converts everything into paperclips.
+- *Goodhart's law, at machine scale.*
+> Can machines have moral status?
+
+explain 4 | Machine moral status
+- If an AI could suffer, would it deserve moral consideration?
+- We can't directly observe consciousness in anything but ourselves.
+- *Philosophers are taking the question more seriously as AI systems grow more capable.*
+> Bias in algorithms
+
+real 4 | Algorithms can inherit bias from data
+- A system trained on past hiring decisions can learn the biases in those decisions.
+- One well-known 2018 report described a recruiting tool that downgraded CVs containing the word "women's".
+- *Fairness has several mathematical definitions that can't all be satisfied at once.*
+> Philosophy track part two complete

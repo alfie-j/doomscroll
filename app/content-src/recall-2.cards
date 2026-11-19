@@ -1,0 +1,266 @@
+## rc-calc2 | Calc 2 and 3 concept check | maths | 2 | calc2 | rc-calc
+quiz 3 | Integration by parts comes from which differentiation rule?
+* The product rule
+o The chain rule
+o The quotient rule
+o The power rule
+= ∫u dv = uv − ∫v du.
+> Next
+
+quiz 3 | u-substitution reverses which rule?
+* The chain rule
+o The product rule
+o The quotient rule
+o L'Hôpital's rule
+= Spot an inner function and its derivative.
+> Next
+
+quiz 3 | An improper integral is one where…
+* A limit of integration is infinite, or the integrand blows up
+o The answer is negative
+o The function is discontinuous somewhere harmless
+o It can't be computed
+= Defined as a limit.
+> Next
+
+quiz 3 | The ratio test is inconclusive when the limit equals…
+* 1
+o 0
+o ∞
+o 1/2
+= Try another test.
+> Next
+
+quiz 3 | A Taylor series about 0 is also called a…
+* Maclaurin series
+o Fourier series
+o Laurent series
+o Power tower
+= After Colin Maclaurin.
+> Next
+
+quiz 4 | A Fourier series represents a periodic function as a sum of…
+* Sines and cosines
+o Polynomials
+o Exponentials only
+o Step functions
+= Frequencies that are integer multiples of the fundamental.
+> Next
+
+quiz 4 | A homogeneous linear ODE with constant coefficients is solved by trying…
+* y = e^(rx)
+o y = x^r
+o y = ln x
+o y = sin x only
+= Leading to the characteristic equation.
+> Next
+
+quiz 4 | What does a partial derivative ∂f/∂x hold constant?
+* All the other variables
+o x
+o The function's value
+o Nothing
+= It's the slope along the x-direction.
+> Next
+
+quiz 4 | A saddle point of f(x, y) has Hessian determinant…
+* Negative
+o Positive
+o Zero
+o Equal to 1
+= D = f_xx f_yy − f_xy² < 0.
+> Next
+
+quiz 4 | Stokes' theorem relates…
+* Circulation around a curve to the curl through a surface it bounds
+o Flux through a closed surface to divergence
+o Area to perimeter
+o Volume to surface area
+= ∮F·dr = ∬(∇×F)·dS.
+> Next
+
+quiz 4 | The divergence of a curl is always…
+* Zero
+o One
+o The Laplacian
+o Undefined
+= ∇·(∇×F) = 0.
+> Next
+
+quiz 5 | What does the generalised Stokes theorem say?
+* ∫ over ∂M of ω = ∫ over M of dω
+o All integrals are zero
+o d(dω) = ω
+o Every form is exact
+= It contains the FTC, Green, Stokes and divergence theorems.
+> Concept checks complete
+
+## qf-mix | Quick-fire: anything goes | history | 0 | - | qf-hist4
+quiz 3 | Which inventor is associated with the light bulb's commercial success?
+* Thomas Edison
+o Nikola Tesla
+o Joseph Swan only
+o Alexander Graham Bell
+= Joseph Swan developed a working bulb in Britain around the same time; they later merged companies.
+> Next
+
+quiz 3 | Who developed the theory of evolution by natural selection alongside Darwin?
+* Alfred Russel Wallace
+o Gregor Mendel
+o Jean-Baptiste Lamarck
+o Thomas Huxley
+= Their papers were read together in 1858.
+> Next
+
+quiz 3 | Which scientist formulated the laws of motion and universal gravitation?
+* Isaac Newton
+o Galileo
+o Kepler
+o Einstein
+= Principia, 1687.
+> Next
+
+quiz 4 | Which ship carried Darwin on his voyage?
+* HMS Beagle
+o HMS Endeavour
+o HMS Victory
+o The Mayflower
+= 1831–1836, including the Galápagos.
+> Next
+
+quiz 4 | Who discovered penicillin?
+* Alexander Fleming
+o Louis Pasteur
+o Joseph Lister
+o Edward Jenner
+= 1928.
+> Next
+
+quiz 4 | Who proposed the heliocentric model in 1543?
+* Nicolaus Copernicus
+o Galileo
+o Ptolemy
+o Kepler
+= Aristarchus had suggested it around 270 BC.
+> Next
+
+quiz 4 | Which scientist is known for the uncertainty principle?
+* Werner Heisenberg
+o Erwin Schrödinger
+o Max Planck
+o Paul Dirac
+= 1927.
+> Next
+
+quiz 4 | Who first proposed that continents drift?
+* Alfred Wegener
+o Charles Lyell
+o James Hutton
+o Arthur Holmes
+= 1912. Holmes later suggested mantle convection as the mechanism.
+> Next
+
+quiz 4 | Which mathematician is known for the incompleteness theorems?
+* Kurt Gödel
+o David Hilbert
+o Alan Turing
+o Bertrand Russell
+= 1931.
+> Next
+
+quiz 4 | Who wrote A Brief History of Time?
+* Stephen Hawking
+o Carl Sagan
+o Richard Feynman
+o Brian Greene
+= 1988. It spent years on bestseller lists.
+> Next
+
+quiz 4 | Who discovered the structure of benzene (a ring)?
+* August Kekulé
+o Dmitri Mendeleev
+o Linus Pauling
+o John Dalton
+= 1865.
+> Next
+
+quiz 4 | Who proposed atomic theory in its modern chemical form (1808)?
+* John Dalton
+o Democritus
+o Niels Bohr
+o Ernest Rutherford
+= Elements made of identical atoms combining in simple ratios.
+> Next
+
+quiz 5 | Who first proved that the square root of 2 is irrational (traditionally)?
+* The Pythagoreans
+o Euclid
+o Archimedes
+o Euler
+= Legend says Hippasus was drowned for revealing it. Probably a myth.
+> Anything-goes round complete
+
+## qf-final2 | Quick-fire: last round | physics | 0 | - | qf-phys2
+quiz 3 | What's the unit of electrical resistance?
+* Ohm
+o Volt
+o Amp
+o Watt
+= Ω.
+> Next
+
+quiz 3 | Which particle is responsible for electric current in metals?
+* Electrons
+o Protons
+o Neutrons
+o Photons
+= Conduction electrons drift slowly; the signal travels fast.
+> Next
+
+quiz 3 | What is the speed of sound in air at room temperature?
+* About 343 m/s
+o About 3 × 10⁸ m/s
+o About 34 m/s
+o About 1,500 m/s
+= 1,500 m/s is roughly sound in water.
+> Next
+
+quiz 4 | What happens to the period of a pendulum on the Moon?
+* It gets longer
+o It gets shorter
+o It stays the same
+o It stops swinging
+= T = 2π√(L/g), and g is about a sixth of Earth's.
+> Next
+
+quiz 4 | Which phase change absorbs the most energy per kilogram for water?
+* Boiling (liquid to gas)
+o Melting
+o Freezing
+o Condensing
+= About 2,260 kJ/kg versus 334 kJ/kg for melting.
+> Next
+
+quiz 4 | Doubling the distance from a point light source makes it…
+* A quarter as bright
+o Half as bright
+o The same
+o Twice as bright
+= Inverse square law.
+> Next
+
+quiz 4 | What's the main reason the sky is dark at night?
+* The universe has a finite age, so light from far stars hasn't reached us
+o Stars are too few
+o Dust blocks all starlight
+o The Sun is behind Earth (only)
+= Olbers' paradox: an infinite, eternal, static universe would have a bright sky everywhere.
+> Next
+
+quiz 5 | Which equation describes how a quantum state evolves in time?
+* The Schrödinger equation
+o Maxwell's equations
+o Newton's second law
+o The Navier–Stokes equations
+= iħ∂ψ/∂t = Hψ.
+> Last round complete

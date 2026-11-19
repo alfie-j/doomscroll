@@ -1,0 +1,362 @@
+## rc-calc | Calculus concept check | maths | 1 | calc1 | c1-px3
+quiz 2 | What does f′(a) represent geometrically?
+* The slope of the tangent line at x = a
+o The area under f up to a
+o The value of f at a
+o The y-intercept
+= The instantaneous rate of change.
+> Next
+
+quiz 3 | If f′(x) > 0 on an interval, f is…
+* Increasing there
+o Decreasing there
+o Concave up
+o Constant
+= Positive slope means rising.
+> Next
+
+quiz 3 | What does the integral ∫ₐᵇ v(t) dt give, if v is velocity?
+* Displacement
+o Distance travelled (always)
+o Acceleration
+o Average speed
+= Distance travelled is ∫|v| dt.
+> Next
+
+quiz 3 | Rolle's theorem: if f is continuous on [a, b], differentiable on (a, b), and f(a) = f(b), then…
+* f′(c) = 0 for some c in (a, b)
+o f is constant
+o f(c) = 0 for some c
+o f″(c) = 0 for some c
+= A special case of the Mean Value Theorem.
+> Next
+
+quiz 3 | A function differentiable at a point must be…
+* Continuous there
+o Increasing there
+o Zero there
+o Twice differentiable there
+= Differentiability implies continuity, not the reverse.
+> Next
+
+quiz 3 | Which is an antiderivative of 1/x for x > 0?
+* ln x
+o −1/x²
+o x⁰
+o eˣ
+= d/dx ln x = 1/x.
+> Next
+
+quiz 4 | The second derivative test is inconclusive when…
+* f″(c) = 0
+o f″(c) > 0
+o f″(c) < 0
+o f′(c) ≠ 0
+= Use the first derivative test instead.
+> Next
+
+quiz 3 | What does a definite integral of a rate give?
+* The net change in the quantity
+o The rate at the end
+o The average rate
+o Zero
+= Net change theorem: ∫ₐᵇ F′(x) dx = F(b) − F(a).
+> Next
+
+quiz 4 | A series Σaₙ converges absolutely if…
+* Σ|aₙ| converges
+o aₙ → 0
+o The partial sums are bounded
+o It alternates
+= Absolute convergence implies convergence.
+> Next
+
+quiz 4 | The radius of convergence of a power series can be found with…
+* The ratio (or root) test
+o The integral test
+o The divergence test
+o The comparison test only
+= Apply it to |cₙ(x − a)ⁿ|.
+> Next
+
+quiz 4 | ∇f at a point is perpendicular to…
+* The level curve (or surface) through that point
+o The x-axis
+o The tangent plane's normal
+o Every other gradient
+= It points in the direction of steepest increase.
+> Next
+
+quiz 4 | A vector field F is conservative on a simply connected region if…
+* curl F = 0
+o div F = 0
+o F is constant
+o |F| = 1
+= Then F = ∇φ for some potential φ.
+> Next
+
+quiz 4 | The Jacobian for polar coordinates is…
+* r
+o 1
+o r²
+o sin θ
+= dA = r dr dθ.
+> Next
+
+quiz 4 | Which theorem relates a line integral around a closed curve to a double integral over the region inside it?
+* Green's theorem
+o Divergence theorem
+o Fundamental theorem of calculus
+o Fubini's theorem
+= ∮(P dx + Q dy) = ∬(Q_x − P_y) dA.
+> Next
+
+quiz 4 | The divergence theorem relates…
+* Flux through a closed surface to the volume integral of the divergence
+o Circulation to curl
+o Area to perimeter
+o Slope to area
+= ∯ F·dS = ∭ ∇·F dV.
+> Physics concept check next
+
+## rc-phys1 | Mechanics concept check | physics | 1 | phys1 | p1-px3
+quiz 2 | Newton's first law is also called the law of…
+* Inertia
+o Acceleration
+o Action and reaction
+o Gravitation
+= Objects keep their velocity unless a net force acts.
+> Next
+
+quiz 3 | Momentum is conserved when…
+* No net external force acts on the system
+o Kinetic energy is conserved
+o Objects stick together
+o Friction is present
+= Momentum is conserved in all collisions of an isolated system.
+> Next
+
+quiz 3 | The area under a force–displacement graph gives…
+* Work done
+o Power
+o Momentum
+o Acceleration
+= W = ∫F dx.
+> Next
+
+quiz 3 | The area under a force–time graph gives…
+* Impulse (change in momentum)
+o Work
+o Energy
+o Power
+= J = ∫F dt = Δp.
+> Next
+
+quiz 3 | For an object in uniform circular motion, the net force points…
+* Toward the centre
+o Along the velocity
+o Outward
+o It's zero
+= Centripetal force: mv²/r.
+> Next
+
+quiz 3 | What quantity is conserved when no external torque acts?
+* Angular momentum
+o Linear momentum
+o Kinetic energy
+o Angular velocity
+= L = Iω stays constant; ω can change if I does.
+> Next
+
+quiz 4 | In SHM, where is speed greatest?
+* At the equilibrium position
+o At the extremes
+o Halfway to the extreme
+o Speed is constant
+= All energy is kinetic at equilibrium.
+> Next
+
+quiz 4 | A conservative force is one where…
+* Work done is independent of path
+o Energy is always lost
+o It's always attractive
+o It acts only on moving objects
+= Gravity and springs: yes. Friction: no.
+> Next
+
+quiz 4 | Parallel axis theorem: I about a parallel axis at distance d equals…
+* I_cm + Md²
+o I_cm − Md²
+o I_cm × d
+o Md²
+= From the centre-of-mass axis.
+> Next
+
+quiz 4 | In the Lagrangian formalism, L equals…
+* T − V
+o T + V
+o V − T
+o pq̇ − H
+= The Hamiltonian is T + V (for standard systems).
+> E&M concept check next
+
+## rc-phys2 | E&M concept check | physics | 1 | phys2 | p2-px2
+quiz 2 | Electric field lines point from…
+* Positive to negative charge
+o Negative to positive charge
+o North to south
+o High to low resistance
+= They show the direction of force on a positive test charge.
+> Next
+
+quiz 3 | Inside a conductor in electrostatic equilibrium, the electric field is…
+* Zero
+o Maximum
+o Uniform and non-zero
+o Equal to the surface field
+= Free charges rearrange until it vanishes.
+> Next
+
+quiz 3 | The unit of capacitance is the…
+* Farad
+o Henry
+o Tesla
+o Weber
+= Henry is inductance; tesla is magnetic field; weber is flux.
+> Next
+
+quiz 3 | Kirchhoff's junction rule expresses conservation of…
+* Charge
+o Energy
+o Momentum
+o Mass
+= The loop rule expresses energy conservation.
+> Next
+
+quiz 3 | A magnetic field exerts a force on a charge only if the charge is…
+* Moving (not parallel to the field)
+o Stationary
+o Negative
+o Inside a conductor
+= F = qv × B.
+> Next
+
+quiz 4 | Lenz's law says induced current flows so as to…
+* Oppose the change in magnetic flux
+o Increase the flux
+o Flow clockwise
+o Maximise power
+= A consequence of energy conservation.
+> Next
+
+quiz 4 | Which Maxwell equation says there are no magnetic monopoles?
+* ∇·B = 0
+o ∇·E = ρ/ε₀
+o ∇×E = −∂B/∂t
+o ∇×B = μ₀J + μ₀ε₀∂E/∂t
+= Magnetic field lines have no sources or sinks.
+> Next
+
+quiz 4 | The displacement current term was added by…
+* Maxwell
+o Faraday
+o Ampère
+o Gauss
+= It made the equations consistent with charge conservation and predicted EM waves.
+> Next
+
+quiz 4 | In an EM wave, E and B are…
+* Perpendicular to each other and to the direction of travel
+o Parallel to each other
+o Parallel to the direction of travel
+o 90° out of phase in vacuum
+= In vacuum they're in phase, with E = cB.
+> Next
+
+quiz 4 | The time constant of an RL circuit is…
+* L/R
+o RC
+o LR
+o √(LC)
+= Current rises to about 63% of its final value after one L/R.
+> Modern physics concept check next
+
+## rc-phys3 | Modern physics concept check | physics | 2 | phys3 | p3-px2
+quiz 2 | Einstein's photoelectric equation is…
+* KE_max = hf − φ
+o E = mc²
+o E = hf only
+o λ = h/p
+= φ is the work function of the metal.
+> Next
+
+quiz 3 | Which postulate is NOT part of special relativity?
+* Mass is constant at all speeds
+o The laws of physics are the same in all inertial frames
+o The speed of light in vacuum is the same for all observers
+= Relativistic energy and momentum depend on speed through γ.
+> Next
+
+quiz 3 | The Pauli exclusion principle applies to…
+* Fermions
+o Bosons
+o Photons
+o All particles
+= No two identical fermions can share a quantum state.
+> Next
+
+quiz 3 | The second law of thermodynamics says the entropy of an isolated system…
+* Never decreases
+o Always stays constant
+o Always decreases
+o Is zero
+= It increases in irreversible processes and stays constant in reversible ones.
+> Next
+
+quiz 4 | |ψ(x)|² gives…
+* A probability density
+o The particle's energy
+o The particle's momentum
+o The wave's speed
+= Born's rule.
+> Next
+
+quiz 4 | Which quantity is quantised in the Bohr model?
+* Angular momentum (in units of ħ)
+o Linear momentum
+o Mass
+o Charge only
+= L = nħ.
+> Next
+
+quiz 4 | A spin-½ particle has how many possible spin states along a measured axis?
+* 2
+o 1
+o 3
+o Infinite
+= Up and down: m_s = ±½.
+> Next
+
+quiz 4 | Beta-minus decay turns…
+* A neutron into a proton, emitting an electron and an antineutrino
+o A proton into a neutron
+o A nucleus into a helium nucleus
+o An electron into a photon
+= Mediated by the weak force (via a W⁻ boson).
+> Next
+
+quiz 4 | Which particle mediates the electromagnetic force?
+* The photon
+o The gluon
+o The W boson
+o The Higgs boson
+= Gluons carry the strong force; W and Z the weak force.
+> Next
+
+quiz 5 | The commutator [x, p] equals…
+* iħ
+o 0
+o ħ
+o −iħ/2
+= Canonical commutation relation.
+> Concept checks complete

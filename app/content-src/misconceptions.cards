@@ -1,0 +1,89 @@
+## mc-calc | Calculus mistakes examiners love | maths | 1 | calc1 | rc-calc
+myth 3 F | d/dx (f·g) = f′·g′.
+= Product rule: (fg)′ = f′g + fg′.
+= Check with x·x: f′g′ = 1, but the true derivative is 2x.
+> Next mistake
+
+myth 3 F | ∫ 1/x² dx = ln(x²) + C.
+= 1/x² = x⁻², and the power rule works: −x⁻¹ + C = −1/x + C.
+= ln only appears for x⁻¹.
+> Next mistake
+
+myth 3 F | √(a² + b²) = a + b.
+= √(9 + 16) = 5, not 7.
+= Roots don't distribute over addition. Neither do squares: (a + b)² ≠ a² + b².
+> Next mistake
+
+myth 4 F | If lim f(x) = 0 and lim g(x) = ∞, then lim f·g = 0.
+= 0·∞ is indeterminate. x·(1/x) → 1, x²·(1/x) → 0, x·(1/x²) → ∞.
+> Next mistake
+
+myth 3 F | d/dx e^(x²) = e^(x²), just like eˣ.
+= Chain rule: d/dx e^(x²) = 2x e^(x²).
+> Next mistake
+
+myth 4 F | A function with f′(c) undefined can't have an extremum at c.
+= |x| has a minimum at 0, where f′ is undefined.
+= Critical points include places where f′ doesn't exist.
+> Next mistake
+
+myth 3 F | ln(a + b) = ln a + ln b.
+= ln(ab) = ln a + ln b. There's no simple rule for ln(a + b).
+> Next mistake
+
+myth 4 F | If aₙ → 0, then Σ aₙ converges.
+= The harmonic series is the counterexample.
+= aₙ → 0 is necessary, not sufficient.
+> Next mistake
+
+myth 4 F | The integral of a product is the product of the integrals.
+= ∫x·x dx = x³/3, but (∫x dx)² = x⁴/4.
+= That's why integration by parts exists.
+> Next mistake
+
+myth 4 F | Mixed partial derivatives f_xy and f_yx are always equal.
+= They're equal when they're continuous (Clairaut's theorem). Pathological functions break this.
+> Physics mistakes next
+
+## mc-phys | Physics mistakes examiners love | physics | 1 | phys1 | rc-phys1
+myth 3 F | A moving object must have a net force acting on it.
+= Constant velocity needs zero net force (Newton's first law).
+= Force changes motion; it doesn't sustain it.
+> Next mistake
+
+myth 3 F | Heavier objects fall faster (without air resistance).
+= All objects fall with the same acceleration g in a vacuum.
+> Next mistake
+
+myth 3 F | At the top of a projectile's path, its acceleration is zero.
+= Acceleration is g downward throughout. Only the vertical velocity is zero there.
+> Next mistake
+
+myth 4 F | Centrifugal force pushes objects outward in circular motion.
+= In an inertial frame, there's only an inward (centripetal) net force. Centrifugal force is fictitious, appearing only in rotating frames.
+> Next mistake
+
+myth 3 F | Mass and weight are the same thing.
+= Mass is in kg and is the same everywhere. Weight is a force (mg) in newtons and changes with gravity.
+> Next mistake
+
+myth 4 F | In an elastic collision, both objects keep their kinetic energies.
+= The total kinetic energy is conserved. Individual energies can change completely.
+> Next mistake
+
+myth 4 F | Current gets used up as it goes around a circuit.
+= Current is the same everywhere in a series loop. Energy is transferred, not charge.
+> Next mistake
+
+myth 4 F | A battery stores charge.
+= A battery stores chemical energy and maintains a potential difference. A capacitor stores separated charge.
+> Next mistake
+
+myth 4 F | Heat and temperature are the same thing.
+= Temperature measures average kinetic energy per particle. Heat is energy transferred because of a temperature difference.
+= A bath at 40°C holds more heat energy than a cup of tea at 80°C.
+> Next mistake
+
+myth 4 F | In quantum mechanics, the uncertainty principle is caused by our clumsy measuring tools.
+= It's a property of the quantum state itself: no state has sharp position and momentum together.
+> Mistakes cleared

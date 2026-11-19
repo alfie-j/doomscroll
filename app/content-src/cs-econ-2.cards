@@ -1,0 +1,114 @@
+## cs-hist | History of computing | cs | 0 | - | cs-info
+story 4 | The first computer bug was a real moth
+- 1947: operators of the Harvard Mark II found a moth stuck in a relay and taped it into the logbook: "First actual case of bug being found."
+- "Bug" for a fault predates it, but the moth is real and survives in the Smithsonian.
+- *Grace Hopper popularised the story.*
+> Grace Hopper built the first compiler
+
+story 4 | Grace Hopper
+- A US Navy rear admiral, she developed one of the first compilers in the early 1950s and drove the creation of COBOL.
+- She handed out 30 cm lengths of wire to show what a nanosecond is: how far light travels in one.
+- *"It's easier to ask forgiveness than it is to get permission."*
+> Moore's law
+
+explain 3 | Moore's law
+- 1965: Gordon Moore observed transistors per chip were doubling roughly every year; in 1975 he revised it to every two years.
+- It held, roughly, for about five decades.
+- *It's an observation about engineering and economics, not a law of physics.*
+> The web was invented at CERN
+
+story 4 | Tim Berners-Lee invented the web to share physics papers
+- 1989: at CERN, he proposed a system of linked documents. His boss wrote "Vague but exciting" on the proposal.
+- The first website went live in 1991.
+- *CERN released the web's technology royalty-free in 1993.*
+> Next: programming ideas
+
+## cs-prog | Programming ideas | cs | 0 | - | cs-hist
+explain 3 | Recursion: a function that calls itself
+- factorial(n) = n × factorial(n − 1), stopping at factorial(0) = 1.
+- Every recursion needs a base case, or it runs forever (and overflows the stack).
+- *"To understand recursion, you must first understand recursion."*
+> Abstraction
+
+explain 3 | Abstraction hides complexity
+- You use a car's steering wheel without knowing how the rack and pinion work.
+- Good code exposes simple interfaces and hides details behind them.
+- *Every layer of computing, from transistors to apps, is built this way.*
+> Version control
+
+real 3 | Git was written in about two weeks
+- 2005: Linus Torvalds wrote Git when the Linux project lost free access to its previous tool.
+- It tracks every change, lets many people work in parallel, and merges their work.
+- *Nearly all software development now uses it.*
+> Off-by-one errors
+
+explain 2 | The two hardest problems in computer science
+- An old joke: cache invalidation, naming things, and off-by-one errors.
+- Off-by-one: looping once too often or too few times, like counting fence posts instead of gaps.
+- *A 10 m fence with posts every metre needs 11 posts.*
+> Next: security
+
+## cs-sec | Cybersecurity | cs | 0 | - | cs-prog
+explain 3 | Most hacks start with people, not code
+- Phishing emails trick people into giving passwords or running malware.
+- Attackers impersonate bosses, banks and IT support.
+- *Multi-factor authentication blocks most automated account takeovers.*
+> Password length beats complexity
+
+explain 4 | Why long passphrases win
+- Each extra random character multiplies the number of guesses needed.
+- Four random common words can beat a short password full of symbols.
+- *Reusing passwords is the bigger danger: one breach unlocks everything.*
+> Stuxnet
+
+story 5 | Stuxnet: malware that broke centrifuges
+- Discovered in 2010, it targeted industrial control systems at Iran's uranium enrichment plant.
+- It made centrifuges spin destructively while showing operators normal readings.
+- *Widely believed to be a US–Israeli operation; the first known cyberweapon to cause physical destruction.*
+> Next: companies and how they started
+
+## ec-firm | Business origins | econ | 0 | - | ec-pf
+story 3 | Nintendo started by making playing cards in 1889
+- It made hanafuda cards in Kyoto, then tried taxis, instant rice and "love hotels" before toys and video games.
+- *Its first major video game hits came in the 1980s.*
+> Coca-Cola was sold as a medicine
+
+story 3 | Coca-Cola started as a patent medicine
+- Pharmacist John Pemberton created it in 1886, marketed as a nerve tonic.
+- Early versions contained a small amount of cocaine from coca leaves; it was removed by the early 1900s.
+- *The leaf extract is still used, de-cocainised.*
+> Amazon's name
+
+quiz 3 | What was Amazon originally incorporated as, in 1994?
+* Cadabra
+o Bookworld
+o Relentless
+o Earth's Biggest Bookstore
+= Bezos renamed it because a lawyer misheard "Cadabra" as "cadaver".
+= He also liked "Relentless": relentless.com still redirects to Amazon.
+> Next: economic history
+
+## ec-hist | Economic history | econ | 0 | - | ec-firm
+explain 4 | The Great Divergence
+- Around 1800, living standards in the richest parts of Europe and China were broadly comparable, by some estimates.
+- Industrialisation then let Western Europe pull dramatically ahead.
+- *Historians still debate why it happened there first: coal, colonies, institutions, or chance.*
+> Adam Smith's pin factory
+
+explain 3 | Adam Smith's pin factory
+- 1776: Smith described ten workers, each specialising in one step, making about 48,000 pins a day.
+- One worker alone might make 20 at most.
+- *Division of labour as the engine of productivity.*
+> Keynes vs Hayek
+
+explain 4 | Keynes vs Hayek
+- Keynes: in a slump, governments should spend to replace missing demand.
+- Hayek: government intervention distorts prices and creates bigger problems later.
+- *Their 1930s debate still shapes economic policy arguments.*
+> The Marshall Plan
+
+explain 3 | The Marshall Plan
+- 1948–1952: the US gave around $13 billion (over $150 billion today) to rebuild Western Europe.
+- It aimed to restore economies and counter Soviet influence.
+- *Its exact economic impact is debated, but it's widely seen as a success.*
+> Economics track part two complete

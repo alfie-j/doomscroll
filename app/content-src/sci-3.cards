@@ -1,0 +1,200 @@
+## ch-elem | Elements with stories | chem | 0 | - | ch-org
+story 4 | Phosphorus was discovered in urine
+- 1669: alchemist Hennig Brand boiled down large quantities of urine looking for the philosopher's stone.
+- He got a glowing substance instead: phosphorus, the first element discovered by a known person.
+- *It glows because it slowly reacts with oxygen in the air.*
+> Gallium melts in your hand
+
+explain 3 | Gallium melts at about 30°C
+- Hold a spoon of it and it melts into a silvery puddle.
+- A classic prank: a gallium spoon that "disappears" when stirring hot tea.
+- *It also makes aluminium crumble by seeping between its grains.*
+> Element names from places
+
+quiz 3 | Four elements are named after the same Swedish village. Which?
+* Ytterby (yttrium, ytterbium, terbium, erbium)
+o Uppsala
+o Stockholm
+o Lund
+= A mine near Ytterby yielded several rare earth minerals.
+> The most expensive element
+
+explain 4 | Helium is running out (sort of)
+- Helium is so light that once released, it escapes Earth's gravity into space.
+- Most is extracted from natural gas, where it's trapped underground.
+- *MRI machines need liquid helium. Party balloons waste it.*
+> Next: more chemistry everyday
+
+## ch-day | Everyday chemistry 2 | chem | 0 | - | ch-elem
+explain 3 | Why cut apples go brown
+- Cutting releases an enzyme (polyphenol oxidase) that reacts phenols with oxygen, forming brown pigments.
+- Lemon juice slows it by lowering the pH and acting as an antioxidant.
+- *Same reaction browns avocados and bananas.*
+> Why bread rises
+
+explain 3 | Yeast farts make bread rise
+- Yeast ferments sugars into carbon dioxide and a little alcohol.
+- Gluten traps the gas in bubbles.
+- *The alcohol bakes off; the bubbles set into the crumb.*
+> Rust is slow fire
+
+explain 3 | Rust is slow burning
+- Iron combining with oxygen (and water) to form iron oxides.
+- Burning is the same kind of reaction, much faster.
+- *Hand warmers use powdered iron rusting quickly to release heat.*
+> Why the sea doesn't freeze easily
+
+quiz 3 | Why does stainless steel resist rust?
+* Chromium forms a thin protective oxide layer that heals itself
+o It contains no iron
+o It's coated with paint
+o It's too hard to react
+= At least about 10.5% chromium. Scratch it and the layer re-forms.
+> Next: ecology
+
+## bi-eco | Ecology | bio | 0 | - | bo-evo
+story 5 | Wolves changed Yellowstone's rivers (partly)
+- Wolves were reintroduced to Yellowstone in 1995 after 70 years' absence.
+- Elk numbers fell and their behaviour changed, letting some streamside willows and aspens recover.
+- *The popular "wolves changed the rivers" story is debated by ecologists, but trophic cascades are real.*
+> Keystone species
+
+explain 4 | Keystone species
+- Robert Paine removed starfish from a tidal pool in the 1960s. Mussels took over and diversity crashed.
+- Some species have outsized effects on their ecosystem.
+- *Sea otters, which eat urchins that eat kelp, protect kelp forests.*
+> Insects are declining
+
+explain 4 | The insect decline
+- A 2017 study of German nature reserves found flying insect biomass fell by over 75% in 27 years.
+- Causes may include habitat loss, pesticides and climate change.
+- *Insects pollinate crops and feed birds: losses ripple outward.*
+> Most species are unknown
+
+quiz 3 | Roughly what fraction of Earth's species have been formally described?
+* Perhaps 15–20% (estimates vary widely)
+o About 90%
+o About 50%
+o About 1%
+= Around 2 million species are named; estimates of the total range from about 8 million to far more.
+> Next: origins of life
+
+## bi-orig | The origin of life | bio | 0 | - | bi-eco
+story 4 | Miller–Urey made amino acids from scratch
+- 1952: Stanley Miller passed sparks through a flask of water, methane, ammonia and hydrogen.
+- After a week, the water contained amino acids, building blocks of proteins.
+- *Reanalysis of his sealed samples decades later found over 20 amino acids.*
+> The RNA world
+
+explain 4 | The RNA world hypothesis
+- RNA can both store information (like DNA) and catalyse reactions (like proteins).
+- So early life may have run on RNA alone.
+- *Your ribosomes, which build proteins, are themselves catalytic RNA at their core.*
+> Life appeared fast
+
+explain 4 | Life appeared early
+- Earth formed about 4.5 billion years ago.
+- Evidence of life goes back at least 3.5 billion years, possibly earlier.
+- *Complex multicellular life took around 3 billion years longer.*
+> Next: plants
+
+## bi-plant | Plants | bio | 0 | - | bi-orig
+explain 3 | Plants are mostly made of air
+- A tree's mass comes overwhelmingly from carbon dioxide in the air, not from the soil.
+- Photosynthesis turns CO₂ and water into sugars, using light.
+- *Van Helmont's 17th-century willow experiment found the soil barely lost weight.*
+> Trees talk underground (sort of)
+
+explain 4 | The "wood wide web"
+- Fungal networks connect tree roots, trading sugars for nutrients.
+- Some studies suggest resources pass between trees through them.
+- *How much trees "share" is debated; some popular claims go beyond the evidence.*
+> The oldest living things
+
+quiz 3 | A bristlecone pine in California is about how old?
+* About 4,800 years
+o About 480 years
+o About 48,000 years
+o About 1,000 years
+= "Methuselah", in the White Mountains. Its exact location is kept secret.
+> Plants can count
+
+explain 4 | Venus flytraps count
+- A flytrap snaps shut only after its trigger hairs are touched twice within about 20 seconds.
+- It starts digesting only after more touches: confirmation the prey is real and struggling.
+- *Counting to five, without a nervous system.*
+> Next: physics oddities
+
+## ph-odd | Physics oddities | physics | 0 | - | ev-phys
+explain 4 | Hot water can freeze faster than cold (sometimes)
+- The Mpemba effect, named after a Tanzanian student who noticed it in 1963 making ice cream.
+- Evaporation, convection and dissolved gases may play roles.
+- *Whether it's real in carefully controlled experiments is still debated.*
+> Glass breaks at the speed of sound in glass
+
+explain 4 | Prince Rupert's drops
+- Drip molten glass into cold water and you get a tadpole-shaped drop.
+- The head survives hammer blows; snip the tail and the whole thing explodes into powder.
+- *Internal stresses: the surface is in compression, the core in tension.*
+> Non-Newtonian fluids
+
+explain 3 | Walking on custard
+- A cornflour and water mix thickens under sudden force: you can run across a pool of it, but sink if you stand still.
+- It's a shear-thickening, non-Newtonian fluid.
+- *Ketchup does the opposite: it thins when shaken.*
+> Superfluid helium climbs walls
+
+explain 5 | Superfluid helium
+- Below about 2.17 K, helium-4 becomes a superfluid with zero viscosity.
+- It creeps up container walls as a thin film and drips off the bottom.
+- *A quantum effect visible to the naked eye.*
+> Next: arts again
+
+## ar-mus2 | Music history and theory | arts | 0 | - | ar-mus
+explain 3 | Why a minor chord sounds sad (in Western music)
+- Major and minor chords differ by one note, lowered by a semitone.
+- The "sad" association is largely cultural and learned, though acoustic factors are debated.
+- *Many cultures don't map minor = sad.*
+> Mozart wrote a symphony at 8
+
+story 4 | Mozart transcribed a secret piece from memory at 14
+- Allegri's Miserere was sung only in the Sistine Chapel, and copying it was forbidden.
+- In 1770 the 14-year-old Mozart reportedly heard it and wrote it out from memory.
+- *Musicologists note the piece is partly repetitive, but the feat is still remarkable.*
+> The Rite of Spring riot
+
+story 4 | The Rite of Spring caused a near-riot in 1913
+- Stravinsky's ballet premiered in Paris with jarring rhythms and dissonance.
+- The audience jeered and argued loudly enough to drown out the orchestra.
+- *Within a few years it was hailed as a masterpiece.*
+> The Beatles couldn't read music
+
+myth 3 T | None of the Beatles could read or write standard musical notation.
+= They composed by ear and recorded, working with producer George Martin on arrangements.
+= Paul McCartney has said this himself.
+> Next: art again
+
+## ar-art2 | Artists and their works | arts | 0 | - | ar-art
+story 4 | The Scream has a faint pencil note
+- Edvard Munch's 1893 painted version has a tiny inscription: "Can only have been painted by a madman."
+- Infrared analysis in 2021 confirmed it was Munch's own handwriting.
+- *He likely wrote it after critics called him mentally ill.*
+> Vermeer used optics (maybe)
+
+explain 4 | Did Vermeer use a camera obscura?
+- His paintings show optical effects like soft, out-of-focus highlights.
+- Some argue he traced projections from a camera obscura; others say he simply observed carefully.
+- *There's no documentary proof either way.*
+> Frida Kahlo painted from bed
+
+story 4 | Frida Kahlo painted from her bed
+- After a bus accident at 18 left her badly injured, she painted with a mirror above her bed.
+- About a third of her works are self-portraits.
+- *"I paint myself because I am so often alone and because I am the subject I know best."*
+> Banksy's shredded painting
+
+story 4 | The painting that shredded itself at auction
+- 2018: moments after Banksy's Girl with Balloon sold for over £1 million at Sotheby's, a hidden shredder in the frame cut through it.
+- It was renamed "Love is in the Bin".
+- *In 2021 it resold for about £18.6 million.*
+> Arts track part two complete

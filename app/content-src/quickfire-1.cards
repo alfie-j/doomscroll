@@ -1,0 +1,485 @@
+## qf-sci | Quick-fire: science | physics | 0 | - | ph-odd
+quiz 2 | What's the SI unit of electric charge?
+* Coulomb
+o Ampere
+o Volt
+o Ohm
+= One coulomb is one ampere flowing for one second.
+> Next
+
+quiz 2 | Speed of light in vacuum, to 1 significant figure?
+* 3 × 10⁸ m/s
+o 3 × 10⁶ m/s
+o 3 × 10¹⁰ m/s
+o 3 × 10⁵ m/s
+= Exactly 299,792,458 m/s, by definition of the metre since 1983.
+> Next
+
+quiz 2 | Which particle has no electric charge?
+* Neutron
+o Proton
+o Electron
+o Positron
+= Chadwick discovered it in 1932.
+> Next
+
+quiz 3 | What does a joule per second equal?
+* A watt
+o A newton
+o A volt
+o A pascal
+= Power is energy per unit time.
+> Next
+
+quiz 3 | Absolute zero in Celsius?
+* −273.15°C
+o −100°C
+o −459.67°C
+o −373.15°C
+= −459.67 is the Fahrenheit value.
+> Next
+
+quiz 3 | What colour of visible light has the longest wavelength?
+* Red
+o Violet
+o Green
+o Blue
+= Around 700 nm. Violet is around 400 nm.
+> Next
+
+quiz 3 | Which force holds protons together in a nucleus despite their repulsion?
+* The strong nuclear force
+o Gravity
+o The weak force
+o Magnetism
+= It's the strongest force, but acts only over about 10⁻¹⁵ m.
+> Next
+
+quiz 3 | Sound travels fastest through…
+* Steel
+o Air
+o Water
+o A vacuum
+= About 5,900 m/s in steel, 1,480 in water, 343 in air. None in a vacuum.
+> Next
+
+quiz 3 | What is the approximate acceleration due to gravity on Earth's surface?
+* 9.8 m/s²
+o 6.7 m/s²
+o 1.6 m/s²
+o 98 m/s²
+= 1.6 m/s² is the Moon's.
+> Next
+
+quiz 3 | Which planet has the shortest day?
+* Jupiter
+o Mercury
+o Earth
+o Saturn
+= About 9 hours 56 minutes, despite being the largest planet.
+> More quick-fire next
+
+## qf-maths | Quick-fire: maths | maths | 0 | - | mt-geo
+quiz 2 | What is 0! (zero factorial)?
+* 1
+o 0
+o Undefined
+o ∞
+= There's exactly one way to arrange nothing. It also makes formulas like n!/(n − k)! work.
+> Next
+
+quiz 2 | Sum of the interior angles of a hexagon?
+* 720°
+o 360°
+o 540°
+o 1080°
+= (n − 2) × 180°.
+> Next
+
+quiz 3 | What is i²?
+* −1
+o 1
+o i
+o 0
+= By definition.
+> Next
+
+quiz 3 | How many edges does a cube have?
+* 12
+o 8
+o 6
+o 24
+= Euler: V − E + F = 8 − 12 + 6 = 2.
+> Next
+
+quiz 3 | log₂(1024) = ?
+* 10
+o 8
+o 12
+o 512
+= 2¹⁰ = 1024.
+> Next
+
+quiz 3 | The derivative of a constant is…
+* 0
+o 1
+o The constant
+o Undefined
+= Constants don't change.
+> Next
+
+quiz 3 | How many ways can you arrange 5 different books on a shelf?
+* 120
+o 25
+o 60
+o 5
+= 5! = 120.
+> Next
+
+quiz 3 | How many ways to choose 2 people from 10?
+* 45
+o 90
+o 20
+o 100
+= 10C2 = 10 × 9/2.
+> Next
+
+quiz 3 | What's the next prime after 89?
+* 97
+o 91
+o 93
+o 99
+= 91 = 7 × 13, 93 = 3 × 31, 95 = 5 × 19.
+> Next
+
+quiz 4 | What's the probability of rolling at least one six in four rolls of a die?
+* About 52%
+o About 67%
+o About 25%
+o About 48%
+= 1 − (5/6)⁴ ≈ 0.518. This bet made money for the Chevalier de Méré in the 1600s.
+> More quick-fire next
+
+## qf-hist | Quick-fire: history | history | 0 | - | wo-cult
+quiz 2 | In which year did the Berlin Wall fall?
+* 1989
+o 1991
+o 1961
+o 1979
+= 9 November 1989. Germany reunified in October 1990.
+> Next
+
+quiz 2 | Who was the first person in space?
+* Yuri Gagarin
+o Neil Armstrong
+o Alan Shepard
+o Valentina Tereshkova
+= 12 April 1961, one orbit, 108 minutes.
+= Tereshkova was the first woman, in 1963.
+> Next
+
+quiz 3 | The Battle of Hastings was in…
+* 1066
+o 1215
+o 1415
+o 1666
+= William of Normandy defeated Harold II. 1215 is Magna Carta.
+> Next
+
+quiz 3 | Which empire built Machu Picchu?
+* The Inca
+o The Aztec
+o The Maya
+o The Olmec
+= Built around the mid-1400s, high in the Andes.
+> Next
+
+quiz 3 | Who wrote The Communist Manifesto (1848)?
+* Marx and Engels
+o Lenin
+o Trotsky
+o Rousseau
+= Karl Marx and Friedrich Engels.
+> Next
+
+quiz 3 | The Great Fire of London was in…
+* 1666
+o 1066
+o 1766
+o 1566
+= It burned for about four days and destroyed most of the medieval City.
+> Next
+
+quiz 3 | Which ancient wonder still stands?
+* The Great Pyramid of Giza
+o The Colossus of Rhodes
+o The Hanging Gardens of Babylon
+o The Lighthouse of Alexandria
+= The oldest of the seven, and the only one left.
+> Next
+
+quiz 3 | Who was the first female Prime Minister of the UK?
+* Margaret Thatcher
+o Theresa May
+o Barbara Castle
+o Liz Truss
+= 1979 to 1990.
+> Next
+
+quiz 4 | The Rosetta Stone is in which museum?
+* The British Museum
+o The Louvre
+o The Egyptian Museum, Cairo
+o The Metropolitan Museum
+= It has been in London since 1802. Egypt has requested its return.
+> Next
+
+quiz 4 | Which came first: the printing press or the compass in Europe?
+* The compass (in Europe by about 1190)
+o The printing press
+o Same decade
+= Magnetic compasses were used in Chinese navigation by about 1100 and in Europe by the late 1100s. Gutenberg's press: around 1450.
+> More quick-fire next
+
+## qf-bio | Quick-fire: biology | bio | 0 | - | bi-plant
+quiz 2 | What organelle is called the powerhouse of the cell?
+* Mitochondrion
+o Nucleus
+o Ribosome
+o Golgi apparatus
+= It makes most of the cell's ATP.
+> Next
+
+quiz 2 | How many chromosomes do humans normally have?
+* 46
+o 23
+o 48
+o 44
+= 23 pairs.
+> Next
+
+quiz 3 | Which blood type is the "universal donor" for red cells?
+* O negative
+o AB positive
+o A negative
+o B positive
+= It lacks A, B and RhD antigens. AB positive is the universal recipient.
+> Next
+
+quiz 3 | What's the largest organ of the human body?
+* The skin
+o The liver
+o The brain
+o The lungs
+= Around 2 m² in adults. The liver is the largest internal organ.
+> Next
+
+quiz 3 | Which animal has the largest brain?
+* The sperm whale
+o The elephant
+o The blue whale
+o The human
+= About 8 kg. Humans have one of the largest brains relative to body size.
+> Next
+
+quiz 3 | What molecule carries oxygen in your red blood cells?
+* Haemoglobin
+o Myoglobin
+o Insulin
+o Collagen
+= Each haemoglobin molecule carries up to four oxygen molecules.
+> Next
+
+quiz 3 | Which vitamin does your skin make in sunlight?
+* Vitamin D
+o Vitamin C
+o Vitamin A
+o Vitamin B12
+= UVB light converts a cholesterol derivative in the skin.
+> Next
+
+quiz 4 | Which of these is NOT a mammal?
+* Shark
+o Whale
+o Bat
+o Platypus
+= Sharks are fish. The platypus is an egg-laying mammal.
+> Next
+
+quiz 3 | How many hearts does an octopus have?
+* 3
+o 1
+o 2
+o 8
+= Two for the gills, one for the body.
+> Next
+
+quiz 4 | Tardigrades can survive…
+* All of these, in their dried "tun" state
+o Near absolute zero
+o Thousands of times normal atmospheric pressure
+o The vacuum of space
+= Extreme tolerance, though active tardigrades are much more fragile.
+> More quick-fire next
+
+## qf-lit | Quick-fire: literature | lit | 0 | - | li-kids
+quiz 2 | Who wrote Frankenstein?
+* Mary Shelley
+o Percy Shelley
+o Bram Stoker
+o Lord Byron
+= Published in 1818.
+> Next
+
+quiz 2 | Who wrote One Hundred Years of Solitude?
+* Gabriel García Márquez
+o Jorge Luis Borges
+o Isabel Allende
+o Pablo Neruda
+= Published in 1967.
+> Next
+
+quiz 3 | In which novel does Jay Gatsby appear?
+* The Great Gatsby
+o Tender Is the Night
+o On the Road
+o The Sun Also Rises
+= F. Scott Fitzgerald, 1925. It sold modestly at first.
+> Next
+
+quiz 3 | Who wrote The Divine Comedy?
+* Dante Alighieri
+o Petrarch
+o Boccaccio
+o Virgil
+= Virgil is Dante's guide through Hell and Purgatory in the poem.
+> Next
+
+quiz 3 | Which play features the line "To be, or not to be"?
+* Hamlet
+o Macbeth
+o King Lear
+o Othello
+= Act 3, Scene 1.
+> Next
+
+quiz 3 | Don Quixote was written by…
+* Miguel de Cervantes
+o Lope de Vega
+o Federico García Lorca
+o Calderón
+= First part published 1605. Often called the first modern novel.
+> Next
+
+quiz 3 | Who wrote Beloved (1987)?
+* Toni Morrison
+o Maya Angelou
+o Alice Walker
+o Zora Neale Hurston
+= Morrison won the 1993 Nobel Prize in Literature.
+> Next
+
+quiz 3 | Which Russian author wrote The Master and Margarita?
+* Mikhail Bulgakov
+o Leo Tolstoy
+o Boris Pasternak
+o Vladimir Nabokov
+= Written in secret in the 1930s, published decades after his death.
+> Next
+
+quiz 4 | Which novel begins "Lolita, light of my life, fire of my loins"?
+* Lolita
+o Pale Fire
+o Ada
+o Pnin
+= Nabokov, 1955.
+> Next
+
+quiz 4 | What is the name of the whale in Moby-Dick's title?
+* Moby Dick, a white sperm whale
+o Leviathan
+o Pequod
+o Queequeg
+= The Pequod is the ship; Queequeg is a harpooner.
+> More quick-fire next
+
+## qf-phil | Quick-fire: philosophy and ideas | philo | 0 | - | ph-ai
+quiz 2 | Who wrote The Republic?
+* Plato
+o Aristotle
+o Socrates
+o Cicero
+= Around 375 BC. It contains the allegory of the cave.
+> Next
+
+quiz 3 | "God is dead" is associated with…
+* Nietzsche
+o Sartre
+o Kierkegaard
+o Marx
+= From The Gay Science (1882). It's about the collapse of shared belief, not a celebration.
+> Next
+
+quiz 3 | Utilitarianism is most associated with…
+* Jeremy Bentham and John Stuart Mill
+o Immanuel Kant
+o Thomas Hobbes
+o Plato
+= Greatest happiness for the greatest number.
+> Next
+
+quiz 3 | Who wrote Leviathan?
+* Thomas Hobbes
+o John Locke
+o Machiavelli
+o Rousseau
+= 1651.
+> Next
+
+quiz 3 | Who wrote The Prince?
+* Niccolò Machiavelli
+o Thomas More
+o Erasmus
+o Hobbes
+= Written in 1513, published after his death in 1532.
+> Next
+
+quiz 3 | Which philosopher wrote Critique of Pure Reason?
+* Immanuel Kant
+o Hegel
+o Hume
+o Leibniz
+= 1781.
+> Next
+
+quiz 4 | "Man is born free, and everywhere he is in chains." Who wrote it?
+* Jean-Jacques Rousseau
+o Voltaire
+o Locke
+o Marx
+= Opening of The Social Contract (1762).
+> Next
+
+quiz 4 | Who wrote A Vindication of the Rights of Woman (1792)?
+* Mary Wollstonecraft
+o Mary Shelley
+o Simone de Beauvoir
+o Jane Austen
+= Mary Shelley's mother.
+> Next
+
+quiz 4 | Who wrote The Second Sex (1949)?
+* Simone de Beauvoir
+o Virginia Woolf
+o Hannah Arendt
+o Judith Butler
+= "One is not born, but rather becomes, a woman."
+> Next
+
+quiz 4 | Which philosopher was also a famous mathematician and co-inventor of calculus?
+* Leibniz
+o Spinoza
+o Locke
+o Hume
+= Gottfried Wilhelm Leibniz, rival of Newton.
+> Quick-fire round one complete

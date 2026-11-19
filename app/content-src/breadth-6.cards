@@ -1,0 +1,68 @@
+## sc-meas | Measuring the universe | physics | 0 | - | sc-disc
+story 4 | Eratosthenes measured Earth with a shadow, around 240 BC
+- At noon on the summer solstice, the Sun shone straight down a well in Syene. In Alexandria, a stick cast a shadow of about 7°.
+- 7° is about 1/50 of a circle, so Earth's circumference is about 50 times the distance between the cities.
+- *His answer was within a few percent of the true value (depending on the length of the stadion he used).*
+> Rømer timed light with Jupiter's moons
+
+story 4 | Rømer showed light has a finite speed, 1676
+- Jupiter's moon Io seemed to eclipse earlier when Earth was closer to Jupiter and later when farther.
+- The delay was the time light took to cross the extra distance.
+- *His estimate was about 25% too low, but it proved light isn't instantaneous.*
+> The kilogram was a lump of metal until 2019
+
+story 4 | The kilogram was a metal cylinder in Paris until 2019
+- Since 1889, the kilogram was defined by the International Prototype Kilogram, kept in a vault near Paris.
+- Copies drifted by tens of micrograms relative to it.
+- *Since 2019, the kilogram is defined by fixing Planck's constant.*
+> The metre is defined by light
+
+explain 3 | The metre is defined by the speed of light
+- Since 1983: the distance light travels in vacuum in 1/299,792,458 of a second.
+- So the speed of light is exactly 299,792,458 m/s by definition.
+- *The second is defined by caesium atoms ticking 9,192,631,770 times.*
+> Next: frontiers of physics
+
+## sc-front | Open questions in physics | physics | 0 | - | sc-meas
+explain 4 | What is dark matter?
+- Galaxies rotate too fast for their visible mass; extra unseen mass is needed.
+- Decades of direct-detection experiments have found no dark matter particle yet.
+- *Candidates include WIMPs, axions, or something stranger.*
+> Why is there more matter than antimatter?
+
+explain 4 | Where did the antimatter go?
+- The Big Bang should have made matter and antimatter in equal amounts. They'd have annihilated.
+- Some slight asymmetry left about one extra matter particle per billion pairs.
+- *We exist because of that leftover, and nobody knows exactly why it happened.*
+> Quantum gravity
+
+explain 4 | Quantum gravity
+- General relativity and quantum mechanics both work brilliantly but clash at black hole centres and the Big Bang.
+- String theory and loop quantum gravity are leading attempts.
+- *No experiment has yet tested them directly.*
+> The measurement problem
+
+explain 4 | The measurement problem
+- The Schrödinger equation evolves smoothly, but measurements give single definite results.
+- What counts as a measurement? Interpretations disagree: collapse, many worlds, pilot waves and more.
+- *A century on, physicists still argue about it.*
+> Next: questions in biology
+
+## bi-front | Open questions in biology | bio | 0 | - | bi-anim
+explain 4 | Why do we sleep?
+- Every animal studied sleeps in some form, despite the risks of being unconscious.
+- Theories: memory consolidation, waste clearance, energy saving, synaptic housekeeping.
+- *Probably several of these, but there's no single agreed answer.*
+> How does the brain create consciousness?
+
+explain 4 | The neural correlates of consciousness
+- Researchers look for the minimal brain activity that accompanies specific experiences.
+- Rival theories (global workspace, integrated information) make different predictions; adversarial tests began in the 2020s.
+- *Results so far haven't decisively favoured either.*
+> Why do we age?
+
+explain 4 | Why do we age?
+- Cells accumulate DNA damage, protein errors and shortened telomeres.
+- Evolution weakly selects against problems that appear after reproduction.
+- *Some animals, like certain jellyfish and hydra, show little or no ageing.*
+> Final round complete

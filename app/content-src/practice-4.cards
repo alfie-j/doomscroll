@@ -1,0 +1,143 @@
+## c2-px4 | Calc 2 drill: series and ODEs | maths | 2 | calc2 | c2-px3
+quiz 3 | Sum of Σ (2/3)ⁿ from n = 0?
+* 3
+o 2
+o 3/2
+o ∞
+= 1/(1 − 2/3).
+> Next
+
+quiz 3 | Σ 1/n^0.5 …
+* Diverges
+o Converges
+o Converges to 2
+= p = 1/2 ≤ 1.
+> Next
+
+quiz 4 | Does Σ (−1)ⁿ n/(n + 1) converge?
+* No: terms don't go to zero
+o Yes, conditionally
+o Yes, absolutely
+= n/(n + 1) → 1. Divergence test.
+> Next
+
+quiz 4 | Maclaurin series for sinh x?
+* x + x³/3! + x⁵/5! + …
+o x − x³/3! + x⁵/5! − …
+o 1 + x²/2! + x⁴/4! + …
+o 1 + x + x²/2! + …
+= Same as sin x but all plus signs.
+> Next
+
+quiz 4 | Solve dy/dx = y/x.
+* y = Cx
+o y = Ceˣ
+o y = C/x
+o y = x + C
+= Separable: ln|y| = ln|x| + c.
+> Next
+
+quiz 4 | Solve y′ + 2y = 0, y(0) = 5.
+* y = 5e^(−2x)
+o y = 5e^(2x)
+o y = 2e^(−5x)
+o y = 5 − 2x
+= Exponential decay.
+> Next
+
+quiz 4 | General solution of y″ + 2y′ + 5y = 0?
+* e^(−x)(A cos 2x + B sin 2x)
+o Ae^(−x) + Be^(−5x)
+o A cos 5x + B sin 5x
+o (A + Bx)e^(−x)
+= r² + 2r + 5 = 0, r = −1 ± 2i. Damped oscillation.
+> Next
+
+quiz 4 | L{1} = ?
+* 1/s
+o 1
+o s
+o 1/s²
+= ∫₀^∞ e^(−st) dt.
+> Next
+
+quiz 4 | L{t} = ?
+* 1/s²
+o 1/s
+o s
+o 2/s³
+= In general L{tⁿ} = n!/sⁿ⁺¹.
+> Next
+
+quiz 4 | Fourier series of an even function contains only…
+* Cosine terms (and a constant)
+o Sine terms
+o Both always
+o Neither
+= Cosines are even; sines are odd.
+> Calc 2 drill complete
+
+## p2-px3 | Phys 2 drill: fields and circuits | physics | 2 | phys2 | p2-px2
+quiz 3 | Field between parallel plates 2 mm apart with 100 V across them?
+* 50,000 V/m
+o 200 V/m
+o 50 V/m
+o 5,000 V/m
+= E = V/d.
+> Next
+
+quiz 3 | Equivalent resistance of 4 Ω in series with (6 Ω ∥ 3 Ω)?
+* 6 Ω
+o 13 Ω
+o 3 Ω
+o 9 Ω
+= 6 ∥ 3 = 2. 4 + 2 = 6.
+> Next
+
+quiz 4 | A 10 μF capacitor discharges through 100 kΩ. Time constant?
+* 1 s
+o 0.1 s
+o 10 s
+o 1 ms
+= RC = 10⁻⁵ × 10⁵.
+> Next
+
+quiz 4 | Magnetic force on an electron moving parallel to a magnetic field?
+* Zero
+o Maximum
+o evB
+o Depends on the charge sign
+= v × B = 0 when parallel.
+> Next
+
+quiz 4 | Energy stored in a 0.5 H inductor carrying 2 A?
+* 1 J
+o 0.5 J
+o 2 J
+o 4 J
+= ½LI².
+> Next
+
+quiz 4 | Two wires carry current in opposite directions. They…
+* Repel
+o Attract
+o Feel no force
+o Twist
+= Parallel currents attract; antiparallel repel.
+> Next
+
+quiz 4 | Critical angle for water (n = 1.33) to air?
+* About 49°
+o About 42°
+o About 30°
+o About 60°
+= sin θ = 1/1.33 ≈ 0.75.
+> Next
+
+quiz 4 | Photon energy of a 100 MHz radio wave compared with visible light?
+* Millions of times smaller
+o About the same
+o Larger
+o Zero
+= E = hf: 10⁸ Hz versus about 5 × 10¹⁴ Hz.
+> Drills complete

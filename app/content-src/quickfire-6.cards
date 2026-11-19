@@ -1,0 +1,194 @@
+## qf-bio2 | Quick-fire: biology 2 | bio | 0 | - | qf-bio
+quiz 2 | What's the basic unit of life?
+* The cell
+o The atom
+o The gene
+o The organ
+= Cell theory: all living things are made of cells.
+> Next
+
+quiz 3 | Which base pairs with adenine in DNA?
+* Thymine
+o Guanine
+o Cytosine
+o Uracil
+= A–T and G–C. In RNA, uracil replaces thymine.
+> Next
+
+quiz 3 | Which organ produces insulin?
+* The pancreas
+o The liver
+o The kidney
+o The thyroid
+= Beta cells in the islets of Langerhans.
+> Next
+
+quiz 3 | What's the largest living animal?
+* The blue whale
+o The African elephant
+o The whale shark
+o The giant squid
+= Up to about 30 m and 150+ tonnes: the largest animal known to have ever lived.
+> Next
+
+quiz 3 | Which process do cells use to divide into two identical cells?
+* Mitosis
+o Meiosis
+o Osmosis
+o Fermentation
+= Meiosis makes sex cells with half the chromosomes.
+> Next
+
+quiz 3 | Which scientist developed the first vaccine?
+* Edward Jenner
+o Louis Pasteur
+o Alexander Fleming
+o Robert Koch
+= Smallpox, 1796. Pasteur later developed rabies and anthrax vaccines.
+> Next
+
+quiz 4 | How many bones in the adult human body?
+* 206
+o 300
+o 186
+o 256
+= Babies have around 270–300; many fuse.
+> Next
+
+quiz 4 | Which part of the plant cell does photosynthesis?
+* Chloroplasts
+o Mitochondria
+o Vacuoles
+o Ribosomes
+= Like mitochondria, they descend from once free-living bacteria.
+> Next
+
+quiz 4 | What do white blood cells mainly do?
+* Fight infection
+o Carry oxygen
+o Clot blood
+o Carry nutrients
+= Platelets help clotting; red cells carry oxygen.
+> Next
+
+quiz 4 | Which animal has the longest known lifespan among vertebrates?
+* The Greenland shark
+o The tortoise
+o The bowhead whale
+o The elephant
+= One was estimated at about 390 years old (with wide uncertainty).
+> More quick-fire next
+
+## qf-psy2 | Quick-fire: mind and brain | psych | 0 | - | qf-psy
+quiz 2 | Which hormone is most associated with the sleep–wake cycle?
+* Melatonin
+o Insulin
+o Adrenaline
+o Oestrogen
+= Released as it gets dark.
+> Next
+
+quiz 3 | The "fight or flight" response is driven mainly by…
+* Adrenaline (epinephrine)
+o Melatonin
+o Serotonin
+o Insulin
+= Raises heart rate and blood sugar fast.
+> Next
+
+quiz 3 | Which lobe of the brain is mainly responsible for vision?
+* Occipital
+o Frontal
+o Temporal
+o Parietal
+= At the back of the head.
+> Next
+
+quiz 3 | Imposter syndrome is…
+* Feeling like a fraud despite evidence of competence
+o Pretending to be someone else
+o A formal psychiatric diagnosis
+o Fear of crowds
+= Common among high achievers. It's not an official diagnosis.
+> Next
+
+quiz 3 | The "Zeigarnik effect" says people remember…
+* Unfinished tasks better than finished ones
+o First impressions best
+o Faces better than names
+o Pleasant memories more
+= Why cliffhangers stick. Replications are mixed, though.
+> Next
+
+quiz 4 | Who described the "hierarchy of needs"?
+* Abraham Maslow
+o Carl Rogers
+o B. F. Skinner
+o Jean Piaget
+= 1943. The pyramid image was added later by others.
+> Next
+
+quiz 4 | Who proposed stages of cognitive development in children?
+* Jean Piaget
+o Sigmund Freud
+o John Bowlby
+o Lev Vygotsky
+= Sensorimotor, preoperational, concrete operational, formal operational.
+> Next
+
+quiz 4 | What's "learned helplessness"?
+* Giving up after repeated uncontrollable failures
+o Learning by watching others
+o Forgetting skills over time
+o Relying on technology
+= Seligman's experiments in the 1960s, later linked to depression.
+> Quick-fire biology and mind complete
+
+## qf-cs2 | Quick-fire: computing 2 | cs | 0 | - | qf-cs
+quiz 3 | What does "AI" stand for?
+* Artificial intelligence
+o Automated integration
+o Applied informatics
+o Algorithmic interface
+= Coined for the 1956 Dartmouth workshop.
+> Next
+
+quiz 3 | What is a "bug" in software?
+* A mistake that makes a program behave incorrectly
+o A virus
+o A type of hardware
+o A slow computer
+= Debugging is finding and fixing them.
+> Next
+
+quiz 3 | What does "HTTP 404" mean?
+* Page not found
+o Server error
+o Access forbidden
+o Success
+= 500 is a server error; 403 is forbidden; 200 is OK.
+> Next
+
+quiz 4 | What does a compiler do?
+* Translates source code into machine code (or another lower-level form)
+o Runs code line by line only
+o Designs computer chips
+o Stores files
+= An interpreter runs code directly, line by line.
+> Next
+
+quiz 4 | Which company developed the first commercially successful graphical user interface for home computers?
+* Apple (Macintosh, 1984), building on Xerox PARC's work
+o Microsoft
+o IBM
+o Google
+= Xerox PARC's Alto pioneered windows and the mouse in the 1970s.
+> Next
+
+quiz 4 | What does "SQL" query?
+* Databases
+o Websites' layout
+o Image files
+o Network speed
+= Structured Query Language.
+> Quick-fire computing complete

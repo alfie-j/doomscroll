@@ -1,0 +1,240 @@
+## qf-lit2 | Quick-fire: books 2 | lit | 0 | - | qf-lit
+quiz 2 | Who wrote Pride and Prejudice?
+* Jane Austen
+o Charlotte Brontë
+o George Eliot
+o Mary Shelley
+= 1813.
+> Next
+
+quiz 2 | Who wrote The Odyssey?
+* Homer (traditionally)
+o Virgil
+o Sophocles
+o Ovid
+= Composed around the 8th century BC, likely from an oral tradition.
+> Next
+
+quiz 3 | Who wrote To Kill a Mockingbird?
+* Harper Lee
+o John Steinbeck
+o Truman Capote
+o William Faulkner
+= 1960. Capote was her childhood friend and inspired the character Dill.
+> Next
+
+quiz 3 | Who wrote The Catcher in the Rye?
+* J. D. Salinger
+o Jack Kerouac
+o Ernest Hemingway
+o Kurt Vonnegut
+= 1951, narrated by Holden Caulfield.
+> Next
+
+quiz 3 | Which Brontë sister wrote Wuthering Heights?
+* Emily
+o Charlotte
+o Anne
+= Published in 1847 under the name Ellis Bell.
+> Next
+
+quiz 3 | Who wrote The Trial and The Castle?
+* Franz Kafka
+o Thomas Mann
+o Hermann Hesse
+o Robert Musil
+= Both published after his death by Max Brod.
+> Next
+
+quiz 3 | Who wrote Things Fall Apart (1958)?
+* Chinua Achebe
+o Wole Soyinka
+o Ngũgĩ wa Thiong'o
+o Ben Okri
+= One of the most widely read African novels.
+> Next
+
+quiz 4 | Who wrote Slaughterhouse-Five?
+* Kurt Vonnegut
+o Joseph Heller
+o Norman Mailer
+o Philip Roth
+= Vonnegut survived the bombing of Dresden as a prisoner of war in a meat locker.
+> Next
+
+quiz 4 | Who wrote The Brothers Karamazov?
+* Fyodor Dostoevsky
+o Leo Tolstoy
+o Ivan Turgenev
+o Nikolai Gogol
+= His final novel, 1880.
+> Next
+
+quiz 4 | Which poet wrote "The Road Not Taken"?
+* Robert Frost
+o Walt Whitman
+o Emily Dickinson
+o T. S. Eliot
+= Often read as advice to be bold; Frost said it was a gentle joke about a friend's indecision.
+> More quick-fire next
+
+## qf-geo | Quick-fire: world | earth | 0 | - | qf-earth
+quiz 2 | What's the capital of Australia?
+* Canberra
+o Sydney
+o Melbourne
+o Perth
+= A purpose-built compromise between Sydney and Melbourne.
+> Next
+
+quiz 2 | Which is the smallest country in the world?
+* Vatican City
+o Monaco
+o San Marino
+o Liechtenstein
+= About 0.44 km².
+> Next
+
+quiz 3 | Which country has the largest population (as of the mid-2020s)?
+* India
+o China
+o USA
+o Indonesia
+= India passed China in 2023.
+> Next
+
+quiz 3 | Mount Kilimanjaro is in…
+* Tanzania
+o Kenya
+o Uganda
+o Ethiopia
+= Africa's highest peak, at about 5,895 m.
+> Next
+
+quiz 3 | Which country is both in Europe and Asia?
+* Turkey
+o Greece
+o Egypt
+o Iran
+= Istanbul straddles the Bosphorus. Russia and Kazakhstan do too.
+> Next
+
+quiz 3 | What's the capital of Canada?
+* Ottawa
+o Toronto
+o Montreal
+o Vancouver
+= Chosen by Queen Victoria in 1857.
+> Next
+
+quiz 4 | Which line divides the Earth into Northern and Southern Hemispheres?
+* The equator
+o The Prime Meridian
+o The Tropic of Cancer
+o The International Date Line
+= The Prime Meridian divides east and west.
+> Next
+
+quiz 4 | Which country has the most islands?
+* Sweden (by most counts)
+o Indonesia
+o Philippines
+o Japan
+= About 267,000 islands, most tiny and uninhabited.
+> Next
+
+quiz 4 | Which is the highest capital city?
+* La Paz, Bolivia (seat of government)
+o Quito
+o Kathmandu
+o Bogotá
+= About 3,600 m. Sucre is Bolivia's constitutional capital.
+> Next
+
+quiz 4 | The Sahara is roughly the size of…
+* The USA (or China)
+o France
+o The UK
+o Australia ×3
+= About 9 million km².
+> More quick-fire next
+
+## qf-math3 | Quick-fire: maths 3 | maths | 1 | - | qf-maths2
+quiz 3 | How many prime numbers are there below 20?
+* 8
+o 7
+o 9
+o 10
+= 2, 3, 5, 7, 11, 13, 17, 19.
+> Next
+
+quiz 3 | Perimeter of a semicircle of radius 1 (including the diameter)?
+* π + 2
+o π
+o 2π
+o 2π + 2
+= Curved part π, plus the straight diameter 2.
+> Next
+
+quiz 3 | What is 7! / 5!?
+* 42
+o 2
+o 35
+o 5,040
+= 7 × 6.
+> Next
+
+quiz 4 | Probability that a random integer is divisible by 2 or 3?
+* 2/3
+o 5/6
+o 1/2
+o 1/6
+= 1/2 + 1/3 − 1/6.
+> Next
+
+quiz 4 | What's the next term: 1, 1, 2, 3, 5, 8, 13, …?
+* 21
+o 18
+o 20
+o 26
+= Fibonacci: add the previous two.
+> Next
+
+quiz 4 | How many subsets does a set with 5 elements have?
+* 32
+o 25
+o 10
+o 120
+= 2⁵: each element is in or out.
+> Next
+
+quiz 4 | What's the angle sum of a triangle drawn on a sphere?
+* More than 180°
+o Exactly 180°
+o Less than 180°
+o 360°
+= A triangle from the North Pole to two points on the equator 90° apart has three right angles: 270°.
+> Next
+
+quiz 4 | How many handshakes if 10 people each shake hands once with everyone else?
+* 45
+o 100
+o 90
+o 10
+= 10C2.
+> Next
+
+quiz 4 | What's the probability of drawing two aces from a deck (without replacement)?
+* 1/221
+o 1/169
+o 1/52
+o 1/26
+= (4/52) × (3/51).
+> Next
+
+quiz 5 | Which is larger: 100! or 100¹⁰⁰?
+* 100¹⁰⁰
+o 100!
+o They're equal
+= 100! multiplies 100 numbers that are mostly less than 100.
+> Quick-fire round seven complete

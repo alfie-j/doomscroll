@@ -1,0 +1,37 @@
+## st-story | Stories from statistics | stats | 0 | - | st-samp
+story 4 | Florence Nightingale was a statistician
+- In the Crimean War, she showed more soldiers died from disease in hospitals than from battle wounds.
+- Her polar area ("rose") diagrams persuaded officials to improve sanitation.
+- *She became the first female member of the Royal Statistical Society, in 1859.*
+> Student's t-test came from a brewery
+
+story 4 | The t-test was invented at Guinness
+- William Gosset worked at the Guinness brewery in Dublin, testing barley with small samples.
+- Guinness didn't let employees publish under their names, so he used the pen name "Student" (1908).
+- *Student's t-test is now used in labs everywhere.*
+> Fisher and the lady tasting tea
+
+story 4 | The lady tasting tea
+- A colleague of Ronald Fisher claimed she could tell if milk was poured before or after the tea.
+- Fisher designed a randomised test with eight cups. She reportedly got them all right.
+- *It became the opening example of his 1935 book on experimental design.*
+> Next: more economics stories
+
+## ec-story | Economics stories | econ | 0 | - | ec-hist
+story 4 | The Phillips machine computed the economy with water
+- 1949: economist Bill Phillips built a machine of tanks and pipes where flowing water represented money in the economy.
+- Valves modelled taxes, savings and spending.
+- *A working one is on display at the Science Museum in London.*
+> The Lipstick index
+
+story 3 | Do people buy more lipstick in recessions?
+- Estée Lauder's chairman suggested lipstick sales rise in downturns as an affordable luxury.
+- The evidence is mixed, and the index is more anecdote than law.
+- *Economic folk indicators are fun but often unreliable.*
+> The Big Mac index
+
+explain 3 | The Big Mac index
+- The Economist compares burger prices across countries to judge whether currencies look over- or undervalued.
+- It's based on purchasing power parity: the same thing should cost the same everywhere.
+- *Started in 1986 as a light-hearted guide.*
+> Breadth complete

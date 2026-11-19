@@ -1,0 +1,483 @@
+## c1-px3 | Calc 1 drill: derivatives | maths | 1 | calc1 | c1-px1
+quiz 2 | d/dx (5x³) = ?
+* 15x²
+o 5x²
+o 15x³
+o 3x²
+= Power rule.
+> Next
+
+quiz 2 | d/dx (1/x) = ?
+* −1/x²
+o 1/x²
+o ln x
+o −1/x
+= x⁻¹ → −x⁻².
+> Next
+
+quiz 2 | d/dx (e^(3x)) = ?
+* 3e^(3x)
+o e^(3x)
+o e^(3x)/3
+o 3xe^(3x)
+= Chain rule.
+> Next
+
+quiz 3 | d/dx (sin x cos x) = ?
+* cos 2x
+o −sin 2x
+o 1
+o sin 2x
+= cos²x − sin²x = cos 2x.
+> Next
+
+quiz 3 | d/dx (x ln x) = ?
+* ln x + 1
+o 1/x
+o ln x
+o x + ln x
+= Product rule: ln x + x(1/x).
+> Next
+
+quiz 3 | d/dx √(x² + 1) = ?
+* x/√(x² + 1)
+o 1/(2√(x² + 1))
+o 2x√(x² + 1)
+o √(2x)
+= ½(x² + 1)^(−½)·2x.
+> Next
+
+quiz 3 | d/dx tan(2x) = ?
+* 2sec²(2x)
+o sec²(2x)
+o 2tan(2x)
+o −2csc²(2x)
+= Chain rule on tan.
+> Next
+
+quiz 3 | d/dx (eˣ/x) = ?
+* eˣ(x − 1)/x²
+o eˣ/x²
+o eˣ(x + 1)/x²
+o eˣ
+= Quotient rule.
+> Next
+
+quiz 4 | d/dx ln(ln x) = ?
+* 1/(x ln x)
+o 1/ln x
+o ln x/x
+o 1/x²
+= (1/ln x)·(1/x).
+> Next
+
+quiz 4 | d/dx (3^(x²)) = ?
+* 2x ln 3 · 3^(x²)
+o x² · 3^(x²−1)
+o 3^(x²) ln 3
+o 2x · 3^(x²)
+= a^u differentiates to a^u ln a · u′.
+> Next
+
+quiz 3 | Slope of y = x³ − x at x = 0?
+* −1
+o 0
+o 1
+o 3
+= y′ = 3x² − 1.
+> Next
+
+quiz 3 | Where does f(x) = x² − 6x + 5 have its minimum?
+* x = 3
+o x = 5
+o x = 1
+o x = −3
+= f′ = 2x − 6 = 0.
+> Integral drill next
+
+## c1-px4 | Calc 1 drill: integrals | maths | 1 | calc1 | c1-px2
+quiz 2 | ∫ 4x³ dx = ?
+* x⁴ + C
+o 12x² + C
+o 4x⁴ + C
+o x³ + C
+= Power rule backwards.
+> Next
+
+quiz 2 | ∫ eˣ dx from 0 to 1 = ?
+* e − 1
+o e
+o 1
+o e + 1
+= [eˣ]₀¹.
+> Next
+
+quiz 2 | ∫ sec²x dx = ?
+* tan x + C
+o sec x + C
+o −cot x + C
+o sec x tan x + C
+= d/dx tan x = sec² x.
+> Next
+
+quiz 3 | ∫ 1/(2x + 1) dx = ?
+* ½ln|2x + 1| + C
+o ln|2x + 1| + C
+o 2ln|2x + 1| + C
+o 1/(2x + 1)² + C
+= Divide by the inner derivative.
+> Next
+
+quiz 3 | ∫₀^(π/2) cos x dx = ?
+* 1
+o 0
+o π/2
+o −1
+= sin(π/2) − sin 0.
+> Next
+
+quiz 3 | ∫ x√(x² + 1) dx = ?
+* (1/3)(x² + 1)^(3/2) + C
+o (2/3)(x² + 1)^(3/2) + C
+o ½(x² + 1)^(1/2) + C
+o x²√(x² + 1) + C
+= u = x² + 1: ½ ∫ √u du = (1/3)u^(3/2).
+> Next
+
+quiz 3 | ∫₁⁴ 1/√x dx = ?
+* 2
+o 4
+o 1
+o 3
+= [2√x]₁⁴ = 4 − 2.
+> Next
+
+quiz 3 | ∫ (eˣ + e⁻ˣ) dx = ?
+* eˣ − e⁻ˣ + C
+o eˣ + e⁻ˣ + C
+o 2eˣ + C
+o eˣ·e⁻ˣ + C
+= That's 2 sinh x + C.
+> Next
+
+quiz 4 | ∫ cos²x dx = ?
+* x/2 + sin(2x)/4 + C
+o cos³x/3 + C
+o x/2 − sin(2x)/4 + C
+o sin²x + C
+= Use cos²x = (1 + cos 2x)/2.
+> Next
+
+quiz 3 | Average value of sin x on [0, π]?
+* 2/π
+o 1/2
+o 1
+o 0
+= (1/π)∫₀^π sin x dx = 2/π.
+> Calc 2 drill next
+
+## c2-px3 | Calc 2 drill | maths | 2 | calc2 | c2-px2
+quiz 3 | ∫ x eˣ dx = ?
+* eˣ(x − 1) + C
+o x eˣ + C
+o eˣ(x + 1) + C
+o x²eˣ/2 + C
+= Parts with u = x.
+> Next
+
+quiz 3 | ∫ 1/(x² − 1) dx = ?
+* ½ ln|(x − 1)/(x + 1)| + C
+o ln|x² − 1| + C
+o arctan x + C
+o ½ ln|(x + 1)/(x − 1)| + C
+= Partial fractions: ½[1/(x − 1) − 1/(x + 1)].
+> Next
+
+quiz 2 | Sum of the geometric series 2 + 1 + ½ + ¼ + …?
+* 4
+o 3
+o ∞
+o 8
+= a/(1 − r) = 2/(1/2).
+> Next
+
+quiz 3 | Does Σ 1/n³ converge?
+* Yes
+o No
+o Only conditionally
+= p-series with p = 3 > 1. (Its value, ζ(3), is called Apéry's constant.)
+> Next
+
+quiz 3 | Does Σ 2ⁿ/n! converge?
+* Yes, to e² − 1 (from n = 1)
+o No
+o Only for even n
+o Yes, to 2
+= Ratio test gives 0. Σ from 0 is e².
+> Next
+
+quiz 3 | First three nonzero terms of the Maclaurin series of e^(2x)?
+* 1 + 2x + 2x²
+o 1 + 2x + x²
+o 1 + x + x²/2
+o 2 + 2x + x²
+= Substitute 2x: 1 + 2x + (2x)²/2.
+> Next
+
+quiz 4 | lim x→0 (eˣ − 1 − x)/x² = ?
+* 1/2
+o 1
+o 0
+o ∞
+= eˣ = 1 + x + x²/2 + …
+> Next
+
+quiz 3 | Interval of convergence of Σ xⁿ/n (including endpoints)?
+* −1 ≤ x < 1
+o −1 < x < 1
+o −1 ≤ x ≤ 1
+o All x
+= At x = 1 it's the harmonic series (diverges); at x = −1, alternating harmonic (converges).
+> Next
+
+quiz 4 | Solve y′ = 2y with y(0) = 3.
+* y = 3e^(2x)
+o y = 2e^(3x)
+o y = 3 + 2x
+o y = e^(2x) + 3
+= Exponential growth with rate 2.
+> Next
+
+quiz 4 | General solution of y″ − 4y = 0?
+* Ae^(2x) + Be^(−2x)
+o A cos 2x + B sin 2x
+o (A + Bx)e^(2x)
+o Ae^(4x)
+= r² − 4 = 0, r = ±2: real roots, exponentials.
+> Next
+
+quiz 4 | Arc length of y = cosh x from 0 to 1?
+* sinh 1 ≈ 1.175
+o cosh 1
+o 1
+o e
+= √(1 + sinh²x) = cosh x. ∫₀¹ cosh x dx = sinh 1.
+> Next
+
+quiz 3 | Polar curve r = 4 sin θ is a circle with radius…
+* 2
+o 4
+o 1
+o 8
+= r² = 4r sin θ → x² + y² = 4y → x² + (y − 2)² = 4.
+> Physics drills next
+
+## p1-px3 | Phys 1 drill | physics | 1 | phys1 | p1-px2
+quiz 2 | 72 km/h in m/s?
+* 20 m/s
+o 7.2 m/s
+o 72 m/s
+o 2 m/s
+= Divide by 3.6.
+> Next
+
+quiz 3 | A 2 kg mass on a 10 N/m spring. Angular frequency?
+* √5 rad/s ≈ 2.24
+o 5 rad/s
+o 20 rad/s
+o 0.45 rad/s
+= ω = √(k/m) = √5.
+> Next
+
+quiz 3 | A wheel speeds from rest to 20 rad/s in 4 s. Angular acceleration?
+* 5 rad/s²
+o 80 rad/s²
+o 20 rad/s²
+o 0.2 rad/s²
+= α = Δω/Δt.
+> Next
+
+quiz 3 | Torque from a 50 N force at 0.4 m, perpendicular?
+* 20 N m
+o 125 N m
+o 12.5 N m
+o 50 N m
+= τ = rF.
+> Next
+
+quiz 3 | Escape velocity scales with planet mass M and radius R as…
+* √(M/R)
+o M/R
+o √(MR)
+o M/R²
+= v = √(2GM/R).
+> Next
+
+quiz 3 | A pendulum's length is quadrupled. Its period…
+* Doubles
+o Quadruples
+o Halves
+o Stays the same
+= T ∝ √L.
+> Next
+
+quiz 4 | A 4 kg block at 6 m/s hits a 2 kg block at rest and they stick. Kinetic energy lost?
+* 24 J
+o 72 J
+o 48 J
+o 0 J
+= v = 24/6 = 4 m/s. KE before 72 J, after 48 J.
+> Next
+
+quiz 3 | Pressure 20 m under water (ρ = 1000, g = 10), not counting the atmosphere?
+* 200 kPa
+o 20 kPa
+o 2 MPa
+o 100 kPa
+= ρgh = 200,000 Pa: about 2 atmospheres.
+> Next
+
+quiz 4 | Moment of inertia of a uniform rod (mass M, length L) about its centre?
+* ML²/12
+o ML²/3
+o ML²
+o ML²/2
+= About one end it's ML²/3 (parallel axis theorem).
+> Next
+
+quiz 3 | Power needed to push a car at constant 20 m/s against 500 N of drag?
+* 10 kW
+o 25 W
+o 1 kW
+o 100 kW
+= P = Fv.
+> E&M drill next
+
+## p2-px2 | Phys 2 drill | physics | 1 | phys2 | p2-px1
+quiz 2 | Three 6 Ω resistors in parallel. Total?
+* 2 Ω
+o 18 Ω
+o 6 Ω
+o 3 Ω
+= n equal resistors in parallel: R/n.
+> Next
+
+quiz 3 | Potential 0.5 m from a 1 nC point charge? (k = 9 × 10⁹)
+* 18 V
+o 36 V
+o 9 V
+o 4.5 V
+= V = kQ/r.
+> Next
+
+quiz 3 | Two capacitors, 2 μF and 3 μF, in parallel. Total?
+* 5 μF
+o 1.2 μF
+o 6 μF
+o 1 μF
+= Parallel capacitors add.
+> Next
+
+quiz 3 | Peak value of 230 V RMS mains?
+* About 325 V
+o 230 V
+o About 163 V
+o 460 V
+= Peak = RMS × √2.
+> Next
+
+quiz 3 | Speed of an EM wave in glass with n = 1.5?
+* 2 × 10⁸ m/s
+o 3 × 10⁸ m/s
+o 4.5 × 10⁸ m/s
+o 1.5 × 10⁸ m/s
+= v = c/n.
+> Next
+
+quiz 4 | An inductor of 2 H carries a current rising at 3 A/s. Voltage across it?
+* 6 V
+o 1.5 V
+o 0.67 V
+o 5 V
+= V = L dI/dt.
+> Next
+
+quiz 3 | Wavelength of a 100 MHz FM radio wave?
+* 3 m
+o 30 m
+o 0.3 m
+o 300 m
+= λ = c/f = 3 × 10⁸/10⁸.
+> Next
+
+quiz 4 | Resonant frequency (Hz) of an LC circuit with L = 1 mH, C = 1 μF?
+* About 5 kHz
+o About 1 kHz
+o About 31 kHz
+o About 500 Hz
+= ω = 1/√(LC) = 1/√(10⁻⁹) ≈ 31,600 rad/s; f = ω/2π ≈ 5,000 Hz.
+> Modern physics drill next
+
+## p3-px2 | Phys 3 drill | physics | 2 | phys3 | p3-px1
+quiz 3 | Speed of sound is 343 m/s. Wavelength of a 686 Hz tone?
+* 0.5 m
+o 2 m
+o 0.25 m
+o 1 m
+= λ = v/f.
+> Next
+
+quiz 3 | A heat engine absorbs 1,000 J and does 300 J of work. Heat dumped?
+* 700 J
+o 300 J
+o 1,300 J
+o 1,000 J
+= First law: Q_out = Q_in − W.
+> Next
+
+quiz 3 | Lorentz factor at v = 0.8c?
+* 5/3
+o 1.25
+o 0.6
+o 2
+= 1/√(1 − 0.64) = 1/0.6.
+> Next
+
+quiz 4 | Momentum of a photon with energy 1 eV? (c = 3 × 10⁸, 1 eV = 1.6 × 10⁻¹⁹ J)
+* About 5.3 × 10⁻²⁸ kg m/s
+o About 1.6 × 10⁻¹⁹ kg m/s
+o About 3 × 10⁸ kg m/s
+o Zero
+= p = E/c.
+> Next
+
+quiz 3 | Ionisation energy of hydrogen from its ground state?
+* 13.6 eV
+o 10.2 eV
+o 1 eV
+o 27.2 eV
+= Taking the electron from n = 1 to n = ∞.
+> Next
+
+quiz 4 | An isotope has a decay constant λ = 0.1 per year. Half-life?
+* About 6.9 years
+o 10 years
+o 0.1 years
+o About 1.4 years
+= t½ = ln 2/λ ≈ 0.693/0.1.
+> Next
+
+quiz 4 | Ground state energy of a quantum harmonic oscillator with ħω = 0.2 eV?
+* 0.1 eV
+o 0 eV
+o 0.2 eV
+o 0.3 eV
+= E₀ = ½ħω.
+> Next
+
+quiz 3 | Which has a longer de Broglie wavelength at the same speed: an electron or a proton?
+* The electron
+o The proton
+o They're equal
+= λ = h/(mv): lighter particle, longer wavelength.
+> Drills complete

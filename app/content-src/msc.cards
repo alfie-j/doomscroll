@@ -1,0 +1,134 @@
+## msc-gr | General relativity in depth | physics | 4 | phys3 | p3-astro
+explain 5 | Geodesics: free fall is straight-line motion in curved spacetime
+- In GR, a falling body feels no force: it follows a geodesic, the straightest possible path.
+- $ d²xᵘ/dτ² + Γᵘ_αβ (dxᵅ/dτ)(dxᵝ/dτ) = 0
+- *The Christoffel symbols Γ encode how the coordinates bend.*
+> The Schwarzschild solution came from the trenches
+
+story 5 | Schwarzschild solved Einstein's equations on the Russian front
+- 1915: Karl Schwarzschild, serving in the German army, found the first exact solution for a spherical mass.
+- He mailed it to Einstein, who was surprised an exact solution existed.
+- *Schwarzschild died months later from an illness contracted at the front.*
+> Gravitational time dilation at the horizon
+
+quiz 5 | Schwarzschild radius of the Sun (2 × 10³⁰ kg)? r_s = 2GM/c²
+* About 3 km
+o About 3 m
+o About 300 km
+o About 30 cm
+= 2 × 6.67 × 10⁻¹¹ × 2 × 10³⁰ / (9 × 10¹⁶) ≈ 2,960 m.
+> Frame dragging
+
+explain 5 | Spinning masses drag spacetime around
+- The Lense–Thirring effect: a rotating mass twists nearby spacetime.
+- Gravity Probe B measured Earth's frame dragging in 2011 using gyroscopes in orbit.
+- *Near spinning black holes, the ergosphere forces everything to co-rotate.*
+> The Friedmann equations
+
+explain 5 | The Friedmann equations: the universe's expansion
+- $ (ȧ/a)² = 8πGρ/3 − kc²/a² + Λc²/3
+- a(t) is the scale factor of the universe; ρ its density; Λ the cosmological constant.
+- *Einstein added Λ to get a static universe, later calling it his "biggest blunder". Today it's back, as dark energy.*
+> Next: QFT in more depth
+
+## msc-qft | Quantum field theory in depth | physics | 4 | phys3 | p3-qft
+explain 5 | The Klein–Gordon equation
+- $ (□ + m²c²/ħ²) φ = 0
+- The relativistic wave equation for spin-0 particles, from E² = p²c² + m²c⁴.
+- *It allows negative energies; only as a field theory does it make sense.*
+> Gauge symmetry generates forces
+
+explain 5 | Local gauge invariance creates the photon
+- Demand the electron field's phase can change independently at every point.
+- To keep the Lagrangian invariant, you must introduce a new field that compensates: the electromagnetic potential.
+- *Forces aren't added by hand; they're required by symmetry.*
+> Running couplings
+
+explain 5 | Coupling constants change with energy
+- The fine-structure constant α grows from about 1/137 at low energy to about 1/128 at the Z boson mass.
+- The strong coupling shrinks at high energy: asymptotic freedom.
+- *Gross, Wilczek and Politzer won the 2004 Nobel Prize for asymptotic freedom.*
+> The Higgs mechanism
+
+explain 5 | The Higgs mechanism, in one card
+- The Higgs field's lowest-energy state isn't zero: it has a vacuum value everywhere.
+- Particles interacting with it acquire mass, and the W and Z bosons absorb part of it.
+- *The leftover ripple is the Higgs boson.*
+> Next: condensed matter in more depth
+
+## msc-cm | Condensed matter in depth | physics | 4 | phys3 | p3-solid
+explain 5 | Phonons: quantised vibrations
+- Lattice vibrations come in quanta called phonons.
+- They carry heat in insulators and scatter electrons in metals (causing resistance).
+- *Debye's model explains why solids' heat capacity falls like T³ at low temperature.*
+> The quantum Hall effect
+
+story 5 | The quantum Hall effect measures constants exactly
+- 1980: von Klitzing found that in strong magnetic fields at low temperature, Hall resistance comes in perfectly flat steps of h/(ne²).
+- The plateaus are so precise they're now used as resistance standards.
+- *Nobel Prize 1985.* The steps are robust because of topology.
+> Topological insulators
+
+explain 5 | Topological insulators
+- Insulating inside, conducting on the surface, guaranteed by the topology of the electron bands.
+- Surface states can't be removed by smooth deformations, so they resist disorder.
+- *Topological phases won the 2016 Nobel Prize (Thouless, Haldane, Kosterlitz).*
+> Graphene
+
+story 4 | Graphene was isolated with sticky tape
+- 2004: Geim and Novoselov peeled graphite repeatedly with Scotch tape until single atomic layers remained.
+- Graphene's electrons behave like massless particles described by a Dirac-like equation.
+- *Nobel Prize 2010, just six years later.*
+> Next: analysis and topology
+
+## msc-ana | Measure theory and analysis | maths | 4 | calc1 | c1-ra2
+explain 5 | Why Lebesgue integration
+- Riemann integrates by slicing the x-axis. Lebesgue slices the y-axis: measure the set where f takes each value.
+- The Dirichlet function (1 on rationals, 0 on irrationals) has no Riemann integral on [0, 1], but its Lebesgue integral is 0.
+- *Lebesgue's theory makes limits and integrals swap under mild conditions.*
+> Measure zero
+
+explain 5 | The rationals have measure zero
+- Cover each rational in [0, 1] with an interval of length ε/2ⁿ. Total length ≤ ε.
+- So "almost every" real number is irrational.
+- *Countable sets are negligible for integration.*
+> The Cantor set
+
+story 5 | The Cantor set: uncountable, but zero length
+- Remove the middle third of [0, 1]. Then the middle thirds of what's left. Forever.
+- What remains has total length zero, yet it's uncountable: as many points as the whole interval.
+- *Its fractal dimension is log 2/log 3 ≈ 0.631.*
+> Banach spaces
+
+explain 5 | Function spaces are infinite-dimensional vector spaces
+- L² functions (square-integrable) form a Hilbert space: an inner product and completeness.
+- Quantum states live in Hilbert spaces.
+- *Fourier series are just expansions in an orthonormal basis of L².*
+> Next: topology
+
+## msc-top | Topology | maths | 4 | calc3 | c3-mani
+explain 4 | Open sets define topology
+- A topology says which sets are "open". Continuity: preimages of open sets are open.
+- No distances needed.
+- *That's why topology can treat a doughnut and a mug as the same.*
+> The fundamental group detects holes
+
+explain 5 | The fundamental group
+- Loops in a space, up to continuous deformation, form a group.
+- The circle's fundamental group is the integers: how many times you wind around.
+- *A sphere's is trivial: every loop shrinks to a point.*
+> The Poincaré conjecture
+
+story 5 | Perelman's proof of the Poincaré conjecture
+- Conjecture (1904): every simply connected, closed 3-manifold is a 3-sphere.
+- Perelman (2002–03) proved it using Hamilton's Ricci flow, which smooths a shape's geometry like heat.
+- *He posted the proof online, declined the Fields Medal (2006) and the $1 million prize (2010).*
+> Euler characteristic
+
+quiz 4 | Euler characteristic V − E + F for any convex polyhedron?
+* 2
+o 0
+o 1
+o Depends on the shape
+= Cube: 8 − 12 + 6. A torus-shaped polyhedron gives 0.
+> Masters depth complete

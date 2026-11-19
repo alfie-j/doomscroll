@@ -1,0 +1,404 @@
+## qf-psy | Quick-fire: psychology | psych | 0 | - | ps-study
+quiz 2 | Pavlov's dogs learned to salivate at…
+* A sound associated with food
+o The smell of food
+o The sight of other dogs
+o Darkness
+= Classical conditioning. Pavlov used various stimuli including metronomes and buzzers.
+> Next
+
+quiz 3 | Confirmation bias is the tendency to…
+* Seek and favour information that supports what you already believe
+o Remember the first item in a list
+o Overrate your own abilities
+o Follow the crowd
+= It affects scientists too, which is why blinding and pre-registration exist.
+> Next
+
+quiz 3 | The "magical number seven, plus or minus two" refers to…
+* Short-term memory span
+o Hours of sleep needed
+o Close friends
+o Days to form a habit
+= George Miller, 1956. Later research suggests it's closer to about four chunks.
+> Next
+
+quiz 3 | The placebo effect is…
+* Improvement from believing you're being treated
+o A side effect of medicine
+o A type of memory error
+o A drug interaction
+= Placebos can even help when people know they're placebos, in some studies.
+> Next
+
+quiz 3 | What is the "halo effect"?
+* One good trait making us rate someone's other traits higher
+o Feeling better after helping others
+o Remembering happy events more
+o Overestimating risks
+= Attractive people are often rated as more competent.
+> Next
+
+quiz 3 | Freud's theory of the mind divided it into…
+* Id, ego and superego
+o Conscious and subconscious only
+o Left and right brain
+o Short-term and long-term
+= Influential, but largely untestable and not supported in its details.
+> Next
+
+quiz 4 | The "Baader–Meinhof phenomenon" is…
+* Noticing something everywhere right after learning about it
+o Forgetting names instantly
+o Believing others share your views
+o Hindsight bias
+= Also called the frequency illusion.
+> Next
+
+quiz 3 | Which part of the brain is most associated with forming new memories?
+* Hippocampus
+o Cerebellum
+o Amygdala
+o Medulla
+= Patient H.M. lost the ability to form new long-term memories after it was removed in 1953.
+> Next
+
+quiz 3 | The "IKEA effect" means…
+* We value things more when we've built them ourselves
+o We underestimate assembly time
+o Cheap furniture lowers happiness
+o Choice overload
+= Named in a 2011 study involving IKEA boxes and origami.
+> Next
+
+quiz 4 | Choice overload: shoppers offered 24 jams vs 6 jams…
+* Were less likely to buy when offered 24
+o Bought more with 24
+o Bought the same
+o Only bought the cheapest
+= Iyengar and Lepper (2000). Later replications found smaller or mixed effects.
+> More quick-fire next
+
+## qf-stat | Quick-fire: statistics | stats | 0 | - | ct-news
+quiz 2 | The median of 2, 3, 7, 100 is…
+* 5
+o 28
+o 7
+o 3
+= Average of the middle two: (3 + 7)/2. The mean is 28: medians resist outliers.
+> Next
+
+quiz 3 | A correlation coefficient of −0.9 means…
+* A strong negative linear relationship
+o No relationship
+o A weak positive relationship
+o 90% of the variation is unexplained
+= r² = 0.81: about 81% of variance explained.
+> Next
+
+quiz 3 | Flip a fair coin 5 times. Probability of all heads?
+* 1/32
+o 1/5
+o 1/10
+o 1/16
+= (1/2)⁵.
+> Next
+
+quiz 3 | In a normal distribution, mean, median and mode are…
+* All equal
+o All different
+o Mean > median > mode
+o Mode is always zero
+= Symmetric distributions line them up.
+> Next
+
+quiz 3 | A type I error is…
+* A false positive: rejecting a true null hypothesis
+o A false negative
+o A calculation mistake
+o A biased sample
+= Type II is a false negative.
+> Next
+
+quiz 4 | You roll two dice. Most likely total?
+* 7
+o 6
+o 12
+o All equally likely
+= Six of the 36 combinations give 7.
+> Next
+
+quiz 4 | Regression to the mean predicts that a student who scored exceptionally on one test will probably…
+* Score closer to average on the next
+o Score even higher
+o Score exactly the same
+o Score below average
+= Part of any extreme score is luck.
+> Next
+
+quiz 3 | What's the standard deviation of {5, 5, 5, 5}?
+* 0
+o 5
+o 1
+o 20
+= No spread at all.
+> Next
+
+quiz 4 | 1% of people have a condition. A test catches 90% of cases and has a 9% false positive rate. P(condition | positive)?
+* About 9%
+o About 90%
+o About 50%
+o About 1%
+= Of 1,000 people: 9 true positives, about 89 false positives. 9/98 ≈ 9%.
+> Next
+
+quiz 3 | "Statistically significant at p < 0.05" means the result is…
+* Unlikely under the null hypothesis
+o Definitely true
+o Important
+o 95% likely to be true
+= It says nothing directly about importance or truth probability.
+> More quick-fire next
+
+## qf-cs | Quick-fire: computing | cs | 0 | - | cs-sec
+quiz 2 | How many bits in a byte?
+* 8
+o 4
+o 16
+o 10
+= A byte can represent 256 values.
+> Next
+
+quiz 2 | What does CPU stand for?
+* Central Processing Unit
+o Computer Power Unit
+o Central Program Utility
+o Core Processing Utility
+= It executes instructions.
+> Next
+
+quiz 3 | 1111 in binary is what in decimal?
+* 15
+o 4
+o 16
+o 1111
+= 8 + 4 + 2 + 1.
+> Next
+
+quiz 3 | What does HTML stand for?
+* HyperText Markup Language
+o High Transfer Machine Language
+o HyperText Machine Logic
+o Home Tool Markup Language
+= It structures web pages; CSS styles them.
+> Next
+
+quiz 3 | Which data structure works "last in, first out"?
+* Stack
+o Queue
+o Tree
+o Hash table
+= Like a pile of plates.
+> Next
+
+quiz 3 | What is "open source" software?
+* Software whose source code is publicly available to use and modify
+o Free trial software
+o Software without bugs
+o Any web app
+= Linux, Firefox and Python are open source.
+> Next
+
+quiz 4 | Time complexity of looking up a key in a balanced binary search tree?
+* O(log n)
+o O(1)
+o O(n)
+o O(n²)
+= Each comparison halves the remaining search.
+> Next
+
+quiz 3 | What does "RAM" lose when the power goes off?
+* Its contents (it's volatile)
+o Nothing
+o Only half its data
+o Its speed
+= That's why you save to disk or flash storage.
+> Next
+
+quiz 4 | Who is often called the father of theoretical computer science and AI?
+* Alan Turing
+o Charles Babbage
+o John von Neumann
+o Steve Jobs
+= Turing machines (1936) and the imitation game (1950).
+> Next
+
+quiz 3 | Which language did Guido van Rossum create?
+* Python
+o Java
+o C
+o Ruby
+= First released in 1991, named after Monty Python.
+> More quick-fire next
+
+## qf-econ | Quick-fire: economics | econ | 0 | - | ec-hist
+quiz 2 | Inflation measures…
+* The rise in the general level of prices
+o The growth of the stock market
+o Unemployment
+o Interest rates
+= Measured with price indices like CPI.
+> Next
+
+quiz 3 | GDP stands for…
+* Gross Domestic Product
+o General Domestic Price
+o Government Debt Percentage
+o Gross Debt Product
+= Total value of goods and services produced in a country.
+> Next
+
+quiz 3 | Who wrote The Wealth of Nations (1776)?
+* Adam Smith
+o David Ricardo
+o John Maynard Keynes
+o Karl Marx
+= The "invisible hand" appears in it once.
+> Next
+
+quiz 3 | Comparative advantage says countries gain from trade even if…
+* One country is better at producing everything
+o They have the same currency
+o They're neighbours
+o They have no resources
+= Ricardo, 1817: specialise in what you're relatively best at.
+> Next
+
+quiz 3 | A monopoly is a market with…
+* One seller
+o One buyer
+o Two sellers
+o Many small sellers
+= One buyer is a monopsony.
+> Next
+
+quiz 4 | If a £10 item rises to £12, by what percentage did the price rise?
+* 20%
+o 2%
+o 12%
+o 17%
+= 2/10.
+> Next
+
+quiz 4 | A "recession" is often defined as…
+* Two consecutive quarters of falling GDP
+o A stock market drop of 10%
+o Inflation above 5%
+o Rising unemployment for a month
+= A rule of thumb; official bodies use broader measures.
+> Next
+
+quiz 3 | What does a central bank do?
+* Manages money supply and interest rates
+o Collects taxes
+o Sets government spending
+o Runs shops
+= Like the Bank of England or the Federal Reserve.
+> Next
+
+quiz 4 | Which economist argued governments should spend more in recessions?
+* John Maynard Keynes
+o Milton Friedman
+o Friedrich Hayek
+o Adam Smith
+= The General Theory, 1936.
+> Next
+
+quiz 4 | A "sunk cost" is…
+* A cost already paid that can't be recovered
+o A hidden cost
+o An investment in shipping
+o A future expense
+= Rational decisions should ignore it.
+> More quick-fire next
+
+## qf-chem | Quick-fire: chemistry | chem | 0 | - | ch-day
+quiz 2 | Chemical symbol for gold?
+* Au
+o Ag
+o Gd
+o Go
+= From the Latin aurum. Ag is silver (argentum).
+> Next
+
+quiz 2 | What's the most abundant gas in Earth's atmosphere?
+* Nitrogen
+o Oxygen
+o Carbon dioxide
+o Argon
+= About 78%. Oxygen about 21%, argon about 0.9%.
+> Next
+
+quiz 3 | What's the chemical formula of table salt?
+* NaCl
+o KCl
+o NaOH
+o CaCl₂
+= Sodium chloride.
+> Next
+
+quiz 3 | Which element has atomic number 1?
+* Hydrogen
+o Helium
+o Lithium
+o Carbon
+= One proton.
+> Next
+
+quiz 3 | Pure water has a pH of about…
+* 7
+o 0
+o 14
+o 5
+= Neutral at 25°C.
+> Next
+
+quiz 3 | What gas do plants absorb for photosynthesis?
+* Carbon dioxide
+o Oxygen
+o Nitrogen
+o Hydrogen
+= They release oxygen.
+> Next
+
+quiz 3 | Diamond is made of…
+* Carbon
+o Silicon
+o Quartz
+o Boron
+= The same element as graphite and coal.
+> Next
+
+quiz 4 | Which metal is liquid at room temperature?
+* Mercury
+o Gallium
+o Sodium
+o Lead
+= Gallium melts at about 30°C, just above typical room temperature.
+> Next
+
+quiz 4 | Avogadro's number is approximately…
+* 6.02 × 10²³
+o 3 × 10⁸
+o 1.6 × 10⁻¹⁹
+o 9.8
+= Particles per mole.
+> Next
+
+quiz 4 | Which element is the most abundant in the universe by mass?
+* Hydrogen
+o Helium
+o Oxygen
+o Carbon
+= About 74% of normal matter by mass. Helium about 24%.
+> Quick-fire round two complete

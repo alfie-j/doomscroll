@@ -1,0 +1,201 @@
+## rc-units | Units and constants check | physics | 1 | phys1 | rc-phys1
+quiz 2 | Unit of magnetic field strength (B)?
+* Tesla
+o Weber
+o Henry
+o Gauss only
+= 1 T = 10,000 gauss. Earth's field is about 50 μT.
+> Next
+
+quiz 3 | Unit of pressure?
+* Pascal
+o Newton
+o Joule
+o Bar only
+= 1 Pa = 1 N/m². Atmospheric pressure ≈ 101 kPa.
+> Next
+
+quiz 3 | Planck's constant h is approximately…
+* 6.63 × 10⁻³⁴ J s
+o 6.67 × 10⁻¹¹ N m²/kg²
+o 1.38 × 10⁻²³ J/K
+o 9.11 × 10⁻³¹ kg
+= The others: G, Boltzmann's constant, and the electron mass.
+> Next
+
+quiz 3 | Boltzmann's constant k_B is approximately…
+* 1.38 × 10⁻²³ J/K
+o 6.02 × 10²³
+o 8.31 J/(mol K)
+o 1.6 × 10⁻¹⁹ C
+= R = N_A k_B ≈ 8.31 J/(mol K).
+> Next
+
+quiz 3 | Mass of a proton?
+* About 1.67 × 10⁻²⁷ kg
+o About 9.11 × 10⁻³¹ kg
+o About 1.6 × 10⁻¹⁹ kg
+o About 6.6 × 10⁻²⁷ kg
+= About 1,836 times the electron's mass.
+> Next
+
+quiz 4 | 1 electronvolt in joules?
+* 1.6 × 10⁻¹⁹ J
+o 1 J
+o 1.6 × 10⁻¹⁶ J
+o 9.1 × 10⁻³¹ J
+= The energy of one electron accelerated through 1 V.
+> Next
+
+quiz 4 | Permittivity of free space ε₀ is approximately…
+* 8.85 × 10⁻¹² F/m
+o 4π × 10⁻⁷ H/m
+o 9 × 10⁹ N m²/C²
+o 6.67 × 10⁻¹¹ N m²/kg²
+= μ₀ is 4π × 10⁻⁷ H/m (very nearly). 1/(4πε₀) is the 9 × 10⁹.
+> Next
+
+quiz 4 | The fine-structure constant α is approximately…
+* 1/137
+o 1/1000
+o 1/2
+o 137
+= Dimensionless: e²/(4πε₀ħc).
+> Next
+
+quiz 4 | Gravitational constant G?
+* 6.67 × 10⁻¹¹ N m²/kg²
+o 9.8 m/s²
+o 6.63 × 10⁻³⁴ J s
+o 3 × 10⁸ m/s
+= The least precisely known fundamental constant.
+> Next
+
+quiz 4 | Stefan–Boltzmann law: total power radiated by a black body scales as…
+* T⁴
+o T
+o T²
+o 1/T
+= Double the temperature, 16 times the power.
+> Next
+
+quiz 4 | Wien's law: peak wavelength of black-body radiation scales as…
+* 1/T
+o T
+o T⁴
+o √T
+= The Sun (about 5,800 K) peaks around 500 nm.
+> Next
+
+quiz 4 | Speed of light in vacuum in km/s, roughly?
+* 300,000 km/s
+o 30,000 km/s
+o 3,000 km/s
+o 3,000,000 km/s
+= Around the Earth about 7.5 times in one second.
+> Next
+
+quiz 4 | 1 light-year in metres, roughly?
+* 9.5 × 10¹⁵ m
+o 3 × 10⁸ m
+o 1.5 × 10¹¹ m
+o 3 × 10¹⁶ m
+= 1.5 × 10¹¹ m is the Earth–Sun distance (1 AU). A parsec is about 3.1 × 10¹⁶ m.
+> Next
+
+quiz 4 | Avogadro's number connects…
+* Moles to number of particles
+o Energy to temperature
+o Charge to current
+o Mass to energy
+= 6.022 × 10²³ per mole.
+> Next
+
+quiz 5 | The reduced Planck constant ħ equals…
+* h/2π
+o 2πh
+o h²
+o h/2
+= ≈ 1.055 × 10⁻³⁴ J s.
+> Units check complete
+
+## rc-maths | Maths facts check | maths | 1 | calc1 | rc-calc2
+quiz 2 | sin²θ + cos²θ = ?
+* 1
+o 0
+o 2
+o tan²θ
+= Pythagoras on the unit circle.
+> Next
+
+quiz 3 | What's cos(0)?
+* 1
+o 0
+o −1
+o 1/2
+= Cosine starts at its maximum.
+> Next
+
+quiz 3 | e^(ln 5) = ?
+* 5
+o ln 5
+o e⁵
+o 1/5
+= They're inverse functions.
+> Next
+
+quiz 3 | ln(1) = ?
+* 0
+o 1
+o e
+o Undefined
+= e⁰ = 1.
+> Next
+
+quiz 3 | Quadratic formula roots of ax² + bx + c = 0?
+* (−b ± √(b² − 4ac))/(2a)
+o (b ± √(b² + 4ac))/(2a)
+o −b/(2a)
+o (−b ± √(b − 4ac))/a
+= b² − 4ac is the discriminant.
+> Next
+
+quiz 4 | tan(45°) = ?
+* 1
+o 0
+o √3
+o Undefined
+= Opposite equals adjacent.
+> Next
+
+quiz 4 | The derivative of arctan x at x = 0?
+* 1
+o 0
+o 1/2
+o π/4
+= 1/(1 + x²) at 0.
+> Next
+
+quiz 4 | log₁₀(0.001) = ?
+* −3
+o 3
+o −2
+o 0.001
+= 10⁻³.
+> Next
+
+quiz 4 | How many radians in 180°?
+* π
+o 2π
+o π/2
+o 180
+= 360° = 2π radians.
+> Next
+
+quiz 4 | |3 + 4i| = ?
+* 5
+o 7
+o 1
+o 25
+= √(9 + 16).
+> Facts check complete
