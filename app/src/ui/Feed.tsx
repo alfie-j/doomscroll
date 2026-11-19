@@ -3,8 +3,9 @@ import { Platform, StyleSheet, View, type LayoutChangeEvent } from 'react-native
 import Animated, { useAnimatedStyle, useSharedValue, withSpring, type SharedValue } from 'react-native-reanimated';
 import { GestureDetector, usePanGesture, useSimultaneousGestures, useTapGesture } from 'react-native-gesture-handler';
 import { scheduleOnRN } from 'react-native-worklets';
+import { cachedBook } from '../books/library';
 import { CARD_BY_ID } from '../content';
-import type { FeedItem } from '../engine/engine';
+import { TUNING, type FeedItem } from '../engine/engine';
 import { fx } from '../feedback/sound';
 import type { Theme } from '../theme';
 import { DOCK_H, HUD_H, ItemView, surfaceOf } from './cards';
@@ -42,6 +43,17 @@ export function Feed({ onOpenMe, overlayRef }: { onOpenMe: () => void; overlayRe
   const wentDeeper = useRef(false);
   const visited = useRef(new Set<string>());
   const interacted = useRef(new Set<string>());
+  const paneSince = useRef(Date.now());
+  const depthRef = useRef<Record<string, number>>({});
+  /** A bite counts as read once you move past it after a fair look (scaled to its length, 2.5–8 s). */
+  const markBite = useCallback((it: FeedItem | undefined, depth: number) => {
+    if (it?.kind !== 'read') return;
+    const idx = it.start + depth;
+    const text = cachedBook(it.bookId)?.bites[idx];
+    if (!text) return;
+    const need = Math.min(8000, Math.max(2500, (text.split(/\s+/).length * 60000) / 700));
+    if (Date.now() - paneSince.current >= need) engine.readBite(it.bookId, idx);
+  }, [engine]);
   markInteractedRef.current = (k: string) => interacted.current.add(k);
 
   const items = engine.items;
@@ -63,6 +75,7 @@ export function Feed({ onOpenMe, overlayRef }: { onOpenMe: () => void; overlayRe
     const from = engine.cur;
     if (target === from) return;
     const leaving = engine.items[from];
+    if (leaving) markBite(leaving, depthRef.current[leaving.key] ?? 0);
     if (leaving) {
       engine.exit(from, {
         dwellMs: Date.now() - liveSince.current,
@@ -75,6 +88,7 @@ export function Feed({ onOpenMe, overlayRef }: { onOpenMe: () => void; overlayRe
     engine.setCurrent(target);
     curSV.value = engine.cur;
     liveSince.current = Date.now();
+    paneSince.current = Date.now();
     wentDeeper.current = false;
     dpos.value = 0;
     setCur(engine.cur);
@@ -82,16 +96,20 @@ export function Feed({ onOpenMe, overlayRef }: { onOpenMe: () => void; overlayRe
     const next = engine.items[engine.cur];
     if (next?.kind === 'card' && CARD_BY_ID[next.cardId]?.legendary && !visited.current.has(next.key)) setTimeout(() => fx.both('legend', 'heavy'), 220);
     overlayRef.current?.flush();
-  }, [engine, curSV, dpos, overlayRef]);
+  }, [engine, curSV, dpos, overlayRef, markBite]);
 
   const commitDepth = useCallback((target: number) => {
     const it = engine.items[engine.cur];
     if (!it) return;
+    const prev = depthRef.current[it.key] ?? 0;
+    if (target > prev) markBite(it, prev);
+    depthRef.current[it.key] = target;
+    paneSince.current = Date.now();
     setDepths(d => (d[it.key] === target ? d : { ...d, [it.key]: target }));
     if (target > 0 && it.kind === 'card') { wentDeeper.current = true; engine.wentDeeper(it.cardId); }
     fx.both('tick', 'tick');
     overlayRef.current?.flush();
-  }, [engine, overlayRef]);
+  }, [engine, overlayRef, markBite]);
 
   const doubleTap = useCallback(() => {
     const it = engine.items[engine.cur];
@@ -208,8 +226,13 @@ export function Feed({ onOpenMe, overlayRef }: { onOpenMe: () => void; overlayRe
   );
 }
 
-/** Card ids in a row: the card plus its deeper cards. */
+/** Pane ids in a row: the card plus its deeper cards, or the run of book bites. */
 function paneIds(item: FeedItem | undefined): string[] {
+  if (item?.kind === 'read') {
+    const total = cachedBook(item.bookId)?.bites.length ?? 0;
+    const n = Math.max(1, Math.min(TUNING.readRow, total - item.start));
+    return Array.from({ length: n }, (_, k) => `b${item.start + k}`);
+  }
   if (!item || item.kind !== 'card') return [];
   const c = CARD_BY_ID[item.cardId];
   return [c.id, ...(c.deeper ?? [])];
@@ -234,7 +257,9 @@ function Row({ index, item, pos, dpos, isCur, depth, w, h, theme }: {
     <Animated.View style={[StyleSheet.absoluteFill, style]}>
       {ids.map((id, k) => (
         <Pane key={id} k={k} dpos={dpos} isCur={isCur} depth={depth} w={w}>
-          <ItemView item={k === 0 ? item : { key: `${item.key}:${id}`, kind: 'card', cardId: id }} active={isCur && depth === k} theme={theme} />
+          {item.kind === 'read'
+            ? (Math.abs(k - depth) <= 1 ? <ItemView item={item} bite={item.start + k} active={isCur && depth === k} theme={theme} /> : null)
+            : <ItemView item={k === 0 ? item : { key: `${item.key}:${id}`, kind: 'card', cardId: id }} active={isCur && depth === k} theme={theme} />}
         </Pane>
       ))}
     </Animated.View>

@@ -4,6 +4,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { AppState, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
+import { openBook } from './src/books/library';
 import { validateContent } from './src/content';
 import { store } from './src/data/store';
 import { Engine } from './src/engine/engine';
@@ -31,7 +32,14 @@ export default function App() {
       const errs = validateContent();
       if (errs.length) console.warn('Content errors:\n' + errs.join('\n'));
     }
-    store.load().then(raw => setEngine(new Engine(migrate(raw)))).catch(() => setEngine(new Engine(migrate(null))));
+    const start = async (raw: unknown) => {
+      const e = new Engine(migrate(raw));
+      // Resume the current book. New users start with a short one; it can be changed under Me → Books.
+      const id = e.s.activeBook ?? (Object.keys(e.s.books).length === 0 ? 'time-machine' : null);
+      if (id) await openBook(e, id).catch(() => false);
+      setEngine(e);
+    };
+    store.load().then(start).catch(() => start(null));
   }, []);
 
   if (!fontsLoaded || !engine) {

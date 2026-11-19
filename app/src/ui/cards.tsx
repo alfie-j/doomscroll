@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
 import Svg, { Ellipse, G, Path, Rect, Text as SvgText } from 'react-native-svg';
 import { CARD_BY_ID, CHAINS, CHAIN_LENGTH, COURSES, courseOf } from '../content';
@@ -10,6 +10,8 @@ import { SUBJECT_NAME, type SurfaceKind, type Theme } from '../theme';
 import { useApp } from './context';
 import { Btn, Label, Rich, Rv } from './primitives';
 import { WidgetView } from './widgets';
+import { cachedBook } from '../books/library';
+import { TUNING } from '../engine/engine';
 
 export const HUD_H = 74;
 export const DOCK_H = 64;
@@ -355,7 +357,7 @@ function MilestoneCard({ item, active, theme }: { item: FeedItem & { kind: 'mile
   const pop = useSharedValue(0.6);
   useEffect(() => { if (active) pop.value = withSpring(1, { damping: 7, stiffness: 160 }); }, [active, pop]);
   const a = useAnimatedStyle(() => ({ transform: [{ scale: pop.value }] }));
-  const tag = { goal: 'Daily goal', level: 'Level up', chain: 'Chain complete', title: 'New title', welcome: 'Mindscroll' }[item.tone];
+  const tag = { goal: 'Daily goal', level: 'Level up', chain: 'Chain complete', title: 'New title', welcome: 'Mindscroll', book: 'Book finished' }[item.tone];
   return (
     <Frame surface={s} theme={theme}>
       <Label theme={theme} surface={s} color={theme.ink(s)}>{tag}</Label>
@@ -370,7 +372,68 @@ function MilestoneCard({ item, active, theme }: { item: FeedItem & { kind: 'mile
   );
 }
 
-export function ItemView({ item, active, theme }: { item: FeedItem; active: boolean; theme: Theme }) {
+/* ---------------- reading ---------------- */
+
+/** Shrinks the text until it fits the space it has, so a bite never needs scrolling. */
+function FitText({ text, theme, surface, max = 20, min = 13 }: { text: string; theme: Theme; surface: SurfaceKind; max?: number; min?: number }) {
+  const [size, setSize] = useState(max);
+  const [box, setBox] = useState(0);
+  // Height of the text, tagged with the font size it was measured at, so a stale measurement can't shrink it twice.
+  const [m, setM] = useState<{ h: number; at: number } | null>(null);
+  useEffect(() => { setSize(max); setM(null); }, [text, max]);
+  useEffect(() => {
+    if (!box || !m || m.at !== size || m.h <= box || size <= min) return;
+    setSize(Math.max(min, Math.min(size - 1, Math.floor(size * Math.sqrt(box / m.h)))));
+  }, [box, m, size, min]);
+  const fits = !!box && !!m && m.at === size && (m.h <= box || size <= min);
+  return (
+    <View style={{ flex: 1, overflow: 'hidden' }} onLayout={(e: LayoutChangeEvent) => setBox(e.nativeEvent.layout.height)}>
+      <View style={{ position: 'absolute', left: 0, right: 0, top: 0, opacity: fits ? 1 : 0 }} onLayout={(e: LayoutChangeEvent) => setM({ h: e.nativeEvent.layout.height, at: size })}>
+        {text.split('\n\n').map((p, k) => (
+          <Text key={k} style={{ fontFamily: theme.body, fontSize: size, lineHeight: Math.round(size * 1.48), color: theme.ink(surface), marginBottom: Math.round(size * 0.7) }}>{p}</Text>
+        ))}
+      </View>
+    </View>
+  );
+}
+
+function ReadCard({ item, index, theme }: { item: FeedItem & { kind: 'read' }; index: number; theme: Theme }) {
+  const { engine } = useApp();
+  const s: SurfaceKind = 'read';
+  const book = cachedBook(item.bookId);
+  const prog = engine.s.books[item.bookId];
+  if (!book || !prog) {
+    return <Frame surface={s} theme={theme}><Label theme={theme} surface={s} color={theme.ink(s)}>Reading</Label><Text style={{ fontFamily: theme.body, color: theme.ink(s), marginTop: 12 }}>This book isn’t loaded. Open Me → Books.</Text></Frame>;
+  }
+  const total = book.bites.length;
+  const chapter = [...book.chapters].reverse().find(c => c.bite <= index);
+  const lastInRow = index >= Math.min(total - 1, item.start + TUNING.readRow - 1);
+  const done = Math.max(prog.progress, index) / total;
+  const ink = theme.ink(s);
+  const cliff = index >= total - 1 ? 'The end. Swipe up.' : lastInRow ? 'Swipe up. The next bite comes back in a few cards.' : 'Swipe right to keep reading';
+  return (
+    <Frame surface={s} theme={theme}>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+        <Label theme={theme} surface={s} color={ink} style={{ flexShrink: 1 }}>Reading · {book.title}</Label>
+        <Label theme={theme} surface={s} color={theme.muted(s)}>{Math.floor(done * 100)}%</Label>
+      </View>
+      <Text numberOfLines={1} style={{ fontFamily: theme.label, fontSize: 12, color: theme.muted(s), marginTop: 4, marginBottom: 14 }}>
+        {book.author}{chapter ? ` · ${chapter.title}` : ''}
+      </Text>
+      <FitText text={book.bites[index]} theme={theme} surface={s} />
+      <View style={{ height: 3, backgroundColor: 'rgba(10,10,10,0.12)', marginTop: 8 }}>
+        <View style={{ height: 3, width: `${done * 100}%`, backgroundColor: ink }} />
+      </View>
+      <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 8, gap: 10 }}>
+        <Text style={{ flex: 1, fontFamily: theme.label, fontSize: 14, color: ink }}>{cliff}</Text>
+        <Text style={{ fontFamily: theme.display, fontSize: 22, lineHeight: 22, color: ink }}>{lastInRow ? '↑' : '→'}</Text>
+      </View>
+    </Frame>
+  );
+}
+
+export function ItemView({ item, active, theme, bite }: { item: FeedItem; active: boolean; theme: Theme; bite?: number }) {
+  if (item.kind === 'read') return <ReadCard item={item} index={bite ?? item.start} theme={theme} />;
   if (item.kind === 'chest') return <ChestCard item={item} active={active} theme={theme} />;
   if (item.kind === 'recall') return <RecallCard item={item} active={active} theme={theme} />;
   if (item.kind === 'milestone') return <MilestoneCard item={item} active={active} theme={theme} />;
@@ -383,6 +446,7 @@ export function surfaceOf(item: FeedItem | undefined): SurfaceKind {
   if (item.kind === 'chest') return 'chest';
   if (item.kind === 'milestone') return 'milestone';
   if (item.kind === 'recall') return 'recall';
+  if (item.kind === 'read') return 'read';
   return CARD_BY_ID[item.cardId].subject;
 }
 

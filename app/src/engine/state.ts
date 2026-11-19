@@ -15,13 +15,24 @@ export interface CardStat {
 
 export interface SrsEntry { box: number; due: number }
 
+export interface BookProgress {
+  title: string;
+  author: string;
+  total: number; // bites
+  progress: number; // bites read (next bite to read)
+  imported: boolean;
+  addedAt: number;
+  lastRead?: number;
+  finishedAt?: number;
+}
+
 export interface PersistedState {
   v: 1;
   xp: number;
   subjectXp: Partial<Record<Subject, number>>;
   titles: string[];
   streak: { count: number; lastDay: string | null; freezes: number; best: number };
-  daily: { day: string; done: number; completed: boolean };
+  daily: { day: string; done: number; completed: boolean; readBites: number };
   shields: number;
   bestCombo: number;
   arms: Record<string, [number, number]>;
@@ -29,7 +40,9 @@ export interface PersistedState {
   chains: Record<string, number>; // highest order seen
   srs: Record<string, SrsEntry>;
   exams: Partial<Record<CourseId, string>>; // ISO date
-  settings: { theme: ThemeSetting; sound: boolean; haptics: boolean; stopAtGoal: boolean; goal: number; courseShare: number };
+  settings: { theme: ThemeSetting; sound: boolean; haptics: boolean; stopAtGoal: boolean; goal: number; courseShare: number; readGoal: number };
+  books: Record<string, BookProgress>;
+  activeBook: string | null;
   sessions: { start: number; end: number; cards: number }[];
   daysUsed: string[];
   openHours: number[];
@@ -55,7 +68,7 @@ export function defaultState(): PersistedState {
     subjectXp: {},
     titles: [],
     streak: { count: 0, lastDay: null, freezes: 1, best: 0 },
-    daily: { day: dayKey(), done: 0, completed: false },
+    daily: { day: dayKey(), done: 0, completed: false, readBites: 0 },
     shields: 0,
     bestCombo: 0,
     arms: {},
@@ -63,7 +76,9 @@ export function defaultState(): PersistedState {
     chains: {},
     srs: {},
     exams: {},
-    settings: { theme: 'swiss', sound: true, haptics: true, stopAtGoal: false, goal: 15, courseShare: 0.6 },
+    settings: { theme: 'swiss', sound: true, haptics: true, stopAtGoal: false, goal: 15, courseShare: 0.6, readGoal: 10 },
+    books: {},
+    activeBook: null,
     sessions: [],
     daysUsed: [],
     openHours: Array(24).fill(0),
@@ -87,7 +102,7 @@ export function migrate(raw: unknown): PersistedState {
 
 export interface LogEvent {
   ts: number;
-  type: 'exit' | 'answer' | 'chest' | 'recall' | 'like' | 'save' | 'deeper';
+  type: 'exit' | 'answer' | 'chest' | 'recall' | 'like' | 'save' | 'deeper' | 'read';
   cardId?: string;
   subject?: string;
   format?: string;

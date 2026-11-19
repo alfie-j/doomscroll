@@ -1,7 +1,7 @@
 import type { Subject } from './content/types';
 
 export type ThemeName = 'swiss';
-export type SurfaceKind = Subject | 'chest' | 'milestone' | 'recall';
+export type SurfaceKind = Subject | 'chest' | 'milestone' | 'recall' | 'read';
 
 export interface Theme {
   name: ThemeName;
@@ -26,13 +26,13 @@ const SWISS_BG: Record<SurfaceKind, string> = {
   maths: '#1E3CFF', physics: '#FF4F1A', psych: '#00A35C', stats: '#FFD200', cs: '#0A0A0A',
   econ: '#FF8FB8', bio: '#C6F432', history: '#EDE8DC', philo: '#8B6CFF', lit: '#00B8B0',
   chem: '#00C2FF', arts: '#E6007E', lang: '#8C5A3C', earth: '#2E7D32',
-  chest: '#0A0A0A', milestone: '#E8B400', recall: '#FFFFFF',
+  chest: '#0A0A0A', milestone: '#E8B400', recall: '#FFFFFF', read: '#F4EFE3',
 };
 const SWISS_INK: Record<SurfaceKind, string> = {
   maths: '#FFFFFF', physics: '#0A0A0A', psych: '#0A0A0A', stats: '#0A0A0A', cs: '#FFFFFF',
   econ: '#0A0A0A', bio: '#0A0A0A', history: '#0A0A0A', philo: '#0A0A0A', lit: '#0A0A0A',
   chem: '#0A0A0A', arts: '#FFFFFF', lang: '#FFFFFF', earth: '#FFFFFF',
-  chest: '#FFFFFF', milestone: '#0A0A0A', recall: '#0A0A0A',
+  chest: '#FFFFFF', milestone: '#0A0A0A', recall: '#0A0A0A', read: '#0A0A0A',
 };
 
 export const swiss: Theme = {

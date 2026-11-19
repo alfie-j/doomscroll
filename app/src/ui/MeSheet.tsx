@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { deleteBook, importBook, openBook } from '../books/library';
 import { CARD_BY_ID, COURSES } from '../content';
+import { BUNDLED_BOOKS } from '../content/books';
 import type { CourseId } from '../content/types';
 import { levelStart, levelTitle } from '../engine/engine';
 import { type LogEvent, dayKey, daysBetween } from '../engine/state';
@@ -69,6 +71,8 @@ export function MeSheet({ visible, onClose, loadEvents }: Props) {
             {s.titles.length > 0 && <Text style={T({ fontSize: 14 })}>Titles: {s.titles.join(' · ')}</Text>}
           </Section>
 
+          <Books theme={theme} ink={ink} muted={muted} />
+
           {/* courses */}
           <Section title="Courses · exam readiness" theme={theme} ink={ink}>
             {COURSES.map(c => {
@@ -129,6 +133,9 @@ export function MeSheet({ visible, onClose, loadEvents }: Props) {
             <Setting label="Daily goal" theme={theme} ink={ink}>
               {[10, 15, 25, 40].map(g => <Chip key={g} label={`${g} cards`} on={s.settings.goal === g} onPress={() => engine.updateSettings({ goal: g })} theme={theme} ink={ink} />)}
             </Setting>
+            <Setting label="Daily reading goal" theme={theme} ink={ink}>
+              {[5, 10, 20, 40].map(g => <Chip key={g} label={`${g} bites`} on={s.settings.readGoal === g} onPress={() => engine.updateSettings({ readGoal: g })} theme={theme} ink={ink} />)}
+            </Setting>
             <Setting label="Courses vs curiosity" theme={theme} ink={ink}>
               {[0.4, 0.6, 0.8].map(v => <Chip key={v} label={`${Math.round(v * 100)}/${Math.round((1 - v) * 100)}`} on={s.settings.courseShare === v} onPress={() => engine.updateSettings({ courseShare: v })} theme={theme} ink={ink} />)}
             </Setting>
@@ -145,6 +152,71 @@ export function MeSheet({ visible, onClose, loadEvents }: Props) {
         </ScrollView>
       </View>
     </Modal>
+  );
+}
+
+function Books({ theme, ink, muted }: { theme: Theme; ink: string; muted: string }) {
+  const { engine } = useApp();
+  const s = engine.s;
+  const [msg, setMsg] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+  const active = s.activeBook ? s.books[s.activeBook] : undefined;
+  const T = (st: object) => [{ color: ink, fontFamily: theme.body }, st];
+  const imported = Object.entries(s.books).filter(([, b]) => b.imported).sort((a, b) => b[1].addedAt - a[1].addedAt);
+  const rows = [
+    ...imported.map(([id, b]) => ({ id, title: b.title, author: b.author, blurb: 'Imported', total: b.total, imported: true })),
+    ...BUNDLED_BOOKS.map(b => ({ ...b, imported: false })),
+  ];
+  const open = async (id: string) => {
+    setMsg(null);
+    if (!(await openBook(engine, id))) setMsg('That book’s text is missing. Try importing it again.');
+  };
+  const doImport = async () => {
+    setBusy(true); setMsg(null);
+    const r = await importBook(engine).catch(() => ({ ok: false as const, error: 'Import failed.' }));
+    setBusy(false);
+    if (r.ok) setMsg(`Added ${r.title}: ${r.bites} bites. It’s in your feed now.`);
+    else if (r.error) setMsg(r.error);
+  };
+  return (
+    <Section title="Books · read in bites" theme={theme} ink={ink}>
+      {active ? (
+        <>
+          <Text style={T({ fontFamily: theme.heavy, fontSize: 30, letterSpacing: theme.titleTracking })}>{active.title}</Text>
+          <Text style={T({ color: muted, fontSize: 13 })}>{active.author}</Text>
+          <Bar frac={active.progress / active.total} ink={ink} muted={muted} />
+          <Text style={T({ color: muted, fontSize: 13 })}>
+            {active.progress}/{active.total} bites · {Math.floor((active.progress / active.total) * 100)}% · about {Math.max(1, Math.round(((active.total - active.progress) * 105) / 230 / 60))} h left · today {s.daily.readBites ?? 0}/{s.settings.readGoal}
+          </Text>
+          <View style={{ flexDirection: 'row', gap: 6 }}>
+            <Chip label="Stop reading" onPress={() => engine.setReading(null)} theme={theme} ink={ink} />
+          </View>
+        </>
+      ) : (
+        <Text style={T({ fontSize: 14 })}>Pick a book and a bite of it turns up every few cards. Swipe right to keep reading.</Text>
+      )}
+      <Text style={T({ fontFamily: theme.label, fontSize: 13, marginTop: 6 })}>Library</Text>
+      {rows.map(b => {
+        const p = s.books[b.id];
+        const isActive = s.activeBook === b.id;
+        const status = isActive ? 'Reading' : p?.finishedAt ? 'Finished' : p && p.progress > 0 ? `${Math.floor((p.progress / p.total) * 100)}%` : `${b.total} bites`;
+        return (
+          <Pressable key={b.id} onPress={() => { if (!isActive) open(b.id); }} style={{ flexDirection: 'row', gap: 10, alignItems: 'center', paddingVertical: 8, borderBottomWidth: 1, borderColor: muted }}>
+            <View style={{ flex: 1, gap: 2 }}>
+              <Text style={T({ fontFamily: theme.label, fontSize: 15 })}>{b.title}</Text>
+              <Text style={T({ color: muted, fontSize: 12 })}>{b.author} · {b.blurb}</Text>
+            </View>
+            {b.imported && !isActive && <Chip label="Remove" onPress={() => deleteBook(engine, b.id)} theme={theme} ink={ink} />}
+            <Text style={{ fontFamily: theme.label, fontSize: 12, color: isActive ? '#FFFFFF' : ink, backgroundColor: isActive ? ink : 'transparent', borderWidth: 2, borderColor: ink, paddingHorizontal: 8, paddingVertical: 4 }}>{status}</Text>
+          </Pressable>
+        );
+      })}
+      <View style={{ flexDirection: 'row' }}>
+        <Chip label={busy ? 'Importing…' : 'Import a book (.txt or .epub)'} onPress={() => { if (!busy) doImport(); }} theme={theme} ink={ink} />
+      </View>
+      {msg && <Text style={T({ fontSize: 13 })}>{msg}</Text>}
+      <Text style={T({ color: muted, fontSize: 12 })}>Bundled books are public domain, from Project Gutenberg. DRM-free EPUBs and plain text files import; Kindle and other DRM files don’t.</Text>
+    </Section>
   );
 }
 

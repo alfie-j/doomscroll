@@ -46,6 +46,7 @@ export function Hud({ surface, item, depth, panes, onOpenMe, onLike, onSave, lik
     where = c.chain ? `${course ? COURSES.find(x => x.id === course)?.short + ' · ' : ''}${CHAINS[c.chain].name}` : 'Wildcard';
   } else if (item?.kind === 'recall') where = 'Review';
   else if (item?.kind === 'chest') where = 'Drop';
+  else if (item?.kind === 'read') where = `Book · ${engine.s.books[item.bookId]?.title ?? ''}`;
 
   const goalFrac = Math.min(1, engine.s.daily.done / engine.goal);
   const left = Math.max(0, engine.goal - engine.s.daily.done);
@@ -90,8 +91,8 @@ export function Hud({ surface, item, depth, panes, onOpenMe, onLike, onSave, lik
         )}
         {panes > 1 && (
           <View style={{ marginLeft: 'auto', flexDirection: 'row', alignItems: 'center', gap: 5 }}>
-            <Text style={[label, { fontSize: 11 }]}>{depth === 0 ? 'SWIPE RIGHT: DEEPER' : 'DEPTH'}</Text>
-            {Array.from({ length: panes }, (_, k) => <View key={k} style={{ width: 14, height: 4, backgroundColor: ink, opacity: k === depth ? 1 : 0.3 }} />)}
+            <Text style={[label, { fontSize: 11 }]}>{item?.kind === 'read' ? (depth === 0 ? 'SWIPE RIGHT: READ ON' : `BITE ${depth + 1}/${panes}`) : depth === 0 ? 'SWIPE RIGHT: DEEPER' : 'DEPTH'}</Text>
+            {Array.from({ length: panes }, (_, k) => <View key={k} style={{ width: panes > 6 ? 8 : 14, height: 4, backgroundColor: ink, opacity: k === depth ? 1 : k < depth && item?.kind === 'read' ? 0.6 : 0.3 }} />)}
           </View>
         )}
       </View>

@@ -8,6 +8,10 @@ export interface Store {
   save(state: PersistedState): Promise<void>;
   log(events: LogEvent[]): Promise<void>;
   events(since: number): Promise<LogEvent[]>;
+  /** Large values kept apart from the state, such as imported books. */
+  saveBlob(key: string, value: string): Promise<void>;
+  loadBlob(key: string): Promise<string | null>;
+  deleteBlob(key: string): Promise<void>;
 }
 
 let dbPromise: Promise<SQLite.SQLiteDatabase> | null = null;
@@ -49,6 +53,19 @@ export const store: Store = {
         );
       }
     });
+  },
+  async saveBlob(key, value) {
+    const d = await db();
+    await d.runAsync('INSERT OR REPLACE INTO kv (key, value) VALUES (?, ?)', [`blob:${key}`, value]);
+  },
+  async loadBlob(key) {
+    const d = await db();
+    const row = await d.getFirstAsync<{ value: string }>('SELECT value FROM kv WHERE key = ?', [`blob:${key}`]);
+    return row?.value ?? null;
+  },
+  async deleteBlob(key) {
+    const d = await db();
+    await d.runAsync('DELETE FROM kv WHERE key = ?', [`blob:${key}`]);
   },
   async events(since) {
     const d = await db();

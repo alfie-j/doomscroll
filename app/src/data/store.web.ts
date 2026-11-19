@@ -15,6 +15,11 @@ export const store: Store = {
     const all: LogEvent[] = JSON.parse(get(K_EVENTS) ?? '[]');
     set(K_EVENTS, JSON.stringify([...all, ...events].slice(-5000)));
   },
+  async saveBlob(key: string, value: string) {
+    try { localStorage.setItem(`mindscroll:blob:${key}`, value); } catch { throw new Error('Not enough browser storage for this book.'); }
+  },
+  async loadBlob(key: string) { return get(`mindscroll:blob:${key}`); },
+  async deleteBlob(key: string) { try { localStorage.removeItem(`mindscroll:blob:${key}`); } catch { /* ignore */ } },
   async events(since: number) {
     const all: LogEvent[] = JSON.parse(get(K_EVENTS) ?? '[]');
     return all.filter(e => e.ts >= since);

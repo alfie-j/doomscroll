@@ -2,15 +2,17 @@ import { CARD_BY_ID, CARDS, CHAINS, CHAIN_CARDS, CHAIN_LENGTH, COURSES, courseCa
 import type { Card, CourseId, Format, Subject } from '../content/types';
 import { SUBJECT_NAME, SUBJECT_NOUN } from '../theme';
 import { betaSample, pick, rand, randInt } from './random';
+import type { BookData } from '../books/types';
 import { type LogEvent, type PersistedState, dayKey, daysBetween } from './state';
 
 /* ---------------- feed items ---------------- */
 
-export type MilestoneTone = 'goal' | 'level' | 'chain' | 'title' | 'welcome';
+export type MilestoneTone = 'goal' | 'level' | 'chain' | 'title' | 'welcome' | 'book';
 export type FeedItem =
   | { key: string; kind: 'card'; cardId: string; rerun?: boolean }
   | { key: string; kind: 'recall'; cardId: string }
   | { key: string; kind: 'chest' }
+  | { key: string; kind: 'read'; bookId: string; start: number }
   | { key: string; kind: 'milestone'; tone: MilestoneTone; title: string; lines: string[] };
 
 export type Effect =
@@ -47,6 +49,10 @@ export const TUNING = {
   ],
   srsDays: [1, 3, 7, 16, 35, 90],
   bonusRound: 10,
+  readEvery: [5, 8] as [number, number], // cards between book bites
+  readEveryAfterGoal: [10, 14] as [number, number],
+  readRow: 10, // bites you can swipe through in one sitting before the feed moves on
+  readXp: 4,
   armCap: 60,
 };
 
@@ -106,6 +112,11 @@ export class Engine {
   private chestOpened = new Set<string>();
   private recallDone = new Set<string>();
   private touched = new Set<string>();
+  /** The book being read, with its text. Set by the app once the book has loaded. */
+  reading: BookData | null = null;
+  private sinceRead = 0;
+  private readTarget = 3; // the first bite turns up early in a session
+  private readSkips = 0;
 
   constructor(state: PersistedState) {
     this.s = state;
@@ -153,7 +164,7 @@ export class Engine {
   /* ----- day rollover ----- */
   private rollDay() {
     const today = dayKey();
-    if (this.s.daily.day !== today) this.s.daily = { day: today, done: 0, completed: false };
+    if (this.s.daily.day !== today) this.s.daily = { day: today, done: 0, completed: false, readBites: 0 };
   }
 
   private isNewUser() { return Object.keys(this.s.cards).length === 0; }
@@ -252,7 +263,10 @@ export class Engine {
       this.sinceChest = 0; this.chestTarget = randInt(...TUNING.chestEvery);
       return { key: this.key(), kind: 'chest' };
     }
-    // 3. Spaced repetition and same-session relearning.
+    // 3. The next bite of the book you're reading.
+    const bite = this.readItem(pos);
+    if (bite) return bite;
+    // 4. Spaced repetition and same-session relearning.
     if (this.sinceRecall >= TUNING.recallEvery) {
       const r = this.dueRecall(pos, queued);
       if (r) { this.sinceRecall = 0; return { key: this.key(), kind: 'recall', cardId: r }; }
@@ -295,9 +309,21 @@ export class Engine {
   }
 
   private cardItem(c: Card): FeedItem {
-    this.sinceChest++; this.sinceRecall++;
+    this.sinceChest++; this.sinceRecall++; this.sinceRead++;
     if (c.hook >= 4) { this.sinceBanger = 0; this.bangerTarget = randInt(...TUNING.bangerEvery); } else this.sinceBanger++;
     return { key: this.key(), kind: 'card', cardId: c.id };
+  }
+
+  private readItem(pos: number): FeedItem | null {
+    const book = this.reading;
+    const b = book ? this.s.books[book.id] : undefined;
+    if (!book || !b || b.progress >= b.total || this.sinceRead < this.readTarget) return null;
+    if (this.items.slice(Math.max(0, this.cur - 1)).some(i => i.kind === 'read')) return null;
+    if (this.items[pos - 1]?.kind === 'milestone') return null;
+    this.sinceRead = 0;
+    const goalMet = this.s.daily.readBites >= this.s.settings.readGoal;
+    this.readTarget = randInt(...(goalMet ? TUNING.readEveryAfterGoal : TUNING.readEvery)) + Math.min(this.readSkips, 3) * 3;
+    return { key: this.key(), kind: 'read', bookId: book.id, start: b.progress };
   }
 
   private rerun(queued: Set<string>): FeedItem {
@@ -326,7 +352,11 @@ export class Engine {
     if (!item) return;
     this.rollDay();
     if (item.kind === 'card') this.exitCard(item.cardId, info);
-    else {
+    else if (item.kind === 'read') {
+      // Passing on a bite never costs anything; it just makes bites a little rarer.
+      const b = this.s.books[item.bookId];
+      if (b && b.progress <= item.start && info.dwellMs < 3000) this.readSkips++;
+    } else {
       const interacted = info.interacted || (item.kind === 'chest' && this.chestOpened.has(item.key)) || (item.kind === 'recall' && this.recallDone.has(item.key));
       if (interacted) this.bumpCombo();
     }
@@ -583,6 +613,64 @@ export class Engine {
   }
 
   /* ----- settings and courses ----- */
+
+  /* ----- reading ----- */
+
+  /** Starts (or stops, with null) reading a book. Registers it in the library if it's new. */
+  setReading(book: BookData | null, imported = false) {
+    this.reading = book;
+    this.s.activeBook = book?.id ?? null;
+    if (book) {
+      const b = (this.s.books[book.id] ??= { title: book.title, author: book.author, total: book.bites.length, progress: 0, imported, addedAt: Date.now() });
+      b.total = book.bites.length;
+      if (b.progress >= b.total) { b.progress = 0; b.finishedAt = undefined; } // reread
+      this.sinceRead = Math.max(this.sinceRead, this.readTarget - 1);
+      this.readSkips = 0;
+    }
+    this.items = this.items.filter((it, i) => i <= this.cur || it.kind !== 'read');
+    this.reshuffleAhead();
+    this.changed();
+  }
+
+  removeBook(id: string) {
+    if (this.s.activeBook === id) this.setReading(null);
+    delete this.s.books[id];
+    this.changed();
+  }
+
+  /** Called when a bite has been read (moved past after a fair look). */
+  readBite(bookId: string, index: number) {
+    const b = this.s.books[bookId];
+    if (!b || index < b.progress || index >= b.total) return;
+    this.rollDay();
+    const before = b.progress;
+    b.progress = index + 1;
+    b.lastRead = Date.now();
+    this.readSkips = 0;
+    const d = this.s.daily;
+    d.readBites = (d.readBites ?? 0) + 1;
+    this.gainXp(TUNING.readXp, 'lit', 'READ');
+    this.bumpCombo();
+    this.countTowardGoal();
+    this.log({ type: 'read', cardId: `${bookId}#${index}`, subject: 'lit' });
+    const book = this.reading?.id === bookId ? this.reading : null;
+    const nextChapter = book?.chapters.find(c => c.bite === b.progress);
+    const thisChapter = book ? [...book.chapters].reverse().find(c => c.bite <= index) : undefined;
+    if (b.progress >= b.total) {
+      b.finishedAt = Date.now();
+      this.gainXp(150, 'lit', 'BOOK FINISHED');
+      this.insertNext({ key: this.key(), kind: 'milestone', tone: 'book', title: `Finished: ${b.title}`, lines: [`${b.total} bites, ${b.title} by ${b.author}. +150 XP.`, 'Pick the next one under Me → Books.'] });
+    } else {
+      const pct = [0.25, 0.5, 0.75].find(q => before < q * b.total && b.progress >= q * b.total);
+      if (pct) this.effects.push({ type: 'toast', text: `${pct * 100}% through ${b.title}` });
+      else if (nextChapter && thisChapter) this.effects.push({ type: 'toast', text: `Chapter done: ${thisChapter.title}` });
+    }
+    if (d.readBites === this.s.settings.readGoal) {
+      this.gainXp(20, 'lit', 'READING GOAL');
+      this.effects.push({ type: 'toast', text: `Reading goal done: ${d.readBites} bites today` });
+    }
+    this.changed();
+  }
 
   setExam(id: CourseId, iso: string | null) {
     if (iso) this.s.exams[id] = iso; else delete this.s.exams[id];

@@ -10,6 +10,9 @@ if (errors.length) { console.error('CONTENT ERRORS\n' + errors.join('\n')); proc
 
 setRandom(seeded(42));
 const e = new Engine(defaultState());
+// Read The Time Machine along the way: three bites each time one turns up.
+const tm = require('../src/content/books/time-machine.json');
+e.setReading(tm);
 const kinds: Record<string, number> = {};
 const formats: string[] = [];
 let courseN = 0, breadthN = 0, prevFormat = '', sameFmt = 0;
@@ -28,6 +31,7 @@ for (let i = 0; i < 160; i++) {
   }
   if (it.kind === 'chest') { e.openChest(it.key); interacted = true; }
   if (it.kind === 'recall') { e.gradeRecall(it.key, it.cardId, true); interacted = true; }
+  if (it.kind === 'read') for (let k = 0; k < 3; k++) e.readBite(it.bookId, it.start + k);
   e.exit(e.cur, { dwellMs: dwell, deeper: false, interacted, revisit: false });
   e.setCurrent(e.cur + 1);
   e.drainEffects();
@@ -40,4 +44,5 @@ const arms = Object.entries(e.s.arms).map(([k, [a, b]]) => [k, (a / (a + b)).toF
 console.log('top arms:', arms.slice(0, 4).map(a => a.join(' ')).join(' | '));
 console.log('bottom arms:', arms.slice(-3).map(a => a.join(' ')).join(' | '));
 console.log('history cards shown after 40 swipes:', formats.slice(40).filter(f => f.startsWith('history')).length);
+console.log(`reading: ${e.s.books['time-machine'].progress}/${e.s.books['time-machine'].total} bites, today ${e.s.daily.readBites}`);
 console.log('readiness calc1:', e.readiness('calc1').toFixed(2), 'phys1:', e.readiness('phys1').toFixed(2));
